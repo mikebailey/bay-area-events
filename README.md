@@ -10,10 +10,11 @@ mentions until it is over.
 
 ## Where this project lives
 
-- **Local:** `~/Projects/personal/bay-area-events/`
+- **Local:** `~/Projects/personal/family/bay-area-events/`
 - **GitHub:** `github.com/mikebailey/bay-area-events` (public)
 - **Hosting:** GitHub Pages, planned at `bayarea.michaelbailey.org`
-- **Mirror:** personal Google Drive (`data/` and `outputs/` only)
+- **Mirror:** personal Google Drive, `Projects/personal/family/bay-area-events/`
+  (`data/` and `outputs/` only)
 
 Public repo, but deliberately unlinked from michaelbailey.org in both directions,
 `noindex`, and excluded from search engines. It is a listing of public events, and
