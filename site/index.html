@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bay Area Things To Do</title>
+<style>
+  :root {
+    --bg:#f7f7f5; --panel:#fff; --ink:#1a1a18; --muted:#6b6b66; --line:#e3e3de;
+    --accent:#2f6f4f; --accent-soft:#e8f1ec; --warn:#9a3412; --chip:#f0f0ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#16171a; --panel:#1e1f23; --ink:#e9e9e6; --muted:#9a9a94; --line:#2e2f35;
+      --accent:#6fbf90; --accent-soft:#1d2b23; --warn:#f0916a; --chip:#26272c;
+    }
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  .wrap { max-width:1100px; margin:0 auto; padding:20px 16px 64px; }
+  header { margin-bottom:18px; }
+  h1 { font-size:26px; margin:0 0 4px; letter-spacing:-0.02em; }
+  .sub { color:var(--muted); font-size:14px; }
+  .controls {
+    position:sticky; top:0; z-index:10; background:var(--bg);
+    padding:12px 0; border-bottom:1px solid var(--line); margin-bottom:18px;
+  }
+  .row { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+  .row + .row { margin-top:8px; }
+  input[type=search] {
+    flex:1 1 220px; min-width:180px; padding:9px 12px; border:1px solid var(--line);
+    border-radius:8px; background:var(--panel); color:var(--ink); font-size:15px;
+  }
+  button.f {
+    padding:6px 11px; border:1px solid var(--line); border-radius:999px;
+    background:var(--panel); color:var(--muted); cursor:pointer; font-size:13px;
+  }
+  button.f[aria-pressed=true] {
+    background:var(--accent-soft); border-color:var(--accent); color:var(--accent); font-weight:600;
+  }
+  .label { font-size:12px; color:var(--muted); text-transform:uppercase;
+           letter-spacing:.06em; margin-right:2px; }
+  h2 { font-size:19px; margin:30px 0 4px; letter-spacing:-0.01em; }
+  h2 .n { color:var(--muted); font-weight:400; font-size:14px; }
+  .sechint { color:var(--muted); font-size:13px; margin:0 0 12px; }
+  .grid { display:grid; gap:10px; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); }
+  .card {
+    background:var(--panel); border:1px solid var(--line); border-radius:12px;
+    padding:12px 14px; display:flex; flex-direction:column; gap:6px;
+  }
+  .card a.t { color:var(--ink); text-decoration:none; font-weight:600; line-height:1.35; }
+  .card a.t:hover { color:var(--accent); text-decoration:underline; }
+  .meta { font-size:13px; color:var(--muted); }
+  .chips { display:flex; flex-wrap:wrap; gap:5px; margin-top:2px; }
+  .chip {
+    font-size:11px; padding:2px 7px; border-radius:999px;
+    background:var(--chip); color:var(--muted); white-space:nowrap;
+  }
+  .chip.free { background:var(--accent-soft); color:var(--accent); font-weight:600; }
+  .chip.adult { background:transparent; border:1px solid var(--line); }
+  .when { font-weight:600; color:var(--accent); font-size:13px; }
+  .empty { color:var(--muted); font-style:italic; padding:8px 0; }
+  footer { margin-top:44px; padding-top:14px; border-top:1px solid var(--line);
+           color:var(--muted); font-size:12.5px; }
+  footer .bad { color:var(--warn); }
+  .srcs { display:flex; flex-wrap:wrap; gap:10px; margin-top:6px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Bay Area Things To Do</h1>
+    <div class="sub" id="sub">Loading…</div>
+  </header>
+
+  <div class="controls">
+    <div class="row">
+      <input type="search" id="q" placeholder="Search events, venues, cities…" autocomplete="off">
+      <button class="f" id="sortBtn" aria-pressed="false">Sort: date</button>
+    </div>
+    <div class="row">
+      <span class="label">Drive</span>
+      <button class="f" data-drive="20" aria-pressed="false">≤20m</button>
+      <button class="f" data-drive="40" aria-pressed="false">≤40m</button>
+      <button class="f" data-drive="60" aria-pressed="false">≤60m</button>
+      <span class="label" style="margin-left:8px">Price</span>
+      <button class="f" data-price="free" aria-pressed="false">Free</button>
+      <span class="label" style="margin-left:8px">Who</span>
+      <button class="f" data-who="kids" aria-pressed="false">Kid-friendly</button>
+      <button class="f" data-who="adults" aria-pressed="false">Adults</button>
+    </div>
+    <div class="row" id="catRow">
+      <span class="label">Type</span>
+    </div>
+  </div>
+
+  <main id="out"></main>
+
+  <footer>
+    <div id="health"></div>
+    <div style="margin-top:8px">
+      Drive times are estimates from straight-line distance, not routed times.
+      Always confirm details on the event's own page before going.
+    </div>
+  </footer>
+</div>
+
+<script>
+const SECTIONS = [
+  ["week",    "This Week",        "The next seven days."],
+  ["month",   "Rest of the Month","The next 30 days, close to home."],
+  ["later",   "Further Out",      "Beyond a month. Mostly ticketed shows worth booking early."],
+  ["daytrip", "Epic Day Trips",   "Worth the drive. Big, once-a-year things only."],
+  ["ongoing", "Ongoing & Runs",   "Exhibits and multi-day runs. Check closing dates."]
+];
+let DATA = null, sortMode = "date";
+const expanded = new Set();
+const filters = { q:"", drive:null, price:null, who:null, cats:new Set() };
+
+const fmtDay = new Intl.DateTimeFormat(undefined,
+  {weekday:"short", month:"short", day:"numeric"});
+const fmtTime = new Intl.DateTimeFormat(undefined,
+  {hour:"numeric", minute:"2-digit"});
+
+function whenLabel(ev) {
+  const d = new Date(ev.start);
+  let s = fmtDay.format(d);
+  if (!ev.allDay) s += ", " + fmtTime.format(d);
+  return s;
+}
+
+function matches(ev) {
+  if (filters.drive !== null && (ev.drive === null || ev.drive > filters.drive)) return false;
+  if (filters.price === "free" && !ev.free) return false;
+  if (filters.who === "kids" && ev.adults) return false;
+  if (filters.who === "adults" && !ev.adults) return false;
+  if (filters.cats.size && !filters.cats.has(ev.category)) return false;
+  if (filters.q) {
+    const hay = (ev.title + " " + (ev.venue||"") + " " + (ev.city||"") + " " +
+                 ev.tags.join(" ")).toLowerCase();
+    if (!hay.includes(filters.q)) return false;
+  }
+  return true;
+}
+
+function card(ev) {
+  const el = document.createElement("div");
+  el.className = "card";
+
+  const when = document.createElement("div");
+  when.className = "when";
+  when.textContent = whenLabel(ev);
+  el.appendChild(when);
+
+  const a = document.createElement("a");
+  a.className = "t"; a.href = ev.url; a.target = "_blank"; a.rel = "noopener";
+  a.textContent = ev.title;
+  el.appendChild(a);
+
+  const where = [ev.venue, ev.city].filter(Boolean).join(" · ") || "Location not listed";
+  const meta = document.createElement("div");
+  meta.className = "meta";
+  meta.textContent = where + (ev.drive !== null ? "  ·  ~" + ev.drive + " min" : "");
+  el.appendChild(meta);
+
+  const chips = document.createElement("div");
+  chips.className = "chips";
+  const add = (txt, cls) => {
+    const c = document.createElement("span");
+    c.className = "chip" + (cls ? " " + cls : "");
+    c.textContent = txt; chips.appendChild(c);
+  };
+  if (ev.free) add("Free", "free"); else if (ev.price !== "?") add(ev.price);
+  if (ev.adults) add("adults", "adult");
+  if (ev.category) add(ev.category);
+  (ev.tags || []).slice(0, 2).forEach(t => add(t));
+  el.appendChild(chips);
+  return el;
+}
+
+function render() {
+  const out = document.getElementById("out");
+  out.textContent = "";
+  let shown = 0;
+
+  for (const [key, title, hint] of SECTIONS) {
+    let evs = DATA.events.filter(e => e.section === key && matches(e));
+    evs.sort(sortMode === "date"
+      ? (a,b) => a.start.localeCompare(b.start) || b.score - a.score
+      : (a,b) => b.score - a.score || a.start.localeCompare(b.start));
+
+    const h = document.createElement("h2");
+    h.innerHTML = title + ' <span class="n">' + evs.length + '</span>';
+    out.appendChild(h);
+    const p = document.createElement("p");
+    p.className = "sechint"; p.textContent = hint;
+    out.appendChild(p);
+
+    if (!evs.length) {
+      const e = document.createElement("div");
+      e.className = "empty"; e.textContent = "Nothing matches your filters here.";
+      out.appendChild(e);
+      continue;
+    }
+    const grid = document.createElement("div");
+    grid.className = "grid";
+    const cap = expanded.has(key) ? evs.length : (key === "week" ? 200 : 48);
+    evs.slice(0, cap).forEach(ev => grid.appendChild(card(ev)));
+    out.appendChild(grid);
+    if (evs.length > cap) {
+      const more = document.createElement("button");
+      more.className = "f"; more.style.marginTop = "10px";
+      more.textContent = "Show all " + evs.length + " ↓";
+      more.addEventListener("click", () => { expanded.add(key); render(); });
+      out.appendChild(more);
+    }
+    shown += Math.min(cap, evs.length);
+  }
+  document.getElementById("sub").textContent =
+    shown + " events shown · from " + DATA.home + " · updated " +
+    new Date(DATA.generated).toLocaleString();
+}
+
+function wire() {
+  document.getElementById("q").addEventListener("input", e => {
+    filters.q = e.target.value.trim().toLowerCase(); render();
+  });
+  document.getElementById("sortBtn").addEventListener("click", e => {
+    sortMode = sortMode === "date" ? "score" : "date";
+    e.target.textContent = "Sort: " + (sortMode === "date" ? "date" : "best first");
+    e.target.setAttribute("aria-pressed", sortMode === "score");
+    render();
+  });
+  document.querySelectorAll("button.f[data-drive],button.f[data-price],button.f[data-who]")
+    .forEach(btn => btn.addEventListener("click", () => {
+      const [k, v] = btn.dataset.drive ? ["drive", +btn.dataset.drive]
+                   : btn.dataset.price ? ["price", btn.dataset.price]
+                   : ["who", btn.dataset.who];
+      const on = filters[k] === v;
+      filters[k] = on ? null : v;
+      document.querySelectorAll("button.f[data-" + k + "]")
+        .forEach(b => b.setAttribute("aria-pressed", "false"));
+      btn.setAttribute("aria-pressed", String(!on));
+      render();
+    }));
+}
+
+function buildCatButtons() {
+  const row = document.getElementById("catRow");
+  const cats = [...new Set(DATA.events.map(e => e.category).filter(Boolean))].sort();
+  cats.forEach(c => {
+    const b = document.createElement("button");
+    b.className = "f"; b.textContent = c; b.setAttribute("aria-pressed", "false");
+    b.addEventListener("click", () => {
+      const on = filters.cats.has(c);
+      on ? filters.cats.delete(c) : filters.cats.add(c);
+      b.setAttribute("aria-pressed", String(!on));
+      render();
+    });
+    row.appendChild(b);
+  });
+}
+
+function health() {
+  const bad = DATA.sources.filter(s => !s.ok);
+  const el = document.getElementById("health");
+  const parts = DATA.sources.map(s =>
+    '<span class="' + (s.ok ? "" : "bad") + '">' + s.key +
+    (s.ok ? " " + s.count : " FAILED") + "</span>");
+  el.innerHTML = "<strong>Sources</strong> (" +
+    (DATA.sources.length - bad.length) + "/" + DATA.sources.length + " healthy)" +
+    '<div class="srcs">' + parts.join("") + "</div>";
+}
+
+fetch("events.json?" + Date.now())
+  .then(r => r.json())
+  .then(d => { DATA = d; buildCatButtons(); wire(); health(); render(); })
+  .catch(e => {
+    document.getElementById("sub").textContent = "Could not load events.json: " + e;
+  });
+</script>
+</body>
+</html>
