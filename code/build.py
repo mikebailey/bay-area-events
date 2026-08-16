@@ -117,6 +117,55 @@ def classify(ev, today):
     return "later"
 
 
+# Type carries the color on the page; attributes carry text badges.
+#
+# This split is forced by measurement, not taste. Running the palette validator
+# over candidate sets, six category colors fail badly (green vs orange comes out
+# at deltaE 3.2 under protanopia, effectively identical) and five fail the
+# normal-vision floor. Only three hues plus a neutral pass all-pairs checking in
+# both light and dark mode.
+#
+# It is also the better model. "Family-friendly" is not a peer of "music" — it is
+# a property a concert can have. So type is a small closed set that gets color,
+# and everything crosscutting becomes a badge.
+TYPE_MAP = {
+    "music": "music",
+    "arts": "arts", "film": "arts",
+    "sports": "sports",
+}
+
+OUTDOOR_RE = re.compile(r"\b(park|beach|garden|trail|hike|outdoor|picnic|"
+                        r"pier|plaza|farm|open space|waterfront)\b", re.I)
+
+
+def event_type(ev):
+    """One of music / arts / sports / other. Only these four get a color."""
+    return TYPE_MAP.get(ev["category"], "other")
+
+
+def badges_for(ev):
+    """Crosscutting attributes, shown as text so they never rely on color."""
+    title = ev["title"] or ""
+    tags = [t.lower() for t in json.loads(ev["tags"] or "[]")]
+    out = []
+    if "funcheap top pick" in tags:
+        out.append("top pick")
+    if ev["category"] == "family" or (KID_GOOD_RE.search(title)
+                                      and not ADULT_RE.search(title)):
+        out.append("family")
+    if EPIC_RE.search(title):
+        out.append("festival")
+    if ev["is_free"]:
+        out.append("free")
+    if ADULT_RE.search(title):
+        out.append("adults")
+    if OUTDOOR_RE.search(title):
+        out.append("outdoor")
+    if "sold out" in tags:
+        out.append("sold out")
+    return out[:4]
+
+
 # A venue that runs the same thing every single day is describing an attraction,
 # not an event. Hiller's "Drone Plex" ran 35 times in one window. We keep the next
 # occurrence as a standing attraction and drop the rest.
@@ -182,6 +231,8 @@ def main():
             "url": ev["url"],
             "image": ev["image"],
             "adults": bool(ADULT_RE.search(ev["title"] or "")),
+            "type": event_type(ev),
+            "badges": badges_for(ev),
             "score": score,
             "why": reasons,
             "section": section,

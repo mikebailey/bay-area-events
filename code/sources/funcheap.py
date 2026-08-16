@@ -109,6 +109,19 @@ def _detect_city(title):
     return best.title() if best else None
 
 
+# Funcheap monetizes with sponsored deal posts that sit in the listing exactly like
+# events ("$35 for Locally-Run Independent Internet Service", "50% Off Resale
+# Finds"). They are advertisements, not things to go do, and they are the single
+# biggest source of junk on that site. Drop them.
+_DEAL_TITLE = re.compile(
+    r"^\s*\$\d+\s+for\b|"           # "$35 for ..."
+    r"^\s*\d+%\s*off\b|"            # "50% Off ..."
+    r"\bpromo code\b|\bcoupon\b|"
+    r"\b(save|deal[s]?)\s+(up\s+to\s+)?\d+%|"
+    r"^\s*free\s+(shipping|trial)\b", re.I)
+_DEAL_CATEGORIES = {"sponsored", "discount-tix-promo-codes"}
+
+
 def _parse_post(block, day):
     tm = _TITLE_RE.search(block)
     if not tm:
@@ -116,6 +129,13 @@ def _parse_post(block, day):
     url = tm.group(1)
     title = clean_text(tm.group(2), 200)
     if not title or not url:
+        return None
+
+    cats_raw = set(_CATEGORY_RE.findall(block))
+    # A sponsored post with no real event category is an ad. Note that some
+    # genuine events are cross-listed under promo codes, so "sponsored" alone
+    # is the disqualifier, not the discount tag by itself.
+    if "sponsored" in cats_raw or _DEAL_TITLE.search(title):
         return None
 
     start_raw = _DATE_RE.search(block)

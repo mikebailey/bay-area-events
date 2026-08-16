@@ -63,6 +63,7 @@ coverage is surfaced rather than hidden.
 | Source | Kind | Notes |
 |---|---|---|
 | Ticketmaster Discovery | API | Concerts, pro sports, big theater. Highest yield by far. |
+| DoTheBay | JSON API | Curated aggregator. Carries its own popularity signal and a slice of Eventbrite inventory. |
 | CuriOdyssey, Filoli, Hiller, Chabot, Oakland Museum | API | All run The Events Calendar WordPress plugin, so one parser serves all five. Adding a venue is one line in `config.py`. |
 | Funcheap | Scrape | Day archives. The long tail of small, local, free events. |
 
@@ -88,9 +89,43 @@ Recorded because each one cost real debugging time and none is documented anywhe
 - **Smart punctuation breaks naive filters.** Venue sites write `Today’s Schedule`
   with U+2019, so a regex using an ASCII apostrophe matches nothing and 114
   operating-hours rows sail through. `base.normalize_punct` handles this.
+- **DoTheBay 403s any bot User-Agent.** It looked unavailable until retried with
+  a browser UA, after which `/events.json?page=N` serves clean paged JSON. Its
+  `begin_time` field is not a clock string despite the name, it is a full ISO
+  datetime, and its offsets are `-05:00` rather than Pacific; the `tz_adjusted_*`
+  fields carry the correct time. Venue name lives under `venue.title`, not `name`.
+- **Funcheap sells sponsored posts that sit in the listing like events**
+  ("$35 for Locally-Run Independent Internet Service"). Filtered on the
+  `sponsored` category and deal-shaped titles.
+- **Eventbrite has had no public event-search API since 2020** and blocks
+  scraping. DoTheBay is the legitimate route to part of that inventory.
+- **The SF Peninsula tourism board API is closed.** It runs Simpleview, whose
+  `rest_v2` endpoints return 403 even with a browser UA and a matching Referer.
+  Would need HTML scraping.
 - **Windows console encoding.** Event titles are full of `™`, `’`, and `–`. Run
   with `PYTHONIOENCODING=utf-8` on the PC or printing crashes. All file writes
   specify `encoding="utf-8"` explicitly for the same reason.
+
+## The color system, and why there are only three
+
+Event **type** carries color; crosscutting **attributes** carry text badges. That
+split is forced by measurement rather than taste. Running candidate palettes
+through the colorblind validator:
+
+| Palette | Result |
+|---|---|
+| 6 category colors | FAIL — green vs orange at deltaE 3.2 under protanopia, effectively identical |
+| 5 category colors | FAIL — normal-vision floor, magenta vs orange at 12.9 (needs 15) |
+| **3 + neutral** | **PASS all checks, both light and dark mode** |
+
+So type is a closed set of four (music blue, arts aqua, sports orange, everything
+else neutral) and anything crosscutting is a badge: family, festival, free,
+adults, outdoor, top pick, sold out.
+
+It is also the better model. "Family-friendly" is not a peer of "music", it is a
+property a concert can have. **Do not add a fourth hue without re-running
+`validate_palette.js`.** Every row also names its type in text, so color is never
+the sole encoding.
 
 ## Ranking, and what it is not
 
@@ -113,9 +148,17 @@ or by caching it between Actions runs. Flagged rather than silently decided.
 
 ## Status
 
-**Phase 1 complete.** Seven sources, roughly 2,200 events in a 120-day window,
-working page with search, drive-time, price, audience, and category filters.
+**Phase 1 complete, plus the agenda redesign.** Eight sources, roughly 2,250
+events in a 120-day window. The page is a day-grouped agenda: sticky day headers,
+a scrollable date strip showing per-day counts, weekend emphasis, aligned time and
+price rails, colored type bars, and text badges. Filters for drive time, type, and
+attributes.
 
-Next: Phase 2 (wider source list, AI sweep for events no feed carries, LLM
-scoring), then Phase 3 (Thursday digest email, add-to-calendar links, DNS and
-GitHub Actions cron).
+Still open:
+- **AI sweep** for editorial listicles (SFGate, Chronicle, TimeOut weekend
+  roundups). This is the real gap against a Google "what's on this weekend"
+  search, since no feed carries that content. Blocked on an Anthropic API key.
+- **More museum calendars.** Exploratorium, Cal Academy, and The Tech publish no
+  machine-readable feed at all; SFMoMA exposes `wp-json` exhibitions but hides
+  their dates in unexposed ACF fields. All need HTML scraping.
+- **Phase 3**: Thursday digest email, add-to-calendar links, DNS, Actions cron.

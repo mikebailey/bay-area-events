@@ -23,12 +23,19 @@ _SSL_CTX = ssl.create_default_context()
 _NOISE_RE = [re.compile(p, re.I) for p in NOISE_TITLE_PATTERNS]
 
 
-def http_get(url, timeout=HTTP_TIMEOUT, retries=3):
+# Some sites reject any User-Agent that identifies itself as a bot. DoTheBay
+# returns 403 to our project UA and 200 to a browser one, which is the only
+# difference between "this source is unavailable" and "this source works".
+BROWSER_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+              "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
+
+
+def http_get(url, timeout=HTTP_TIMEOUT, retries=3, ua=None):
     """GET with a real User-Agent and polite exponential backoff."""
     last = None
     for attempt in range(retries):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            req = urllib.request.Request(url, headers={"User-Agent": ua or USER_AGENT})
             with urllib.request.urlopen(req, timeout=timeout, context=_SSL_CTX) as r:
                 return r.read().decode("utf-8", "replace")
         except urllib.error.HTTPError as e:

@@ -24,7 +24,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from config import FUNCHEAP_MAX_DAYS, HORIZON_DAYS, ROOT, TRIBE_VENUES
 import store
-from sources import funcheap, ticketmaster, tribe
+from sources import dothebay, funcheap, ticketmaster, tribe
 
 
 def load_env(path=None):
@@ -54,6 +54,7 @@ def build_registry():
     for v in TRIBE_VENUES:
         reg.append((v["key"], v["name"],
                     lambda ws, we, v=v: tribe.fetch_venue(v, ws, we)))
+    reg.append(("dothebay", "DoTheBay", dothebay.fetch))
     reg.append(("funcheap", "Funcheap (day archives)",
                 lambda ws, we: funcheap.fetch(ws, we, FUNCHEAP_MAX_DAYS)))
     return reg
