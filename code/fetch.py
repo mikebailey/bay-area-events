@@ -60,8 +60,39 @@ def build_registry():
     return reg
 
 
+# Sources tack a location or edition onto the same event's title:
+#   "Brick Blast: LEGO Fan Convention"
+#   "Brick Blast: LEGO Fan Convention | Santa Clara"
+# Both are real listings of one event. Strip the trailing qualifier before
+# comparing, or they occupy two slots in a 20-card Highlights band.
+_TITLE_SUFFIX = re.compile(
+    r"\s*[|–—-]\s*[^|–—-]{2,28}$"   # "... | Santa Clara", "... - Oakland"
+    r"|\s*\([^)]{2,28}\)\s*$"                          # "... (San Mateo)"
+    r"|\s*\b(day\s*\d|weekend|session\s*\d)\b\s*$",     # "... Day 2"
+    re.I)
+
+
 def _norm_title(t):
-    return re.sub(r"[^a-z0-9]+", "", (t or "").lower())[:40]
+    t = (t or "").strip()
+    prev = None
+    while prev != t:            # a title can carry two qualifiers
+        prev = t
+        t = _TITLE_SUFFIX.sub("", t).strip()
+    return re.sub(r"[^a-z0-9]+", "", t.lower())[:40]
+
+
+def _same_event(a, b):
+    """True when two normalized titles describe one event.
+
+    Equality alone misses the case where one title is the other plus extra
+    words the suffix stripper did not catch, so a long shared prefix counts
+    too. The 18-character floor keeps short generic titles ("Open Mic") from
+    swallowing each other.
+    """
+    if a == b:
+        return True
+    lo, hi = (a, b) if len(a) <= len(b) else (b, a)
+    return len(lo) >= 18 and hi.startswith(lo)
 
 
 def _completeness(ev):
@@ -85,10 +116,22 @@ def dedupe(events):
     Kept deliberately conservative: no fuzzy string distance, so two genuinely
     different shows at the same venue on the same night stay separate.
     """
-    groups = {}
+    # Bucket by date first, then merge within a date using prefix matching, so
+    # "X" and "X | Santa Clara" land together instead of in separate buckets.
+    by_date = {}
     for ev in events:
-        key = (ev["start_local"][:10], _norm_title(ev["title"]))
-        groups.setdefault(key, []).append(ev)
+        by_date.setdefault(ev["start_local"][:10], []).append(ev)
+
+    groups = {}
+    for day, todays in by_date.items():
+        canon = []          # (normalized_title, group_key)
+        for ev in todays:
+            norm = _norm_title(ev["title"])
+            match = next((k for n, k in canon if _same_event(n, norm)), None)
+            if match is None:
+                match = (day, norm)
+                canon.append((norm, match))
+            groups.setdefault(match, []).append(ev)
 
     merged, collapsed = [], 0
     for key, group in groups.items():

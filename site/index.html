@@ -17,7 +17,7 @@
     color-scheme: light;
     --bg:#f7f7f5; --panel:#fff; --ink:#191918; --muted:#6c6c66; --faint:#93938c;
     --line:#e4e4df; --line-strong:#d2d2cb; --accent:#2f6f4f; --warn:#9a3412;
-    --weekend:#fbf8ef; --chip:#f1f1ec;
+    --weekend:#fbf8ef; --chip:#f1f1ec; --shadow:0 1px 2px rgba(0,0,0,.06);
     --t-music:#2a78d6; --t-arts:#1baf7a; --t-sports:#eb6834; --t-other:#9b9b93;
   }
   @media (prefers-color-scheme: dark) {
@@ -25,7 +25,7 @@
       color-scheme: dark;
       --bg:#151619; --panel:#1d1e22; --ink:#eaeae7; --muted:#9c9c96; --faint:#77776f;
       --line:#2c2d33; --line-strong:#3a3b42; --accent:#6fbf90; --warn:#f0916a;
-      --weekend:#20211d; --chip:#262730;
+      --weekend:#20211d; --chip:#262730; --shadow:0 1px 2px rgba(0,0,0,.3);
       --t-music:#3987e5; --t-arts:#199e70; --t-sports:#d95926; --t-other:#7d7d86;
     }
   }
@@ -35,20 +35,19 @@
     font:15.5px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     -webkit-text-size-adjust:100%;
   }
-  .wrap { max-width:900px; margin:0 auto; padding:18px 14px 70px; }
-
-  header h1 { font-size:23px; margin:0 0 2px; letter-spacing:-0.02em; }
+  .wrap { max-width:1180px; margin:0 auto; padding:18px 16px 70px; }
+  header h1 { font-size:24px; margin:0 0 2px; letter-spacing:-0.02em; }
   .sub { color:var(--muted); font-size:13px; }
 
-  /* ---- sticky control bar ---- */
+  /* ---- sticky controls ---- */
   .controls {
-    position:sticky; top:0; z-index:20; background:var(--bg);
+    position:sticky; top:0; z-index:30; background:var(--bg);
     padding:10px 0 8px; border-bottom:1px solid var(--line-strong); margin:14px 0 0;
   }
   .row { display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
   .row + .row { margin-top:7px; }
   input[type=search] {
-    flex:1 1 200px; min-width:160px; padding:8px 11px; border:1px solid var(--line);
+    flex:1 1 220px; min-width:170px; padding:8px 11px; border:1px solid var(--line);
     border-radius:8px; background:var(--panel); color:var(--ink); font-size:15px;
   }
   button.f, .tab {
@@ -56,71 +55,118 @@
     background:var(--panel); color:var(--muted); cursor:pointer; font-size:12.5px;
     white-space:nowrap; font-family:inherit;
   }
-  button.f[aria-pressed=true] {
+  button.f[aria-pressed=true], .tab[aria-selected=true] {
     background:var(--ink); border-color:var(--ink); color:var(--bg); font-weight:600;
   }
   .tabs { display:flex; gap:6px; overflow-x:auto; padding-bottom:2px; }
-  .tab[aria-selected=true] {
-    background:var(--ink); border-color:var(--ink); color:var(--bg); font-weight:600;
-  }
   .lbl { font-size:11px; color:var(--faint); text-transform:uppercase;
          letter-spacing:.07em; margin:0 1px 0 6px; }
 
-  /* ---- date strip: the timeline ---- */
-  .strip { display:flex; gap:4px; overflow-x:auto; margin-top:8px; padding-bottom:4px; }
-  .strip button {
-    flex:0 0 auto; width:46px; padding:4px 0; border:1px solid var(--line);
-    border-radius:8px; background:var(--panel); cursor:pointer; text-align:center;
-    font-family:inherit; color:var(--muted); line-height:1.25;
-  }
-  .strip button .dw { font-size:10px; text-transform:uppercase; letter-spacing:.04em; }
-  .strip button .dd { font-size:15px; font-weight:700; color:var(--ink); }
-  .strip button .dc { font-size:10px; color:var(--faint); }
-  .strip button.wknd { background:var(--weekend); border-color:var(--line-strong); }
-  .strip button.none { opacity:.4; }
+  /* ---- two-column shell ---- */
+  .layout { display:grid; grid-template-columns:minmax(0,1fr) 290px; gap:26px; margin-top:20px; }
+  @media (max-width:900px) { .layout { grid-template-columns:1fr; gap:20px; } }
 
-  /* ---- day groups ---- */
-  .day { margin-top:22px; scroll-margin-top:150px; }
+  h2.sec {
+    font-size:12px; text-transform:uppercase; letter-spacing:.1em; color:var(--faint);
+    margin:0 0 10px; font-weight:700; display:flex; align-items:baseline; gap:8px;
+  }
+  h2.sec .n { letter-spacing:0; text-transform:none; font-weight:400; font-size:12px; }
+  .band { margin-bottom:34px; }
+
+  /* ---- highlight cards ---- */
+  .hgrid { display:grid; grid-template-columns:repeat(auto-fill,minmax(196px,1fr)); gap:14px; }
+  .hcard {
+    background:var(--panel); border:1px solid var(--line); border-radius:12px;
+    overflow:hidden; display:flex; flex-direction:column; box-shadow:var(--shadow);
+    text-decoration:none; color:inherit;
+  }
+  .hcard:hover { border-color:var(--line-strong); }
+  .hthumb { aspect-ratio:16/9; width:100%; object-fit:cover; display:block; background:var(--chip); }
+  .hthumb.ph {
+    display:flex; align-items:center; justify-content:center;
+    font-size:11px; text-transform:uppercase; letter-spacing:.09em; font-weight:700;
+    color:#fff; opacity:.92;
+  }
+  .ph.music{background:var(--t-music)} .ph.arts{background:var(--t-arts)}
+  .ph.sports{background:var(--t-sports)} .ph.other{background:var(--t-other)}
+  .hbody { padding:9px 11px 11px; display:flex; flex-direction:column; gap:3px; }
+  .hwhen { font-size:11.5px; font-weight:700; color:var(--accent); letter-spacing:.02em; }
+  .htitle { font-weight:600; font-size:14.5px; line-height:1.3; }
+  .hmeta { font-size:12px; color:var(--muted); }
+  .hblurb { font-size:12.5px; color:var(--ink); opacity:.75; line-height:1.35; }
+
+  .hgroup {
+    display:flex; align-items:baseline; gap:9px; margin:20px 0 9px;
+    font-weight:700; font-size:14px; letter-spacing:-0.01em;
+    padding-bottom:5px; border-bottom:2px solid var(--line-strong);
+  }
+  .hgroup:first-of-type { margin-top:0; }
+  .hgroup.wknd { border-bottom-color:var(--accent); }
+  .hgroup .hnote { font-weight:400; font-size:12px; color:var(--faint);
+                   text-transform:uppercase; letter-spacing:.06em; }
+  .hgroup .hcount { margin-left:auto; font-weight:400; font-size:12px; color:var(--faint); }
+
+  /* ---- all events ---- */
+  .day { margin-top:16px; scroll-margin-top:150px; }
   .dayhead {
-    position:sticky; top:0; z-index:5; display:flex; align-items:baseline;
-    gap:8px; padding:5px 8px; background:var(--panel);
+    display:flex; align-items:baseline; gap:8px; padding:5px 9px; background:var(--panel);
     border:1px solid var(--line-strong); border-radius:8px;
     font-weight:700; font-size:14px; letter-spacing:-0.01em;
   }
   .dayhead.wknd { background:var(--weekend); }
   .dayhead .cnt { font-weight:400; font-size:12px; color:var(--faint); margin-left:auto; }
-
-  /* ---- event rows ---- */
   .ev {
-    display:grid; grid-template-columns:62px 3px 1fr auto;
-    gap:0 10px; align-items:start; padding:8px 8px 8px 4px;
+    display:grid; grid-template-columns:60px 3px minmax(0,1fr) auto;
+    gap:0 10px; align-items:start; padding:7px 8px 7px 4px;
     border-bottom:1px solid var(--line);
   }
   .ev:hover { background:var(--panel); }
-  .time { font-size:12.5px; color:var(--muted); text-align:right;
-          padding-top:1px; font-variant-numeric:tabular-nums; white-space:nowrap; }
-  .bar { width:3px; border-radius:2px; align-self:stretch; min-height:30px; }
+  .time { font-size:12.5px; color:var(--muted); text-align:right; padding-top:1px;
+          font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .bar { width:3px; border-radius:2px; align-self:stretch; min-height:26px; }
   .bar.music{background:var(--t-music)} .bar.arts{background:var(--t-arts)}
   .bar.sports{background:var(--t-sports)} .bar.other{background:var(--t-other)}
-  .body a.t { color:var(--ink); text-decoration:none; font-weight:600; font-size:15px; }
+  .body a.t { color:var(--ink); text-decoration:none; font-weight:600; font-size:14.5px; }
   .body a.t:hover { text-decoration:underline; }
   .meta { font-size:12.5px; color:var(--muted); margin-top:1px; }
   .meta .ty { font-weight:600; }
   .meta .ty.music{color:var(--t-music)} .meta .ty.arts{color:var(--t-arts)}
   .meta .ty.sports{color:var(--t-sports)} .meta .ty.other{color:var(--muted)}
+  .blurb { font-size:12.5px; color:var(--ink); opacity:.78; margin-top:2px; line-height:1.35; }
   .badges { display:flex; flex-wrap:wrap; gap:4px; margin-top:3px; }
-  .b {
-    font-size:10px; letter-spacing:.05em; text-transform:uppercase; font-weight:600;
-    padding:1px 5px; border-radius:4px; background:var(--chip); color:var(--muted);
-  }
+  .b { font-size:10px; letter-spacing:.05em; text-transform:uppercase; font-weight:600;
+       padding:1px 5px; border-radius:4px; background:var(--chip); color:var(--muted); }
   .b.free { color:var(--accent); }
   .b.sold { color:var(--warn); }
-  .price { font-size:12.5px; color:var(--muted); text-align:right;
-           white-space:nowrap; padding-top:1px; }
+  .price { font-size:12.5px; color:var(--muted); text-align:right; white-space:nowrap; padding-top:1px; }
+  .citylab {
+    margin:10px 0 1px; padding:3px 8px; font-size:11.5px; font-weight:700;
+    text-transform:uppercase; letter-spacing:.07em; color:var(--muted);
+    background:var(--chip); border-radius:5px; display:inline-block;
+  }
+  .expand {
+    margin:7px 0 0 4px; font-size:12.5px; color:var(--muted); background:none;
+    border:none; cursor:pointer; font-family:inherit; padding:3px 0; text-decoration:underline;
+  }
+  .expand:hover { color:var(--ink); }
+
+  /* ---- right rail ---- */
+  .rail { display:flex; flex-direction:column; gap:18px; }
+  .rbox { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:11px 12px; }
+  .rbox h3 {
+    font-size:11px; text-transform:uppercase; letter-spacing:.09em; margin:0 0 8px;
+    color:var(--faint); font-weight:700; display:flex; align-items:center; gap:6px;
+  }
+  .ritem { display:flex; gap:8px; padding:5px 0; border-top:1px solid var(--line); font-size:13px; }
+  .ritem:first-of-type { border-top:none; }
+  .rday { color:var(--faint); font-size:11.5px; width:34px; flex:0 0 34px; padding-top:2px;
+          text-transform:uppercase; letter-spacing:.03em; }
+  .ritem a { color:var(--ink); text-decoration:none; line-height:1.3; }
+  .ritem a:hover { text-decoration:underline; }
+  .rsub { color:var(--faint); font-size:11.5px; }
 
   .empty { color:var(--faint); font-style:italic; padding:14px 4px; }
-  .more { margin:14px 0 0; }
-  footer { margin-top:40px; padding-top:12px; border-top:1px solid var(--line);
+  footer { margin-top:44px; padding-top:12px; border-top:1px solid var(--line);
            color:var(--faint); font-size:12px; }
   footer .bad { color:var(--warn); font-weight:600; }
   .srcs { display:flex; flex-wrap:wrap; gap:9px; margin-top:5px; }
@@ -129,7 +175,7 @@
   .sw { width:10px; height:10px; border-radius:2px; display:inline-block; }
 
   @media (max-width:520px) {
-    .ev { grid-template-columns:52px 3px 1fr; }
+    .ev { grid-template-columns:52px 3px minmax(0,1fr); }
     .price { grid-column:3; text-align:left; padding-top:2px; }
   }
 </style>
@@ -158,12 +204,16 @@
       <span class="lbl">Only</span>
       <button class="f" data-badge="free" aria-pressed="false">Free</button>
       <button class="f" data-badge="family" aria-pressed="false">Family</button>
-      <button class="f" data-badge="festival" aria-pressed="false">Festivals</button>
+      <button class="f" data-badge="__backyard" aria-pressed="false">In your backyard</button>
+      <span class="lbl">View</span>
+      <button class="f" id="areaToggle" aria-pressed="false">Group by area</button>
     </div>
-    <div class="strip" id="strip"></div>
   </div>
 
-  <main id="out"></main>
+  <div class="layout">
+    <main id="main"></main>
+    <aside class="rail" id="rail"></aside>
+  </div>
 
   <footer>
     <div class="legend">
@@ -182,42 +232,176 @@
 
 <script>
 const VIEWS = [
-  {key:"week",    label:"This Week",   sections:["week"],           strip:true},
-  {key:"month",   label:"This Month",  sections:["week","month"],   strip:true},
-  {key:"later",   label:"Further Out", sections:["later"],          strip:false},
-  {key:"daytrip", label:"Day Trips",   sections:["daytrip"],        strip:false},
-  {key:"ongoing", label:"Ongoing",     sections:["ongoing"],        strip:false}
+  {key:"week",    label:"This Week",   sections:["week"]},
+  {key:"month",   label:"This Month",  sections:["week","month"]},
+  {key:"later",   label:"Further Out", sections:["later"]},
+  {key:"trips",   label:"Day Trips",   sections:["daytrip"]},
+  {key:"ongoing", label:"Ongoing",     sections:["ongoing"]}
 ];
-let DATA = null, view = "week", limit = 300;
+
+// A Saturday event is worth planning around; a Tuesday one rarely is. These
+// weights are what stop Highlights from being a flat top-20 dominated by
+// whichever day happens to carry the most listings. Index is JS getDay(): Sun..Sat.
+const DAY_WEIGHT = [0.85, 0.35, 0.35, 0.35, 0.45, 0.70, 1.00];
+const HIGHLIGHT_COUNT = 20;
+const HIGHLIGHT_MAX_PER_DAY = 6;   // stops one huge Saturday taking every slot
+const WEEKDAY_PREVIEW = 3;         // Mon-Thu collapse to their best few
+const RAIL_COUNT = 7;
+
+// "In your backyard": close enough to go on a whim. 20 minutes from Menlo Park
+// covers Palo Alto, Redwood City, Atherton, Woodside, Los Altos, Mountain View
+// and East Palo Alto. Nearby events get a ranking boost because a good thing
+// 10 minutes away beats a slightly better thing an hour away — which is how
+// the family actually chooses.
+const BACKYARD_MIN = 20;
+function proximityBoost(ev) {
+  if (ev.drive === null) return 0.9;      // unknown location, mild penalty
+  if (ev.drive <= BACKYARD_MIN) return 1.30;
+  if (ev.drive <= 35) return 1.10;
+  if (ev.drive <= 60) return 1.00;
+  return 0.85;
+}
+const isBackyard = ev => ev.drive !== null && ev.drive <= BACKYARD_MIN;
+
+let DATA = null, view = "week", groupByArea = false;
+const expandedDays = new Set();
 const filters = {q:"", drive:null, types:new Set(), badges:new Set()};
 
-const fDay  = new Intl.DateTimeFormat(undefined,{weekday:"long", month:"long", day:"numeric"});
-const fDow  = new Intl.DateTimeFormat(undefined,{weekday:"short"});
-const fTime = new Intl.DateTimeFormat(undefined,{hour:"numeric", minute:"2-digit"});
+const fDayFull  = new Intl.DateTimeFormat(undefined,{weekday:"long", month:"long", day:"numeric"});
+const fDayShort = new Intl.DateTimeFormat(undefined,{weekday:"short", month:"short", day:"numeric"});
+const fDow      = new Intl.DateTimeFormat(undefined,{weekday:"short"});
+const fTime     = new Intl.DateTimeFormat(undefined,{hour:"numeric", minute:"2-digit"});
 const TYPE_LABEL = {music:"Music", arts:"Arts", sports:"Sports", other:"Event"};
 
-const dayKey = ev => ev.start.slice(0,10);
-const asDate = k => new Date(k + "T12:00:00");
-const isWeekend = k => [0,6].includes(asDate(k).getDay());
+const dayKey    = ev => ev.start.slice(0,10);
+const asDate    = k  => new Date(k + "T12:00:00");
+const isWeekend = k  => [0,6].includes(asDate(k).getDay());
+const dayWeight = ev => DAY_WEIGHT[asDate(dayKey(ev)).getDay()];
 
 function matches(ev) {
   if (filters.drive !== null && (ev.drive === null || ev.drive > filters.drive)) return false;
   if (filters.types.size && !filters.types.has(ev.type)) return false;
-  for (const b of filters.badges) if (!ev.badges.includes(b)) return false;
+  for (const b of filters.badges) {
+    if (b === "__backyard") { if (!isBackyard(ev)) return false; continue; }
+    if (!ev.badges.includes(b)) return false;
+  }
   if (filters.q) {
     const hay = (ev.title + " " + (ev.venue||"") + " " + (ev.city||"") + " " +
-                 ev.badges.join(" ") + " " + ev.tags.join(" ")).toLowerCase();
+                 (ev.blurb||"") + " " + ev.badges.join(" ") + " " + ev.tags.join(" ")).toLowerCase();
     if (!hay.includes(filters.q)) return false;
   }
   return true;
 }
 
-function visible() {
+function inScope() {
   const secs = VIEWS.find(v => v.key === view).sections;
   return DATA.events.filter(e => secs.includes(e.section) && matches(e));
 }
 
-function row(ev) {
+/* ---------------- highlights ---------------- */
+
+function pickHighlights(evs) {
+  const ranked = evs.map(e => ({e, w: e.score * dayWeight(e) * proximityBoost(e)}))
+                    .sort((a,b) => b.w - a.w);
+  const perDay = new Map(), out = [];
+  for (const {e} of ranked) {
+    if (out.length >= HIGHLIGHT_COUNT) break;
+    const k = dayKey(e);
+    const n = perDay.get(k) || 0;
+    if (n >= HIGHLIGHT_MAX_PER_DAY) continue;
+    perDay.set(k, n + 1);
+    out.push(e);
+  }
+  return out.sort((a,b) => a.start.localeCompare(b.start));
+}
+
+// Highlights are grouped by when they happen, because that is how you decide:
+// "what's on Saturday" is the question, not "what are the 20 best things".
+// Fri/Sat/Sun each get their own heading; Mon-Thu collapse into one block that
+// sits in its natural chronological place rather than being scattered.
+function highlightGroups(list) {
+  const buckets = new Map();
+  for (const e of list) {
+    const dow = asDate(dayKey(e)).getDay();
+    const ownDay = dow === 0 || dow === 5 || dow === 6;   // Sun, Fri, Sat
+    const key = ownDay ? dayKey(e) : "weekdays";
+    if (!buckets.has(key)) buckets.set(key, []);
+    buckets.get(key).push(e);
+  }
+
+  const groups = [];
+  for (const [key, evs] of buckets) {
+    evs.sort((a,b) => a.start.localeCompare(b.start));
+    const first = dayKey(evs[0]);
+    if (key === "weekdays") {
+      const days = [...new Set(evs.map(dayKey))].sort();
+      const span = days.length > 1
+        ? fDow.format(asDate(days[0])) + "–" + fDow.format(asDate(days[days.length-1]))
+        : fDow.format(asDate(days[0]));
+      groups.push({key, label:"Weekdays", note:span, sort:first, events:evs});
+    } else {
+      groups.push({key, label:fDayFull.format(asDate(key)), note:null,
+                   sort:key, events:evs, weekend:isWeekend(key)});
+    }
+  }
+  return groups.sort((a,b) => a.sort.localeCompare(b.sort));
+}
+
+function placeholder(ev) {
+  const ph = document.createElement("div");
+  ph.className = "hthumb ph " + ev.type;
+  ph.textContent = TYPE_LABEL[ev.type];
+  return ph;
+}
+
+function highlightCard(ev) {
+  const a = document.createElement("a");
+  a.className = "hcard"; a.href = ev.url; a.target = "_blank"; a.rel = "noopener";
+
+  if (ev.image) {
+    const img = document.createElement("img");
+    img.className = "hthumb"; img.src = ev.image; img.alt = "";
+    img.loading = "lazy"; img.decoding = "async";
+    // A dead image URL must not leave a broken icon sitting in the grid.
+    img.onerror = () => img.replaceWith(placeholder(ev));
+    a.appendChild(img);
+  } else {
+    a.appendChild(placeholder(ev));
+  }
+
+  const body = document.createElement("div");
+  body.className = "hbody";
+
+  const when = document.createElement("div");
+  when.className = "hwhen";
+  const d = new Date(ev.start);
+  when.textContent = fDayShort.format(d).toUpperCase() +
+    (ev.allDay ? "" : " · " + fTime.format(d));
+  body.appendChild(when);
+
+  const t = document.createElement("div");
+  t.className = "htitle"; t.textContent = ev.title;
+  body.appendChild(t);
+
+  const meta = document.createElement("div");
+  meta.className = "hmeta";
+  const where = [ev.venue, ev.city].filter(Boolean).join(", ") || "location not listed";
+  meta.textContent = where + (ev.drive !== null ? " · " + ev.drive + " min" : "") +
+    (ev.free ? " · Free" : (ev.price !== "?" ? " · " + ev.price : ""));
+  body.appendChild(meta);
+
+  if (ev.blurb) {
+    const bl = document.createElement("div");
+    bl.className = "hblurb"; bl.textContent = ev.blurb;
+    body.appendChild(bl);
+  }
+  a.appendChild(body);
+  return a;
+}
+
+/* ---------------- all events ---------------- */
+
+function eventRow(ev) {
   const el = document.createElement("div");
   el.className = "ev";
 
@@ -237,26 +421,28 @@ function row(ev) {
   a.textContent = ev.title;
   body.appendChild(a);
 
-  // Type is named in text as well as coloured, so the encoding never relies on hue.
   const meta = document.createElement("div");
   meta.className = "meta";
   const ty = document.createElement("span");
-  ty.className = "ty " + ev.type;
-  ty.textContent = TYPE_LABEL[ev.type];
+  ty.className = "ty " + ev.type; ty.textContent = TYPE_LABEL[ev.type];
   meta.appendChild(ty);
   const where = [ev.venue, ev.city].filter(Boolean).join(", ") || "location not listed";
   meta.appendChild(document.createTextNode(
     " · " + where + (ev.drive !== null ? " · " + ev.drive + " min" : "")));
   body.appendChild(meta);
 
+  if (ev.blurb) {
+    const bl = document.createElement("div");
+    bl.className = "blurb"; bl.textContent = ev.blurb;
+    body.appendChild(bl);
+  }
   if (ev.badges.length) {
     const bs = document.createElement("div");
     bs.className = "badges";
     ev.badges.forEach(b => {
       const s = document.createElement("span");
       s.className = "b" + (b === "free" ? " free" : b === "sold out" ? " sold" : "");
-      s.textContent = b;
-      bs.appendChild(s);
+      s.textContent = b; bs.appendChild(s);
     });
     body.appendChild(bs);
   }
@@ -269,79 +455,175 @@ function row(ev) {
   return el;
 }
 
-function render() {
-  const out = document.getElementById("out");
-  out.textContent = "";
-  const evs = visible().sort((a,b) => a.start.localeCompare(b.start) || b.score - a.score);
-
-  if (!evs.length) {
-    out.innerHTML = '<div class="empty">Nothing matches those filters.</div>';
-    document.getElementById("sub").textContent = "0 events";
-    renderStrip({});
-    return;
-  }
-
+function renderAllEvents(container, evs) {
   const groups = new Map();
-  evs.forEach(e => {
-    const k = dayKey(e);
-    if (!groups.has(k)) groups.set(k, []);
-    groups.get(k).push(e);
-  });
+  evs.slice().sort((a,b) => a.start.localeCompare(b.start) || b.score - a.score)
+     .forEach(e => {
+       const k = dayKey(e);
+       if (!groups.has(k)) groups.set(k, []);
+       groups.get(k).push(e);
+     });
 
-  const counts = {};
-  groups.forEach((v,k) => counts[k] = v.length);
-  renderStrip(counts);
-
-  let drawn = 0;
   for (const [k, list] of groups) {
-    if (drawn >= limit) break;
     const sec = document.createElement("section");
     sec.className = "day"; sec.id = "d-" + k;
 
     const h = document.createElement("div");
     h.className = "dayhead" + (isWeekend(k) ? " wknd" : "");
-    h.innerHTML = '<span>' + fDay.format(asDate(k)) + '</span>' +
-                  '<span class="cnt">' + list.length + '</span>';
+    h.innerHTML = "<span>" + fDayFull.format(asDate(k)) + "</span>" +
+                  '<span class="cnt">' + list.length + "</span>";
     sec.appendChild(h);
-    list.forEach(e => { sec.appendChild(row(e)); drawn++; });
-    out.appendChild(sec);
-  }
 
-  if (evs.length > drawn) {
-    const b = document.createElement("button");
-    b.className = "f more";
-    b.textContent = "Show more (" + (evs.length - drawn) + " remaining) ↓";
-    b.onclick = () => { limit += 400; render(); };
-    out.appendChild(b);
+    // Fri/Sat/Sun stay fully expanded. Mon-Thu collapse to their best few,
+    // because a Tuesday with 22 listings is 22 rows of things nobody attends.
+    const bigDay = isWeekend(k) || asDate(k).getDay() === 5;
+    const collapsed = !bigDay && !expandedDays.has(k) && list.length > WEEKDAY_PREVIEW;
+    const shown = collapsed
+      ? list.slice().sort((a,b) => b.score - a.score).slice(0, WEEKDAY_PREVIEW)
+                    .sort((a,b) => a.start.localeCompare(b.start))
+      : list;
+
+    if (groupByArea) {
+      // Cluster a day by town so you can see "three things in Burlingame"
+      // rather than a time-ordered mix across the whole Bay.
+      const cities = new Map();
+      shown.forEach(e => {
+        const c = e.city || "Location not listed";
+        if (!cities.has(c)) cities.set(c, []);
+        cities.get(c).push(e);
+      });
+      [...cities.entries()]
+        .sort((a,b) => b[1].length - a[1].length ||
+                       ((a[1][0].drive ?? 999) - (b[1][0].drive ?? 999)))
+        .forEach(([city, list]) => {
+          const lab = document.createElement("div");
+          lab.className = "citylab";
+          const drive = list[0].drive;
+          lab.textContent = city + "  ·  " + list.length +
+            (drive !== null ? "  ·  ~" + drive + " min" : "");
+          sec.appendChild(lab);
+          list.sort((a,b) => a.start.localeCompare(b.start))
+              .forEach(e => sec.appendChild(eventRow(e)));
+        });
+    } else {
+      shown.forEach(e => sec.appendChild(eventRow(e)));
+    }
+
+    if (collapsed) {
+      const btn = document.createElement("button");
+      btn.className = "expand";
+      btn.textContent = "show " + (list.length - WEEKDAY_PREVIEW) + " more on " +
+                        fDow.format(asDate(k));
+      btn.onclick = () => { expandedDays.add(k); render(); };
+      sec.appendChild(btn);
+    }
+    container.appendChild(sec);
   }
-  document.getElementById("sub").textContent =
-    evs.length + " events across " + groups.size + " days · from " + DATA.home +
-    " · updated " + new Date(DATA.generated).toLocaleDateString();
 }
 
-function renderStrip(counts) {
-  const strip = document.getElementById("strip");
-  strip.textContent = "";
-  if (!VIEWS.find(v => v.key === view).strip) { strip.style.display = "none"; return; }
-  strip.style.display = "flex";
+/* ---------------- right rail ---------------- */
 
-  const days = view === "week" ? 8 : 31;
-  const start = new Date();
-  for (let i = 0; i < days; i++) {
-    const d = new Date(start.getFullYear(), start.getMonth(), start.getDate() + i);
-    const k = d.toISOString().slice(0,10);
-    const n = counts[k] || 0;
-    const b = document.createElement("button");
-    b.className = (isWeekend(k) ? "wknd " : "") + (n ? "" : "none");
-    b.innerHTML = '<div class="dw">' + fDow.format(d) + '</div>' +
-                  '<div class="dd">' + d.getDate() + '</div>' +
-                  '<div class="dc">' + (n || "–") + '</div>';
-    b.onclick = () => {
-      const el = document.getElementById("d-" + k);
-      if (el) el.scrollIntoView({behavior:"smooth", block:"start"});
-    };
-    strip.appendChild(b);
+const RAIL = [
+  {title:"In Your Backyard", color:"var(--accent)", pick:isBackyard, by:"family"},
+  {title:"Music",             color:"var(--t-music)",  pick:e => e.type === "music",  by:"family"},
+  {title:"Arts & Culture",    color:"var(--t-arts)",   pick:e => e.type === "arts",   by:"family"},
+  {title:"Sports & Outdoors", color:"var(--t-sports)", pick:e => e.type === "sports", by:"family"},
+  {title:"Family Picks",      color:"var(--t-other)",  pick:e => e.badges.includes("family"), by:"family"},
+  {title:"For the Adults",    color:"var(--t-other)",  pick:e => e.dateNight,         by:"adult"}
+];
+
+function renderRail(evs) {
+  const rail = document.getElementById("rail");
+  rail.textContent = "";
+  for (const spec of RAIL) {
+    const picks = evs.filter(spec.pick)
+      .sort((a,b) => spec.by === "adult"
+        ? (b.adultScore||0) - (a.adultScore||0)
+        : (b.score * dayWeight(b)) - (a.score * dayWeight(a)))
+      .slice(0, RAIL_COUNT)
+      .sort((a,b) => a.start.localeCompare(b.start));
+    if (!picks.length) continue;
+
+    const box = document.createElement("div");
+    box.className = "rbox";
+    const h = document.createElement("h3");
+    h.innerHTML = '<i class="sw" style="background:' + spec.color + '"></i>' + spec.title;
+    box.appendChild(h);
+
+    picks.forEach(ev => {
+      const row = document.createElement("div");
+      row.className = "ritem";
+      const d = document.createElement("div");
+      d.className = "rday"; d.textContent = fDow.format(new Date(ev.start));
+      row.appendChild(d);
+      const wrap = document.createElement("div");
+      const a = document.createElement("a");
+      a.href = ev.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = ev.title;
+      wrap.appendChild(a);
+      const sub = document.createElement("div");
+      sub.className = "rsub";
+      sub.textContent = [ev.city, ev.drive !== null ? ev.drive + " min" : null,
+                         ev.free ? "free" : null].filter(Boolean).join(" · ");
+      wrap.appendChild(sub);
+      row.appendChild(wrap);
+      box.appendChild(row);
+    });
+    rail.appendChild(box);
   }
+}
+
+/* ---------------- render ---------------- */
+
+function render() {
+  const main = document.getElementById("main");
+  main.textContent = "";
+  const evs = inScope();
+
+  if (!evs.length) {
+    main.innerHTML = '<div class="empty">Nothing matches those filters.</div>';
+    document.getElementById("rail").textContent = "";
+    document.getElementById("sub").textContent = "0 events";
+    return;
+  }
+
+  const highlights = pickHighlights(evs);
+  if (highlights.length) {
+    const band = document.createElement("div");
+    band.className = "band";
+    const h = document.createElement("h2");
+    h.className = "sec";
+    h.innerHTML = "Highlights <span class='n'>best of " + evs.length +
+                  ", weighted to the weekend</span>";
+    band.appendChild(h);
+    highlightGroups(highlights).forEach(g => {
+      const head = document.createElement("div");
+      head.className = "hgroup" + (g.weekend ? " wknd" : "");
+      head.innerHTML = "<span>" + g.label + "</span>" +
+        (g.note ? '<span class="hnote">' + g.note + "</span>" : "") +
+        '<span class="hcount">' + g.events.length + "</span>";
+      band.appendChild(head);
+
+      const grid = document.createElement("div");
+      grid.className = "hgrid";
+      g.events.forEach(e => grid.appendChild(highlightCard(e)));
+      band.appendChild(grid);
+    });
+    main.appendChild(band);
+  }
+
+  const all = document.createElement("div");
+  all.className = "band";
+  const h2 = document.createElement("h2");
+  h2.className = "sec";
+  h2.innerHTML = "All Events <span class='n'>" + evs.length + "</span>";
+  all.appendChild(h2);
+  renderAllEvents(all, evs);
+  main.appendChild(all);
+
+  renderRail(evs);
+  document.getElementById("sub").textContent =
+    evs.length + " events · from " + DATA.home + " · updated " +
+    new Date(DATA.generated).toLocaleDateString();
 }
 
 function wire() {
@@ -351,7 +633,7 @@ function wire() {
     b.className = "tab"; b.textContent = v.label;
     b.setAttribute("aria-selected", String(v.key === view));
     b.onclick = () => {
-      view = v.key; limit = 300;
+      view = v.key; expandedDays.clear();
       [...tabs.children].forEach((c,i) =>
         c.setAttribute("aria-selected", String(VIEWS[i].key === view)));
       render();
@@ -360,7 +642,7 @@ function wire() {
   });
 
   document.getElementById("q").addEventListener("input", e => {
-    filters.q = e.target.value.trim().toLowerCase(); limit = 300; render();
+    filters.q = e.target.value.trim().toLowerCase(); render();
   });
 
   document.querySelectorAll("button.f[data-drive]").forEach(btn => btn.onclick = () => {
@@ -378,10 +660,17 @@ function wire() {
       const on = filters[key].has(v);
       on ? filters[key].delete(v) : filters[key].add(v);
       btn.setAttribute("aria-pressed", String(!on));
-      limit = 300; render();
+      render();
     });
   toggleSet("button.f[data-type]", "types");
   toggleSet("button.f[data-badge]", "badges");
+
+  const at = document.getElementById("areaToggle");
+  at.onclick = () => {
+    groupByArea = !groupByArea;
+    at.setAttribute("aria-pressed", String(groupByArea));
+    render();
+  };
 }
 
 function health() {

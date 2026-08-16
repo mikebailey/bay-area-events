@@ -16,7 +16,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from config import (DAY_TRIP_DRIVE_MAX_MIN, HOME_LABEL, HORIZON_DAYS,
+from config import (CACHE_PATH, DAY_TRIP_DRIVE_MAX_MIN, HOME_LABEL, HORIZON_DAYS,
                     LOCAL_DRIVE_MAX_MIN, SITE)
 import store
 from sources.base import is_noise
@@ -87,8 +87,13 @@ def score_event(ev):
     return max(0, min(100, score)), reasons
 
 
-def classify(ev, today):
-    """Assign an event to a section of the page."""
+def classify(ev, today, llm=None):
+    """Assign an event to a section of the page.
+
+    The day-trip gate asks the model whether an event is genuinely worth a long
+    drive, since that is a judgment call the EPIC_RE keyword list makes badly.
+    Unscored events fall back to the keyword test.
+    """
     start = datetime.fromisoformat(ev["start_local"]).date()
     end = None
     if ev["end_local"]:
@@ -99,7 +104,7 @@ def classify(ev, today):
 
     drive = ev["drive_minutes"]
     is_day_trip = drive is not None and drive > LOCAL_DRIVE_MAX_MIN
-    epic = bool(EPIC_RE.search(ev["title"] or ""))
+    epic = bool(llm["epic"]) if llm else bool(EPIC_RE.search(ev["title"] or ""))
 
     # A run of more than three days is an exhibit or season, not an outing.
     if end and (end - start).days >= 3:
@@ -143,18 +148,25 @@ def event_type(ev):
     return TYPE_MAP.get(ev["category"], "other")
 
 
-def badges_for(ev):
+def badges_for(ev, llm=None):
     """Crosscutting attributes, shown as text so they never rely on color."""
     title = ev["title"] or ""
     tags = [t.lower() for t in json.loads(ev["tags"] or "[]")]
     out = []
     if "funcheap top pick" in tags:
         out.append("top pick")
-    if ev["category"] == "family" or (KID_GOOD_RE.search(title)
-                                      and not ADULT_RE.search(title)):
-        out.append("family")
-    if EPIC_RE.search(title):
-        out.append("festival")
+    if llm:
+        # Trust the model's read of who the event is for.
+        if llm["family_fit"] >= 65 and not llm["adults_only"]:
+            out.append("family")
+        if llm["epic"]:
+            out.append("epic")
+    else:
+        if ev["category"] == "family" or (KID_GOOD_RE.search(title)
+                                          and not ADULT_RE.search(title)):
+            out.append("family")
+        if EPIC_RE.search(title):
+            out.append("festival")
     if ev["is_free"]:
         out.append("free")
     if ADULT_RE.search(title):
@@ -164,6 +176,27 @@ def badges_for(ev):
     if "sold out" in tags:
         out.append("sold out")
     return out[:4]
+
+
+# "For the adults" is a view, not a category: an event stays in its normal day
+# section AND surfaces here if it qualifies. The rule is deliberately narrow —
+# strong adult appeal, plus a reason it is not a family outing (age-restricted,
+# poor family fit, or simply an evening thing).
+DATE_NIGHT_MIN_ADULT = 75
+DATE_NIGHT_HOUR = 19
+
+
+def is_date_night(ev, llm):
+    if not llm or llm.get("adult_interest") is None:
+        return False
+    if llm["adult_interest"] < DATE_NIGHT_MIN_ADULT:
+        return False
+    if llm["adults_only"] or llm["family_fit"] < 55:
+        return True
+    try:
+        return int(ev["start_local"][11:13]) >= DATE_NIGHT_HOUR
+    except (ValueError, IndexError):
+        return False
 
 
 # A venue that runs the same thing every single day is describing an attraction,
@@ -181,11 +214,28 @@ def find_standing(rows):
     return {k for k, v in days.items() if len(v) >= STANDING_MIN_DAYS}
 
 
+def load_scores():
+    """LLM scores from the local scorer, if any exist yet.
+
+    Deliberately optional. The daily cloud build has no GPU and no model, so it
+    reads whatever this file happens to contain and falls back to the heuristic
+    for anything unscored. A missing file is a normal state, not an error.
+    """
+    if not CACHE_PATH.exists():
+        return {}
+    try:
+        return json.loads(CACHE_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        print("WARNING: %s is malformed; ignoring it" % CACHE_PATH)
+        return {}
+
+
 def main():
     conn = store.connect()
     today = date.today()
     horizon = today + timedelta(days=HORIZON_DAYS)
     rows = store.upcoming(conn, today.isoformat(), horizon.isoformat())
+    scores = load_scores()
 
     standing = find_standing(rows)
     standing_kept = set()
@@ -209,7 +259,13 @@ def main():
             standing_kept.add(key)
 
         score, reasons = score_event(ev)
-        section = "ongoing" if key in standing else classify(ev, today)
+        llm = scores.get(ev["id"])
+        if llm:
+            # The model's judgment replaces the keyword heuristic outright.
+            score = llm["family_fit"]
+            reasons = ["scored locally"]
+
+        section = "ongoing" if key in standing else classify(ev, today, llm)
         if section == "far":
             continue  # long drive, not big enough to be worth it
 
@@ -230,9 +286,13 @@ def main():
             "free": bool(ev["is_free"]),
             "url": ev["url"],
             "image": ev["image"],
-            "adults": bool(ADULT_RE.search(ev["title"] or "")),
+            "adults": bool(llm["adults_only"]) if llm else bool(ADULT_RE.search(ev["title"] or "")),
             "type": event_type(ev),
-            "badges": badges_for(ev),
+            "badges": badges_for(ev, llm),
+            "blurb": llm["blurb"] if llm else None,
+            "scored": bool(llm),
+            "adultScore": (llm or {}).get("adult_interest"),
+            "dateNight": is_date_night(ev, llm),
             "score": score,
             "why": reasons,
             "section": section,
@@ -266,6 +326,11 @@ def main():
     print("  %d events: %s" % (len(events), payload["counts"]))
     healthy = sum(1 for r in runs if r["ok"])
     print("  sources healthy: %d/%d" % (healthy, len(runs)))
+    n_date = sum(1 for e in events if e["dateNight"])
+    print("  date-night events: %d" % n_date)
+    n_scored = sum(1 for e in events if e["scored"])
+    print("  scored by local model: %d/%d (%.0f%%)"
+          % (n_scored, len(events), 100.0 * n_scored / max(1, len(events))))
 
 
 if __name__ == "__main__":

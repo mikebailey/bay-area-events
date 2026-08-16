@@ -127,24 +127,63 @@ property a concert can have. **Do not add a fourth hue without re-running
 `validate_palette.js`.** Every row also names its type in text, so color is never
 the sole encoding.
 
-## Ranking, and what it is not
+## Ranking: local model, no API
 
-The current interest score is a **transparent heuristic**, not a model. It weighs
-drive time, free vs paid, kid-relevant keywords for the 9 to 14 range, festival
-scale, and whether several independent sources listed the same thing. Every input
-is preserved per event in the `why` field, so when the order looks wrong you can
-see exactly which rule caused it.
+**There is no paid API anywhere in this project.** The only credential is the free
+Ticketmaster key. Scoring runs on a local model; the one job that genuinely needs
+frontier reasoning runs through the Claude Code subscription.
 
-Phase 2 replaces it with an LLM family-fit score, run once per event and cached,
-plus a written one-line summary. Descriptions are deliberately **not** republished
-verbatim from sources.
+| Job | Volume | Runs on |
+|---|---|---|
+| Scoring events (family fit, audience, badges, blurb) | ~100/day | **Ollama**, `qwen3:30b-a3b`, on the 4090 |
+| Weekly editorial sweep (SFGate / Chronicle / TimeOut roundups) | ~1/week | **`claude -p`** headless, uses the subscription |
+| Dedupe, drive times, sectioning | everything | plain Python |
 
-## Data model note
+Scoring is high-volume but low-judgment: a fixed rubric applied to short text with
+structured output. That is what a local model is good at. The editorial sweep is
+the opposite, small volume but needing live web search and real judgment, so it
+goes to Claude.
 
-`data/events.db` is gitignored, which is right for local work but means a cloud
-runner starts empty every time and cannot tell new events from old. Before the
-Thursday digest ships, that has to be resolved, either by committing the database
-or by caching it between Actions runs. Flagged rather than silently decided.
+**Two things make the local model reliable enough.** Ollama's `format` parameter
+takes a JSON schema and constrains generation to it, which is the difference
+between a clean pipeline and one that spends its time repairing malformed JSON.
+And batching twelve events per call amortizes the rubric, which otherwise
+dominates prompt size and wall-clock time.
+
+Where no score exists yet, the page falls back to a **transparent keyword
+heuristic** (drive time, free vs paid, kid-relevant words, festival scale, how
+many sources listed it). Its inputs are preserved per event in the `why` field.
+
+Descriptions are deliberately **not** republished verbatim from sources; the
+`blurb` is the model's own one-sentence summary.
+
+## How the two halves stay in sync
+
+The daily job runs in GitHub Actions, which has no GPU and no Claude session. So
+the work is split by what needs a model:
+
+```
+GitHub Actions (daily)     fetch -> dedupe -> build -> deploy      no model
+This machine (when on)     score unscored events -> cache/scores.json -> commit
+```
+
+`cache/scores.json` is **tracked in git**, keyed by event ID. Actions reads it at
+build time, uses the model's score where one exists, and falls back to the
+heuristic where it doesn't. An event found today shows a heuristic score until the
+next local run upgrades it.
+
+That also resolves the earlier open question about `data/events.db`: the state
+that actually has to survive between runs is a small text file that diffs
+cleanly, not a gitignored binary. The database stays local and disposable.
+
+Missing a day of scoring has no consequence here, which is what makes this trade
+the right one.
+
+```bash
+python code/enrich.py               # score everything unscored
+python code/enrich.py --limit 50    # small trial batch
+python code/enrich.py --rescore     # discard cached scores and redo
+```
 
 ## Status
 

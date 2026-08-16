@@ -7,6 +7,16 @@ DATA = ROOT / "data"
 SITE = ROOT / "site"
 DB_PATH = DATA / "events.db"
 
+# Scores from the local model. Tracked in git, unlike data/, because it is the
+# one piece of state the cloud build needs and the local scorer produces. Small
+# and text, so it diffs cleanly.
+CACHE_PATH = ROOT / "cache" / "scores.json"
+
+# Local scoring runs against Ollama on this machine. Never in CI: a cloud runner
+# has no GPU, so the daily build falls back to the heuristic score.
+OLLAMA_URL = "http://127.0.0.1:11434"
+OLLAMA_MODEL = "qwen3:30b-a3b"
+
 # Home base: Menlo Park, CA. Everything is ranked by travel time from here.
 HOME = (37.4530, -122.1817)
 HOME_LABEL = "Menlo Park, CA"
@@ -28,6 +38,14 @@ NOISE_TITLE_PATTERNS = [
     r"^(open|closed) (daily|today)",
     r"^general admission$",
     r"^daily (schedule|hours)",
+    # Ticketmaster lists venue blackouts as if they were events.
+    r"^closed for (a )?private event",
+    r"^private event$",
+    r"^(venue |theater )?closed",
+    r"private event",
+    r"^cancell?ed",
+    r"^test event",
+    r"^rescheduled",
 ]
 
 # The Events Calendar (WordPress plugin) venues, verified live 2026-08-15.
