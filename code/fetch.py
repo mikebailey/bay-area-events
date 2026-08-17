@@ -81,18 +81,36 @@ def _norm_title(t):
     return re.sub(r"[^a-z0-9]+", "", t.lower())[:40]
 
 
-def _same_event(a, b):
+def _word_set(t):
+    """Significant words of a title, for order-insensitive comparison."""
+    words = re.findall(r"[a-z0-9]+", (t or "").lower())
+    return {w for w in words if len(w) > 2 and w not in _STOPWORDS}
+
+
+_STOPWORDS = {"the", "and", "for", "with", "featuring", "presents", "annual"}
+
+
+def _same_event(a, b, title_a=None, title_b=None):
     """True when two normalized titles describe one event.
 
-    Equality alone misses the case where one title is the other plus extra
-    words the suffix stripper did not catch, so a long shared prefix counts
-    too. The 18-character floor keeps short generic titles ("Open Mic") from
-    swallowing each other.
+    Three tests, cheapest first:
+      1. Equality.
+      2. Long shared prefix, for "X" vs "X plus extra words".
+      3. Identical significant-word sets, for titles that REORDER rather than
+         extend -- "2026 Oakland Pride Parade & Festival" against "Oakland
+         Pride Parade & Festival 2026". A prefix test cannot see those as one
+         event, and they were taking two slots and carrying different scores.
     """
     if a == b:
         return True
     lo, hi = (a, b) if len(a) <= len(b) else (b, a)
-    return len(lo) >= 18 and hi.startswith(lo)
+    if len(lo) >= 18 and hi.startswith(lo):
+        return True
+    if title_a and title_b:
+        wa, wb = _word_set(title_a), _word_set(title_b)
+        if len(wa) >= 3 and wa == wb:
+            return True
+    return False
 
 
 def _completeness(ev):
@@ -127,10 +145,11 @@ def dedupe(events):
         canon = []          # (normalized_title, group_key)
         for ev in todays:
             norm = _norm_title(ev["title"])
-            match = next((k for n, k in canon if _same_event(n, norm)), None)
+            match = next((k for n, k, raw in canon
+                          if _same_event(n, norm, raw, ev["title"])), None)
             if match is None:
                 match = (day, norm)
-                canon.append((norm, match))
+                canon.append((norm, match, ev["title"]))
             groups.setdefault(match, []).append(ev)
 
     merged, collapsed = [], 0

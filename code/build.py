@@ -16,7 +16,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from config import (CACHE_PATH, DAY_TRIP_DRIVE_MAX_MIN, HOME_LABEL, HORIZON_DAYS,
+from config import (CACHE_PATH, FEEDBACK_PATH, DAY_TRIP_DRIVE_MAX_MIN, HOME_LABEL, HORIZON_DAYS,
                     LOCAL_DRIVE_MAX_MIN, SITE)
 import store
 from sources.base import is_noise
@@ -199,6 +199,28 @@ def is_date_night(ev, llm):
         return False
 
 
+# Volunteering with the kids is its own category: not entertainment, but a good
+# way to spend a Saturday morning and something worth surfacing deliberately.
+VOLUNTEER_RE = re.compile(
+    r"\b(clean[\s-]?up|cleanup|volunteer|restoration|habitat|"
+    r"tree planting|beach clean|creek clean|park steward|stewardship|"
+    r"trail work|food bank|donation drive|service day|litter|weed pull|"
+    r"native plant|beautification|adopt-a-|community service)\b", re.I)
+
+
+def series_stem(ev):
+    """A key shared by every occurrence of a recurring event.
+
+    Weekly and franchise events ("Pokemon GO ... Community Day", a roller disco
+    every Sunday, a venue's standing series) should not crowd out one-off
+    occasions in Highlights. Grouping them lets us both damp their ranking and
+    smooth their scores.
+    """
+    t = re.sub(r"[^a-z0-9 ]", " ", (ev["title"] or "").lower())
+    words = [w for w in t.split() if len(w) > 2 and not w.isdigit()]
+    return " ".join(words[:4])
+
+
 # A venue that runs the same thing every single day is describing an attraction,
 # not an event. Hiller's "Drone Plex" ran 35 times in one window. We keep the next
 # occurrence as a standing attraction and drop the rest.
@@ -212,6 +234,24 @@ def find_standing(rows):
         key = ((r["title"] or "").lower(), (r["venue"] or "").lower())
         days.setdefault(key, set()).add(r["start_local"][:10])
     return {k for k, v in days.items() if len(v) >= STANDING_MIN_DAYS}
+
+
+def load_overrides():
+    """Hand-set scores that beat the model outright, by title substring."""
+    if not FEEDBACK_PATH.exists():
+        return []
+    try:
+        data = json.loads(FEEDBACK_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        print("WARNING: feedback.json is malformed; ignoring overrides")
+        return []
+    out = []
+    for row in data.get("events") or []:
+        m = (row.get("match") or "").strip().lower()
+        if m and (row.get("family_fit") is not None
+                  or row.get("adult_interest") is not None):
+            out.append((m, row))
+    return out
 
 
 def load_scores():
@@ -237,8 +277,24 @@ def main():
     rows = store.upcoming(conn, today.isoformat(), horizon.isoformat())
     scores = load_scores()
 
+    overrides = load_overrides()
+    override_hits = 0
+
     standing = find_standing(rows)
     standing_kept = set()
+
+    # Series stats, computed once over the whole window.
+    #
+    # The scorer is noticeably noisy on repeats: the same "Manny's Neighborhood
+    # Trash Cleanup" came back 55, 85, 40, 85, 40, 40 on different dates, and an
+    # identical weekly roller disco ranged 30 to 85. Identical input, different
+    # answer. Taking the median across a series turns that noise into one stable
+    # number, so a good recurring event is not randomly buried in the week it
+    # happened to score badly.
+    series = {}
+    for r in rows:
+        series.setdefault(series_stem(r), []).append(r["id"])
+    score_by_id = {}
 
     events = []
     for r in rows:
@@ -264,6 +320,24 @@ def main():
             # The model's judgment replaces the keyword heuristic outright.
             score = llm["family_fit"]
             reasons = ["scored locally"]
+
+        title_l = (ev["title"] or "").lower()
+        ov = next((row for m, row in overrides if m in title_l), None)
+        if ov and ov.get("family_fit") is not None:
+            score = ov["family_fit"]
+            reasons = ["your rating"]
+            override_hits += 1
+
+        stem = series_stem(ev)
+        members = series.get(stem, [])
+        if len(members) >= 3:
+            sibling_scores = sorted(
+                scores[i]["family_fit"] for i in members if i in scores)
+            if sibling_scores and not ov:
+                median = sibling_scores[len(sibling_scores) // 2]
+                if llm and median != score:
+                    reasons.append("smoothed across %d in series" % len(sibling_scores))
+                score = median
 
         section = "ongoing" if key in standing else classify(ev, today, llm)
         if section == "far":
@@ -291,8 +365,11 @@ def main():
             "badges": badges_for(ev, llm),
             "blurb": llm["blurb"] if llm else None,
             "scored": bool(llm),
-            "adultScore": (llm or {}).get("adult_interest"),
+            "adultScore": (ov.get("adult_interest") if ov and ov.get("adult_interest") is not None
+                           else (llm or {}).get("adult_interest")),
             "dateNight": is_date_night(ev, llm),
+            "seriesSize": len(series.get(series_stem(ev), [])),
+            "volunteer": bool(VOLUNTEER_RE.search(ev["title"] or "")),
             "score": score,
             "why": reasons,
             "section": section,
@@ -326,6 +403,11 @@ def main():
     print("  %d events: %s" % (len(events), payload["counts"]))
     healthy = sum(1 for r in runs if r["ok"])
     print("  sources healthy: %d/%d" % (healthy, len(runs)))
+    if overrides:
+        print("  your ratings applied: %d event(s) from feedback.json" % override_hits)
+    n_vol = sum(1 for e in events if e["volunteer"])
+    n_series = sum(1 for e in events if e["seriesSize"] >= 4)
+    print("  volunteer events: %d | in a recurring series (4+): %d" % (n_vol, n_series))
     n_date = sum(1 for e in events if e["dateNight"])
     print("  date-night events: %d" % n_date)
     n_scored = sum(1 for e in events if e["scored"])

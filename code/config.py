@@ -12,6 +12,11 @@ DB_PATH = DATA / "events.db"
 # and text, so it diffs cleanly.
 CACHE_PATH = ROOT / "cache" / "scores.json"
 
+# Mike's own judgments about specific events. Tracked in git, edited by hand.
+# Used twice: as hard overrides at build time, and as worked examples in the
+# scoring prompt so a correction generalises instead of applying once.
+FEEDBACK_PATH = ROOT / "feedback.json"
+
 # Local scoring runs against Ollama on this machine. Never in CI: a cloud runner
 # has no GPU, so the daily build falls back to the heuristic score.
 OLLAMA_URL = "http://127.0.0.1:11434"

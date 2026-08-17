@@ -1,0 +1,42 @@
+{
+  "_README": [
+    "Your judgments about specific events. Two things happen to each entry:",
+    "",
+    "1. OVERRIDE - if an event matching `match` is in the window, its score is",
+    "   replaced by yours. Immediate, exact, and it beats the model every time.",
+    "2. CALIBRATION - entries are also shown to the scorer as worked examples,",
+    "   so the same judgment generalises to events you have never rated.",
+    "",
+    "That second part is the point. Abstract rubric instructions moved the model",
+    "very little (three attempts at the Pride ranking barely shifted it), but",
+    "concrete examples of how THIS family scores THIS event are a much stronger",
+    "signal than any adjective.",
+    "",
+    "FIELDS",
+    "  match         substring, matched case-insensitively against the title.",
+    "                Keep it specific enough not to catch unrelated events.",
+    "  family_fit    0-100, or null to leave the model's score alone",
+    "  adult_interest 0-100, or null",
+    "  why           one line, in your words. This is what the scorer reads,",
+    "                so say the REASON, not just the number: 'huge festival,",
+    "                lots to do' generalises, 'should be higher' does not.",
+    "  added         YYYY-MM-DD, so stale entries can be pruned later"
+  ],
+
+  "events": [
+    {
+      "match": "Oakland Pride Parade",
+      "family_fit": 85,
+      "adult_interest": 85,
+      "why": "Huge street festival with tons going on - stages, food, crowds. A great family day out, not an adults-only event.",
+      "added": "2026-08-16"
+    },
+    {
+      "match": "Pokemon GO",
+      "family_fit": 45,
+      "adult_interest": null,
+      "why": "Fun but not special - this promotion runs every month in many cities, so it is never a reason to plan a weekend around.",
+      "added": "2026-08-16"
+    }
+  ]
+}

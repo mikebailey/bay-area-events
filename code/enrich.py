@@ -88,6 +88,10 @@ without a kid in tow.
   Daytime does not disqualify an event, but evening events, ticketed music, \
 comedy, theater, food and drink, and 21+ venues are where the high scores live.
 
+SCALE AND VARIETY RAISE A SCORE. An event where there is a lot going on in one place -- a big street festival or parade with food stalls, music stages, performances, vendors and crowds -- is worth more of a family's day than a single scheduled activity, because everyone finds something and you can stay as long as you like. Judge how much there is to do once you arrive, not just the headline.
+
+RECURRING PROMOTIONS ARE NOT OCCASIONS. Some listings are a franchise or brand running the same promotion on a schedule, in many cities at once: mobile-game community days, chain-store events, weekly club nights, standing bar trivia. They can be perfectly pleasant, but they are not a reason to plan a weekend around, because the same thing runs again next month somewhere nearby. Score these in the middle at best -- never above 70 -- and reserve high scores for things happening once.
+
 audience: exactly one of "kids", "teens", "adults", "all".
 
 adults_only: this means a REAL AGE RESTRICTION — the venue or event bars \
