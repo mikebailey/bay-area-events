@@ -236,6 +236,53 @@ def find_standing(rows):
     return {k for k, v in days.items() if len(v) >= STANDING_MIN_DAYS}
 
 
+def collapse_duplicates(events):
+    """Final dedupe pass over everything headed for the page.
+
+    fetch.py dedupes what it collects in one run, but sweep.py writes straight
+    to the store, so a sweep find can duplicate an event a feed already had --
+    "Bay Area Chocolate Chip Cookie Festival" against the same title with
+    "(Palo Alto)" appended. Doing it here catches any source, including ones
+    added later, and costs one pass.
+
+    Keeps the richer record, and unions the source lists so the page still shows
+    that several sources saw it.
+    """
+    from fetch import _norm_title, _same_event
+
+    by_day = {}
+    for ev in events:
+        by_day.setdefault(ev["start"][:10], []).append(ev)
+
+    out, collapsed = [], 0
+    for day, todays in by_day.items():
+        kept = []   # (normalized, raw_title, event)
+        for ev in todays:
+            norm = _norm_title(ev["title"])
+            hit = None
+            for i, (n, raw, prev) in enumerate(kept):
+                if _same_event(n, norm, raw, ev["title"]):
+                    hit = i
+                    break
+            if hit is None:
+                kept.append((norm, ev["title"], ev))
+                continue
+            # Prefer the record carrying more detail.
+            _, _, prev = kept[hit]
+            richer = max(prev, ev, key=lambda e: sum(
+                1 for f in ("blurb", "image", "venue", "city", "drive", "priceMin")
+                if e.get(f) is not None))
+            poorer = prev if richer is ev else ev
+            richer["sources"] = sorted(set(richer["sources"]) | set(poorer["sources"]))
+            kept[hit] = (_norm_title(richer["title"]), richer["title"], richer)
+            collapsed += 1
+        out.extend(ev for _, _, ev in kept)
+
+    if collapsed:
+        print("  collapsed %d duplicate listing(s) at build time" % collapsed)
+    return out
+
+
 def load_overrides():
     """Hand-set scores that beat the model outright, by title substring."""
     if not FEEDBACK_PATH.exists():
@@ -376,6 +423,8 @@ def main():
             "sources": json.loads(ev["sources"] or "[]"),
             "firstSeen": ev["first_seen"],
         })
+
+    events = collapse_duplicates(events)
 
     runs = [dict(r) for r in store.latest_runs(conn)]
     payload = {

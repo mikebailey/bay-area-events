@@ -110,9 +110,35 @@ confident an event is real and happening on that date, leave it out.
 trivia nights, standing museum hours).
 - Aim for 15 to 30 genuinely interesting events. Quality over quantity.
 
-Return ONLY a JSON object, no prose before or after:
-{{"events": [{{"title": ..., "date": ..., "time": ..., "venue": ..., \
-"city": ..., "price": ..., "url": ..., "why": ...}}]}}"""
+A script reads your reply, not a person. The response shape is enforced by a \
+schema, so just fill it in: one entry per event, and nothing you cannot \
+support with a page you actually read."""
+
+
+SWEEP_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "events": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "title": {"type": "string"},
+                    "date": {"type": "string", "description": "YYYY-MM-DD"},
+                    "time": {"type": ["string", "null"], "description": "HH:MM 24h, or null"},
+                    "venue": {"type": ["string", "null"]},
+                    "city": {"type": ["string", "null"]},
+                    "price": {"type": ["number", "null"],
+                              "description": "cheapest adult entry in dollars, 0 if free"},
+                    "url": {"type": "string", "description": "a working link to this event"},
+                    "why": {"type": "string"},
+                },
+                "required": ["title", "date", "url", "why"],
+            },
+        }
+    },
+    "required": ["events"],
+}
 
 
 def run_claude(prompt, cli):
@@ -125,13 +151,23 @@ def run_claude(prompt, cli):
     # The permission system stays on; it simply has a standing answer here.
     # Do NOT add --permission-mode: `dontAsk` denies these outright, and
     # `bypassPermissions` would disable checks rather than grant two of them.
+    # The prompt goes in on STDIN, not as an argument. claude.cmd is a batch
+    # wrapper, so every argument is re-parsed by cmd.exe -- a prompt containing
+    # braces, quotes or percent signs gets mangled on the way through, and the
+    # symptom is a plain-prose reply with no JSON envelope at all rather than
+    # any kind of error. stdin avoids the whole class of problem.
     cmd = [
-        cli, "-p", prompt,
+        cli, "-p",
         "--output-format", "json",
+        # Constrain the reply structurally instead of asking for JSON in prose.
+        # Two rounds of increasingly emphatic "return only JSON" instructions
+        # were ignored -- headless Claude defaults to a readable summary, and a
+        # user-turn instruction does not override that. A schema does.
+        "--json-schema", json.dumps(SWEEP_SCHEMA),
         "--tools", "WebSearch", "WebFetch",
     ]
     proc = subprocess.run(
-        cmd, capture_output=True, text=True, encoding="utf-8",
+        cmd, input=prompt, capture_output=True, text=True, encoding="utf-8",
         errors="replace", timeout=CLAUDE_TIMEOUT,
         # cwd matters: Claude reads .claude/settings.json relative to it, and
         # that file is what grants WebSearch/WebFetch.
@@ -140,20 +176,44 @@ def run_claude(prompt, cli):
     if proc.returncode != 0:
         raise RuntimeError("claude exited %d: %s" % (proc.returncode, (proc.stderr or "")[:400]))
 
-    # --output-format json wraps the reply in an envelope whose `result` field
-    # holds the assistant's text. Fall back to raw stdout if that shape changes.
-    text = proc.stdout
+    # The envelope carries BOTH a human-readable `result` and, when --json-schema
+    # is set, an already-parsed `structured_output`. Read the structured field
+    # first: `result` can hold a chatty summary even when the schema was honoured,
+    # which is what made this look broken for three rounds of prompt-tweaking.
     try:
         env = json.loads(proc.stdout)
-        text = env.get("result", proc.stdout)
     except json.JSONDecodeError:
-        pass
+        return _extract_json(proc.stdout)
 
-    # The model may still wrap JSON in a fenced block despite instructions.
-    m = re.search(r"\{.*\}", text, re.S)
-    if not m:
-        raise ValueError("no JSON object in Claude's reply: %s" % text[:300])
-    return json.loads(m.group())
+    structured = env.get("structured_output")
+    if isinstance(structured, dict) and "events" in structured:
+        return structured
+
+    return _extract_json(env.get("result") or proc.stdout)
+
+
+def _extract_json(text):
+    """Pull the payload out, tolerating the ways a model wraps it.
+
+    Order matters: a fenced block is the most reliable signal, so try that
+    before falling back to brace matching, which can otherwise grab a stray
+    object out of prose.
+    """
+    fenced = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", text, re.S)
+    if fenced:
+        return json.loads(fenced.group(1))
+
+    # Widest balanced-looking span containing an "events" key.
+    m = re.search(r'\{[^{]*"events".*\}', text, re.S)
+    if m:
+        try:
+            return json.loads(m.group())
+        except json.JSONDecodeError:
+            pass
+
+    raise ValueError(
+        "Claude replied in prose rather than JSON. First 300 chars:\n%s"
+        % text[:300])
 
 
 def url_resolves(url):

@@ -551,6 +551,14 @@
   "epic": false,
   "family_fit": 40
  },
+ "075df3b8d3fde20b": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Gold Rush immersive festival with costumed characters and gold panning.",
+  "epic": false,
+  "family_fit": 90
+ },
  "077bb09f731cfe62": {
   "adult_interest": 30,
   "adults_only": false,
@@ -2007,6 +2015,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "17a18d0193bd9d1d": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free neighborhood night market with hula dancing, food, and art vendors in San Francisco.",
+  "epic": false,
+  "family_fit": 80
+ },
  "17af5b76d5cecaf2": {
   "adult_interest": 80,
   "adults_only": true,
@@ -2486,6 +2502,14 @@
   "blurb": "Planetarium show about celestial movements at Chabot Space Center.",
   "epic": false,
   "family_fit": 60
+ },
+ "1cad57a74949d3f0": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free music festival with Tune-Yards and local bands in a park above downtown San Francisco.",
+  "epic": false,
+  "family_fit": 70
  },
  "1cbfd5382f4721b9": {
   "adult_interest": 70,
@@ -3262,6 +3286,14 @@
   "blurb": "Menopause the Musical at Harris Center for the Arts.",
   "epic": false,
   "family_fit": 10
+ },
+ "2423c26df05b27e6": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free cactus and succulent show with judged specimens and vendors.",
+  "epic": false,
+  "family_fit": 75
  },
  "242c46e7ebcecce1": {
   "adult_interest": 85,
@@ -4070,6 +4102,14 @@
   "blurb": "Dragon Smoke event at a San Francisco venue.",
   "epic": false,
   "family_fit": 10
+ },
+ "2ab73e2dc626025b": {
+  "adult_interest": 35,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free cookie festival with LEGO and museum exploration.",
+  "epic": false,
+  "family_fit": 80
  },
  "2acad20a40df4dc9": {
   "adult_interest": 80,
@@ -6119,6 +6159,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "3e2f46838dee5be5": {
+  "adult_interest": 25,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free cat video screening benefiting a local rescue, perfect for kids.",
+  "epic": false,
+  "family_fit": 90
+ },
  "3e40ce4f050c9773": {
   "adult_interest": 85,
   "adults_only": false,
@@ -8127,6 +8175,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "50d832ccce52a93e": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free street festival with 250+ artists, street painting, and playable sidewalk pianos.",
+  "epic": false,
+  "family_fit": 85
+ },
  "510f952c7fb39023": {
   "adult_interest": 80,
   "adults_only": false,
@@ -8254,6 +8310,14 @@
   "blurb": "Planetarium show about the moon for all ages.",
   "epic": false,
   "family_fit": 70
+ },
+ "52ac4f9b1f11f910": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Free mass night bike ride with music and costumes for confident 12-14 year olds.",
+  "epic": false,
+  "family_fit": 85
  },
  "52b6e81a9a656d2d": {
   "adult_interest": 45,
@@ -8846,6 +8910,14 @@
   "blurb": "Latin music concert, not family-friendly.",
   "epic": false,
   "family_fit": 10
+ },
+ "57522c6a6aecd8df": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free cultural festival with chariot pulling and vegetarian feast.",
+  "epic": false,
+  "family_fit": 85
  },
  "579997a21a602993": {
   "adult_interest": 60,
@@ -10527,6 +10599,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "659a97047d5fe5e9": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free national parks day with paid parking required.",
+  "epic": false,
+  "family_fit": 40
+ },
  "65b4ac54c4bfcff0": {
   "adult_interest": 80,
   "adults_only": false,
@@ -10550,6 +10630,14 @@
   "blurb": "Theater show with age restriction, not ideal for younger kids.",
   "epic": false,
   "family_fit": 40
+ },
+ "65d7d84d4e4cfcd9": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Planetarium tour of the Zodiac for all ages.",
+  "epic": false,
+  "family_fit": 60
  },
  "65f1a50a71817e6b": {
   "adult_interest": 10,
@@ -11238,6 +11326,14 @@
   "blurb": "Alternative band She Wants Revenge at Regency Ballroom.",
   "epic": false,
   "family_fit": 0
+ },
+ "6d8f1e39f1429636": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Disney ice show featuring Moana and Maui.",
+  "epic": false,
+  "family_fit": 50
  },
  "6db01450a7333b22": {
   "adult_interest": 60,
@@ -12551,6 +12647,14 @@
   "epic": false,
   "family_fit": 50
  },
+ "78bca339a427cb41": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free neighborhood street party with bands, artists, and food tastings for all ages.",
+  "epic": false,
+  "family_fit": 85
+ },
  "78c46cdf821404ad": {
   "adult_interest": 85,
   "adults_only": false,
@@ -13391,6 +13495,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "80a43ea94f27c042": {
+  "adult_interest": 55,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free Egyptian cultural festival with food, photo booths, and kids zone.",
+  "epic": false,
+  "family_fit": 70
+ },
  "80a599c8ff892128": {
   "adult_interest": 85,
   "adults_only": false,
@@ -13959,6 +14071,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "849aa0df2ecf9c71": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free Grateful Dead-themed event with music and sea lions at PIER 39.",
+  "epic": false,
+  "family_fit": 65
+ },
  "84a98a1c459c0788": {
   "adult_interest": 80,
   "adults_only": false,
@@ -14343,6 +14463,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "87c3a6422af1bdee": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "County fair with rides, livestock, and exhibits for a full day.",
+  "epic": false,
+  "family_fit": 75
+ },
  "87cd95e737b18874": {
   "adult_interest": 60,
   "adults_only": false,
@@ -14391,6 +14519,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "88560c999eb4d40e": {
+  "adult_interest": 90,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only beer and fermented food festival with live music.",
+  "epic": false,
+  "family_fit": 10
+ },
  "885657d13cd85101": {
   "adult_interest": 85,
   "adults_only": true,
@@ -14438,6 +14574,14 @@
   "blurb": "Giants vs. Diamondbacks baseball game at Oracle Park.",
   "epic": false,
   "family_fit": 70
+ },
+ "8914e87e9ff6ec93": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free outdoor concert with soul music in a park near Menlo Park.",
+  "epic": false,
+  "family_fit": 60
  },
  "8915c06dec6de15e": {
   "adult_interest": 70,
@@ -15934,6 +16078,14 @@
   "blurb": "Alternative band Southern Culture On The Skids plays at a venue.",
   "epic": false,
   "family_fit": 0
+ },
+ "97a580cb1cd7886b": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free street fair with lion dances, food, and entertainment in Oakland Chinatown.",
+  "epic": false,
+  "family_fit": 80
  },
  "97af6fc53dc1741a": {
   "adult_interest": 80,
@@ -17735,6 +17887,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "aaae6139fe3eac6f": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free day at botanical garden with plants and nature walks.",
+  "epic": false,
+  "family_fit": 70
+ },
  "aac2342b12eaebff": {
   "adult_interest": 85,
   "adults_only": true,
@@ -18743,6 +18903,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "b5d46ee5eefb0543": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free restaurant day with pay-what-you-can meals.",
+  "epic": false,
+  "family_fit": 30
+ },
  "b5e6fd0f9d6a8276": {
   "adult_interest": 70,
   "adults_only": false,
@@ -19310,6 +19478,14 @@
   "blurb": "Pop concert in Sacramento, 21+.",
   "epic": false,
   "family_fit": 0
+ },
+ "bb39ff8dcd0bd1c0": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free night market with classic cars, food trucks, and cultural bingo in San Francisco.",
+  "epic": false,
+  "family_fit": 60
  },
  "bb3a362e089dd831": {
   "adult_interest": 10,
@@ -21335,6 +21511,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "cf3daf94b7fec8f7": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free outdoor movie night with Golden Gate Bridge view in San Francisco.",
+  "epic": false,
+  "family_fit": 50
+ },
  "cf709b87ec538db8": {
   "adult_interest": 80,
   "adults_only": false,
@@ -22038,6 +22222,14 @@
   "blurb": "Garden tour with horticulture experts at Filoli.",
   "epic": false,
   "family_fit": 40
+ },
+ "d68fec389ac46c96": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free outdoor Shakespeare performance in a park.",
+  "epic": false,
+  "family_fit": 55
  },
  "d6a98afc20668007": {
   "adult_interest": 85,
