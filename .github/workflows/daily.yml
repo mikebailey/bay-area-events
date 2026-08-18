@@ -1,0 +1,102 @@
+name: Daily events
+
+# 13:00 UTC is 06:00 Pacific during daylight saving, 05:00 in winter. Exact time
+# does not matter for a page you read over breakfast, and GitHub's scheduler
+# drifts by minutes-to-an-hour under load anyway.
+on:
+  schedule:
+    - cron: "0 13 * * *"
+  workflow_dispatch:
+    inputs:
+      send_digest:
+        description: "Send the digest email even if today is not Thursday"
+        type: boolean
+        default: false
+
+# Least privilege: contents to commit the refreshed events.json, pages+id-token
+# for the deploy.
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# A long fetch must never overlap the next day's run.
+concurrency:
+  group: daily-events
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # The pipeline is standard-library only, so there is nothing to install.
+
+      # data/ is gitignored, so CI would otherwise start with an empty database
+      # every run and reset every first_seen date -- which would break the
+      # digest's "newly found this week" section. Cache it between runs instead
+      # of committing a binary.
+      - name: Restore event database
+        uses: actions/cache@v4
+        with:
+          path: data
+          key: events-db-${{ github.run_id }}
+          restore-keys: events-db-
+
+      - name: Fetch events
+        env:
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
+          PYTHONUTF8: "1"
+        run: python code/fetch.py
+
+      # No scoring here on purpose: a cloud runner has no GPU and no Claude
+      # session. build.py reads whatever cache/scores.json was last committed
+      # from the machine that does have them, and falls back to the keyword
+      # heuristic for anything unscored.
+      - name: Build the site
+        env:
+          PYTHONUTF8: "1"
+        run: python code/build.py
+
+      - name: Commit refreshed events.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- site/events.json; then
+            echo "No change to events.json"
+          else
+            git add site/events.json
+            git commit -m "Daily refresh: $(date -u +%Y-%m-%d)"
+            # Another run (or a local push) may have landed first.
+            git pull --rebase --autostash origin ${{ github.ref_name }}
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+      # Thursday morning, so there is still time to buy tickets for the weekend.
+      # `date -u +%u` gives 4 for Thursday.
+      - name: Send the digest
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          DIGEST_TO: ${{ secrets.DIGEST_TO }}
+          FORCE: ${{ github.event.inputs.send_digest }}
+          PYTHONUTF8: "1"
+        run: |
+          if [ "$(date -u +%u)" = "4" ] || [ "$FORCE" = "true" ]; then
+            python code/digest.py --send
+          else
+            echo "Not Thursday; skipping the digest."
+          fi

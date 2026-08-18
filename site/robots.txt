@@ -1,0 +1,4 @@
+# This is a private family events page. It is deliberately unlisted: no links
+# point at it from michaelbailey.org, and the page carries a noindex tag.
+User-agent: *
+Disallow: /

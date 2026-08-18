@@ -193,8 +193,24 @@ def render_text(sections, meta):
     return "\n".join(lines)
 
 
+def recipients(override=None):
+    """Who gets it: --to wins, then DIGEST_TO, then the sending account.
+
+    DIGEST_TO takes a comma-separated list, so the digest can go to both of us
+    without maintaining a second copy of anything.
+    """
+    raw = override or os.environ.get("DIGEST_TO") or os.environ.get("GMAIL_USER") or ""
+    addrs = [a.strip() for a in raw.split(",") if a.strip()]
+    bad = [a for a in addrs if "@" not in a or a.startswith("@") or a.endswith("@")]
+    if bad:
+        raise SystemExit("These do not look like email addresses: %s" % ", ".join(bad))
+    if not addrs:
+        raise SystemExit("No recipients. Set DIGEST_TO in .env or pass --to.")
+    return addrs
+
+
 def send(subject, html_body, text_body, to_addr):
-    user = os.environ.get("GMAIL_USER") or os.environ.get("DIGEST_TO")
+    user = os.environ.get("GMAIL_USER")
     password = os.environ.get("GMAIL_APP_PASSWORD")
     if not user or not password:
         raise SystemExit(
@@ -203,10 +219,11 @@ def send(subject, html_body, text_body, to_addr):
             "The app password is generated at https://myaccount.google.com/apppasswords\n"
             "(requires 2FA on the account; it is 16 characters, spaces optional).")
 
+    to = recipients(to_addr)
     msg = EmailMessage()
     msg["Subject"] = subject
     msg["From"] = user
-    msg["To"] = to_addr or user
+    msg["To"] = ", ".join(to)
     msg.set_content(text_body)
     msg.add_alternative(html_body, subtype="html")
 
@@ -215,7 +232,7 @@ def send(subject, html_body, text_body, to_addr):
         # Gmail shows app passwords in groups of four; the spaces are cosmetic.
         s.login(user, password.replace(" ", ""))
         s.send_message(msg)
-    return msg["To"]
+    return to
 
 
 def main():
@@ -256,7 +273,7 @@ def main():
         webbrowser.open(PREVIEW_PATH.as_uri())
     if args.send:
         to = send(subject, html_body, text_body, args.to)
-        print("Sent to %s" % to)
+        print("Sent to %s" % ", ".join(to))
     else:
         print("(not sent - add --send)")
 
