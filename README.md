@@ -186,6 +186,26 @@ python code/enrich.py --limit 50    # small trial batch
 python code/enrich.py --rescore     # discard cached scores and redo
 ```
 
+## Running it in the cloud
+
+`.github/workflows/daily.yml` runs at 13:00 UTC: fetch, build, commit
+`site/events.json`, deploy to GitHub Pages, and on Thursdays send the digest.
+`workflow_dispatch` takes a `send_digest` input for testing out of cycle.
+
+Four repo secrets: `TICKETMASTER_API_KEY`, `GMAIL_USER`, `GMAIL_APP_PASSWORD`,
+`DIGEST_TO` (comma-separated).
+
+**Two sources block GitHub's datacenter IPs.** Chabot returns 403 and DoTheBay
+returns an empty list, though both serve a home connection fine. So the cloud
+build sees ~200 fewer events than a local run. `carry_over_degraded()` in
+build.py keeps events alive across that gap, but only while every source that
+knew about an event is degraded -- if a working source stops listing something,
+it really has been cancelled and should disappear.
+
+`data/` is cached between runs rather than committed. It is gitignored, so CI
+would otherwise start empty each day and reset every `first_seen`, silently
+breaking the digest's "newly found this week" section.
+
 ## Status
 
 **Phase 1 complete, plus the agenda redesign.** Eight sources, roughly 2,250
@@ -193,6 +213,9 @@ events in a 120-day window. The page is a day-grouped agenda: sticky day headers
 a scrollable date strip showing per-day counts, weekend emphasis, aligned time and
 price rails, colored type bars, and text badges. Filters for drive time, type, and
 attributes.
+
+Live at `bayarea.michaelbailey.org` (Cloudflare CNAME -> mikebailey.github.io,
+DNS-only/grey cloud -- proxying breaks GitHub's certificate validation).
 
 Still open:
 - **AI sweep** for editorial listicles (SFGate, Chronicle, TimeOut weekend
