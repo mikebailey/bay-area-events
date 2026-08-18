@@ -236,6 +236,52 @@ def find_standing(rows):
     return {k for k, v in days.items() if len(v) >= STANDING_MIN_DAYS}
 
 
+def carry_over_degraded(events, runs, today, horizon):
+    """Keep events from sources that could not be reached this run.
+
+    Two sources (Chabot, DoTheBay) serve this machine fine and block GitHub's
+    datacenter IPs -- 403 and an empty list respectively. Without this, the
+    daily cloud build would quietly drop every event only those sources know
+    about, and its commit would overwrite the richer file a local run produced.
+
+    The rule is deliberately narrow: an old event is carried forward ONLY if
+    every source that knew about it was degraded this run. If a working source
+    stopped listing an event, that is real news -- it was cancelled or moved --
+    and it should disappear.
+    """
+    previous_path = SITE / "events.json"
+    if not previous_path.exists():
+        return events
+
+    degraded = {r["source"] for r in runs if not r["ok"] or not r["count"]}
+    if not degraded:
+        return events
+
+    try:
+        previous = json.loads(previous_path.read_text(encoding="utf-8")).get("events", [])
+    except (json.JSONDecodeError, OSError):
+        return events
+
+    have = {e["id"] for e in events}
+    carried = []
+    for old in previous:
+        if old["id"] in have:
+            continue
+        srcs = set(old.get("sources") or [])
+        if not srcs or not srcs.issubset(degraded):
+            continue
+        day = old["start"][:10]
+        if not (today.isoformat() <= day <= horizon.isoformat()):
+            continue
+        old["carried"] = True
+        carried.append(old)
+
+    if carried:
+        print("  carried over %d event(s) from degraded source(s): %s"
+              % (len(carried), ", ".join(sorted(degraded))))
+    return events + carried
+
+
 def collapse_duplicates(events):
     """Final dedupe pass over everything headed for the page.
 
@@ -424,9 +470,9 @@ def main():
             "firstSeen": ev["first_seen"],
         })
 
-    events = collapse_duplicates(events)
-
     runs = [dict(r) for r in store.latest_runs(conn)]
+    events = carry_over_degraded(events, runs, today, horizon)
+    events = collapse_duplicates(events)
     payload = {
         "generated": datetime.now().isoformat(timespec="seconds"),
         "home": HOME_LABEL,
