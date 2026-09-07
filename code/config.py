@@ -55,9 +55,12 @@ NOISE_TITLE_PATTERNS = [
 
 # The Events Calendar (WordPress plugin) venues, verified live 2026-08-15.
 # Adding a venue here is the whole integration; the parser is shared.
+#
+# Filoli was here until 2026-09-07, when they replatformed onto Umbraco and
+# took the whole WordPress REST API with them. They have their own scraper
+# in sources/filoli.py now.
 TRIBE_VENUES = [
     {"key": "curiodyssey",   "domain": "curiodyssey.org",      "name": "CuriOdyssey",                  "city": "San Mateo"},
-    {"key": "filoli",        "domain": "filoli.org",           "name": "Filoli",                       "city": "Woodside"},
     {"key": "hiller",        "domain": "hiller.org",           "name": "Hiller Aviation Museum",       "city": "San Carlos"},
     {"key": "chabot",        "domain": "www.chabotspace.org",  "name": "Chabot Space & Science Center","city": "Oakland"},
     {"key": "oaklandmuseum", "domain": "museumca.org",         "name": "Oakland Museum of California", "city": "Oakland"},

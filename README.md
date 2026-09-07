@@ -65,8 +65,45 @@ coverage is surfaced rather than hidden.
 |---|---|---|
 | Ticketmaster Discovery | API | Concerts, pro sports, big theater. Highest yield by far. |
 | DoTheBay | JSON API | Curated aggregator. Carries its own popularity signal and a slice of Eventbrite inventory. |
-| CuriOdyssey, Filoli, Hiller, Chabot, Oakland Museum | API | All run The Events Calendar WordPress plugin, so one parser serves all five. Adding a venue is one line in `config.py`. |
+| CuriOdyssey, Hiller, Chabot, Oakland Museum | API | All run The Events Calendar WordPress plugin, so one parser serves all four. Adding a venue is one line in `config.py`. |
+| Filoli | Scrape | Was on the shared parser until they replatformed. Own module now, see below. |
 | Funcheap | Scrape | Day archives. The long tail of small, local, free events. |
+
+### Filoli replatformed, and the shared parser died with it (2026-09-07)
+
+Filoli ran The Events Calendar like the other venues until some point before
+2026-09-07, when they moved to Umbraco with Blackbaud ticketing. The whole
+WordPress REST API went with it: `/wp-json/` itself 404s, not just the events
+endpoint. Every daily run recorded a Filoli failure and nobody noticed, which is
+exactly the failure mode the source-health footer exists to catch.
+
+They are worth a bespoke scraper rather than dropping. Filoli is eleven minutes
+away, the same pocket as the Kings Mountain Art Fair, and it runs the sort of
+one-off seasonal thing (Nightfall, Holiday Lights, wreath parties) that no
+ticketing feed carries.
+
+`sources/filoli.py` scrapes `/whats-on/events/?p=N`. What matters about it:
+
+- The listing is **server-rendered**, five per page, four pages. A page past the
+  end returns valid HTML with zero listing items, which is the loop's stop
+  signal.
+- There is a filter form taking `period`, `from`, `to` and `category`, but
+  `from`/`to` want **dd/mm/yyyy** (the site is built en-GB) and the whole
+  calendar is only four pages. Fetching all of it and filtering by date in
+  Python is fewer requests and one less thing to get wrong.
+- The date line comes in four shapes and all of them appear in practice:
+  `Sep 9th - Sep 18th 2026` (range, year only at the end), `Nov 14th 2026 - Jan
+  10th 2027` (range across a year boundary), `Oct 27th 2026` (one day, no time),
+  and `Sep 16th 2026: 10:30am - 11:30am More dates ...` (repeats, sometimes
+  several on the same day). Ranges become one event with an end date; repeats
+  become one event per day, keeping the earliest session.
+- **No price anywhere in the listing.** It is on the detail page, which would
+  cost one request per event. Left alone, so these arrive with price unknown
+  rather than wrongly marked free.
+
+The 23 WordPress-era rows still in the store were purged when this landed: three
+of the four still inside the horizon had dead links, and a plausible event with
+a dead link is worse than no event.
 
 ### Quirks discovered while building (2026-08-15)
 
@@ -335,8 +372,6 @@ Live at `bayarea.michaelbailey.org` (Cloudflare CNAME -> mikebailey.github.io,
 DNS-only/grey cloud -- proxying breaks GitHub's certificate validation).
 
 Still open:
-- **Filoli 404s** (noticed 2026-09-07). The other four Events Calendar venues
-  are fine, so this is a URL change at their end rather than the shared parser.
 - **The Peninsula and Tri-Valley coverage gap.** There are zero Pleasanton
   events in the store at all, which is how the 160th Scottish Highland
   Gathering — 160 years old, at the Alameda County Fairgrounds, on every local

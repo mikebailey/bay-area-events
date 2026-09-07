@@ -431,6 +431,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "035306505e88ad85": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Making Thanksgiving centerpieces at Filoli, likely for young children.",
+  "epic": false,
+  "family_fit": 35
+ },
  "03613fcd5ee7ef0d": {
   "adult_interest": 50,
   "adults_only": false,
@@ -766,6 +774,14 @@
   "blurb": "Adults-only comedy show at a club.",
   "epic": false,
   "family_fit": 0
+ },
+ "067d7d24916d70e6": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Making holiday wreaths at a historic estate, aimed at younger children.",
+  "epic": false,
+  "family_fit": 30
  },
  "06844e2c0ab89353": {
   "adult_interest": 10,
@@ -4615,6 +4631,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "23a932d872328551": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Holiday tea service at a historic estate, likely for young children.",
+  "epic": false,
+  "family_fit": 30
+ },
  "23b31f6e7aaba83c": {
   "adult_interest": 65,
   "adults_only": false,
@@ -5175,6 +5199,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "27cc9ee30503c998": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Garden preparation service learning at Filoli.",
+  "epic": false,
+  "family_fit": 30
+ },
  "27daa1b6af7c7dc3": {
   "adult_interest": 70,
   "adults_only": false,
@@ -5294,6 +5326,14 @@
   "blurb": "Comedy show at a venue with 18+ age restriction.",
   "epic": false,
   "family_fit": 0
+ },
+ "28e1804c30bec9e5": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Holiday tea service at a historic estate, likely for young children.",
+  "epic": false,
+  "family_fit": 30
  },
  "28f92f9bf76e3633": {
   "adult_interest": 75,
@@ -5430,6 +5470,14 @@
   "blurb": "Comedy night in Downtown SF with 21+ restriction.",
   "epic": false,
   "family_fit": 0
+ },
+ "296fdac75c0c348d": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Holiday tea service at a historic estate, likely for young children.",
+  "epic": false,
+  "family_fit": 30
  },
  "2970ffa67d52f1e8": {
   "adult_interest": 10,
@@ -6991,6 +7039,14 @@
   "epic": false,
   "family_fit": 80
  },
+ "34fb149b2c4257a6": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Watercolor sketching class at Filoli for adults.",
+  "epic": false,
+  "family_fit": 40
+ },
  "34ff0d6064180ac6": {
   "adult_interest": 55,
   "adults_only": false,
@@ -7495,11 +7551,27 @@
   "epic": false,
   "family_fit": 0
  },
+ "37f9393cc103f9e5": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Making holiday wreaths at a historic estate.",
+  "epic": false,
+  "family_fit": 40
+ },
  "37f9da556e78d715": {
   "adult_interest": 70,
   "adults_only": false,
   "audience": "all",
   "blurb": "Jazz concert at Yoshi's Oakland.",
+  "epic": false,
+  "family_fit": 10
+ },
+ "37fbaad7cef50764": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Wine tasting at a historic estate, restricted to adults.",
   "epic": false,
   "family_fit": 10
  },
@@ -8935,6 +9007,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "41ed7ac2162eb94e": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Garden preparation service learning at Filoli.",
+  "epic": false,
+  "family_fit": 30
+ },
  "41f03a372037f33a": {
   "adult_interest": 80,
   "adults_only": false,
@@ -9870,6 +9950,14 @@
   "blurb": "Comedy show for adults only, 18+.",
   "epic": false,
   "family_fit": 0
+ },
+ "4869a1f855300e61": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Garden preparation service learning at Filoli.",
+  "epic": false,
+  "family_fit": 30
  },
  "4873476613a93552": {
   "adult_interest": 80,
@@ -10830,6 +10918,14 @@
   "blurb": "Podcast live show at Palace of Fine Arts, all ages.",
   "epic": false,
   "family_fit": 60
+ },
+ "4f0b88e0b32d49c2": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Making holiday wreaths at a historic estate, aimed at younger children.",
+  "epic": false,
+  "family_fit": 30
  },
  "4f1da59034f2c1b9": {
   "adult_interest": 60,
@@ -12183,6 +12279,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "5833aa9f4cdb5035": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Tea service at a historic estate for adults.",
+  "epic": false,
+  "family_fit": 20
+ },
  "5833f7c321c7e973": {
   "adult_interest": 70,
   "adults_only": true,
@@ -12519,6 +12623,14 @@
   "epic": false,
   "family_fit": 30
  },
+ "5a33760d808e5db1": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Holiday project service learning at Filoli.",
+  "epic": false,
+  "family_fit": 30
+ },
  "5a37d496c52a7aa8": {
   "adult_interest": 75,
   "adults_only": true,
@@ -12630,6 +12742,14 @@
   "blurb": "Theatre show with age restriction for minors.",
   "epic": false,
   "family_fit": 10
+ },
+ "5af6a4be35a5d613": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Holiday tea service at a historic estate, likely for young children.",
+  "epic": false,
+  "family_fit": 30
  },
  "5b320a99da9463f4": {
   "adult_interest": 75,
@@ -13519,6 +13639,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "60bc05a5da1e4e08": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Wine tasting event at Filoli, restricted to adults.",
+  "epic": false,
+  "family_fit": 10
+ },
  "60d728deb1ae91e6": {
   "adult_interest": 80,
   "adults_only": true,
@@ -14199,6 +14327,14 @@
   "epic": false,
   "family_fit": 40
  },
+ "65a894c269fb669a": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Making holiday wreaths at Filoli, likely for young children.",
+  "epic": false,
+  "family_fit": 35
+ },
  "65b4ac54c4bfcff0": {
   "adult_interest": 80,
   "adults_only": false,
@@ -14679,6 +14815,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "698855cbca62837a": {
+  "adult_interest": 5,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Tea service at Filoli, probably for young children.",
+  "epic": false,
+  "family_fit": 30
+ },
  "698eee5bd1f8fff6": {
   "adult_interest": 85,
   "adults_only": false,
@@ -14854,6 +14998,14 @@
   "blurb": "Comedy show at Yoshi's Oakland, adult-focused.",
   "epic": false,
   "family_fit": 0
+ },
+ "6b59b3134a6db935": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Tea service at a historic estate for adults.",
+  "epic": false,
+  "family_fit": 20
  },
  "6b6d6f0344de24d0": {
   "adult_interest": 65,
@@ -15823,6 +15975,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "71bc74077569f26f": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Bulb planting service learning at Filoli.",
+  "epic": false,
+  "family_fit": 30
+ },
  "71ea72c2bf5e8e50": {
   "adult_interest": 70,
   "adults_only": true,
@@ -16735,6 +16895,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "780ce43866eabfda": {
+  "adult_interest": 5,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Tea service at Filoli, probably for young children.",
+  "epic": false,
+  "family_fit": 30
+ },
  "780dc4c9e8e7b34c": {
   "adult_interest": 85,
   "adults_only": false,
@@ -17070,6 +17238,14 @@
   "blurb": "Women's basketball game at a university venue.",
   "epic": false,
   "family_fit": 30
+ },
+ "7a87d803378db3b4": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "A garden event at Filoli focused on historical floral displays.",
+  "epic": false,
+  "family_fit": 50
  },
  "7a8d6980040e2d24": {
   "adult_interest": 85,
@@ -18439,6 +18615,14 @@
   "epic": false,
   "family_fit": 70
  },
+ "8392c8ff5c762802": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Wreath-making party at Filoli for adults.",
+  "epic": false,
+  "family_fit": 40
+ },
  "83951eefc5be4c32": {
   "adult_interest": 65,
   "adults_only": false,
@@ -18694,6 +18878,14 @@
   "blurb": "Comedy club show in SF, 18+ only, adults-only event.",
   "epic": false,
   "family_fit": 0
+ },
+ "84d3f50ea3895aca": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Holiday tea service at a historic estate, likely for young children.",
+  "epic": false,
+  "family_fit": 30
  },
  "84df31fef1838dd5": {
   "adult_interest": 60,
@@ -19119,6 +19311,14 @@
   "epic": false,
   "family_fit": 75
  },
+ "873b5c1e4d7cecea": {
+  "adult_interest": 5,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Tea service at Filoli, probably for young children.",
+  "epic": false,
+  "family_fit": 30
+ },
  "874188c7edce1c72": {
   "adult_interest": 85,
   "adults_only": false,
@@ -19302,6 +19502,14 @@
   "blurb": "Fulldome show about the moon at Chabot Space Center.",
   "epic": false,
   "family_fit": 60
+ },
+ "88aeda19ef1064eb": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Hiking with a brewery theme at a historic estate.",
+  "epic": false,
+  "family_fit": 70
  },
  "88cf9a4361c8e936": {
   "adult_interest": 30,
@@ -19926,6 +20134,14 @@
   "blurb": "Hockey game in Stockton.",
   "epic": false,
   "family_fit": 20
+ },
+ "8d346d4161329186": {
+  "adult_interest": 5,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Tea service at Filoli, probably for young children.",
+  "epic": false,
+  "family_fit": 30
  },
  "8d71e2b87c2b73d6": {
   "adult_interest": 50,
@@ -20943,6 +21159,14 @@
   "epic": false,
   "family_fit": 50
  },
+ "94b6ea7b1820e9fc": {
+  "adult_interest": 5,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Tea service at Filoli, probably for young children.",
+  "epic": false,
+  "family_fit": 30
+ },
  "94ba53af95f1cdcc": {
   "adult_interest": 80,
   "adults_only": false,
@@ -21390,6 +21614,14 @@
   "blurb": "Horror movie screening at Crest Theater in Sacramento.",
   "epic": false,
   "family_fit": 0
+ },
+ "980a55ab24a08d87": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Making holiday wreaths at a historic estate, aimed at younger children.",
+  "epic": false,
+  "family_fit": 30
  },
  "980b20011e96fcba": {
   "adult_interest": 75,
@@ -22094,6 +22326,14 @@
   "blurb": "Free music festival with burgers in Half Moon Bay.",
   "epic": false,
   "family_fit": 60
+ },
+ "9da6bda010ba767b": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Wreath-making party at Filoli for adults.",
+  "epic": false,
+  "family_fit": 40
  },
  "9deae52f242a25ec": {
   "adult_interest": 40,
@@ -24127,6 +24367,14 @@
   "epic": false,
   "family_fit": 30
  },
+ "ad759b68c848a474": {
+  "adult_interest": 5,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Tea service at Filoli, probably for young children.",
+  "epic": false,
+  "family_fit": 30
+ },
  "ad7c6bed80393f31": {
   "adult_interest": 75,
   "adults_only": false,
@@ -24391,6 +24639,14 @@
   "epic": false,
   "family_fit": 75
  },
+ "af3d4a2556f47891": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Making holiday wreaths at a historic estate.",
+  "epic": false,
+  "family_fit": 40
+ },
  "af461b97e7aba9af": {
   "adult_interest": 65,
   "adults_only": false,
@@ -24404,6 +24660,14 @@
   "adults_only": false,
   "audience": "teens",
   "blurb": "Live music tribute to 70s sounds at a historic garden.",
+  "epic": false,
+  "family_fit": 30
+ },
+ "af676fa4cab61206": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Holiday tea service at a historic estate, likely for young children.",
   "epic": false,
   "family_fit": 30
  },
@@ -26551,6 +26815,14 @@
   "epic": false,
   "family_fit": 50
  },
+ "bf269a54353b50db": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Evening event at Filoli with music and ambiance.",
+  "epic": false,
+  "family_fit": 20
+ },
  "bf5f30864e2fcd6b": {
   "adult_interest": 85,
   "adults_only": true,
@@ -26863,6 +27135,14 @@
   "epic": false,
   "family_fit": 50
  },
+ "c1e6a2ccbe763beb": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Making holiday wreaths at a historic estate, aimed at younger children.",
+  "epic": false,
+  "family_fit": 30
+ },
  "c1f333ee5496b9bd": {
   "adult_interest": 85,
   "adults_only": true,
@@ -26910,6 +27190,14 @@
   "blurb": "Open mic night in SF, 21+ free event.",
   "epic": false,
   "family_fit": 0
+ },
+ "c22f609a8e0400af": {
+  "adult_interest": 15,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Holiday-themed activities at Filoli, likely for young children.",
+  "epic": false,
+  "family_fit": 25
  },
  "c22f7ce6e81bc9b2": {
   "adult_interest": 85,
@@ -27262,6 +27550,14 @@
   "blurb": "George Clanton concert in Roseville",
   "epic": false,
   "family_fit": 0
+ },
+ "c4bdd94e6ef581a2": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Making Thanksgiving centerpieces at Filoli, likely for young children.",
+  "epic": false,
+  "family_fit": 35
  },
  "c4c8f7b2546b4040": {
   "adult_interest": 75,
@@ -28375,6 +28671,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "cd34df86e60d83ad": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Wine tasting at a historic estate for adults.",
+  "epic": false,
+  "family_fit": 20
+ },
  "cd3a16d83588cabf": {
   "adult_interest": 50,
   "adults_only": false,
@@ -29110,6 +29414,14 @@
   "blurb": "Comedian Corde Snell at a San Jose venue.",
   "epic": false,
   "family_fit": 0
+ },
+ "d29f6b4a58ca4d2e": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Preview night for holiday decorations at Filoli.",
+  "epic": false,
+  "family_fit": 50
  },
  "d2b215f69b90d926": {
   "adult_interest": 70,
@@ -30799,6 +31111,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "de29a9faab5a6808": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Making holiday wreaths at a historic estate, aimed at younger children.",
+  "epic": false,
+  "family_fit": 30
+ },
  "de346c4087d9cbb3": {
   "adult_interest": 85,
   "adults_only": true,
@@ -30846,6 +31166,14 @@
   "blurb": "90s action movie screening at a shopping center.",
   "epic": false,
   "family_fit": 60
+ },
+ "de90665886f854b8": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Winter garden clean-up service learning at Filoli.",
+  "epic": false,
+  "family_fit": 30
  },
  "de9d16a451abdb04": {
   "adult_interest": 65,
@@ -33095,6 +33423,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "f0ee02ee07e6ccbf": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Holiday lights display at Filoli, probably for young children.",
+  "epic": false,
+  "family_fit": 30
+ },
  "f0fd685cc862af4a": {
   "adult_interest": 85,
   "adults_only": true,
@@ -33254,6 +33590,14 @@
   "blurb": "Stand-up comedy at Callback Bar, 18+ only, not family-friendly.",
   "epic": false,
   "family_fit": 0
+ },
+ "f258a7e0fc7422ed": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Wine tasting at a historic estate for adults.",
+  "epic": false,
+  "family_fit": 20
  },
  "f270eddafba8b194": {
   "adult_interest": 50,
