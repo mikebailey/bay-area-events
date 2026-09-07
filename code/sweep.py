@@ -37,6 +37,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from config import HOME_LABEL, ROOT, USER_AGENT
+import holidays
 import store
 from sources.base import BROWSER_UA, clean_text, make_event
 import geo
@@ -106,6 +107,67 @@ Never invent a URL, and never give me a search-results page or a homepage.
 Rules:
 - Only include events you actually found on a page you read. If you are not \
 confident an event is real and happening on that date, leave it out.
+- Do not include recurring weekly things (regular farmers markets, weekly \
+trivia nights, standing museum hours).
+- Aim for 15 to 30 genuinely interesting events. Quality over quantity.
+
+A script reads your reply, not a person. The response shape is enforced by a \
+schema, so just fill it in: one entry per event, and nothing you cannot \
+support with a page you actually read."""
+
+
+# A holiday is the case the ordinary sweep serves worst. The feeds carry
+# whatever is ticketed, and the things a family actually does on Labor Day --
+# a county-line art fair, a Highland games, a small-town parade -- are annual,
+# locally famous, and often listed nowhere machine-readable. The Scottish
+# Highland Gathering in Pleasanton is the worked example: 160 years old,
+# on every local news site that weekend, in none of our eight sources.
+HOLIDAY_PROMPT = """\
+Search the web for what is happening in the Bay Area over {holiday}, which this \
+year runs {start} to {end}.
+
+I am looking for a family based in {home} with kids aged 9 to 14. This is one of \
+the handful of days in the year when all of us are off work and school at once, \
+so it is worth planning properly rather than deciding on the morning.
+
+IMPORTANT — what makes this search worth doing. I already pull every major \
+ticketing feed and event calendar automatically (Ticketmaster, DoTheBay, \
+Funcheap, and museum calendars), so I have the concerts and the stadium \
+sports. What those feeds structurally cannot give me is the annual holiday \
+event: the thing that has run every {holiday} for forty years, that every \
+local knows about, and that appears only in a newspaper roundup and its own \
+ageing website.
+
+Concentrate on:
+- Annual traditions tied to this specific holiday — festivals, fairs, games, \
+parades, county-fair-scale events, cultural celebrations, art shows.
+- Holiday roundups from SFGate, the San Francisco Chronicle, TimeOut SF, The \
+Mercury News, Palo Alto Online, Berkeleyside, and local parent blogs.
+- Anything that needs tickets bought in advance, or that sells out.
+- Places worth going precisely because it is a holiday: open houses, free \
+admission days, special hours.
+
+Also tell me if something big is happening that we would regret missing even if \
+it is a longer drive than usual — this is a day we would make the trip.
+
+For each event, report:
+  title        — the event name
+  date         — YYYY-MM-DD, the specific day it happens. If it runs several \
+days, give one entry per day it is open.
+  time         — HH:MM 24-hour if stated, otherwise null
+  venue        — the venue name if stated, otherwise null
+  city         — the Bay Area city or town
+  price        — a number in dollars for the cheapest adult entry, 0 if free, \
+null if not stated
+  url          — a WORKING link to a page about this event. This is required. \
+Prefer the event's own page or the venue's page; a news article is acceptable. \
+Never invent a URL, and never give me a search-results page or a homepage.
+  why          — one sentence on why this family might like it
+
+Rules:
+- Only include events you actually found on a page you read. If you are not \
+confident an event is real and happening on that date, leave it out.
+- Every event must fall between {start} and {end}.
 - Do not include recurring weekly things (regular farmers markets, weekly \
 trivia nights, standing museum hours).
 - Aim for 15 to 30 genuinely interesting events. Quality over quantity.
@@ -281,12 +343,26 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--days", type=int, default=10)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--holiday", action="store_true",
+                    help="sweep the next family holiday instead of the next ten days")
+    ap.add_argument("--within-days", type=int, default=21,
+                    help="with --holiday, how far ahead to look for one (default 21)")
     args = ap.parse_args()
 
     cli = find_claude()
     start = date.today()
     end = start + timedelta(days=args.days)
     prompt = PROMPT.format(start=start, end=end, home=HOME_LABEL)
+
+    if args.holiday:
+        hday, hname = holidays.next_family_day(start, within_days=args.within_days + 1)
+        if not hday:
+            print("No family holiday within %d days. Nothing to sweep." % args.within_days)
+            return
+        span = holidays.span_for(hday) or (hday, hday)
+        start, end = max(span[0], date.today()), span[1]
+        prompt = HOLIDAY_PROMPT.format(holiday=hname, start=start, end=end, home=HOME_LABEL)
+        print("Holiday sweep: %s (%s to %s)" % (hname, start, end))
 
     print("Sweeping %s to %s via %s" % (start, end, cli))
     payload = run_claude(prompt, cli)

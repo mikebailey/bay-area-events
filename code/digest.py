@@ -27,20 +27,25 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import holidays
 from config import HOME_LABEL, ROOT, SITE
 from fetch import load_env
 
 SITE_URL = "https://bayarea.michaelbailey.org"
 PREVIEW_PATH = ROOT / "outputs" / "digest-preview.html"
 
-# Same weighting the page uses, so the email agrees with what you see there.
-DAY_WEIGHT = {6: 1.00, 5: 0.70, 4: 0.45, 0: 0.35, 1: 0.35, 2: 0.35, 3: 0.35}
-
 
 def day_weight(ev):
-    # Sunday is worth nearly as much as Saturday for a family weekend.
-    d = datetime.fromisoformat(ev["start"]).date()
-    return 0.85 if d.weekday() == 6 else DAY_WEIGHT.get(d.weekday(), 0.35)
+    """Straight from holidays.py, which is also what build.py bakes into the
+    page, so the email and the site rank days identically.
+
+    This used to be a local copy of the page's table, and it was quietly wrong:
+    the page indexes by JavaScript's getDay() (Sunday 0) and the copy was keyed
+    on Python's weekday() (Monday 0), so every weight sat one day off. Saturday
+    was being ranked at Friday's 0.70 and Friday at Thursday's 0.45. Importing
+    the one implementation is the fix, and the reason there is now only one.
+    """
+    return holidays.day_weight(ev["start"])
 
 
 def proximity(ev):
@@ -105,31 +110,106 @@ def fmt_where(ev):
     return where
 
 
-def build_sections(events):
-    """The digest is four short lists, not one long one."""
-    week = upcoming(events)
-    weekend = [e for e in week
-               if datetime.fromisoformat(e["start"]).date().weekday() in (5, 6)]
+def shorten(text, limit):
+    """Trim a title for the subject line at a word boundary.
 
-    top = pick(weekend or week, 6)
+    A hard slice cut "... in the Redwoods (Sept. 5-7)" to "... (Sept", which
+    reads as a broken template rather than a long title.
+    """
+    text = " ".join((text or "").split())
+    if len(text) <= limit:
+        return text
+    cut = text[:limit].rsplit(" ", 1)[0].rstrip(" ,-–—(\"'")
+    return (cut or text[:limit].rstrip()) + "…"
+
+
+def on_day(events, day):
+    return [e for e in events if e["start"][:10] == day.isoformat()]
+
+
+def in_span(events, first, last):
+    return [e for e in events
+            if first.isoformat() <= e["start"][:10] <= last.isoformat()]
+
+
+def build_sections(events, days=9, focus=None):
+    """The digest is four short lists, not one long one.
+
+    When a family holiday falls inside the window the shape changes: the lead
+    section becomes the long weekend rather than just Saturday and Sunday, and
+    the holiday itself gets a section of its own. Labor Day is why. It landed on
+    a Monday, so it sat outside the weekend filter entirely and the one day the
+    whole family was off never appeared in the email at all.
+
+    `focus` narrows the whole digest to one (first, last) span. The early
+    holiday edition goes out a fortnight ahead, so without it every section
+    fills up with this coming Saturday -- perfectly good events, and not what an
+    email about Thanksgiving is for.
+    """
+    today = date.today()
+    if focus:
+        week = in_span(events, *focus)
+        # Look for the holiday inside the span, not from today. Searching from
+        # today finds whichever holiday is soonest, which on a holiday is the
+        # one you are currently standing in rather than the one being previewed.
+        search_from, horizon = focus
+    else:
+        week = upcoming(events, days=days)
+        search_from, horizon = today, today + timedelta(days=days)
+
+    holiday = next(iter(holidays.family_days_between(search_from, horizon)), None)
+
+    if holiday:
+        hday, hname = holiday
+        span = holidays.span_for(hday)
+        first, last = span if span else (hday, hday)
+        first = max(first, today)          # a span that already started is history
+
+        # The holiday itself first and on its own, so it cannot be crowded out
+        # by a Saturday that simply has more listings.
+        holiday_evs = pick(on_day(week, hday), 5)
+
+        # The rest of the long weekend, when there is one left. Once the weekend
+        # has been and gone -- reading this on the holiday itself -- repeating
+        # the same day under a second heading says nothing, so the section
+        # widens instead: to the week in the ordinary digest, or to more of the
+        # same day in a holiday edition that is only ever about that one day.
+        if first != last:
+            lead_title = "%s weekend" % hname
+            lead_pool = in_span(week, first, last)
+        else:
+            lead_title = "More on the day" if focus else "Also this week"
+            lead_pool = week
+
+        top = pick(lead_pool, 6, exclude=holiday_evs)
+        sections = [("On %s" % hname, holiday_evs), (lead_title, top)]
+        claimed = holiday_evs + top
+    else:
+        weekend = [e for e in week
+                   if datetime.fromisoformat(e["start"]).date().weekday() in (5, 6)]
+        top = pick(weekend or week, 6)
+        sections = [("This weekend", top)]
+        claimed = top
+
     backyard = pick(week, 4,
                     where=lambda e: e.get("drive") is not None and e["drive"] <= 20,
-                    exclude=top)
+                    exclude=claimed)
     adults = pick(week, 3, key=lambda e: e.get("adultScore") or 0,
-                  where=lambda e: e.get("dateNight"), exclude=top + backyard)
-    # Anything the pipeline only discovered in the last week is worth calling
-    # out: it is precisely what you would not have seen otherwise.
-    cutoff = (date.today() - timedelta(days=7)).isoformat()
-    fresh = pick(week, 4,
-                 where=lambda e: (e.get("firstSeen") or "") >= cutoff and e["score"] >= 60,
-                 exclude=top + backyard + adults)
+                  where=lambda e: e.get("dateNight"), exclude=claimed + backyard)
+    tail = [("In your backyard", backyard), ("For the two of you", adults)]
 
-    return [
-        ("This weekend", top),
-        ("In your backyard", backyard),
-        ("For the two of you", adults),
-        ("Newly found this week", fresh),
-    ]
+    # Anything the pipeline only discovered in the last week is worth calling
+    # out: it is precisely what you would not have seen otherwise. Meaningless
+    # in the holiday edition, which is about one weekend rather than about what
+    # has changed since the last email.
+    if not focus:
+        cutoff = (date.today() - timedelta(days=7)).isoformat()
+        fresh = pick(week, 4,
+                     where=lambda e: (e.get("firstSeen") or "") >= cutoff and e["score"] >= 60,
+                     exclude=claimed + backyard + adults)
+        tail.append(("Newly found this week", fresh))
+
+    return sections + tail
 
 
 def render_html(sections, meta):
@@ -161,7 +241,7 @@ def render_html(sections, meta):
         "<html><body style='margin:0;background:#f7f7f5'>"
         "<div style='max-width:600px;margin:0 auto;padding:24px 18px;"
         "font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#191918'>"
-        "<h1 style='font-size:21px;margin:0 0 2px'>Bay Area, the week ahead</h1>"
+        "<h1 style='font-size:21px;margin:0 0 2px'>%s</h1>"
         "<div style='color:#777;font-size:13px'>from %s · %s</div>"
         "%s"
         "<div style='margin-top:30px;padding-top:14px;border-top:1px solid #ddd;"
@@ -169,12 +249,12 @@ def render_html(sections, meta):
         "<a href='%s' style='color:#2f6f4f'>See everything on the site</a> · "
         "%d events tracked · drive times are estimates"
         "</div></div></body></html>"
-        % (esc(HOME_LABEL), esc(date.today().strftime("%B %d, %Y")),
+        % (esc(meta["heading"]), esc(HOME_LABEL), esc(date.today().strftime("%B %d, %Y")),
            "".join(blocks), SITE_URL, meta["total"]))
 
 
 def render_text(sections, meta):
-    lines = ["Bay Area, the week ahead", "from %s" % HOME_LABEL, ""]
+    lines = [meta["heading"], "from %s" % HOME_LABEL, ""]
     for title, evs in sections:
         if not evs:
             continue
@@ -240,24 +320,61 @@ def main():
     ap.add_argument("--send", action="store_true", help="actually send the email")
     ap.add_argument("--to", help="override the recipient")
     ap.add_argument("--open", action="store_true", help="open the preview in a browser")
+    ap.add_argument("--holiday", action="store_true",
+                    help="early holiday edition; does nothing unless a family holiday "
+                         "is exactly --lead-days away, so it can be run daily")
+    ap.add_argument("--lead-days", type=int, default=12,
+                    help="how far ahead the holiday edition goes out (default 12)")
     args = ap.parse_args()
 
     load_env()
     data, events = load_events()
-    sections = build_sections(events)
-    meta = {"total": len(events)}
+
+    today = date.today()
+    window = 9
+    focus = None
+    heading = "Bay Area, the week ahead"
+    label = "This weekend"
+
+    if args.holiday:
+        # Fires on exactly one day per holiday, which is what lets the daily job
+        # call this unconditionally without sending the same email a fortnight
+        # running. Far enough out that tickets are still buyable.
+        target = today + timedelta(days=args.lead_days)
+        if not holidays.is_family_day(target):
+            print("No family holiday on %s (%d days out). Nothing to send."
+                  % (target, args.lead_days))
+            return
+        name = holidays.status(target)["name"] or "the holiday"
+        span = holidays.span_for(target) or (target, target)
+        focus = span
+        heading = "%s is coming up" % name
+        label = name
+        print("Holiday edition: %s, %s to %s, %d days out"
+              % (name, span[0], span[1], args.lead_days))
+
+    sections = build_sections(events, days=window, focus=focus)
+    meta = {"total": len(events), "heading": heading}
 
     kept = sum(len(v) for _, v in sections)
     if not kept:
-        print("Nothing to send: no events in the next nine days.")
+        print("Nothing to send: no events in the next %d days." % window)
         return
+
+    # Without a holiday, the lead section is still "This weekend". With one, the
+    # subject should say which holiday, since that is the reason to open it.
+    if not args.holiday:
+        upcoming_holiday = next(
+            iter(holidays.family_days_between(today, today + timedelta(days=window))), None)
+        if upcoming_holiday:
+            label = upcoming_holiday[1]
 
     html_body = render_html(sections, meta)
     text_body = render_text(sections, meta)
     top = next((v for t, v in sections if v), [])
-    lead = top[0]["title"] if top else "the week ahead"
-    subject = "This weekend: %s%s" % (
-        lead[:52], " and %d more" % (kept - 1) if kept > 1 else "")
+    lead = shorten(top[0]["title"], 52) if top else "the week ahead"
+    subject = "%s: %s%s" % (
+        label, lead, " and %d more" % (kept - 1) if kept > 1 else "")
 
     PREVIEW_PATH.parent.mkdir(parents=True, exist_ok=True)
     PREVIEW_PATH.write_text(html_body, encoding="utf-8")

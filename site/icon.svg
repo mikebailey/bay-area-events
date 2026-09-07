@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Bay Area Things To Do">
+  <!-- Home-screen icon: the bridge at dusk, drawn in the site's own palette.
+       Ink ground (#16181c) and the sports orange (#eb6834) that already carries
+       one of the three event types, so the icon and the page look related.
+
+       Full-bleed square on purpose. iOS and Android apply their own corner
+       mask, so rounding the artwork here would only inset it inside theirs.
+
+       Drawn rather than traced, and deliberately heavy: nothing is thinner than
+       about 16 units, which is ~5px once rendered at 180. Real suspension-cable
+       proportions disappear entirely at that size.
+
+       The cable is three quadratics sharing endpoints at the tower tops, and it
+       anchors at deck level off both edges. Anchoring it higher reads as a hump
+       floating over the bridge rather than as a cable. Every suspender below is
+       placed at a point actually on those curves, worked out from the Bezier
+       rather than eyeballed, which is why they meet the cable instead of
+       hanging near it. -->
+
+  <rect width="512" height="512" fill="#16181c"/>
+
+  <!-- Haze at the horizon. One flat band, not a gradient: gradients gain
+       visible steps when a launcher rescales a small PNG. -->
+  <rect y="286" width="512" height="92" fill="#1c212a"/>
+
+  <!-- Bay. Deep blue, a relative of the music hue, so it reads as water without
+       introducing a colour the palette has not already cleared. -->
+  <rect y="378" width="512" height="134" fill="#16324e"/>
+  <g fill="#2a78d6" opacity="0.45">
+    <rect x="40"  y="416" width="150" height="9" rx="4.5"/>
+    <rect x="252" y="440" width="196" height="9" rx="4.5"/>
+    <rect x="96"  y="466" width="104" height="9" rx="4.5"/>
+  </g>
+
+  <!-- Suspenders. Individually too fine to resolve at icon size, where they
+       just add weight under the cable; they earn their place at 512. -->
+  <g stroke="#eb6834" stroke-width="8" opacity="0.5" stroke-linecap="round">
+    <path d="M 23 316 V 348"/>
+    <path d="M 59 267 V 348"/>
+    <path d="M 96 203 V 348"/>
+    <path d="M 164 200 V 348"/>
+    <path d="M 194 255 V 348"/>
+    <path d="M 225 289 V 348"/>
+    <path d="M 287 289 V 348"/>
+    <path d="M 318 255 V 348"/>
+    <path d="M 348 200 V 348"/>
+    <path d="M 416 203 V 348"/>
+    <path d="M 453 267 V 348"/>
+    <path d="M 489 316 V 348"/>
+  </g>
+
+  <path d="M -12 348 Q 58 300 133 122 Q 256 478 379 122 Q 454 300 524 348"
+        fill="none" stroke="#eb6834" stroke-width="17" stroke-linecap="round"/>
+
+  <!-- Towers: two legs and crossbeams, not a solid slab. The gap between the
+       legs is what tells you it is a bridge tower and not a chimney. -->
+  <g fill="#eb6834">
+    <rect x="101" y="112" width="64" height="18"/>
+    <rect x="101" y="130" width="20" height="252"/>
+    <rect x="145" y="130" width="20" height="252"/>
+    <rect x="101" y="176" width="64" height="15"/>
+    <rect x="101" y="268" width="64" height="15"/>
+
+    <rect x="347" y="112" width="64" height="18"/>
+    <rect x="347" y="130" width="20" height="252"/>
+    <rect x="391" y="130" width="20" height="252"/>
+    <rect x="347" y="176" width="64" height="15"/>
+    <rect x="347" y="268" width="64" height="15"/>
+
+    <!-- Deck. The heaviest single element, so the silhouette survives being
+         shrunk to a browser-tab favicon. -->
+    <rect y="348" width="512" height="26"/>
+  </g>
+</svg>

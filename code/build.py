@@ -18,6 +18,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from config import (CACHE_PATH, FEEDBACK_PATH, DAY_TRIP_DRIVE_MAX_MIN, HOME_LABEL, HORIZON_DAYS,
                     LOCAL_DRIVE_MAX_MIN, SITE)
+import geo
+import holidays
 import store
 from sources.base import is_noise
 
@@ -47,7 +49,18 @@ def score_event(ev):
     score, reasons = 50, []
     title = ev["title"] or ""
 
+    # A source that gives us the area but not the address still tells us most of
+    # what proximity is for. "Somewhere on the Peninsula" is not the same claim
+    # as "we have no idea where this is", and treating them alike was pushing
+    # genuinely local events down: the Kings Mountain Art Fair, eleven minutes
+    # away, was carrying the unknown-location penalty.
     drive = ev["drive_minutes"]
+    if drive is None:
+        hint = geo.REGION_DRIVE_HINT.get(ev["region"])
+        if hint is not None:
+            drive = hint
+            reasons.append("%s, address unknown" % ev["region"])
+
     if drive is None:
         score -= 12
         reasons.append("location unknown")
@@ -367,6 +380,11 @@ def main():
     conn = store.connect()
     today = date.today()
     horizon = today + timedelta(days=HORIZON_DAYS)
+    # Makes additions to geo.CITY_COORDS retroactive for rows the feeds will
+    # never touch again, sweep results above all.
+    regeocoded = store.backfill_geo(conn)
+    if regeocoded:
+        print("  re-geocoded %d event(s) after a city-table update" % regeocoded)
     rows = store.upcoming(conn, today.isoformat(), horizon.isoformat())
     scores = load_scores()
 
@@ -436,11 +454,23 @@ def main():
         if section == "far":
             continue  # long drive, not big enough to be worth it
 
+        # A festival that opened on Saturday and runs through Monday is still
+        # something to do on the Monday, but it is stored under its opening day,
+        # so the page would file it in the past and never show it. Move it to
+        # today and say so. Classification above deliberately uses the real
+        # dates, since the true span is what makes something an exhibit.
+        start_local = ev["start_local"]
+        continuing = False
+        if start_local[:10] < today.isoformat():
+            start_local = today.isoformat() + start_local[10:]
+            continuing = True
+
         events.append({
             "id": ev["id"],
             "title": ev["title"],
-            "start": ev["start_local"],
+            "start": start_local,
             "end": ev["end_local"],
+            "continuing": continuing,
             "allDay": bool(ev["all_day"]),
             "venue": ev["venue"],
             "city": ev["city"],
@@ -478,6 +508,12 @@ def main():
         "home": HOME_LABEL,
         "horizonDays": HORIZON_DAYS,
         "localDriveMax": LOCAL_DRIVE_MAX_MIN,
+        # The day table and the region hints are baked in so the page applies
+        # exactly the weights Python computed. The alternative -- a second copy
+        # of the holiday calendar in JavaScript -- is the kind of duplication
+        # that agrees on the day it is written and quietly diverges after.
+        "days": holidays.calendar_for(today, horizon),
+        "regionDriveHint": geo.REGION_DRIVE_HINT,
         "counts": {
             s: sum(1 for e in events if e["section"] == s)
             for s in ("week", "month", "later", "daytrip", "ongoing")

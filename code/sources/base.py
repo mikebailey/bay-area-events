@@ -106,12 +106,17 @@ def price_band(price_min, is_free):
 
 
 def make_event(*, source, title, start_local, url, end_local=None, venue=None, city=None,
-               lat=None, lon=None, category=None, tags=None, price_min=None, price_max=None,
-               is_free=False, image=None, description=None, all_day=False):
+               lat=None, lon=None, region=None, category=None, tags=None, price_min=None,
+               price_max=None, is_free=False, image=None, description=None, all_day=False):
     """Normalize one raw record into the shared event shape.
 
     Fills in coordinates from the city table when the source gave none, then
     derives region and drive time from whatever location we ended up with.
+
+    `region` is for sources that publish one directly. Funcheap tags every post
+    with its area, which is the only location a good number of its listings
+    carry at all, so it beats the "Unknown" a missing city would otherwise
+    produce. A city, when we have one, still wins: it is more specific.
     """
     title = clean_text(title, 200)
     if not title or not start_local:
@@ -123,8 +128,9 @@ def make_event(*, source, title, start_local, url, end_local=None, venue=None, c
             lat, lon = c
 
     drive = geo.drive_minutes(HOME, (lat, lon)) if lat is not None and lon is not None else None
-    region = geo.region_for_city(city) if city else (
+    derived = geo.region_for_city(city) if city else (
         geo.region_for_city(venue) if venue else "Unknown")
+    region = derived if derived not in ("Unknown", "Farther Afield") else (region or derived)
 
     if is_free or (price_min is not None and price_min <= 0):
         is_free = True

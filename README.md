@@ -98,6 +98,26 @@ Recorded because each one cost real debugging time and none is documented anywhe
 - **Funcheap sells sponsored posts that sit in the listing like events**
   ("$35 for Locally-Run Independent Internet Service"). Filtered on the
   `sponsored` category and deal-shaped titles.
+- **Funcheap tags every post with its region** (`category-peninsula`,
+  `category-east-bay`, ...) and this is the most reliable location signal on the
+  page — better than the title, which is where the city used to be read from.
+  It was being parsed and then thrown away: regions arrived as ordinary tags,
+  the tag list is sorted alphabetically and capped at six, and `peninsula`
+  sorted last. Pulled out before the cap now.
+- **The Funcheap meta line carries a venue** after the cost
+  (`<span class="cost">Cost: FREE</span> | <span>Kings Mountain Fire
+  Station</span>`), which for a lot of listings is the only location present at
+  all. It used to be discarded outright.
+- **Multi-day events are posted once, on their opening day**, and
+  `data-event-date-end` is usually just that day's closing time. The real span
+  lives in the title: "(Sept. 5-7)". Parsed as a fallback end date, because
+  without it a two-day festival vanishes from the site halfway through — which
+  is how the 160th Scottish Highland Gathering disappeared on the Sunday it was
+  running.
+- **Some venues are named after a place they are not in.** The Alameda County
+  Fairgrounds is in Pleasanton, 25 miles from Alameda, and `coords_for_city`
+  falls back to substring matching. `geo.VENUE_CITY` corrects the handful that
+  matter; only add an entry when the name is actively misleading.
 - **Eventbrite has had no public event-search API since 2020** and blocks
   scraping. DoTheBay is the legitimate route to part of that inventory.
 - **The SF Peninsula tourism board API is closed.** It runs Simpleview, whose
@@ -127,6 +147,82 @@ It is also the better model. "Family-friendly" is not a peer of "music", it is a
 property a concert can have. **Do not add a fourth hue without re-running
 `validate_palette.js`.** Every row also names its type in text, so color is never
 the sole encoding.
+
+## Holidays: the days that actually matter
+
+The page used to weight a day purely by where it sat in the week — Saturday
+1.00, Monday 0.35. That is a fine proxy and it fails on precisely the days worth
+planning around. Labor Day 2026 was a Monday, so every event on the one day the
+whole family was off got divided by three and buried under a Tuesday concert.
+
+So `code/holidays.py` replaces "is it Saturday" with "how free are we", from two
+calendars:
+
+| Calendar | Says | Source |
+|---|---|---|
+| MIT Institute Holidays | Mike is off | [hr.mit.edu/holidays](https://hr.mit.edu/holidays) |
+| MPCSD instructional calendar | the kids are off | [district.mpcsd.org/calendar](https://district.mpcsd.org/calendar) |
+
+**Neither one alone is the answer, and the mismatches are the point.** Patriots'
+Day is an MIT holiday and an ordinary school day in California: Mike is free,
+the kids are not, so it is a date-day and scores 0.55. Spring break is the
+reverse and scores 0.50. Only the overlap gets a Saturday-grade 1.00.
+
+Two smaller rules do real work. **The evening before a family day** is worth far
+more than its weekday slot suggests, because what makes a Sunday night bad is
+the Monday morning after it — so the Sunday of Labor Day weekend goes to 0.95.
+And **a holiday never demotes a day**: the weight is a floor over the
+day-of-week baseline, never a replacement, so a holiday landing on a Saturday
+changes nothing.
+
+Both calendars are transcribed rather than computed. No generic US-holiday
+library knows that MIT observes Patriots' Day, and none of them knows when
+MPCSD schedules its staff development days. **Refresh both once a year.**
+
+Going stale degrades in two stages, deliberately. Past the end of the school
+calendar, the holidays *every* California district closes for — Labor Day,
+Thanksgiving, Christmas and the rest — are still treated as family days, so the
+common cases keep working for a year; Veterans Day and Indigenous Peoples' Day
+are not on that list, because MPCSD closes for them and plenty of districts do
+not, and guessing wrong there is the exact error this module exists to avoid.
+Past the end of the MIT calendar too, every day falls back to its plain
+day-of-week weight.
+
+The interesting failure here was the first attempt at that fallback: "outside
+the published school year" was open-ended, so every date after June 2027 was
+classified as summer forever. That lifted every weekday in 2028 from 0.35 to
+0.42 and labelled Christmas 2028 a summer holiday. A calendar has to know the
+range it covers, not just its contents.
+
+`build.py` bakes the resulting weights into `events.json` as a `days` table and
+the page reads them from there. The alternative — a second copy of the holiday
+calendar in JavaScript — is the kind of duplication that agrees on the day it is
+written and quietly diverges afterwards. That is not hypothetical here: the
+digest was carrying its own copy of the day weights, keyed on Python's
+`weekday()` while the page indexed by JavaScript's `getDay()`, so every weight
+sat one day off and Saturday was being ranked at Friday's number. There is one
+implementation now.
+
+What a holiday changes, once it is known:
+
+- **The page** gives it its own heading rather than collapsing it into
+  "Weekdays", the cream weekend background, and a banner naming the long
+  weekend and how many events fall on the day itself.
+- **The digest** leads with "On Labor Day" as a section of its own, so the
+  holiday cannot be crowded out by a Saturday that simply has more listings,
+  and the subject line names it.
+- **An early edition** goes out twelve days ahead (`digest.py --holiday`),
+  which is the lead time the Thursday-before digest cannot give you for
+  anything that sells out. It is a no-op unless a family holiday falls exactly
+  twelve days out, so the daily job can just run it every day.
+- **The sweep** gets a holiday-specific prompt (`sweep.py --holiday`) aimed at
+  annual traditions rather than weekend roundups.
+
+```bash
+python code/holidays.py                    # print the next year of free days
+python code/digest.py --holiday            # preview the early edition
+python code/sweep.py --holiday --dry-run   # what the holiday sweep would add
+```
 
 ## Ranking: local model, no API
 
@@ -206,22 +302,48 @@ it really has been cancelled and should disappear.
 would otherwise start empty each day and reset every `first_seen`, silently
 breaking the digest's "newly found this week" section.
 
+## On the phone
+
+The page is installable. Open it, then **Share → Add to Home Screen**, and it
+gets a bridge icon that opens without browser chrome. iOS reads the `apple-*`
+tags and ignores the manifest entirely; Android reads the manifest. Both are in
+`site/index.html`.
+
+The artwork is `site/icon.svg`, drawn by hand in the site's own palette — the
+ink ground and the sports orange that already carries one of the three event
+types. To change it, edit the SVG and re-render:
+
+```bash
+python code/make_icons.py
+```
+
+That finds Chrome or Edge on any of the three platforms. Two things that look
+like bugs and are not: each size is rendered at its own CSS size, because
+scaling one 512px render down with `--force-device-scale-factor` silently
+produces a blank PNG; and the page background matches the SVG ground, so a
+rounding seam at the canvas edge is invisible rather than white.
+
 ## Status
 
-**Phase 1 complete, plus the agenda redesign.** Eight sources, roughly 2,250
-events in a 120-day window. The page is a day-grouped agenda: sticky day headers,
-a scrollable date strip showing per-day counts, weekend emphasis, aligned time and
-price rails, colored type bars, and text badges. Filters for drive time, type, and
-attributes.
+**Phases 1-3 complete, plus holiday mode and the home-screen icon.** Eight
+sources, roughly 2,200 events in a 120-day window. The page is a day-grouped
+agenda: sticky day headers, weekend and holiday emphasis, aligned time and price
+rails, colored type bars, and text badges. Filters for drive time, type, and
+attributes. Installable to the phone home screen.
 
 Live at `bayarea.michaelbailey.org` (Cloudflare CNAME -> mikebailey.github.io,
 DNS-only/grey cloud -- proxying breaks GitHub's certificate validation).
 
 Still open:
-- **AI sweep** for editorial listicles (SFGate, Chronicle, TimeOut weekend
-  roundups). This is the real gap against a Google "what's on this weekend"
-  search, since no feed carries that content. Blocked on an Anthropic API key.
+- **Filoli 404s** (noticed 2026-09-07). The other four Events Calendar venues
+  are fine, so this is a URL change at their end rather than the shared parser.
+- **The Peninsula and Tri-Valley coverage gap.** There are zero Pleasanton
+  events in the store at all, which is how the 160th Scottish Highland
+  Gathering — 160 years old, at the Alameda County Fairgrounds, on every local
+  news site over Labor Day weekend — was invisible. The holiday sweep is the
+  route to this class of event; more feeds are not.
 - **More museum calendars.** Exploratorium, Cal Academy, and The Tech publish no
   machine-readable feed at all; SFMoMA exposes `wp-json` exhibitions but hides
   their dates in unexposed ACF fields. All need HTML scraping.
-- **Phase 3**: Thursday digest email, add-to-calendar links, DNS, Actions cron.
+- **Add-to-calendar links.**
+- **Refresh both holiday calendars** when MIT and MPCSD publish 2027-28.

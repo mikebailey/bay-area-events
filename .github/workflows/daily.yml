@@ -100,3 +100,20 @@ jobs:
           else
             echo "Not Thursday; skipping the digest."
           fi
+
+      # The early holiday edition, for the days the whole family is off. Twelve
+      # days is enough lead time to buy tickets for the things that sell out,
+      # which is exactly what the Thursday-before digest is too late for.
+      #
+      # Run unconditionally: `--holiday` does nothing at all unless a family
+      # holiday falls exactly twelve days out, so this sends one email per
+      # holiday rather than fourteen. The gate lives in digest.py, next to the
+      # holiday calendar that decides it, rather than in shell date arithmetic
+      # here that could not see the school calendar anyway.
+      - name: Send the early holiday edition
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          DIGEST_TO: ${{ secrets.DIGEST_TO }}
+          PYTHONUTF8: "1"
+        run: python code/digest.py --send --holiday

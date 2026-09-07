@@ -10,7 +10,7 @@ has already seen. That gives us three things a stateless rebuild cannot:
 """
 import json
 import sqlite3
-from datetime import date
+from datetime import date, timedelta
 
 from config import DB_PATH
 
@@ -125,9 +125,58 @@ def latest_runs(conn):
     ).fetchall()
 
 
-def upcoming(conn, today_iso, horizon_iso):
+def backfill_geo(conn):
+    """Re-resolve rows that have a city but no coordinates.
+
+    The feeds re-derive location on every fetch, but sweep results are written
+    once and never refetched, so a row stored before its town existed in
+    geo.CITY_COORDS keeps a null drive time forever. That is how the Labor Day
+    sweep's Roaring Camp find sat at "location unknown" while Felton was sitting
+    in the table. Running this at build time makes additions to the city table
+    retroactive, which is what anyone adding one would expect.
+
+    Returns the number of rows updated.
+    """
+    import geo
+    from config import HOME
+
+    rows = conn.execute(
+        "SELECT id, city, venue FROM events WHERE lat IS NULL AND"
+        " (city IS NOT NULL OR venue IS NOT NULL)"
+    ).fetchall()
+
+    fixed = 0
+    for r in rows:
+        coords = geo.coords_for_city(r["city"] or r["venue"])
+        if not coords:
+            continue
+        region = geo.region_for_city(r["city"] or r["venue"])
+        conn.execute(
+            "UPDATE events SET lat=?, lon=?, drive_minutes=?, region=? WHERE id=?",
+            (coords[0], coords[1], geo.drive_minutes(HOME, coords), region, r["id"]))
+        fixed += 1
+    if fixed:
+        conn.commit()
+    return fixed
+
+
+def upcoming(conn, today_iso, horizon_iso, lookback_days=30):
+    """Everything still worth showing: not yet over, and starting before the horizon.
+
+    Selecting on the END date, not the start, is what keeps a multi-day festival
+    on the page for its second and third days. Filtering on start_local alone
+    made the Scottish Highland Games disappear on the Sunday they were running,
+    because Funcheap posts a two-day event once, dated to its opening day.
+
+    The look-back is bounded so a long-running exhibit with a stale end date
+    cannot drag the whole archive forward.
+    """
+    floor = (date.fromisoformat(today_iso[:10]) - timedelta(days=lookback_days)).isoformat()
     return conn.execute(
-        "SELECT * FROM events WHERE date(start_local) >= date(?) AND date(start_local) <= date(?)"
+        "SELECT * FROM events"
+        " WHERE date(COALESCE(end_local, start_local)) >= date(?)"
+        "   AND date(start_local) >= date(?)"
+        "   AND date(start_local) <= date(?)"
         " ORDER BY start_local",
-        (today_iso, horizon_iso),
+        (today_iso, floor, horizon_iso),
     ).fetchall()

@@ -55,6 +55,25 @@ CITY_COORDS = {
     "sonoma": (38.2919, -122.4580), "napa": (38.2975, -122.2869),
     "st helena": (38.5052, -122.4703), "calistoga": (38.5788, -122.5797),
     "vallejo": (38.1041, -122.2566), "benicia": (38.0494, -122.1586),
+    # Small towns the editorial sweep turns up and the ticketing feeds never do.
+    # Added 2026-09-07 after a Labor Day sweep returned Roaring Camp at Felton,
+    # a Bolinas BBQ and a Nicasio concert, all of which arrived with no drive
+    # time at all and were ranked as though their location were unknown.
+    "felton": (37.0513, -122.0736), "ben lomond": (37.0891, -122.0864),
+    "boulder creek": (37.1258, -122.1219), "scotts valley": (37.0511, -122.0147),
+    "aptos": (36.9772, -121.8994), "soquel": (36.9880, -121.9566),
+    "la honda": (37.3188, -122.2739), "pescadero": (37.2552, -122.3833),
+    "san gregorio": (37.3266, -122.3803), "loma mar": (37.2666, -122.3086),
+    "moss beach": (37.5233, -122.5133), "el granada": (37.5027, -122.4692),
+    "montara": (37.5422, -122.5061),
+    "bolinas": (37.9091, -122.6864), "nicasio": (38.0596, -122.6983),
+    "point reyes station": (38.0669, -122.8069), "olema": (38.0399, -122.7869),
+    "stinson beach": (37.9007, -122.6442), "fairfax": (37.9871, -122.5889),
+    "san anselmo": (37.9746, -122.5616), "ross": (37.9624, -122.5550),
+    "kentfield": (37.9527, -122.5572), "tiburon": (37.8735, -122.4566),
+    "briones": (37.9327, -122.1441), "pleasant hill": (37.9480, -122.0608),
+    "moraga": (37.8349, -122.1297), "piedmont": (37.8244, -122.2316),
+    "albany": (37.8869, -122.2977), "el cerrito": (37.9161, -122.3108),
     # Day-trip range
     "santa cruz": (36.9741, -122.0308), "capitola": (36.9752, -121.9533),
     "watsonville": (36.9102, -121.7569), "monterey": (36.6002, -121.8947),
@@ -71,7 +90,9 @@ REGIONS = {
     "Peninsula": ["menlo park", "palo alto", "east palo alto", "atherton", "redwood city",
                   "san carlos", "belmont", "san mateo", "foster city", "burlingame", "millbrae",
                   "hillsborough", "woodside", "portola valley", "half moon bay", "pacifica",
-                  "south san francisco", "san bruno", "daly city", "brisbane", "stanford"],
+                  "south san francisco", "san bruno", "daly city", "brisbane", "stanford",
+                  "la honda", "pescadero", "san gregorio", "loma mar", "moss beach",
+                  "el granada", "montara"],
     "San Francisco": ["san francisco", "sf"],
     "South Bay": ["mountain view", "los altos", "sunnyvale", "santa clara", "san jose",
                   "cupertino", "campbell", "saratoga", "los gatos", "milpitas", "morgan hill",
@@ -79,12 +100,48 @@ REGIONS = {
     "East Bay": ["oakland", "berkeley", "emeryville", "alameda", "fremont", "hayward",
                  "san leandro", "union city", "newark", "richmond", "walnut creek", "concord",
                  "pleasanton", "livermore", "dublin", "danville", "orinda", "lafayette",
-                 "san ramon", "castro valley", "martinez", "antioch"],
+                 "san ramon", "castro valley", "martinez", "antioch",
+                 "briones", "pleasant hill", "moraga", "piedmont", "albany",
+                 "el cerrito"],
     "North Bay": ["sausalito", "mill valley", "san rafael", "novato", "larkspur", "corte madera",
                   "petaluma", "santa rosa", "sonoma", "napa", "st helena", "calistoga", "vallejo",
-                  "benicia", "bodega bay", "point reyes", "guerneville"],
+                  "benicia", "bodega bay", "point reyes", "guerneville",
+                  "bolinas", "nicasio", "point reyes station", "olema",
+                  "stinson beach", "fairfax", "san anselmo", "ross",
+                  "kentfield", "tiburon"],
 }
 _CITY_TO_REGION = {c: r for r, cities in REGIONS.items() for c in cities}
+
+# Venues whose name contains a place they are not in. coords_for_city() falls
+# back to substring matching, so without this the Alameda County Fairgrounds
+# geocodes to Alameda rather than Pleasanton, 25 miles away. Only worth an entry
+# when the name is actively misleading, not merely unrecognised.
+VENUE_CITY = {
+    "alameda county fairgrounds": "pleasanton",
+    "san mateo county event center": "san mateo",
+    "santa clara county fairgrounds": "san jose",
+    "sonoma county fairgrounds": "santa rosa",
+    "marin center": "san rafael",
+    "cow palace": "daly city",
+    "shoreline amphitheatre": "mountain view",
+    "kings mountain": "woodside",
+    "stanford shopping center": "palo alto",
+    "moffett field": "mountain view",
+    "great america": "santa clara",
+}
+
+# A typical drive to somewhere in each region, for the case where a source names
+# the region but not the town. Used for RANKING ONLY and never displayed: a
+# Peninsula event with no address is genuinely close and should not be shrugged
+# off with the same penalty as an event whose location we know nothing about.
+# Displaying these would be claiming a precision we do not have.
+REGION_DRIVE_HINT = {
+    "Peninsula": 25,
+    "South Bay": 30,
+    "San Francisco": 50,
+    "East Bay": 50,
+    "North Bay": 65,
+}
 
 
 def normalize_city(name):
@@ -98,6 +155,17 @@ def normalize_city(name):
     return s or None
 
 
+def city_for_venue(name):
+    """The town a well-known venue is actually in, or None."""
+    c = normalize_city(name)
+    if not c:
+        return None
+    for venue, city in VENUE_CITY.items():
+        if venue in c:
+            return city
+    return None
+
+
 def coords_for_city(name):
     """Look up a city's coordinates, tolerating "Downtown San Jose" style noise."""
     c = normalize_city(name)
@@ -105,6 +173,11 @@ def coords_for_city(name):
         return None
     if c in CITY_COORDS:
         return CITY_COORDS[c]
+    # A venue named after somewhere it is not must be resolved before the
+    # substring pass below gets hold of it.
+    venue_city = city_for_venue(c)
+    if venue_city:
+        return CITY_COORDS[venue_city]
     # Substring match, longest city name first so "san jose" wins over "san".
     for city in sorted(CITY_COORDS, key=len, reverse=True):
         if city in c:
@@ -118,6 +191,9 @@ def region_for_city(name):
         return "Unknown"
     if c in _CITY_TO_REGION:
         return _CITY_TO_REGION[c]
+    venue_city = city_for_venue(c)
+    if venue_city:
+        return _CITY_TO_REGION.get(venue_city, "Farther Afield")
     for city in sorted(_CITY_TO_REGION, key=len, reverse=True):
         if city in c:
             return _CITY_TO_REGION[city]

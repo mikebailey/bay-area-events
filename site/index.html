@@ -5,6 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Bay Area Things To Do</title>
+
+<!-- Home-screen install. Share -> Add to Home Screen on the phone gives a
+     bridge icon that opens without browser chrome. iOS reads the apple-* tags
+     and ignores the manifest entirely; Android reads the manifest. Both are
+     needed. Artwork is site/icon.svg; code/make_icons.py renders the PNGs. -->
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="icon-180.png">
+<!-- Both spellings: Chrome deprecated the apple- prefixed one in favour of the
+     standard name, and iOS still reads only the apple- one. -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Bay Area">
+<!-- "default", not "black-translucent": translucent puts the page under the
+     status bar and needs safe-area maths to keep the sticky filter row from
+     colliding with the clock. Not worth it for what is mostly a list. -->
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#16181c">
 <style>
   /* ---------------------------------------------------------------------
      Type colors are the three hues (plus a neutral) that pass all-pairs
@@ -113,8 +132,27 @@
     border:1px solid var(--line-strong); border-radius:8px;
     font-weight:700; font-size:14px; letter-spacing:-0.01em;
   }
+  /* Holiday banner. Accent-tinted rather than loud: it should read as a note on
+     the page, not as an alert. */
+  .holbanner {
+    display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;
+    margin:14px 0 2px; padding:9px 12px; border-radius:9px;
+    background:var(--weekend); border:1px solid var(--line-strong);
+  }
+  .holbanner .hname { font-weight:700; font-size:15px; color:var(--accent); }
+  .holbanner .hwhen { font-size:12.5px; color:var(--muted); }
+  .holbanner .hjump {
+    margin-left:auto; font-size:12.5px; color:var(--accent);
+    text-decoration:none; border-bottom:1px solid currentColor;
+  }
   .dayhead.wknd { background:var(--weekend); }
   .dayhead .cnt { font-weight:400; font-size:12px; color:var(--faint); margin-left:auto; }
+  /* Holiday name beside the date. Set in the accent rather than given a badge
+     of its own: it labels the day, it is not a property of any one event. */
+  .dayhead .hol, .hgroup .hnote.hol {
+    font-weight:600; font-size:12px; color:var(--accent); margin-left:8px;
+    letter-spacing:0;
+  }
   .ev {
     display:grid; grid-template-columns:60px 3px minmax(0,1fr) auto;
     gap:0 10px; align-items:start; padding:7px 8px 7px 4px;
@@ -244,7 +282,22 @@ const VIEWS = [
 // A Saturday event is worth planning around; a Tuesday one rarely is. These
 // weights are what stop Highlights from being a flat top-20 dominated by
 // whichever day happens to carry the most listings. Index is JS getDay(): Sun..Sat.
+//
+// This is only the fallback. The real weights come from DATA.days, which
+// code/holidays.py computes from the MIT and school calendars and bakes into
+// events.json, so a day the whole family is off is weighted like a Saturday
+// rather than like whatever weekday it lands on. Labor Day 2026 is the case
+// this exists for: a Monday at 0.35 buried every event on the one day everyone
+// was free. Keeping the rules in one place, in Python, is deliberate — the
+// obvious alternative is a second copy of the holiday calendar here, which
+// agrees on the day it is written and silently drifts afterwards.
 const DAY_WEIGHT = [0.85, 0.35, 0.35, 0.35, 0.45, 0.70, 1.00];
+const dayInfo   = k => (DATA.days || {})[k] || null;
+const holidayOf = k => (dayInfo(k) || {}).n || null;
+// "family" means both calendars are clear. An MIT-only holiday is a real day
+// off for one person and an ordinary school day for everyone else, so it does
+// not get weekend treatment on the page.
+const isFamilyDay = k => ((dayInfo(k) || {}).k) === "family";
 const HIGHLIGHT_COUNT = 20;
 const HIGHLIGHT_MAX_PER_DAY = 6;   // stops one huge Saturday taking every slot
 const WEEKDAY_PREVIEW = 3;         // Mon-Thu collapse to their best few
@@ -256,11 +309,20 @@ const RAIL_COUNT = 7;
 // 10 minutes away beats a slightly better thing an hour away — which is how
 // the family actually chooses.
 const BACKYARD_MIN = 20;
+// Where the exact drive time is unknown but the source told us the area, rank
+// on a typical drive to that area. Displayed nowhere: it is good enough to sort
+// by and not good enough to print as a number.
+function driveForRank(ev) {
+  if (ev.drive !== null) return ev.drive;
+  const hint = (DATA.regionDriveHint || {})[ev.region];
+  return hint === undefined ? null : hint;
+}
 function proximityBoost(ev) {
-  if (ev.drive === null) return 0.9;      // unknown location, mild penalty
-  if (ev.drive <= BACKYARD_MIN) return 1.30;
-  if (ev.drive <= 35) return 1.10;
-  if (ev.drive <= 60) return 1.00;
+  const drive = driveForRank(ev);
+  if (drive === null) return 0.9;         // genuinely unknown location, mild penalty
+  if (drive <= BACKYARD_MIN) return 1.30;
+  if (drive <= 35) return 1.10;
+  if (drive <= 60) return 1.00;
   return 0.85;
 }
 const isBackyard = ev => ev.drive !== null && ev.drive <= BACKYARD_MIN;
@@ -290,10 +352,21 @@ const fMonthDay = new Intl.DateTimeFormat(undefined,{month:"short", day:"numeric
 const fTime     = new Intl.DateTimeFormat(undefined,{hour:"numeric", minute:"2-digit"});
 const TYPE_LABEL = {music:"Music", arts:"Arts", sports:"Sports", other:"Event"};
 
+// Everything else on this page builds text with textContent. The few places
+// that assemble a heading with innerHTML go through here instead.
+const esc = s => String(s).replace(/[&<>"]/g, c =>
+  ({"&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;"}[c]));
+
 const dayKey    = ev => ev.start.slice(0,10);
 const asDate    = k  => new Date(k + "T12:00:00");
 const isWeekend = k  => [0,6].includes(asDate(k).getDay());
-const dayWeight = ev => DAY_WEIGHT[asDate(dayKey(ev)).getDay()];
+// A family holiday gets the same emphasis a weekend does everywhere on the
+// page: the cream day background, its own heading, and no weekday collapsing.
+const isBigDay  = k  => isWeekend(k) || isFamilyDay(k);
+const dayWeight = ev => {
+  const k = dayKey(ev), info = dayInfo(k);
+  return info && info.w !== undefined ? info.w : DAY_WEIGHT[asDate(k).getDay()];
+};
 
 function matches(ev) {
   if (filters.drive !== null && (ev.drive === null || ev.drive > filters.drive)) return false;
@@ -341,9 +414,12 @@ function pickHighlights(evs) {
 function highlightGroups(list) {
   const buckets = new Map();
   for (const e of list) {
-    const dow = asDate(dayKey(e)).getDay();
-    const ownDay = dow === 0 || dow === 5 || dow === 6;   // Sun, Fri, Sat
-    const key = ownDay ? dayKey(e) : "weekdays";
+    const k = dayKey(e), dow = asDate(k).getDay();
+    // Sun, Fri, Sat, and any day the whole family is off. A holiday Monday
+    // collapsing into "Weekdays" was the original complaint: the one day
+    // everybody was free got filed with the Tuesdays.
+    const ownDay = dow === 0 || dow === 5 || dow === 6 || isFamilyDay(k);
+    const key = ownDay ? k : "weekdays";
     if (!buckets.has(key)) buckets.set(key, []);
     buckets.get(key).push(e);
   }
@@ -359,11 +435,24 @@ function highlightGroups(list) {
         : fDow.format(asDate(days[0]));
       groups.push({key, label:"Weekdays", note:span, sort:first, events:evs});
     } else {
-      groups.push({key, label:fDayFull.format(asDate(key)), note:null,
-                   sort:key, events:evs, weekend:isWeekend(key)});
+      groups.push({key, label:fDayFull.format(asDate(key)), note:holidayOf(key),
+                   holiday:!!holidayOf(key), sort:key, events:evs,
+                   weekend:isBigDay(key)});
     }
   }
   return groups.sort((a,b) => a.sort.localeCompare(b.sort));
+}
+
+// "THROUGH SUN" on anything that runs past the day it is filed under. Worth
+// saying for its own sake, and it is also what makes the multi-day handling
+// legible: an event that opened before today is moved to today so it does not
+// sit in the past, and without this it would look like a one-day thing that
+// happens to be on now.
+function runLabel(ev) {
+  if (!ev.end) return "";
+  const last = ev.end.slice(0, 10);
+  if (last <= dayKey(ev)) return "";
+  return " · through " + fDow.format(asDate(last)).toUpperCase();
 }
 
 function placeholder(ev) {
@@ -395,7 +484,7 @@ function highlightCard(ev) {
   when.className = "hwhen";
   const d = new Date(ev.start);
   when.textContent = fDayShort.format(d).toUpperCase() +
-    (ev.allDay ? "" : " · " + fTime.format(d));
+    (ev.allDay ? "" : " · " + fTime.format(d)) + runLabel(ev);
   body.appendChild(when);
 
   const t = document.createElement("div");
@@ -428,6 +517,7 @@ function eventRow(ev) {
   t.className = "time";
   t.textContent = ev.allDay ? "all day" : fTime.format(new Date(ev.start));
   el.appendChild(t);
+  const run = runLabel(ev);
 
   const bar = document.createElement("div");
   bar.className = "bar " + ev.type;
@@ -447,7 +537,7 @@ function eventRow(ev) {
   meta.appendChild(ty);
   const where = [ev.venue, ev.city].filter(Boolean).join(", ") || "location not listed";
   meta.appendChild(document.createTextNode(
-    " · " + where + (ev.drive !== null ? " · " + ev.drive + " min" : "")));
+    " · " + where + (ev.drive !== null ? " · " + ev.drive + " min" : "") + run));
   body.appendChild(meta);
 
   if (ev.blurb) {
@@ -488,14 +578,17 @@ function renderAllEvents(container, evs) {
     sec.className = "day"; sec.id = "d-" + k;
 
     const h = document.createElement("div");
-    h.className = "dayhead" + (isWeekend(k) ? " wknd" : "");
-    h.innerHTML = "<span>" + fDayFull.format(asDate(k)) + "</span>" +
+    h.className = "dayhead" + (isBigDay(k) ? " wknd" : "");
+    const holiday = holidayOf(k);
+    h.innerHTML = "<span>" + fDayFull.format(asDate(k)) +
+                  (holiday ? '<span class="hol">' + esc(holiday) + "</span>" : "") + "</span>" +
                   '<span class="cnt">' + list.length + "</span>";
     sec.appendChild(h);
 
-    // Fri/Sat/Sun stay fully expanded. Mon-Thu collapse to their best few,
-    // because a Tuesday with 22 listings is 22 rows of things nobody attends.
-    const bigDay = isWeekend(k) || asDate(k).getDay() === 5;
+    // Fri/Sat/Sun and family holidays stay fully expanded. Mon-Thu collapse to
+    // their best few, because a Tuesday with 22 listings is 22 rows of things
+    // nobody attends.
+    const bigDay = isBigDay(k) || asDate(k).getDay() === 5;
     const collapsed = !bigDay && !expandedDays.has(k) && list.length > WEEKDAY_PREVIEW;
     const shown = collapsed
       ? list.slice().sort((a,b) => b.score - a.score).slice(0, WEEKDAY_PREVIEW)
@@ -597,6 +690,64 @@ function renderRail(evs) {
   }
 }
 
+/* ---------------- holidays ---------------- */
+
+// A holiday is easy to miss precisely because it sits on a weekday. This calls
+// out the next family day off, and the long weekend around it, so the point of
+// looking at all is visible before you start scrolling. Shown only within a
+// fortnight: further out it is trivia, not a plan.
+const HOLIDAY_HORIZON_DAYS = 14;
+
+function nextHoliday() {
+  const today = new Date().toISOString().slice(0, 10);
+  const keys = Object.keys(DATA.days || {}).sort();
+  for (const k of keys) {
+    if (k < today) continue;
+    if (!isFamilyDay(k)) continue;
+    const days = (asDate(k) - asDate(today)) / 86400000;
+    if (days > HOLIDAY_HORIZON_DAYS) return null;   // keys are sorted, so no later one qualifies
+    return {key: k, name: holidayOf(k) || "holiday", days: Math.round(days)};
+  }
+  return null;
+}
+
+// The contiguous run of free days around a holiday: weekends and family days
+// either side of it. Labor Day Monday gives back the Saturday before it.
+// Clamped to today, since a span that opens with two days you have already
+// spent is a description of the past, not a plan.
+function freeSpan(key) {
+  const today = new Date().toISOString().slice(0, 10);
+  const free = k => isWeekend(k) || isFamilyDay(k);
+  const shift = (k, n) => new Date(asDate(k).getTime() + n * 86400000)
+    .toISOString().slice(0, 10);
+  let first = key, last = key;
+  while (free(shift(first, -1)) && shift(first, -1) >= today) first = shift(first, -1);
+  while (free(shift(last, 1))) last = shift(last, 1);
+  return [first, last];
+}
+
+function holidayBanner(evs) {
+  const hol = nextHoliday();
+  if (!hol) return null;
+  const [first, last] = freeSpan(hol.key);
+  const onDay = evs.filter(e => dayKey(e) === hol.key).length;
+  if (!onDay) return null;
+
+  const when = hol.days === 0 ? "today"
+             : hol.days === 1 ? "tomorrow"
+             : "in " + hol.days + " days";
+  const span = first === last ? "" :
+    fDayShort.format(asDate(first)) + " – " + fDayShort.format(asDate(last));
+
+  const el = document.createElement("div");
+  el.className = "holbanner";
+  el.innerHTML =
+    '<span class="hname">' + esc(hol.name) + "</span>" +
+    '<span class="hwhen">' + when + (span ? " · " + esc(span) : "") + "</span>" +
+    '<a class="hjump" href="#d-' + hol.key + '">' + onDay + " on the day</a>";
+  return el;
+}
+
 /* ---------------- render ---------------- */
 
 function render() {
@@ -611,20 +762,24 @@ function render() {
     return;
   }
 
+  const banner = holidayBanner(evs);
+  if (banner) main.appendChild(banner);
+
   const highlights = pickHighlights(evs);
   if (highlights.length) {
     const band = document.createElement("div");
     band.className = "band";
     const h = document.createElement("h2");
     h.className = "sec";
-    h.innerHTML = "Highlights <span class='n'>best of " + evs.length +
-                  ", weighted to the weekend</span>";
+    h.innerHTML = "Highlights <span class='n'>best of " + evs.length + ", weighted to " +
+                  (banner ? "the long weekend" : "the weekend") + "</span>";
     band.appendChild(h);
     highlightGroups(highlights).forEach(g => {
       const head = document.createElement("div");
       head.className = "hgroup" + (g.weekend ? " wknd" : "");
-      head.innerHTML = "<span>" + g.label + "</span>" +
-        (g.note ? '<span class="hnote">' + g.note + "</span>" : "") +
+      head.innerHTML = "<span>" + esc(g.label) + "</span>" +
+        (g.note ? '<span class="hnote' + (g.holiday ? " hol" : "") + '">' +
+                  esc(g.note) + "</span>" : "") +
         '<span class="hcount">' + g.events.length + "</span>";
       band.appendChild(head);
 

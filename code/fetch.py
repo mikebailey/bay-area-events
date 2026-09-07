@@ -72,19 +72,48 @@ _TITLE_SUFFIX = re.compile(
     re.I)
 
 
+# The same edition qualifier also turns up at the FRONT, and differently per
+# source: Funcheap writes '2026 "Kings Mountain Art Fair"' where the sweep
+# writes "63rd Annual Kings Mountain Art Fair". Neither the prefix test nor the
+# word-set test can see those as one event, so the fair took the top two slots
+# on Labor Day. Stripping a leading year or ordinal makes both normalize to the
+# same string. Safe because candidates are already bucketed by day, so two
+# genuinely different years can never be compared in the first place.
+_TITLE_PREFIX = re.compile(
+    r"^\s*(?:"
+    r"(?:19|20)\d{2}\s*(?:[-–—:|]\s*)?"      # a leading year
+    r"|\d{1,3}(?:st|nd|rd|th)\s+annual\s+"   # "63rd Annual"
+    r"|\d{1,3}(?:st|nd|rd|th)\s+"            # a bare ordinal
+    r"|annual\s+"
+    r")",
+    re.I)
+
+
 def _norm_title(t):
     t = (t or "").strip()
     prev = None
     while prev != t:            # a title can carry two qualifiers
         prev = t
         t = _TITLE_SUFFIX.sub("", t).strip()
+        t = _TITLE_PREFIX.sub("", t).strip()
     return re.sub(r"[^a-z0-9]+", "", t.lower())[:40]
+
+
+# Numbers and month names in a title are edition and date markers, not identity:
+# "2026", "63rd", "Sept". Two listings of one event routinely disagree about
+# them and agree about everything else.
+_EDITION_TOKEN = re.compile(r"^(?:\d+(?:st|nd|rd|th)?)$")
+_MONTHS = {"jan", "january", "feb", "february", "mar", "march", "apr", "april",
+           "may", "jun", "june", "jul", "july", "aug", "august", "sep", "sept",
+           "september", "oct", "october", "nov", "november", "dec", "december"}
 
 
 def _word_set(t):
     """Significant words of a title, for order-insensitive comparison."""
     words = re.findall(r"[a-z0-9]+", (t or "").lower())
-    return {w for w in words if len(w) > 2 and w not in _STOPWORDS}
+    return {w for w in words
+            if len(w) > 2 and w not in _STOPWORDS and w not in _MONTHS
+            and not _EDITION_TOKEN.match(w)}
 
 
 _STOPWORDS = {"the", "and", "for", "with", "featuring", "presents", "annual"}
