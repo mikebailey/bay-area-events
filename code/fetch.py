@@ -24,6 +24,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from config import FUNCHEAP_MAX_DAYS, HORIZON_DAYS, ROOT, TRIBE_VENUES
 import store
+import sweep
 from sources import dothebay, filoli, funcheap, ticketmaster, tribe
 
 
@@ -58,6 +59,11 @@ def build_registry():
     # WordPress and the shared Events Calendar parser cannot reach them.
     reg.append(("filoli", "Filoli", filoli.fetch))
     reg.append(("dothebay", "DoTheBay", dothebay.fetch))
+    # The editorial sweep replayed from its tracked cache. The expensive half
+    # (Claude, web search) already ran on a machine with a session; this just
+    # reads the file, so it works identically in CI and keeps sweep finds alive
+    # across the daily cloud rebuild.
+    reg.append(("sweep", "Editorial sweep (cached)", sweep.replay))
     reg.append(("funcheap", "Funcheap (day archives)",
                 lambda ws, we: funcheap.fetch(ws, we, FUNCHEAP_MAX_DAYS)))
     return reg

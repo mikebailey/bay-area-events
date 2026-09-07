@@ -12,6 +12,13 @@ DB_PATH = DATA / "events.db"
 # and text, so it diffs cleanly.
 CACHE_PATH = ROOT / "cache" / "scores.json"
 
+# Verified editorial-sweep finds. Tracked in git for the same reason as the
+# scores above: sweep.py runs on this machine because it needs a Claude session,
+# and writes to data/events.db, which is gitignored -- so before this file
+# existed every sweep find was invisible to the cloud build and was wiped out by
+# the next daily commit. Twenty-one Labor Day finds died that way on 2026-09-07.
+SWEEP_PATH = ROOT / "cache" / "sweep.json"
+
 # Mike's own judgments about specific events. Tracked in git, edited by hand.
 # Used twice: as hard overrides at build time, and as worked examples in the
 # scoring prompt so a correction generalises instead of applying once.

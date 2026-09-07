@@ -36,7 +36,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from config import HOME_LABEL, ROOT, USER_AGENT
+from config import HOME_LABEL, ROOT, SWEEP_PATH, USER_AGENT
 import holidays
 import store
 from sources.base import BROWSER_UA, clean_text, make_event
@@ -339,6 +339,68 @@ def to_event(raw):
     )
 
 
+def _key_title(title):
+    """Lowercased alphanumerics, for matching one event across two sweeps."""
+    return re.sub(r"[^a-z0-9]+", "", str(title or "").lower())[:60]
+
+
+def load_cached():
+    """Verified finds from previous sweeps, as the raw records the model returned."""
+    if not SWEEP_PATH.exists():
+        return []
+    try:
+        return json.loads(SWEEP_PATH.read_text(encoding="utf-8")).get("events") or []
+    except (json.JSONDecodeError, OSError):
+        print("WARNING: cache/sweep.json is malformed; treating it as empty")
+        return []
+
+
+def save_cached(records):
+    """Merge new finds in, drop anything whose day has passed, write it back.
+
+    The RAW model records are stored rather than the normalized events, so a
+    replay re-derives location through the current geo tables. That is what lets
+    an addition to CITY_COORDS reach a find that was stored months earlier.
+
+    Keyed on date plus normalized title, NOT url. The whole point of the sweep
+    is mining editorial roundups, so five genuinely different events routinely
+    cite one "7 fun things to do this weekend" article as their source. Keying
+    on url silently collapsed exactly that case, which is the one find the feeds
+    could never have produced.
+    """
+    today = date.today().isoformat()
+    merged = {}
+    for r in list(load_cached()) + list(records):
+        day = str(r.get("date") or "")[:10]
+        if day < today:
+            continue                      # already happened; nothing to keep
+        merged[(day, _key_title(r.get("title")))] = r
+
+    out = sorted(merged.values(), key=lambda r: (str(r.get("date")), str(r.get("title"))))
+    SWEEP_PATH.parent.mkdir(parents=True, exist_ok=True)
+    SWEEP_PATH.write_text(
+        json.dumps({"updated": today, "events": out}, indent=1, ensure_ascii=False),
+        encoding="utf-8")
+    return len(out)
+
+
+def replay(window_start, window_end):
+    """The sweep as an ordinary source, so its finds survive a cloud rebuild.
+
+    fetch.py runs this every time, on any machine. Nothing here needs Claude:
+    the expensive part already happened and its results are in the tracked file.
+    """
+    out = []
+    for raw in load_cached():
+        day = str(raw.get("date") or "")[:10]
+        if not (window_start.isoformat() <= day <= window_end.isoformat()):
+            continue
+        ev = to_event(raw)
+        if ev:
+            out.append(ev)
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--days", type=int, default=10)
@@ -369,7 +431,7 @@ def main():
     found = payload.get("events") or []
     print("Claude returned %d events; verifying links...\n" % len(found))
 
-    kept, dropped = [], []
+    kept, kept_raw, dropped = [], [], []
     for raw in found:
         ev = to_event(raw)
         if not ev:
@@ -379,6 +441,7 @@ def main():
             dropped.append((ev["title"], "link did not resolve"))
             continue
         kept.append(ev)
+        kept_raw.append(raw)
         print("  ok   %-52s %s  %s" % (ev["title"][:52], ev["start_local"][:10],
                                        ev["city"] or "?"))
 
@@ -390,6 +453,13 @@ def main():
         print("(dry run: nothing stored)")
         return
     if kept:
+        # The tracked file is the one that matters. data/events.db is gitignored
+        # and CI rebuilds from its own cache, so anything living only there is
+        # invisible to the cloud and gets overwritten by the next daily commit.
+        total = save_cached(kept_raw)
+        print("Cached: %d find(s) -> %s (%d live entries)"
+              % (len(kept_raw), SWEEP_PATH.name, total))
+
         conn = store.connect()
         new, updated = store.upsert_events(conn, kept)
         store.record_run(conn, "sweep", True, len(kept))
