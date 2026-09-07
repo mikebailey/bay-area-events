@@ -15239,6 +15239,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "6d129d65ae7802da": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Hip-hop show at a venue with 21+ age restriction.",
+  "epic": false,
+  "family_fit": 0
+ },
  "6d312f0fd51f8b77": {
   "adult_interest": 70,
   "adults_only": true,
@@ -33942,6 +33950,14 @@
   "blurb": "Free Neil Diamond tribute concert in Healdsburg.",
   "epic": false,
   "family_fit": 60
+ },
+ "f4e25af7870f326f": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Hip-hop show at a venue with 21+ age restriction.",
+  "epic": false,
+  "family_fit": 0
  },
  "f516c075eb344f43": {
   "adult_interest": 85,
