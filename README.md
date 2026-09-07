@@ -319,6 +319,55 @@ python code/enrich.py --limit 50    # small trial batch
 python code/enrich.py --rescore     # discard cached scores and redo
 ```
 
+### The sweep needs the same treatment, and did not have it
+
+`cache/scores.json` was tracked from the start. `sweep.py` was not: it wrote
+only to `data/events.db`, which is gitignored, so CI rebuilt from its own cached
+database, produced a page without any sweep find in it, and its daily commit
+overwrote whatever the local build had produced. Every editorial find was gone
+within hours. Twenty-one verified Labor Day finds died that way on 2026-09-07 --
+Roaring Camp, Gilroy Gardens, Black Diamond Mines -- none of which any feed
+carries, which is the entire reason the sweep exists.
+
+`cache/sweep.json` fixes it, and `sweep.replay()` is registered in `fetch.py` as
+an ordinary source so the finds are re-injected on every run, on any machine.
+Two details worth keeping:
+
+- It stores the **raw records the model returned**, not the normalized events,
+  so a replay re-derives location through the current `geo` tables. Adding a
+  town to `CITY_COORDS` reaches a find stored months earlier.
+- It is keyed on **date plus normalized title, not url**. The first cut keyed on
+  url and silently collapsed five distinct events, because all five cited the
+  same "7 fun things to do this weekend" article. Mining editorial roundups is
+  the point of the sweep, so that is precisely the case the key must get right.
+
+### The scheduled local pass
+
+`code/local_daily.py` is the unattended version of the two jobs that cannot run
+in Actions. Registered on this PC as the Task Scheduler job
+**`BayAreaEvents-LocalDaily`**, daily at 07:30, with *start when available* so a
+machine that was off catches up rather than skipping.
+
+```bash
+python code/local_daily.py            # do whatever is due today
+python code/local_daily.py --dry-run  # say what it would do, change nothing
+```
+
+It is self-gating in the same style as `digest.py --holiday`: run it every day
+and let it decide. A holiday sweep fires once, roughly seventeen days out, which
+is comfortably before the early digest goes at twelve. The window is a range so
+a missed day does not skip the holiday, and `already_swept()` reads
+`cache/sweep.json` to make sure it fires **once** and not on all five days --
+that mistake would have cost fifty Claude sweeps a year instead of nine.
+
+**It commits `cache/` and nothing else.** `site/events.json` is derived, Actions
+rebuilds and commits it daily, and having both ends write the same generated
+file is how you get a 6am rebase conflict with nobody watching. Committing only
+the inputs makes the two halves incapable of fighting. Every step fails soft:
+Ollama down or Claude not logged in costs a day of scoring, which costs nothing.
+
+The log is `outputs/local-daily.log`.
+
 ## Running it in the cloud
 
 `.github/workflows/daily.yml` runs at 13:00 UTC: fetch, build, commit
