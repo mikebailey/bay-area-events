@@ -255,6 +255,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "01f08fe8a410c3be": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Rock concert at The Fillmore.",
+  "epic": false,
+  "family_fit": 0
+ },
  "01f3b08dced5f176": {
   "adult_interest": 0,
   "adults_only": true,
@@ -334,6 +342,14 @@
   "blurb": "Comedy show for adults only.",
   "epic": false,
   "family_fit": 0
+ },
+ "026d4890f7cbc763": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free book talk about detective novel, suitable for teens.",
+  "epic": false,
+  "family_fit": 40
  },
  "026edefb5c29fa00": {
   "adult_interest": 10,
@@ -711,6 +727,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "05d7b5c7ebfd10e8": {
+  "adult_interest": 70,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Olivia Rodrigo concert in Sacramento.",
+  "epic": false,
+  "family_fit": 0
+ },
  "05dc5eb769a46ebe": {
   "adult_interest": 85,
   "adults_only": true,
@@ -788,6 +812,14 @@
   "adults_only": true,
   "audience": "adults",
   "blurb": "18+ comedy show at Punch Line Comedy Club in Sacramento.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "068b90e0806b2985": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Free classical music concert with no specific family appeal.",
   "epic": false,
   "family_fit": 0
  },
@@ -942,6 +974,14 @@
   "blurb": "Alternative music show at a San Francisco venue.",
   "epic": false,
   "family_fit": 0
+ },
+ "080795263ba9c305": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Line dancing night in SF bar, beginner-friendly.",
+  "epic": false,
+  "family_fit": 10
  },
  "08253afc7583f495": {
   "adult_interest": 60,
@@ -1110,6 +1150,14 @@
   "blurb": "Country concert with age restriction for minors.",
   "epic": false,
   "family_fit": 35
+ },
+ "093e73a76465b280": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Samara Joy with SF Symphony, Grammy-winning vocalist.",
+  "epic": false,
+  "family_fit": 10
  },
  "09535ca46ab934e2": {
   "adult_interest": 55,
@@ -2751,6 +2799,14 @@
   "epic": false,
   "family_fit": 40
  },
+ "15d7924e2f7a310b": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Free museum day for adults, not family-friendly.",
+  "epic": false,
+  "family_fit": 10
+ },
  "15db191e2ff9b48c": {
   "adult_interest": 85,
   "adults_only": true,
@@ -2902,6 +2958,14 @@
   "blurb": "DJ party with $1 drinks in North Beach.",
   "epic": false,
   "family_fit": 0
+ },
+ "173a28b30dd15183": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Acoustic music show, adults-only.",
+  "epic": false,
+  "family_fit": 10
  },
  "1744a41877289c52": {
   "adult_interest": 30,
@@ -3294,6 +3358,14 @@
   "blurb": "Stephen Malkmus show at a theater, $20-$30 ticket.",
   "epic": false,
   "family_fit": 0
+ },
+ "19f41a03d3fe6041": {
+  "adult_interest": 90,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Wine tasting at Filoli for adults only.",
+  "epic": false,
+  "family_fit": 10
  },
  "1a010eaf76d889dc": {
   "adult_interest": 65,
@@ -4452,6 +4524,14 @@
   "adults_only": true,
   "audience": "adults",
   "blurb": "18+ comedy show at a San Francisco club.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "226ede8e7f052616": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Musical about myths, not suitable for kids.",
   "epic": false,
   "family_fit": 0
  },
@@ -8063,6 +8143,14 @@
   "epic": false,
   "family_fit": 50
  },
+ "3ad43f0b0668f958": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Theatre show in Sacramento.",
+  "epic": false,
+  "family_fit": 30
+ },
  "3ae4782bbd15f500": {
   "adult_interest": 75,
   "adults_only": false,
@@ -8407,6 +8495,14 @@
   "epic": false,
   "family_fit": 30
  },
+ "3d8441432f772795": {
+  "adult_interest": 35,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Open mic night in Mill Valley, free.",
+  "epic": false,
+  "family_fit": 10
+ },
  "3d86075a37bf90ae": {
   "adult_interest": 85,
   "adults_only": false,
@@ -8446,6 +8542,14 @@
   "blurb": "Comedy show for adults only.",
   "epic": false,
   "family_fit": 0
+ },
+ "3db7ebf113f832da": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Art walk in Oakland with free museums and block party.",
+  "epic": false,
+  "family_fit": 70
  },
  "3dba36dddaada71f": {
   "adult_interest": 90,
@@ -8495,6 +8599,14 @@
   "epic": false,
   "family_fit": 30
  },
+ "3e10e4117efeab54": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Free darkwave dance party at Make-Out Room.",
+  "epic": false,
+  "family_fit": 0
+ },
  "3e15e35c428c0be3": {
   "adult_interest": 85,
   "adults_only": true,
@@ -8535,6 +8647,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "3e5fe4d482fee852": {
+  "adult_interest": 70,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Olivia Rodrigo concert in Sacramento.",
+  "epic": false,
+  "family_fit": 0
+ },
  "3e61624e933c43a7": {
   "adult_interest": 60,
   "adults_only": false,
@@ -8558,6 +8678,14 @@
   "blurb": "Wine tasting at historic garden, 21+.",
   "epic": false,
   "family_fit": 10
+ },
+ "3e7c233cbaaa7e03": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Filipino film with Q&A, not suitable for kids.",
+  "epic": false,
+  "family_fit": 0
  },
  "3e83c376d14db76a": {
   "adult_interest": 80,
@@ -8871,6 +8999,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "40db9ba3aa7d5186": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "R-rated movie about a historical whorehouse, not suitable for kids.",
+  "epic": false,
+  "family_fit": 0
+ },
  "4111b445048cad98": {
   "adult_interest": 75,
   "adults_only": false,
@@ -8924,6 +9060,14 @@
   "adults_only": false,
   "audience": "adults",
   "blurb": "Folk-rock band performance in San Francisco.",
+  "epic": false,
+  "family_fit": 10
+ },
+ "4162df7691b156e0": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Sewing class in Oakland, expensive.",
   "epic": false,
   "family_fit": 10
  },
@@ -9022,6 +9166,14 @@
   "blurb": "Monster Jam monster truck event in Sacramento.",
   "epic": false,
   "family_fit": 90
+ },
+ "422fa70a76676714": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Karaoke night at a 21+ bar.",
+  "epic": false,
+  "family_fit": 10
  },
  "424692e7bc9813ef": {
   "adult_interest": 85,
@@ -9198,6 +9350,14 @@
   "blurb": "GalaxyCon San Jose, Sunday.",
   "epic": false,
   "family_fit": 85
+ },
+ "43a38003eda8d061": {
+  "adult_interest": 90,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Wine tasting at Filoli for adults only.",
+  "epic": false,
+  "family_fit": 10
  },
  "43a5a6f398f5d711": {
   "adult_interest": 75,
@@ -9534,6 +9694,14 @@
   "blurb": "Free comedy night in downtown San Francisco.",
   "epic": false,
   "family_fit": 50
+ },
+ "459ec5f349f56016": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free games and activities at Union Square in San Francisco.",
+  "epic": false,
+  "family_fit": 60
  },
  "45aaad50040d379b": {
   "adult_interest": 75,
@@ -10007,6 +10175,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "48dc3560a619508d": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Maker Faire Bay Area 2026 is a major annual event for makers and inventors.",
+  "epic": true,
+  "family_fit": 80
+ },
  "48f82b125f3b13ef": {
   "adult_interest": 85,
   "adults_only": true,
@@ -10236,6 +10412,14 @@
   "adults_only": false,
   "audience": "all",
   "blurb": "Rod Stewart tribute concert in San Leandro.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "4a4c89ebd8776ca8": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Comedy show for adults only, 18+.",
   "epic": false,
   "family_fit": 0
  },
@@ -10503,6 +10687,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "4c4454f08bbc91eb": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Legal assistance group, not family-friendly.",
+  "epic": false,
+  "family_fit": 0
+ },
  "4c4f670af0e3cbff": {
   "adult_interest": 65,
   "adults_only": false,
@@ -10662,6 +10854,14 @@
   "blurb": "Herbie Hancock jazz concert at Louise M. Davies Symphony Hall.",
   "epic": false,
   "family_fit": 30
+ },
+ "4d2e11490b55bbc1": {
+  "adult_interest": 75,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Rockabilly-themed play with alien invasion plot, performed in SF.",
+  "epic": false,
+  "family_fit": 0
  },
  "4d3b5f12fe7ea79b": {
   "adult_interest": 80,
@@ -11391,6 +11591,14 @@
   "epic": false,
   "family_fit": 70
  },
+ "52997e3969669751": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Rum tasting dinner, not suitable for kids.",
+  "epic": false,
+  "family_fit": 0
+ },
  "52ac4f9b1f11f910": {
   "adult_interest": 60,
   "adults_only": false,
@@ -12014,6 +12222,14 @@
   "blurb": "The Wiz touring theater production at Harris Center.",
   "epic": false,
   "family_fit": 40
+ },
+ "567639d7f84db402": {
+  "adult_interest": 25,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Free darkwave dance party in Folsom, 158 minutes drive.",
+  "epic": false,
+  "family_fit": 0
  },
  "567fd1e53ae189cc": {
   "adult_interest": 60,
@@ -13422,6 +13638,14 @@
   "blurb": "Zach Noe Towers comedy show at Callback Bar, 18+ with ID.",
   "epic": false,
   "family_fit": 0
+ },
+ "5f9e0e80aaec3ae3": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Maker Faire Bay Area 2026 is a major annual event for makers and inventors.",
+  "epic": true,
+  "family_fit": 80
  },
  "5fa5056cb3232e12": {
   "adult_interest": 25,
@@ -15287,6 +15511,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "6d73ddf6c6be5a39": {
+  "adult_interest": 25,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Animal talk event at Novato tavern, free.",
+  "epic": false,
+  "family_fit": 85
+ },
  "6d83ab10bc6cf794": {
   "adult_interest": 70,
   "adults_only": false,
@@ -16919,6 +17151,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "78375e94451b5876": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Rock concert at The Fillmore.",
+  "epic": false,
+  "family_fit": 0
+ },
  "783e848de10eeb11": {
   "adult_interest": 0,
   "adults_only": true,
@@ -17399,6 +17639,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "7bd3e875bf4c8ab5": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Hockey game at Tech CU Arena.",
+  "epic": false,
+  "family_fit": 40
+ },
  "7bd55f8d5d1a33a7": {
   "adult_interest": 80,
   "adults_only": true,
@@ -17692,6 +17940,14 @@
   "adults_only": false,
   "audience": "teens",
   "blurb": "R&B show with special guests at Moe's Alley.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "7d9447553c354191": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Star Trek movie, not suitable for kids.",
   "epic": false,
   "family_fit": 0
  },
@@ -19807,6 +20063,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "8aa9451dada5a785": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Comedy night in Oakland, adults-only.",
+  "epic": false,
+  "family_fit": 10
+ },
  "8aaad274b7ffa949": {
   "adult_interest": 40,
   "adults_only": false,
@@ -19951,6 +20215,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "8bace12f5bfb8011": {
+  "adult_interest": 70,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Olivia Rodrigo concert with limited seating.",
+  "epic": false,
+  "family_fit": 0
+ },
  "8bc8d74ff7e485eb": {
   "adult_interest": 20,
   "adults_only": false,
@@ -20086,6 +20358,14 @@
   "blurb": "A Christmas-themed play for young children.",
   "epic": false,
   "family_fit": 40
+ },
+ "8cce877bc040aabe": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Street fair in SoMa with wrestling, deadlifts, and DJs.",
+  "epic": false,
+  "family_fit": 50
  },
  "8cee38a526b53617": {
   "adult_interest": 75,
@@ -21151,6 +21431,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "94a5e0ddc9d913aa": {
+  "adult_interest": 90,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Weezer concert in Sacramento, 135-minute drive.",
+  "epic": false,
+  "family_fit": 10
+ },
  "94a6cae9e8c0cfd3": {
   "adult_interest": 80,
   "adults_only": false,
@@ -21191,6 +21479,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "94dbf50cdc5e34bc": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Maker Faire Bay Area 2026 is a major annual event for makers and inventors.",
+  "epic": true,
+  "family_fit": 80
+ },
  "94dfdcbc2ee13236": {
   "adult_interest": 50,
   "adults_only": false,
@@ -21198,6 +21494,14 @@
   "blurb": "Free comedy night at Downtown SF, no specific performers listed.",
   "epic": false,
   "family_fit": 40
+ },
+ "952389ed337ed612": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Art film about an apartment building, not suitable for kids.",
+  "epic": false,
+  "family_fit": 0
  },
  "9532169240002fc4": {
   "adult_interest": 60,
@@ -21807,6 +22111,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "992c86d32c7ebc7b": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Wine tasting at Filoli, adults-only event.",
+  "epic": false,
+  "family_fit": 10
+ },
  "9934f57ed1f7ebe5": {
   "adult_interest": 85,
   "adults_only": true,
@@ -22054,6 +22366,14 @@
   "blurb": "Symphony in the Park with Mexican culture day in Golden Gate Park.",
   "epic": false,
   "family_fit": 75
+ },
+ "9b9529a3669573c1": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Happy endings writing showcase in SF, free.",
+  "epic": false,
+  "family_fit": 10
  },
  "9ba2585b806febf2": {
   "adult_interest": 85,
@@ -22503,6 +22823,14 @@
   "epic": false,
   "family_fit": 50
  },
+ "9f27c91f8acdaf50": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Wine tasting at Filoli estate in Woodside.",
+  "epic": false,
+  "family_fit": 70
+ },
  "9f2a475158223510": {
   "adult_interest": 45,
   "adults_only": false,
@@ -22534,6 +22862,14 @@
   "blurb": "Open mic comedy show at a 21+ venue.",
   "epic": false,
   "family_fit": 0
+ },
+ "9f52488af20f8646": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Matt Schofield Trio at Yoshi's Oakland, jazz.",
+  "epic": false,
+  "family_fit": 10
  },
  "9f527c845af12323": {
   "adult_interest": 40,
@@ -22644,6 +22980,14 @@
   "adults_only": true,
   "audience": "adults",
   "blurb": "Thundercat performs at Fox Theater in Oakland with an 18+ age restriction.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "9ff8f361776d3077": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Basketball game at Golden 1 Center.",
   "epic": false,
   "family_fit": 0
  },
@@ -23327,6 +23671,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "a614bb6dc9444215": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Dance/electronic event for 18+ only.",
+  "epic": false,
+  "family_fit": 0
+ },
  "a621115c3d0aada2": {
   "adult_interest": 80,
   "adults_only": false,
@@ -23478,6 +23830,14 @@
   "blurb": "Children's musical at a theater in Mill Valley.",
   "epic": false,
   "family_fit": 40
+ },
+ "a72513926b452f5a": {
+  "adult_interest": 55,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Indie band The Bug Club playing at Rickshaw Stop.",
+  "epic": false,
+  "family_fit": 0
  },
  "a72e0b3e4e2df795": {
   "adult_interest": 85,
@@ -24031,6 +24391,14 @@
   "epic": false,
   "family_fit": 75
  },
+ "aad7fd3d6f93c468": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Hip-hop show for 18+ only, no kids allowed.",
+  "epic": false,
+  "family_fit": 0
+ },
  "aadd6be4f57de6c7": {
   "adult_interest": 70,
   "adults_only": false,
@@ -24246,6 +24614,22 @@
   "blurb": "Horror movie screening of Pulse (2001) in Sacramento.",
   "epic": false,
   "family_fit": 40
+ },
+ "ac673422271664e9": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Musical about Henry VIII's wives, not suitable for kids.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "ac6ca8a707b2c817": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "StorySlam storytelling event in SF, free.",
+  "epic": false,
+  "family_fit": 10
  },
  "ac6eec388bd629f1": {
   "adult_interest": 70,
@@ -24711,6 +25095,14 @@
   "epic": false,
   "family_fit": 85
  },
+ "afdab94a98d74d34": {
+  "adult_interest": 90,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Punk band Bikini Kill performing at The Warfield.",
+  "epic": false,
+  "family_fit": 0
+ },
  "afdba0b26030b13f": {
   "adult_interest": 85,
   "adults_only": true,
@@ -24836,6 +25228,14 @@
   "adults_only": true,
   "audience": "adults",
   "blurb": "Rock concert with age restriction for under 21s.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "b178881448f45916": {
+  "adult_interest": 70,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Olivia Rodrigo concert with limited seating.",
   "epic": false,
   "family_fit": 0
  },
@@ -25670,6 +26070,14 @@
   "blurb": "Free Halloween night market with food and activities in Hayward.",
   "epic": false,
   "family_fit": 75
+ },
+ "b7da0c724a4e0863": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Sandcastle contest at Ocean Beach, free and annual.",
+  "epic": false,
+  "family_fit": 80
  },
  "b7dcc594b2e9bb4f": {
   "adult_interest": 60,
@@ -26631,6 +27039,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "bd81424e797a15dd": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free book talk about Hawaiian land rights, suitable for teens.",
+  "epic": false,
+  "family_fit": 40
+ },
  "bd819798f3ed486f": {
   "adult_interest": 85,
   "adults_only": true,
@@ -27519,6 +27935,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "c43ee57643fc8230": {
+  "adult_interest": 70,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Pop artist Slayyyter performing at The Regency Ballroom.",
+  "epic": false,
+  "family_fit": 0
+ },
  "c4635c6c21cd087c": {
   "adult_interest": 40,
   "adults_only": false,
@@ -27526,6 +27950,14 @@
   "blurb": "Starlight Nights at aviation museum with sky shows and stargazing.",
   "epic": false,
   "family_fit": 60
+ },
+ "c473c87cc2aca2a8": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Folk music concert at The Fillmore, adults-only.",
+  "epic": false,
+  "family_fit": 10
  },
  "c4740568a5339e82": {
   "adult_interest": 80,
@@ -28703,6 +29135,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "cd660a15597d5dae": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Rock concert at The Fillmore.",
+  "epic": false,
+  "family_fit": 0
+ },
  "cd7188a7c4988b22": {
   "adult_interest": 85,
   "adults_only": false,
@@ -28815,6 +29255,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "ce34023f5fdf3b5e": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only comedy show at a San Francisco venue.",
+  "epic": false,
+  "family_fit": 0
+ },
  "ce61815205fb600e": {
   "adult_interest": 60,
   "adults_only": false,
@@ -28879,6 +29327,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "ceb9d6713da639f8": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Open mic night at a bar, not suitable for kids.",
+  "epic": false,
+  "family_fit": 0
+ },
  "cec6fd56df64dea4": {
   "adult_interest": 40,
   "adults_only": false,
@@ -28894,6 +29350,14 @@
   "blurb": "Planetarium show about the sun for ages 6+.",
   "epic": false,
   "family_fit": 75
+ },
+ "ceebffdf93c11e57": {
+  "adult_interest": 90,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Wine tasting at Filoli for adults only.",
+  "epic": false,
+  "family_fit": 10
  },
  "ceee87af1a63477b": {
   "adult_interest": 70,
@@ -29630,6 +30094,14 @@
   "blurb": "Blessing of the Animals event in SF.",
   "epic": false,
   "family_fit": 50
+ },
+ "d3db2a95aa46a253": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Free sports history talk with a legendary sportswriter.",
+  "epic": false,
+  "family_fit": 0
  },
  "d40bea80e0569310": {
   "adult_interest": 80,
@@ -31215,6 +31687,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "def3826e2f709af6": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Blues music show at a San Francisco bar, adults-only after 9pm.",
+  "epic": false,
+  "family_fit": 10
+ },
  "defa31df4c32b275": {
   "adult_interest": 70,
   "adults_only": false,
@@ -31430,6 +31910,14 @@
   "blurb": "Roger Clyne and PH Naffah perform at Moe's Alley.",
   "epic": false,
   "family_fit": 0
+ },
+ "e153c3ac6d91c1b7": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Oktoberfest with a kids zone and 21+ area in Walnut Creek.",
+  "epic": false,
+  "family_fit": 70
  },
  "e170a890e242904c": {
   "adult_interest": 75,
@@ -31663,6 +32151,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "e38ab0fc69da7719": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Comedy club in SF, adults-only event.",
+  "epic": false,
+  "family_fit": 10
+ },
  "e39a9ac7def14474": {
   "adult_interest": 75,
   "adults_only": false,
@@ -31868,6 +32364,14 @@
   "adults_only": true,
   "audience": "adults",
   "blurb": "18+ comedy show in Sacramento, no re-entry.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "e4ff9ea272306c98": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "HIV education group in Spanish, not family-friendly.",
   "epic": false,
   "family_fit": 0
  },
@@ -32135,6 +32639,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "e6b11cafea494b31": {
+  "adult_interest": 55,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Open mic night at Mill Valley venue, free.",
+  "epic": false,
+  "family_fit": 10
+ },
  "e6c10d0d45d561e1": {
   "adult_interest": 70,
   "adults_only": false,
@@ -32359,6 +32871,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "e80f9f46a2252525": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "4K anime film screening in SF, English subtitles.",
+  "epic": false,
+  "family_fit": 50
+ },
  "e811a1bea0ef3da6": {
   "adult_interest": 80,
   "adults_only": true,
@@ -32406,6 +32926,14 @@
   "blurb": "First Friday family night at CuriOdyssey museum, 5-8pm.",
   "epic": false,
   "family_fit": 80
+ },
+ "e8bc44f7685ac96e": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Indian slide guitar performance at The Freight in Berkeley.",
+  "epic": false,
+  "family_fit": 0
  },
  "e8cb449f0d0d03b8": {
   "adult_interest": 70,
@@ -32823,6 +33351,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "eca2786b3d789939": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "R&B festival in Potrero Hill with free entry.",
+  "epic": false,
+  "family_fit": 60
+ },
  "ecc2752e12c82798": {
   "adult_interest": 50,
   "adults_only": false,
@@ -32934,6 +33470,14 @@
   "blurb": "Oakland Chinatown StreetFest with food and culture.",
   "epic": false,
   "family_fit": 75
+ },
+ "ed8b08294161e65f": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Wine tasting at Filoli, adults-only event.",
+  "epic": false,
+  "family_fit": 10
  },
  "eda627c3da6067a1": {
   "adult_interest": 85,
@@ -33206,6 +33750,14 @@
   "blurb": "Free midnight mystery ride in SF.",
   "epic": false,
   "family_fit": 50
+ },
+ "ef54fd66200adc91": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Halloween party for 18+ only, no kids allowed.",
+  "epic": false,
+  "family_fit": 0
  },
  "ef58961b381b0aad": {
   "adult_interest": 85,
@@ -34295,6 +34847,14 @@
   "epic": false,
   "family_fit": 80
  },
+ "f76fa6c8169068c4": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Oktoberfest with a kids zone and 21+ area in Walnut Creek.",
+  "epic": false,
+  "family_fit": 70
+ },
  "f77d2794535cf1b1": {
   "adult_interest": 30,
   "adults_only": false,
@@ -34606,6 +35166,14 @@
   "blurb": "Free taco day at a San Francisco restaurant, every Friday.",
   "epic": false,
   "family_fit": 50
+ },
+ "f9e0513f393d6bb0": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free community event with global games and activities in Union Square.",
+  "epic": false,
+  "family_fit": 80
  },
  "f9f9bc1c0e5fbfa2": {
   "adult_interest": 90,
@@ -35254,6 +35822,14 @@
   "blurb": "Annual pumpkin festival with art and activities.",
   "epic": false,
   "family_fit": 85
+ },
+ "fede32d34c1cc40d": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Indigenous Peoples' Day gathering on Alcatraz.",
+  "epic": false,
+  "family_fit": 40
  },
  "ff05fd90a33b3350": {
   "adult_interest": 75,
