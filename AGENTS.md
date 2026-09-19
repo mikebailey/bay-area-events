@@ -23,6 +23,8 @@ code/sources/*.py -> code/fetch.py -> data/events.db -> code/build.py
 - `python code/fetch.py` updates the ignored SQLite database.
 - `python code/build.py` regenerates `site/events.json`.
 - `python code/test_env_keys.py` checks key resolution.
+- `python code/test_fetch_env.py` checks the dependency-free runtime `.env` loader.
+- `python code/test_noise_filters.py` checks operating-hours and cancellation filtering.
 - Run `node code/validate_palette.js` before changing category colors.
 - Source failures must remain visible in `source_runs` and the site health footer; do
   not silently drop or mask a failing scraper.
@@ -31,6 +33,8 @@ code/sources/*.py -> code/fetch.py -> data/events.db -> code/build.py
 
 - Python 3.9+ and the standard library are the default; do not add a dependency without
   a concrete need and corresponding setup documentation.
+- `requirements-dev.txt` contains the optional `python-dotenv` dependency used only
+  by the API-key resolver test; the fetch/build pipeline remains standard-library-only.
 - Event type uses the validated three-color-plus-neutral system. Crosscutting traits
   such as family, free, outdoor, or festival remain text badges.
 - Keep all file writes UTF-8. On Windows, account for console encoding explicitly.

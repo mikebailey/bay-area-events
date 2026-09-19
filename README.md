@@ -24,12 +24,22 @@ behind Cloudflare Access like the `travel` project.
 
 ## Running it
 
-No dependencies. Standard library only, Python 3.9+.
+The event pipeline uses only the Python 3.9+ standard library. The optional
+API-key resolver test uses `python-dotenv`; install that development dependency
+when setting up a machine for project maintenance:
+
+```bash
+python -m pip install -r requirements-dev.txt
+```
 
 ```bash
 python code/fetch.py            # hit every source, dedupe, write to SQLite
 python code/build.py            # read SQLite, write site/events.json
-cd site && python -m http.server 8765     # then open http://127.0.0.1:8765
+python code/test_env_keys.py    # maintenance check; needs requirements-dev.txt
+python code/test_fetch_env.py   # project .env precedence and parsing
+python code/test_noise_filters.py  # guard pseudo-event title filtering
+node code/validate_palette.js   # verify the light/dark event-type colors
+python -m http.server 8765 -d site        # then open http://127.0.0.1:8765
 ```
 
 Useful flags:

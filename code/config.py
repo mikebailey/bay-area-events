@@ -53,11 +53,11 @@ NOISE_TITLE_PATTERNS = [
     # Ticketmaster lists venue blackouts as if they were events.
     r"^closed for (a )?private event",
     r"^private event$",
-    r"^(venue |theater )?closed",
-    r"private event",
-    r"^cancell?ed",
+    r"^(venue |theater )?closed\b",
+    r"\bprivate event\b",
+    r"^cancell?ed\b",
     r"^test event",
-    r"^rescheduled",
+    r"^rescheduled\b",
 ]
 
 # The Events Calendar (WordPress plugin) venues, verified live 2026-08-15.

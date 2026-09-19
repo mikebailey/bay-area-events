@@ -32,8 +32,9 @@ def load_env(path=None):
     """Minimal .env loader.
 
     Deliberately dependency-free so the daily job needs no pip install, and
-    deliberately NON-overriding for values already in the environment, which is
-    what lets GitHub Actions secrets win in CI where no .env file exists.
+    deliberately overriding so a project-specific value wins over an unrelated
+    inherited value. GitHub Actions secrets still win in CI because no .env file
+    exists there.
     """
     path = Path(path or ROOT / ".env")
     if not path.exists():
@@ -45,7 +46,7 @@ def load_env(path=None):
         key, val = line.split("=", 1)
         key = key.strip()
         val = val.strip().strip("'").strip('"')
-        if key and key not in os.environ:
+        if key:
             os.environ[key] = val
 
 

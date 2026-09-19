@@ -37,6 +37,12 @@ jobs:
 
       # The pipeline is standard-library only, so there is nothing to install.
 
+      - name: Run dependency-free checks
+        run: |
+          python code/test_fetch_env.py
+          python code/test_noise_filters.py
+          node code/validate_palette.js
+
       # data/ is gitignored, so CI would otherwise start with an empty database
       # every run and reset every first_seen date -- which would break the
       # digest's "newly found this week" section. Cache it between runs instead
