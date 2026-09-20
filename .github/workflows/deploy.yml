@@ -1,0 +1,39 @@
+name: Deploy site
+
+# daily.yml owns the fetch-build-deploy pipeline, but it only triggers on a
+# schedule and by hand, so a site change pushed to main used to sit invisible
+# until the next 13:00 UTC run. This deploys what is already committed —
+# no fetch, no build, no events.json commit — so a page edit goes live in
+# under a minute.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - ".github/workflows/deploy.yml"
+
+permissions:
+  pages: write
+  id-token: write
+
+# The daily run pushes its own site/events.json commit, which lands here too.
+# Cancelling in flight is right for that case: the newer commit contains the
+# older one's site/, so the superseded deploy has nothing unique to publish.
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4

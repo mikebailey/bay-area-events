@@ -384,6 +384,13 @@ The log is `outputs/local-daily.log`.
 `site/events.json`, deploy to GitHub Pages, and on Thursdays send the digest.
 `workflow_dispatch` takes a `send_digest` input for testing out of cycle.
 
+`.github/workflows/deploy.yml` covers the other case: a push to `main` that
+touches `site/**` deploys what is already committed, with no fetch and no
+build. Without it a site edit was invisible until the next daily run, because
+`daily.yml` has no `push` trigger — which is exactly what happened shipping the
+Today tab on 2026-09-20. To deploy and refresh the data together, dispatch the
+daily run instead: `gh workflow run daily.yml -f send_digest=false`.
+
 Four repo secrets: `TICKETMASTER_API_KEY`, `GMAIL_USER`, `GMAIL_APP_PASSWORD`,
 `DIGEST_TO` (comma-separated).
 
