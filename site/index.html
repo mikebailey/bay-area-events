@@ -272,6 +272,7 @@
 
 <script>
 const VIEWS = [
+  {key:"today",   label:"Today",       sections:["week","month","later","daytrip","ongoing"]},
   {key:"week",    label:"This Week",   sections:["week"]},
   {key:"month",   label:"This Month",  sections:["week","month"]},
   {key:"later",   label:"Further Out", sections:["later"]},
@@ -358,6 +359,27 @@ const esc = s => String(s).replace(/[&<>"]/g, c =>
   ({"&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;"}[c]));
 
 const dayKey    = ev => ev.start.slice(0,10);
+// The browser's local date, not DATA.generated. The page can be a day or more
+// stale, and "Today" has to mean the day the person is looking at it, so this
+// is the one place the page trusts the device clock over the build.
+const todayKey  = () => {
+  const now = new Date();
+  return new Date(now.getTime() - now.getTimezoneOffset() * 60_000)
+    .toISOString().slice(0,10);
+};
+// On today if it starts today, or if it is a run that opened earlier and has
+// not ended yet. build.py pulls a continuing event's start forward to the build
+// date, which is today only while the data is fresh, so the end date decides.
+// A standing series carries no end and its start is its next occurrence, which
+// is why a missing end never counts as "still running".
+const onToday   = ev => {
+  const k = todayKey();
+  return dayKey(ev) === k ||
+         (!!ev.end && dayKey(ev) <= k && ev.end.slice(0,10) >= k);
+};
+// Today is one day by construction, so a continuing event keeps its earlier
+// start date and would otherwise open a second, past-dated day section.
+const viewDayKey = ev => view === "today" ? todayKey() : dayKey(ev);
 const asDate    = k  => new Date(k + "T12:00:00");
 const isWeekend = k  => [0,6].includes(asDate(k).getDay());
 // A family holiday gets the same emphasis a weekend does everywhere on the
@@ -385,7 +407,8 @@ function matches(ev) {
 
 function inScope() {
   const secs = VIEWS.find(v => v.key === view).sections;
-  return DATA.events.filter(e => secs.includes(e.section) && matches(e));
+  return DATA.events.filter(e =>
+    secs.includes(e.section) && matches(e) && (view !== "today" || onToday(e)));
 }
 
 /* ---------------- highlights ---------------- */
@@ -400,7 +423,7 @@ function pickHighlights(evs) {
     if (out.length >= HIGHLIGHT_COUNT) break;
     const k = dayKey(e);
     const n = perDay.get(k) || 0;
-    if (n >= HIGHLIGHT_MAX_PER_DAY) continue;
+    if (view !== "today" && n >= HIGHLIGHT_MAX_PER_DAY) continue;
     perDay.set(k, n + 1);
     out.push(e);
   }
@@ -412,6 +435,14 @@ function pickHighlights(evs) {
 // Fri/Sat/Sun each get their own heading; Mon-Thu collapse into one block that
 // sits in its natural chronological place rather than being scattered.
 function highlightGroups(list) {
+  // Day buckets are what make "what's on Saturday" legible across a week. In
+  // the Today view they would file everything under "Weekdays" on a Tuesday.
+  if (view === "today") {
+    const k = todayKey();
+    return [{key:k, label:"Today", note:holidayOf(k), holiday:!!holidayOf(k),
+             sort:k, weekend:isBigDay(k),
+             events:list.slice().sort((a,b) => a.start.localeCompare(b.start))}];
+  }
   const buckets = new Map();
   for (const e of list) {
     const k = dayKey(e), dow = asDate(k).getDay();
@@ -452,8 +483,15 @@ function runLabel(ev) {
   if (!ev.end) return "";
   const last = ev.end.slice(0, 10);
   if (last <= dayKey(ev)) return "";
+  if (view === "today" && last <= todayKey()) return " · last day";
   return " · through " + fDow.format(asDate(last)).toUpperCase();
 }
+
+// True when the run opened before today and is still going. build.py pulls such
+// an event's start forward to the build date, so this is only ever true once the
+// data is at least a day old — which is exactly when Today must not print a
+// past date under a heading that says Today.
+const startedEarlier = ev => dayKey(ev) < todayKey();
 
 function placeholder(ev) {
   const ph = document.createElement("div");
@@ -483,8 +521,11 @@ function highlightCard(ev) {
   const when = document.createElement("div");
   when.className = "hwhen";
   const d = new Date(ev.start);
-  when.textContent = fDayShort.format(d).toUpperCase() +
-    (ev.allDay ? "" : " · " + fTime.format(d)) + runLabel(ev);
+  when.textContent = (view === "today"
+    ? (startedEarlier(ev) ? "ON NOW"
+       : ev.allDay ? "ALL DAY" : fTime.format(d))
+    : fDayShort.format(d).toUpperCase() + (ev.allDay ? "" : " · " + fTime.format(d))
+  ) + runLabel(ev);
   body.appendChild(when);
 
   const t = document.createElement("div");
@@ -515,7 +556,9 @@ function eventRow(ev) {
 
   const t = document.createElement("div");
   t.className = "time";
-  t.textContent = ev.allDay ? "all day" : fTime.format(new Date(ev.start));
+  t.textContent = view === "today" && startedEarlier(ev)
+    ? "on now"
+    : ev.allDay ? "all day" : fTime.format(new Date(ev.start));
   el.appendChild(t);
   const run = runLabel(ev);
 
@@ -568,7 +611,7 @@ function renderAllEvents(container, evs) {
   const groups = new Map();
   evs.slice().sort((a,b) => a.start.localeCompare(b.start) || b.score - a.score)
      .forEach(e => {
-       const k = dayKey(e);
+       const k = viewDayKey(e);
        if (!groups.has(k)) groups.set(k, []);
        groups.get(k).push(e);
      });
@@ -589,7 +632,11 @@ function renderAllEvents(container, evs) {
     // their best few, because a Tuesday with 22 listings is 22 rows of things
     // nobody attends.
     const bigDay = isBigDay(k) || asDate(k).getDay() === 5;
-    const collapsed = !bigDay && !expandedDays.has(k) && list.length > WEEKDAY_PREVIEW;
+    // Never collapse the Today view: showing three of a Tuesday's listings is
+    // the right default when scanning a week, and exactly wrong when the whole
+    // point of the tab is everything happening now.
+    const collapsed = view !== "today" && !bigDay &&
+                      !expandedDays.has(k) && list.length > WEEKDAY_PREVIEW;
     const shown = collapsed
       ? list.slice().sort((a,b) => b.score - a.score).slice(0, WEEKDAY_PREVIEW)
                     .sort((a,b) => a.start.localeCompare(b.start))
@@ -645,6 +692,21 @@ const RAIL = [
   {title:"Volunteer",         color:"var(--accent)",   pick:e => e.volunteer,         by:"family"}
 ];
 
+// Two short lines for the rail's 52px date column: faint above, bold below.
+function railWhen(ev) {
+  const dt = new Date(ev.start);
+  if (view !== "today") {
+    return [fDow.format(dt).toUpperCase(), fMonthDay.format(dt).toUpperCase()];
+  }
+  if (startedEarlier(ev)) return ["ON", "NOW"];
+  if (ev.allDay) return ["ALL", "DAY"];
+  // "10:00 AM" does not fit the column, so the meridiem goes on the faint line.
+  // A 24-hour locale has no dayPeriod part and simply leaves that line empty.
+  const parts = fTime.formatToParts(dt);
+  const val = k => (parts.find(part => part.type === k) || {}).value || "";
+  return [val("dayPeriod").toUpperCase(), val("hour") + ":" + val("minute")];
+}
+
 function renderRail(evs) {
   const rail = document.getElementById("rail");
   rail.textContent = "";
@@ -668,11 +730,12 @@ function renderRail(evs) {
       row.className = "ritem";
       const d = document.createElement("div");
       d.className = "rday";
-      const dt = new Date(ev.start);
       // "SUN" small, "AUG 13" bold underneath — the day alone was ambiguous
-      // once the rail spans more than a week.
-      d.innerHTML = "<span class='rdow'>" + fDow.format(dt).toUpperCase() + "</span>" +
-                    "<span class='rdate'>" + fMonthDay.format(dt).toUpperCase() + "</span>";
+      // once the rail spans more than a week. Under Today the date is the same
+      // on every row, so the column carries the time instead.
+      const [top, bottom] = railWhen(ev);
+      d.innerHTML = "<span class='rdow'>" + esc(top) + "</span>" +
+                    "<span class='rdate'>" + esc(bottom) + "</span>";
       row.appendChild(d);
       const wrap = document.createElement("div");
       const a = document.createElement("a");
@@ -756,7 +819,11 @@ function render() {
   const evs = inScope();
 
   if (!evs.length) {
-    main.innerHTML = '<div class="empty">Nothing matches those filters.</div>';
+    const why = view === "today"
+      ? "Nothing listed for today. Last refreshed " +
+        new Date(DATA.generated).toLocaleDateString() + "."
+      : "Nothing matches those filters.";
+    main.innerHTML = '<div class="empty">' + esc(why) + "</div>";
     document.getElementById("rail").textContent = "";
     document.getElementById("sub").textContent = "0 events";
     return;
@@ -771,8 +838,11 @@ function render() {
     band.className = "band";
     const h = document.createElement("h2");
     h.className = "sec";
-    h.innerHTML = "Highlights <span class='n'>best of " + evs.length + ", weighted to " +
-                  (banner ? "the long weekend" : "the weekend") + "</span>";
+    const note = view === "today"
+      ? "best of the " + evs.length + " on today"
+      : "best of " + evs.length + ", weighted to " +
+        (banner ? "the long weekend" : "the weekend");
+    h.innerHTML = "Highlights <span class='n'>" + note + "</span>";
     band.appendChild(h);
     highlightGroups(highlights).forEach(g => {
       const head = document.createElement("div");
