@@ -535,6 +535,14 @@
   "epic": false,
   "family_fit": 50
  },
+ "03381217e8c5a4b1": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filoli estate open for holiday-themed tours and activities.",
+  "epic": false,
+  "family_fit": 70
+ },
  "0352adae7c0dd742": {
   "adult_interest": 75,
   "adults_only": true,
@@ -574,6 +582,14 @@
   "blurb": "Guided shop crawl with owner Q&As in Haight-Ashbury.",
   "epic": false,
   "family_fit": 30
+ },
+ "03812456a02471ec": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Jay Buchanan performing at Felton Music Hall.",
+  "epic": false,
+  "family_fit": 10
  },
  "038afa6851753e88": {
   "adult_interest": 50,
@@ -630,6 +646,14 @@
   "blurb": "Latin pop concert at a major venue.",
   "epic": false,
   "family_fit": 0
+ },
+ "04027e25dbed6d39": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's garden and estate with food pairings.",
+  "epic": false,
+  "family_fit": 60
  },
  "042a72dcfa7d4b15": {
   "adult_interest": 50,
@@ -695,6 +719,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "044fc6a8dc885cbe": {
+  "adult_interest": 75,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Vaultboy live stream performance at Cafe du Nord.",
+  "epic": false,
+  "family_fit": 0
+ },
  "0453c6038af16b8f": {
   "adult_interest": 75,
   "adults_only": true,
@@ -742,6 +774,14 @@
   "blurb": "Community summit for families in Castro.",
   "epic": false,
   "family_fit": 45
+ },
+ "04a5234600b268e6": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Walk SF’s Laziest Marathon with parks and coffee stops.",
+  "epic": false,
+  "family_fit": 60
  },
  "04af41448405411f": {
   "adult_interest": 75,
@@ -806,6 +846,14 @@
   "blurb": "Pop concert at Oakland Arena.",
   "epic": false,
   "family_fit": 50
+ },
+ "0501c1cae3a58cb6": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Dance performance of The Nutcracker by Valley Dance Theatre.",
+  "epic": false,
+  "family_fit": 40
  },
  "0501ce4d82bc4a18": {
   "adult_interest": 85,
@@ -927,6 +975,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "05e0a6de5168658e": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Rock concert with age restriction for attendees.",
+  "epic": false,
+  "family_fit": 10
+ },
  "0600fa38381c4dbd": {
   "adult_interest": 85,
   "adults_only": true,
@@ -934,6 +990,14 @@
   "blurb": "Rock concert at a San Francisco venue with 21+ age restriction.",
   "epic": false,
   "family_fit": 0
+ },
+ "060f5a153e1e8788": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Hip-hop show for ages 5+.",
+  "epic": false,
+  "family_fit": 60
  },
  "0617c3fe8a8e6f3a": {
   "adult_interest": 75,
@@ -1007,6 +1071,14 @@
   "epic": false,
   "family_fit": 30
  },
+ "068215934b21e9f1": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour at Filoli estate.",
+  "epic": false,
+  "family_fit": 70
+ },
  "06844e2c0ab89353": {
   "adult_interest": 10,
   "adults_only": true,
@@ -1030,6 +1102,14 @@
   "blurb": "Great Lake Swimmers folk music at Cafe Du Nord, free but 21+.",
   "epic": false,
   "family_fit": 0
+ },
+ "06a165183438a8fe": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filoli estate open for holiday-themed tours and activities.",
+  "epic": false,
+  "family_fit": 70
  },
  "06ae8db70ce09ded": {
   "adult_interest": 70,
@@ -1111,6 +1191,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "073eb1d5378beac7": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's gardens and food offerings.",
+  "epic": false,
+  "family_fit": 60
+ },
  "075b5f28b7538072": {
   "adult_interest": 65,
   "adults_only": false,
@@ -1180,6 +1268,14 @@
   "adults_only": false,
   "audience": "adults",
   "blurb": "Psychologist discusses new book at university hall.",
+  "epic": false,
+  "family_fit": 10
+ },
+ "07e3a6f0e68df522": {
+  "adult_interest": 75,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Blues concert with age restriction for attendees.",
   "epic": false,
   "family_fit": 10
  },
@@ -1318,6 +1414,14 @@
   "blurb": "Drone and flight sim activities at aviation museum.",
   "epic": false,
   "family_fit": 85
+ },
+ "086d4138b592bbb6": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Shen Yun is a performance of traditional Chinese dance and music, not suitable for children.",
+  "epic": false,
+  "family_fit": 10
  },
  "088330c61e801620": {
   "adult_interest": 60,
@@ -1999,6 +2103,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "0c8c59d623b44ab9": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Leanna Firestone and Sydney Sprague perform at The Ritz.",
+  "epic": false,
+  "family_fit": 10
+ },
  "0c97b411dd13e92f": {
   "adult_interest": 85,
   "adults_only": false,
@@ -2038,6 +2150,14 @@
   "blurb": "Alternative music performance at a Berkeley venue.",
   "epic": false,
   "family_fit": 10
+ },
+ "0cd290a54f3c68dc": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Taste of Filoli Tour offers food and drink samples at Filoli estate during a seasonal event.",
+  "epic": false,
+  "family_fit": 75
  },
  "0cdbdc71bf007cf5": {
   "adult_interest": 45,
@@ -2894,6 +3014,14 @@
   "blurb": "Rock concert for adults, no kids allowed.",
   "epic": false,
   "family_fit": 10
+ },
+ "11fe93bf3a58d201": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's gardens and food offerings.",
+  "epic": false,
+  "family_fit": 60
  },
  "120075c1c1b3c7b8": {
   "adult_interest": 20,
@@ -3815,6 +3943,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "17fad99607f7e2e3": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "The Bridge City Sinners concert at Felton Music Hall.",
+  "epic": false,
+  "family_fit": 20
+ },
  "1812d7d11398281c": {
   "adult_interest": 85,
   "adults_only": true,
@@ -3894,6 +4030,14 @@
   "blurb": "Festival with art, music, and cosmic creativity at Chabot Space Center.",
   "epic": false,
   "family_fit": 80
+ },
+ "188f02b55c28077f": {
+  "adult_interest": 70,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Darkwave dance party at F8sf.",
+  "epic": false,
+  "family_fit": 0
  },
  "1890fa850da79d5b": {
   "adult_interest": 85,
@@ -4054,6 +4198,14 @@
   "blurb": "Holiday ballet with large production, suitable for all ages but not particularly engaging for teens.",
   "epic": false,
   "family_fit": 70
+ },
+ "193103cc1d4223ad": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's gardens and estate, free for members.",
+  "epic": false,
+  "family_fit": 60
  },
  "193bb3b5e3727f9e": {
   "adult_interest": 85,
@@ -4222,6 +4374,14 @@
   "blurb": "Comedy show at Cobb's, 18+ only.",
   "epic": false,
   "family_fit": 0
+ },
+ "1a1855b0c98a8b0c": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filoli estate holiday lights and garden tour.",
+  "epic": false,
+  "family_fit": 70
  },
  "1a1b436f23de72a9": {
   "adult_interest": 30,
@@ -4655,6 +4815,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "1cb44f483828bf06": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filoli estate food and drink tour.",
+  "epic": false,
+  "family_fit": 60
+ },
  "1cbfd5382f4721b9": {
   "adult_interest": 70,
   "adults_only": true,
@@ -4694,6 +4862,14 @@
   "blurb": "Matinee folk show with seated audience, not suitable for kids.",
   "epic": false,
   "family_fit": 20
+ },
+ "1cf96c494cd54d4e": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free film screening of a family-oriented movie.",
+  "epic": false,
+  "family_fit": 50
  },
  "1d096f77103091c0": {
   "adult_interest": 75,
@@ -5071,6 +5247,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "1f6effdea56eafd3": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free hour at Japanese Tea Garden in Golden Gate Park.",
+  "epic": false,
+  "family_fit": 60
+ },
  "1f705dc066233524": {
   "adult_interest": 80,
   "adults_only": true,
@@ -5180,6 +5364,14 @@
   "adults_only": true,
   "audience": "adults",
   "blurb": "Comedy taping at a San Francisco club, 18+ only.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "203ad34155a51c5d": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "21+ Halloween party at a music hall.",
   "epic": false,
   "family_fit": 0
  },
@@ -5452,6 +5644,14 @@
   "adults_only": false,
   "audience": "teens",
   "blurb": "Latin music and dance party with live brass.",
+  "epic": false,
+  "family_fit": 60
+ },
+ "21c61c73faa8f63d": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filoli estate food and drink tour.",
   "epic": false,
   "family_fit": 60
  },
@@ -6143,6 +6343,14 @@
   "epic": false,
   "family_fit": 85
  },
+ "25ae69bf85f134f0": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's garden and estate with food pairings.",
+  "epic": false,
+  "family_fit": 60
+ },
  "25b61e4970f10cc6": {
   "adult_interest": 75,
   "adults_only": false,
@@ -6214,6 +6422,14 @@
   "blurb": "Latin music concert by Julieta Venegas.",
   "epic": false,
   "family_fit": 0
+ },
+ "25f5ebec726ee4c8": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Holiday lights and tours at Filoli estate.",
+  "epic": false,
+  "family_fit": 85
  },
  "2601367b259c7a92": {
   "adult_interest": 80,
@@ -6551,6 +6767,14 @@
   "epic": false,
   "family_fit": 55
  },
+ "281737ad6f8a57fe": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Karaoke night at a 21+ bar, not suitable for children.",
+  "epic": false,
+  "family_fit": 0
+ },
  "281cebf8ac1d71a9": {
   "adult_interest": 35,
   "adults_only": false,
@@ -6646,6 +6870,14 @@
   "blurb": "Hip-hop party at a club in Oakland, 21+ only.",
   "epic": false,
   "family_fit": 0
+ },
+ "28d4b933e8e9afdf": {
+  "adult_interest": 90,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Jay Park concert with special guest in San Francisco.",
+  "epic": false,
+  "family_fit": 10
  },
  "28d6e6b50cfd9f41": {
   "adult_interest": 85,
@@ -6830,6 +7062,14 @@
   "blurb": "Free comedy night in San Francisco.",
   "epic": false,
   "family_fit": 0
+ },
+ "298375688893397d": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Taste of Filoli Tour offers food and drink samples at Filoli estate during a seasonal event.",
+  "epic": false,
+  "family_fit": 75
  },
  "2993504f3d1a4acd": {
   "adult_interest": 85,
@@ -7103,6 +7343,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "2ad74b84c0178fcf": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Free Latin dance event with reggaeton and dembow music.",
+  "epic": false,
+  "family_fit": 10
+ },
  "2ae4511f906bad50": {
   "adult_interest": 30,
   "adults_only": false,
@@ -7287,6 +7535,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "2c45269428d5d166": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's garden and estate with food pairings.",
+  "epic": false,
+  "family_fit": 60
+ },
  "2c595bfcfa3460c9": {
   "adult_interest": 85,
   "adults_only": false,
@@ -7310,6 +7566,14 @@
   "blurb": "Women's basketball game at a large arena.",
   "epic": false,
   "family_fit": 60
+ },
+ "2cbfb0210180d4a8": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filoli Unwrapped is a seasonal event at Filoli estate with holiday decorations and activities for families.",
+  "epic": false,
+  "family_fit": 75
  },
  "2cc7e6673b6b015a": {
   "adult_interest": 90,
@@ -7454,6 +7718,14 @@
   "blurb": "Twilight movie showing at Crest Theater.",
   "epic": false,
   "family_fit": 5
+ },
+ "2da694463f22803b": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Nep is a music act at Felton Music Hall.",
+  "epic": false,
+  "family_fit": 20
  },
  "2da7855e0dbcf453": {
   "adult_interest": 85,
@@ -7983,6 +8255,22 @@
   "epic": false,
   "family_fit": 0
  },
+ "30d343f54b46db98": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free community festival at Alcatraz cruise pier.",
+  "epic": false,
+  "family_fit": 30
+ },
+ "30d5988c7b95f8f3": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Shark-themed science event at a bar in Novato.",
+  "epic": false,
+  "family_fit": 60
+ },
  "30ea8f2859dc60a0": {
   "adult_interest": 85,
   "adults_only": true,
@@ -8022,6 +8310,14 @@
   "blurb": "Comedy show at San Jose Improv, free.",
   "epic": false,
   "family_fit": 0
+ },
+ "311f5ec3a0a5419e": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's gardens and food offerings.",
+  "epic": false,
+  "family_fit": 60
  },
  "312bef96a34c1067": {
   "adult_interest": 80,
@@ -8383,6 +8679,14 @@
   "epic": false,
   "family_fit": 70
  },
+ "3311f36b87d6b467": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Hip-hop artist Syd performing at The Castro Theatre.",
+  "epic": false,
+  "family_fit": 20
+ },
  "331625c7a2723d04": {
   "adult_interest": 70,
   "adults_only": false,
@@ -8526,6 +8830,14 @@
   "blurb": "Rock show at Goldfield Trading Post.",
   "epic": false,
   "family_fit": 0
+ },
+ "33d47518f1b8ebbc": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Documentary about Senegal's history, French with subtitles.",
+  "epic": false,
+  "family_fit": 20
  },
  "33e52436f1808ae9": {
   "adult_interest": 75,
@@ -8790,6 +9102,22 @@
   "blurb": "Hip-hop concert in Oakland, 21+.",
   "epic": false,
   "family_fit": 0
+ },
+ "3596529623c59355": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Romantic comedy film screening.",
+  "epic": false,
+  "family_fit": 10
+ },
+ "3597b20617eb53e9": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Storytelling competition at Public Works.",
+  "epic": false,
+  "family_fit": 10
  },
  "359a1464346a900e": {
   "adult_interest": 85,
@@ -9150,6 +9478,14 @@
   "blurb": "Bluey's Big Play children's theatre show in San Jose.",
   "epic": false,
   "family_fit": 85
+ },
+ "374b47f7c11ec928": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Singer-songwriter Sean Rowe performs new album in San Francisco.",
+  "epic": false,
+  "family_fit": 10
  },
  "374f6f3a9b1ae6f5": {
   "adult_interest": 70,
@@ -9567,6 +9903,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "397a7753b164e3ed": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Volunteer day at Presidio for public lands.",
+  "epic": false,
+  "family_fit": 60
+ },
  "397ce044db800e35": {
   "adult_interest": 75,
   "adults_only": false,
@@ -9614,6 +9958,14 @@
   "blurb": "Intimate comedy club in San Francisco with no family appeal.",
   "epic": false,
   "family_fit": 10
+ },
+ "39aaf34263b9c4cb": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's gardens and food offerings.",
+  "epic": false,
+  "family_fit": 60
  },
  "39b719bbae8c1e6c": {
   "adult_interest": 60,
@@ -9823,6 +10175,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "3a840af5783cc35b": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Comedy show by Frankie Marcos at a comedy club.",
+  "epic": false,
+  "family_fit": 10
+ },
  "3a86bcf23b208e7c": {
   "adult_interest": 80,
   "adults_only": false,
@@ -9999,6 +10359,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "3b6ff8fb63d98c49": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Four Tops concert with age restrictions.",
+  "epic": false,
+  "family_fit": 0
+ },
  "3b749fc184d46f93": {
   "adult_interest": 60,
   "adults_only": true,
@@ -10127,6 +10495,14 @@
   "epic": false,
   "family_fit": 80
  },
+ "3c2b890aff445002": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's gardens and food offerings.",
+  "epic": false,
+  "family_fit": 60
+ },
  "3c2e01656fffa90c": {
   "adult_interest": 70,
   "adults_only": false,
@@ -10174,6 +10550,14 @@
   "blurb": "Cover band show, 21+ required.",
   "epic": false,
   "family_fit": 10
+ },
+ "3ca796580d06414f": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Jerry Douglas performs at Felton Music Hall.",
+  "epic": false,
+  "family_fit": 20
  },
  "3cb09b3e9b20fbf4": {
   "adult_interest": 85,
@@ -10319,6 +10703,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "3db412c41c11e895": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's gardens and estate, free for members.",
+  "epic": false,
+  "family_fit": 60
+ },
  "3db7ebf113f832da": {
   "adult_interest": 65,
   "adults_only": false,
@@ -10430,6 +10822,14 @@
   "blurb": "Jerry Seinfeld comedy show at a theater.",
   "epic": false,
   "family_fit": 0
+ },
+ "3e59514545377e91": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Baby Smoove Live hip-hop show for all ages.",
+  "epic": false,
+  "family_fit": 10
  },
  "3e5fe4d482fee852": {
   "adult_interest": 70,
@@ -10911,6 +11311,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "414ea2817ea845ff": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Documentary about the oldest person in the world.",
+  "epic": false,
+  "family_fit": 10
+ },
  "4162df7691b156e0": {
   "adult_interest": 45,
   "adults_only": false,
@@ -10958,6 +11366,14 @@
   "blurb": "Comedy taping with 13+ age limit, not ideal for younger kids.",
   "epic": false,
   "family_fit": 20
+ },
+ "41ae1438a6b6c7a6": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's gardens and food offerings.",
+  "epic": false,
+  "family_fit": 60
  },
  "41b43a679428f9af": {
   "adult_interest": 5,
@@ -11062,6 +11478,14 @@
   "blurb": "Art and wine festival with local vendors.",
   "epic": false,
   "family_fit": 65
+ },
+ "425c58677850313c": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's garden and estate with food pairings.",
+  "epic": false,
+  "family_fit": 60
  },
  "425c5cf014a48b73": {
   "adult_interest": 80,
@@ -11343,6 +11767,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "4420f87206c6c83e": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free admission hour at Japanese Tea Garden in Golden Gate Park.",
+  "epic": false,
+  "family_fit": 70
+ },
  "44222055632fe2cd": {
   "adult_interest": 50,
   "adults_only": false,
@@ -11510,6 +11942,14 @@
   "blurb": "Adult comedy show, 18+ only.",
   "epic": false,
   "family_fit": 10
+ },
+ "44add3e953fbb386": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "All-ages concert for a 20-year anniversary tour.",
+  "epic": false,
+  "family_fit": 40
  },
  "44c6917f43b71787": {
   "adult_interest": 75,
@@ -11967,6 +12407,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "477f16896e62b7ba": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Jeffrey Martin concert at Felton Music Hall, 21+.",
+  "epic": false,
+  "family_fit": 0
+ },
  "4788babfd219bc25": {
   "adult_interest": 40,
   "adults_only": false,
@@ -12103,6 +12551,14 @@
   "epic": false,
   "family_fit": 85
  },
+ "484a4d65c995d105": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour at Filoli estate.",
+  "epic": false,
+  "family_fit": 50
+ },
  "484bbc15013baa04": {
   "adult_interest": 75,
   "adults_only": false,
@@ -12206,6 +12662,14 @@
   "blurb": "Free art museum day for Bay Area residents every Saturday.",
   "epic": false,
   "family_fit": 60
+ },
+ "48ad06c270940c39": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free tea garden visit in Golden Gate Park.",
+  "epic": false,
+  "family_fit": 80
  },
  "48d3d06bc149dbc3": {
   "adult_interest": 80,
@@ -12326,6 +12790,14 @@
   "blurb": "Dru Hill and Ginuwine perform at Mountain Winery.",
   "epic": false,
   "family_fit": 0
+ },
+ "495b0de1c7bffeab": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Live music at Felton Music Hall.",
+  "epic": false,
+  "family_fit": 5
  },
  "49773411ad49bb5b": {
   "adult_interest": 85,
@@ -12687,6 +13159,14 @@
   "epic": false,
   "family_fit": 65
  },
+ "4bcca58ea0ab37fa": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's garden and estate with food pairings.",
+  "epic": false,
+  "family_fit": 60
+ },
  "4be093a62a2429f9": {
   "adult_interest": 55,
   "adults_only": true,
@@ -12879,6 +13359,14 @@
   "epic": false,
   "family_fit": 70
  },
+ "4caf2e5f3105be43": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's gardens and food offerings.",
+  "epic": false,
+  "family_fit": 60
+ },
  "4cc4ef35139e5dc1": {
   "adult_interest": 30,
   "adults_only": false,
@@ -13038,6 +13526,14 @@
   "blurb": "Emo night concert with a 21+ age restriction.",
   "epic": false,
   "family_fit": 35
+ },
+ "4d846f8dad2d470b": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Nick Shoulders concert at Felton Music Hall, 21+.",
+  "epic": false,
+  "family_fit": 0
  },
  "4d907b3cb8e1367b": {
   "adult_interest": 90,
@@ -13271,6 +13767,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "4efb356781b07b61": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Ten is a music act at The Regency Ballroom.",
+  "epic": false,
+  "family_fit": 20
+ },
  "4efdfbf374f2e045": {
   "adult_interest": 75,
   "adults_only": true,
@@ -13302,6 +13806,14 @@
   "blurb": "Dua Saleh performance at Rickshaw Stop.",
   "epic": false,
   "family_fit": 10
+ },
+ "4f1fa20b4649d0fa": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free market with treasures in Oakland, open Fridays to Sundays.",
+  "epic": false,
+  "family_fit": 60
  },
  "4f36b1c1ed986afb": {
   "adult_interest": 0,
@@ -13406,6 +13918,14 @@
   "blurb": "Free brewery shuttle in San Francisco.",
   "epic": false,
   "family_fit": 50
+ },
+ "4fec73db437d3d8f": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Dance performance of The Nutcracker by Valley Dance Theatre.",
+  "epic": false,
+  "family_fit": 40
  },
  "4fecff5fe1f4cca4": {
   "adult_interest": 85,
@@ -13684,6 +14204,14 @@
   "adults_only": true,
   "audience": "adults",
   "blurb": "Concert by Lucy Bedroque, 18+ only.",
+  "epic": false,
+  "family_fit": 10
+ },
+ "516c47aee895adf7": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Analog Dog performing at Felton Music Hall.",
   "epic": false,
   "family_fit": 10
  },
@@ -14167,6 +14695,14 @@
   "epic": false,
   "family_fit": 70
  },
+ "545242a6c5f06f46": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free market with treasures in Oakland.",
+  "epic": false,
+  "family_fit": 40
+ },
  "545534c8acff6a18": {
   "adult_interest": 65,
   "adults_only": false,
@@ -14575,6 +15111,14 @@
   "epic": false,
   "family_fit": 85
  },
+ "56da69fb0af397d2": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free Tai Chi class at Great Highway on Sundays.",
+  "epic": false,
+  "family_fit": 50
+ },
  "56eb40b2188858af": {
   "adult_interest": 80,
   "adults_only": false,
@@ -14662,6 +15206,14 @@
   "blurb": "Mack Geiger country concert at Ace of Spades in Sacramento.",
   "epic": false,
   "family_fit": 30
+ },
+ "574d0cd15fbc216a": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "21+ concert at a music hall.",
+  "epic": false,
+  "family_fit": 0
  },
  "574efac5116dcb2a": {
   "adult_interest": 75,
@@ -14838,6 +15390,14 @@
   "blurb": "Free alternative music show with two-week delivery delay.",
   "epic": false,
   "family_fit": 0
+ },
+ "58281e5611d5478f": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Free hip-hop/rap concert at Brick and Mortar Music Hall.",
+  "epic": false,
+  "family_fit": 10
  },
  "5833aa9f4cdb5035": {
   "adult_interest": 85,
@@ -15343,6 +15903,14 @@
   "epic": false,
   "family_fit": 30
  },
+ "5ad3ea0b6d86a5fa": {
+  "adult_interest": 65,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Cola concert at Hopmonk Tavern in Sebastopol.",
+  "epic": false,
+  "family_fit": 0
+ },
  "5ae1466c9d3452bf": {
   "adult_interest": 85,
   "adults_only": true,
@@ -15503,6 +16071,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "5bca4e4c1ff6aca3": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filoli Unwrapped is a seasonal event at Filoli estate with holiday decorations and activities for families.",
+  "epic": false,
+  "family_fit": 75
+ },
  "5bcee5deb44eb69b": {
   "adult_interest": 90,
   "adults_only": true,
@@ -15639,6 +16215,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "5c575a09d414655d": {
+  "adult_interest": 60,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "TECHNO TUESDAY at Make-Out Room.",
+  "epic": false,
+  "family_fit": 0
+ },
  "5c63276f66e3536a": {
   "adult_interest": 50,
   "adults_only": false,
@@ -15670,6 +16254,14 @@
   "blurb": "Soccer match between Monterey Bay FC and Lexington SC.",
   "epic": false,
   "family_fit": 70
+ },
+ "5c83b17c3bede8c6": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free market with treasures in Oakland.",
+  "epic": false,
+  "family_fit": 40
  },
  "5c8758579bf17137": {
   "adult_interest": 65,
@@ -15735,6 +16327,14 @@
   "epic": false,
   "family_fit": 70
  },
+ "5cdab0b9590c8f1c": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's gardens and estate, free for members.",
+  "epic": false,
+  "family_fit": 60
+ },
  "5cf1866cbb16c636": {
   "adult_interest": 85,
   "adults_only": false,
@@ -15782,6 +16382,14 @@
   "blurb": "Comedy show for adults only, 18+ with ID required.",
   "epic": false,
   "family_fit": 10
+ },
+ "5d3d828f4ac37740": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Studio 24 event with exclusive lounge access.",
+  "epic": false,
+  "family_fit": 0
  },
  "5d474fb9eb69009e": {
   "adult_interest": 35,
@@ -15894,6 +16502,14 @@
   "blurb": "Planetarium show about Maya skies at Chabot Space Center.",
   "epic": false,
   "family_fit": 80
+ },
+ "5da9ecb77937f56f": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free comedy night in downtown San Francisco.",
+  "epic": false,
+  "family_fit": 70
  },
  "5dab764834007fce": {
   "adult_interest": 50,
@@ -16343,6 +16959,14 @@
   "epic": false,
   "family_fit": 40
  },
+ "606d6bf78a4efe14": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Taste of Filoli Tour offers food and drink samples at Filoli estate during a seasonal event.",
+  "epic": false,
+  "family_fit": 75
+ },
  "607b1856cd2bd884": {
   "adult_interest": 85,
   "adults_only": true,
@@ -16575,6 +17199,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "619ca4b7e1cf44fa": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filoli Unwrapped event at Filoli estate.",
+  "epic": false,
+  "family_fit": 40
+ },
  "61ac7dea854de25e": {
   "adult_interest": 80,
   "adults_only": false,
@@ -16614,6 +17246,14 @@
   "blurb": "CuriOdyssey is closed for maintenance.",
   "epic": false,
   "family_fit": 0
+ },
+ "61d7fd100a1261dc": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free hour at Japanese Tea Garden in Golden Gate Park.",
+  "epic": false,
+  "family_fit": 60
  },
  "61d8ced1efb711d3": {
   "adult_interest": 30,
@@ -16863,6 +17503,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "6388a76311b7c5f8": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Chance The Rapper concert at The Masonic.",
+  "epic": false,
+  "family_fit": 0
+ },
  "638e1a38261320dd": {
   "adult_interest": 85,
   "adults_only": true,
@@ -17014,6 +17662,14 @@
   "blurb": "Jay Park concert at Bill Graham Civic Auditorium in San Francisco.",
   "epic": false,
   "family_fit": 10
+ },
+ "6435d3215668626c": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "The Residents tribute show for adults only.",
+  "epic": false,
+  "family_fit": 0
  },
  "64555fade67a7b31": {
   "adult_interest": 70,
@@ -17575,6 +18231,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "67750f95a3fca725": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Taste of Filoli tour at Filoli estate.",
+  "epic": false,
+  "family_fit": 40
+ },
  "678757be08398dcf": {
   "adult_interest": 85,
   "adults_only": false,
@@ -17598,6 +18262,14 @@
   "blurb": "Volunteering cleanup with free beer, yoga, and fries.",
   "epic": false,
   "family_fit": 50
+ },
+ "6791190a01315f31": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free admission hour at Japanese Tea Garden in Golden Gate Park.",
+  "epic": false,
+  "family_fit": 80
  },
  "6791ef77dc393eff": {
   "adult_interest": 85,
@@ -17750,6 +18422,14 @@
   "blurb": "Punk rock music event with a party atmosphere.",
   "epic": false,
   "family_fit": 10
+ },
+ "68ddb0a6166d0647": {
+  "adult_interest": 75,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Folk music performance at Felton Music Hall, 21+.",
+  "epic": false,
+  "family_fit": 0
  },
  "6910f1e2487003b6": {
   "adult_interest": 85,
@@ -17951,6 +18631,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "6a179a54a5b91621": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Oktoberfest with German beer and Kinder Karneval in Walnut Creek.",
+  "epic": false,
+  "family_fit": 70
+ },
  "6a18416ce28b44e4": {
   "adult_interest": 85,
   "adults_only": true,
@@ -17991,6 +18679,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "6a4005b187e971fb": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour at Filoli estate.",
+  "epic": false,
+  "family_fit": 70
+ },
  "6a448a12c54822d4": {
   "adult_interest": 0,
   "adults_only": true,
@@ -18023,6 +18719,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "6a84d2566893498f": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Shen Yun is a performance of traditional Chinese dance and music, not suitable for children.",
+  "epic": false,
+  "family_fit": 10
+ },
  "6a889a3b34695bb8": {
   "adult_interest": 60,
   "adults_only": true,
@@ -18046,6 +18750,14 @@
   "blurb": "Basketball game between Stockton Kings and Texas Legends.",
   "epic": false,
   "family_fit": 40
+ },
+ "6ac0de1000a45b9c": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Great Lake Swimmers concert at Felton Music Hall.",
+  "epic": false,
+  "family_fit": 20
  },
  "6ac61c981131ffd5": {
   "adult_interest": 95,
@@ -18118,6 +18830,22 @@
   "blurb": "Tea service at a historic estate for adults.",
   "epic": false,
   "family_fit": 20
+ },
+ "6b5a9d07562c722a": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Shakedown City concert at Felton Music Hall, 21+.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "6b620ed468737413": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Pat McGann performing at Felton Music Hall.",
+  "epic": false,
+  "family_fit": 10
  },
  "6b6d6f0344de24d0": {
   "adult_interest": 65,
@@ -18390,6 +19118,14 @@
   "blurb": "Willie Watson & Erin Rae concert at Napa Music Hall.",
   "epic": false,
   "family_fit": 0
+ },
+ "6ced0389dee73096": {
+  "adult_interest": 90,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Live music at Felton Music Hall.",
+  "epic": false,
+  "family_fit": 5
  },
  "6cf1589bf073f617": {
   "adult_interest": 65,
@@ -18799,6 +19535,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "6e947f3822382876": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Agriculture-themed event for adults only.",
+  "epic": false,
+  "family_fit": 0
+ },
  "6ea1a720f0ddd54b": {
   "adult_interest": 30,
   "adults_only": false,
@@ -18935,6 +19679,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "6fa3601bb25ca70a": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Volunteer cleanup with free drink at Fillmore Happy Hour.",
+  "epic": false,
+  "family_fit": 80
+ },
  "6fcc8d0c1ad91816": {
   "adult_interest": 0,
   "adults_only": true,
@@ -19052,6 +19804,14 @@
   "adults_only": false,
   "audience": "adults",
   "blurb": "Lilyisthatyou performance at The Chapel.",
+  "epic": false,
+  "family_fit": 10
+ },
+ "709702037b5556da": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Tribute to Carole King's music at a theater.",
   "epic": false,
   "family_fit": 10
  },
@@ -19718,6 +20478,14 @@
   "blurb": "Metal concert at Ace of Spades, Sacramento.",
   "epic": false,
   "family_fit": 10
+ },
+ "7424529178314940": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Rock band playing at Felton Music Hall, 21+.",
+  "epic": false,
+  "family_fit": 0
  },
  "7427a1b78dceb281": {
   "adult_interest": 75,
@@ -20567,6 +21335,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "7884a1e2934f2a37": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filoli estate open for holiday-themed tours and activities.",
+  "epic": false,
+  "family_fit": 70
+ },
  "78870d696e8bbd96": {
   "adult_interest": 85,
   "adults_only": true,
@@ -20620,6 +21396,14 @@
   "adults_only": false,
   "audience": "adults",
   "blurb": "R&B show at a Santa Cruz restaurant.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "78e36aef17b1490a": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "21+ concert at a music hall.",
   "epic": false,
   "family_fit": 0
  },
@@ -20678,6 +21462,14 @@
   "blurb": "Musical about a kid learning to rock with a band, suitable for teens.",
   "epic": false,
   "family_fit": 70
+ },
+ "794aed0dfdaffb5e": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free antique fair in Petaluma downtown.",
+  "epic": false,
+  "family_fit": 40
  },
  "7953ea3ae5635dfc": {
   "adult_interest": 75,
@@ -20863,6 +21655,14 @@
   "epic": false,
   "family_fit": 80
  },
+ "7ac7ce34b915a1eb": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Los Hermanos Mendoza performs at Felton Music Hall.",
+  "epic": false,
+  "family_fit": 20
+ },
  "7af9c45c51ef705e": {
   "adult_interest": 85,
   "adults_only": true,
@@ -21038,6 +21838,14 @@
   "blurb": "Rexx Life Raj anniversary concert, 18+.",
   "epic": false,
   "family_fit": 0
+ },
+ "7c093bbc4fb37d72": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Free political discussion on local politics.",
+  "epic": false,
+  "family_fit": 10
  },
  "7c118edbbd64eeb3": {
   "adult_interest": 90,
@@ -21254,6 +22062,14 @@
   "blurb": "18+ comedy show at Punch Line Comedy Club.",
   "epic": false,
   "family_fit": 0
+ },
+ "7ce107f99a05a717": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filoli estate food and drink tour.",
+  "epic": false,
+  "family_fit": 60
  },
  "7ce7cab2cf9efac3": {
   "adult_interest": 80,
@@ -21511,6 +22327,14 @@
   "epic": false,
   "family_fit": 35
  },
+ "7e8bb9f3984b220a": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free market selling secondhand items every Friday-Sunday.",
+  "epic": false,
+  "family_fit": 60
+ },
  "7e987f63e6d9345b": {
   "adult_interest": 75,
   "adults_only": false,
@@ -21644,6 +22468,14 @@
   "adults_only": false,
   "audience": "teens",
   "blurb": "Science museum $5 day with biotech and animal exhibits.",
+  "epic": false,
+  "family_fit": 70
+ },
+ "7f29f4b20346e3b6": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filoli estate open for holiday-themed tours and activities.",
   "epic": false,
   "family_fit": 70
  },
@@ -22087,6 +22919,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "81b94796d2302fc5": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's gardens and food offerings.",
+  "epic": false,
+  "family_fit": 60
+ },
  "81dcc3e5632574d1": {
   "adult_interest": 55,
   "adults_only": false,
@@ -22094,6 +22934,14 @@
   "blurb": "Planetarium show about Earth's hypothetical scenarios at Chabot Space Center.",
   "epic": false,
   "family_fit": 85
+ },
+ "81e3925f21b5521b": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Tasting tour at historic estate.",
+  "epic": false,
+  "family_fit": 20
  },
  "81ed9a7302cef035": {
   "adult_interest": 60,
@@ -22535,6 +23383,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "83df6ae5b56f31be": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Eco-friendly casting workshop with Jesmonite.",
+  "epic": false,
+  "family_fit": 10
+ },
  "83f823c14d098453": {
   "adult_interest": 85,
   "adults_only": true,
@@ -22567,6 +23423,14 @@
   "epic": false,
   "family_fit": 40
  },
+ "8423bfbe31cf7da8": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's garden and estate with food pairings.",
+  "epic": false,
+  "family_fit": 60
+ },
  "84343d795fffdec6": {
   "adult_interest": 70,
   "adults_only": false,
@@ -22575,6 +23439,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "8434ab92642cdd30": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's gardens and estate, free for members.",
+  "epic": false,
+  "family_fit": 60
+ },
  "843a0e9952479830": {
   "adult_interest": 85,
   "adults_only": true,
@@ -22582,6 +23454,14 @@
   "blurb": "18+ comedy show at a club, two drink minimum.",
   "epic": false,
   "family_fit": 0
+ },
+ "8451d444b634292a": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Live music at Felton Music Hall.",
+  "epic": false,
+  "family_fit": 5
  },
  "84532cf9e599fd6c": {
   "adult_interest": 45,
@@ -22766,6 +23646,14 @@
   "blurb": "Damon Wayans comedy show, 18+ with ID.",
   "epic": false,
   "family_fit": 0
+ },
+ "84fbceec2d905d10": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's gardens and food offerings.",
+  "epic": false,
+  "family_fit": 60
  },
  "8503520e1be2c75e": {
   "adult_interest": 70,
@@ -23215,6 +24103,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "87457a3cad814661": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Melanie C Spice Girls concert in San Francisco.",
+  "epic": false,
+  "family_fit": 10
+ },
  "8753a8e700e0a367": {
   "adult_interest": 80,
   "adults_only": false,
@@ -23319,6 +24215,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "8804df111d500506": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "ZOSO concert with age restrictions.",
+  "epic": false,
+  "family_fit": 0
+ },
  "8808c6046ad95f95": {
   "adult_interest": 85,
   "adults_only": false,
@@ -23366,6 +24270,14 @@
   "blurb": "Bike ride through San Jose with group.",
   "epic": false,
   "family_fit": 60
+ },
+ "88529cad1a28a579": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour at Filoli estate.",
+  "epic": false,
+  "family_fit": 50
  },
  "88560c999eb4d40e": {
   "adult_interest": 90,
@@ -23631,6 +24543,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "89beecb5ad1ef762": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Cast of The Sopranos performing at a theater.",
+  "epic": false,
+  "family_fit": 10
+ },
  "89bf176eaa0e54ae": {
   "adult_interest": 65,
   "adults_only": false,
@@ -23679,6 +24599,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "8a034f8d9cf3a512": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "David Starfire performing at Felton Music Hall.",
+  "epic": false,
+  "family_fit": 10
+ },
  "8a0961bd90bd2d94": {
   "adult_interest": 90,
   "adults_only": true,
@@ -23686,6 +24614,14 @@
   "blurb": "EDM concert by international artist.",
   "epic": false,
   "family_fit": 0
+ },
+ "8a0c6b186c190d33": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Dvorak Symphony No. 8 at War Memorial Opera House.",
+  "epic": false,
+  "family_fit": 20
  },
  "8a204f7d7da7d920": {
   "adult_interest": 70,
@@ -23702,6 +24638,14 @@
   "blurb": "The Mountain Goats perform at The Fillmore with an 18+ age restriction.",
   "epic": false,
   "family_fit": 0
+ },
+ "8a3fd92ac7f9bf5a": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's gardens and food offerings.",
+  "epic": false,
+  "family_fit": 60
  },
  "8a405f11387652f1": {
   "adult_interest": 85,
@@ -24431,6 +25375,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "8e6b73bb44c4bd87": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Taste of Filoli tour at Filoli estate.",
+  "epic": false,
+  "family_fit": 40
+ },
  "8e746475f1e2c87f": {
   "adult_interest": 85,
   "adults_only": true,
@@ -24679,6 +25631,14 @@
   "epic": false,
   "family_fit": 50
  },
+ "902dce757495bf9e": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Free health symposium for Black men at YMCA.",
+  "epic": false,
+  "family_fit": 10
+ },
  "902f0cc6e02c0966": {
   "adult_interest": 65,
   "adults_only": false,
@@ -24694,6 +25654,14 @@
   "blurb": "A family fair in SF for young kids, not suitable for 9-14 year olds.",
   "epic": false,
   "family_fit": 20
+ },
+ "9047551792ebdc15": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's gardens and food offerings.",
+  "epic": false,
+  "family_fit": 60
  },
  "904b75de3aa6e343": {
   "adult_interest": 30,
@@ -25031,6 +25999,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "926277acb2b74f27": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "NBA basketball game with high-energy play and crowd interaction.",
+  "epic": false,
+  "family_fit": 80
+ },
  "9265e0a124723fff": {
   "adult_interest": 40,
   "adults_only": false,
@@ -25255,6 +26231,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "93cc491c376f5f06": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Holiday lights and tours at Filoli estate.",
+  "epic": false,
+  "family_fit": 85
+ },
  "93d32d667ddfc7da": {
   "adult_interest": 85,
   "adults_only": false,
@@ -25398,6 +26382,14 @@
   "blurb": "Free summer party series at The Chapel.",
   "epic": false,
   "family_fit": 10
+ },
+ "94adb02829745f0d": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Nat Geo Live presentation about Pompeii.",
+  "epic": false,
+  "family_fit": 40
  },
  "94b5e8b33c6c0867": {
   "adult_interest": 75,
@@ -25591,6 +26583,14 @@
   "epic": false,
   "family_fit": 70
  },
+ "95e897d95e5823ce": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Ripe is a music event at The Regency Ballroom.",
+  "epic": false,
+  "family_fit": 20
+ },
  "95eae05d9b34ba38": {
   "adult_interest": 85,
   "adults_only": true,
@@ -25628,6 +26628,14 @@
   "adults_only": true,
   "audience": "adults",
   "blurb": "Comedy show at a venue with 21+ age restriction.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "961ffe4e2456d216": {
+  "adult_interest": 0,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Health education about HIV in Spanish for adults.",
   "epic": false,
   "family_fit": 0
  },
@@ -25983,6 +26991,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "97fcaf9b2244a7ff": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Dance music performance at The Freight.",
+  "epic": false,
+  "family_fit": 10
+ },
  "980a55ab24a08d87": {
   "adult_interest": 20,
   "adults_only": false,
@@ -26054,6 +27070,14 @@
   "blurb": "Shreya Ghoshal concert at Oakland Arena.",
   "epic": false,
   "family_fit": 30
+ },
+ "983cd38a0882067b": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Holiday lights and tours at Filoli estate.",
+  "epic": false,
+  "family_fit": 85
  },
  "9855b668911cd0d5": {
   "adult_interest": 50,
@@ -26159,6 +27183,14 @@
   "epic": false,
   "family_fit": 50
  },
+ "98fdc941671975ae": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filoli Unwrapped is a seasonal event at Filoli estate with holiday decorations and activities for families.",
+  "epic": false,
+  "family_fit": 75
+ },
  "99044ecfb2a28b5f": {
   "adult_interest": 20,
   "adults_only": false,
@@ -26214,6 +27246,14 @@
   "blurb": "R&B concert at Greek Theatre, 21+ venue.",
   "epic": false,
   "family_fit": 0
+ },
+ "993dd52a2fe4f4a4": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filoli estate open for holiday-themed tours and activities.",
+  "epic": false,
+  "family_fit": 70
  },
  "994b312f41b49d3c": {
   "adult_interest": 90,
@@ -26823,6 +27863,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "9d163a609db70c0e": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Creed Bratton performing at Felton Music Hall.",
+  "epic": false,
+  "family_fit": 10
+ },
  "9d2c4427d6bea92c": {
   "adult_interest": 80,
   "adults_only": true,
@@ -26838,6 +27886,14 @@
   "blurb": "Free museum day at Legion of Honor.",
   "epic": false,
   "family_fit": 40
+ },
+ "9d560cbeea57943a": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Shen Yun is a performance of traditional Chinese dance and music, not suitable for children.",
+  "epic": false,
+  "family_fit": 10
  },
  "9d6f4e54ea963f95": {
   "adult_interest": 20,
@@ -27231,6 +28287,14 @@
   "epic": false,
   "family_fit": 65
  },
+ "9f9f68e6aacd5d60": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "R&B show at a music hall, likely for adults.",
+  "epic": false,
+  "family_fit": 20
+ },
  "9fc2652d9d54dc06": {
   "adult_interest": 90,
   "adults_only": true,
@@ -27327,6 +28391,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "a093d847a3394a40": {
+  "adult_interest": 75,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Dance/electronic music show in San Francisco.",
+  "epic": false,
+  "family_fit": 0
+ },
  "a0a845e259df627d": {
   "adult_interest": 85,
   "adults_only": false,
@@ -27390,6 +28462,14 @@
   "blurb": "Theater show, not for kids.",
   "epic": false,
   "family_fit": 20
+ },
+ "a1063baf64195c2f": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Rock band The Bends performing at Felton Music Hall.",
+  "epic": false,
+  "family_fit": 10
  },
  "a1345a5eeebf2ddc": {
   "adult_interest": 60,
@@ -27614,6 +28694,14 @@
   "blurb": "18+ comedy show at Sacramento club, no entry for minors.",
   "epic": false,
   "family_fit": 0
+ },
+ "a251d59b5b77718e": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Lou Hazel performing at Felton Music Hall.",
+  "epic": false,
+  "family_fit": 10
  },
  "a253aff58708fe2b": {
   "adult_interest": 65,
@@ -27903,6 +28991,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "a44d51c54ed69c90": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's gardens and food offerings.",
+  "epic": false,
+  "family_fit": 60
+ },
  "a4527ed332f15e07": {
   "adult_interest": 85,
   "adults_only": false,
@@ -27910,6 +29006,14 @@
   "blurb": "ASL performance of Disney's Beauty and the Beast musical in San Jose.",
   "epic": false,
   "family_fit": 60
+ },
+ "a47e9e5347283071": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Latin music performance at a music hall.",
+  "epic": false,
+  "family_fit": 20
  },
  "a48035c09d666aa5": {
   "adult_interest": 65,
@@ -28615,6 +29719,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "a8a673cc0dd1902c": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Charo performs at Bankhead Theater.",
+  "epic": false,
+  "family_fit": 20
+ },
  "a8b039a2f4544830": {
   "adult_interest": 90,
   "adults_only": true,
@@ -29039,6 +30151,14 @@
   "epic": false,
   "family_fit": 85
  },
+ "ab152261a5d24183": {
+  "adult_interest": 40,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Opera performance in Sacramento.",
+  "epic": false,
+  "family_fit": 20
+ },
  "ab1fb76b261c120d": {
   "adult_interest": 70,
   "adults_only": false,
@@ -29118,6 +30238,22 @@
   "blurb": "Haight Ashbury Street Fair with live music and street vendors.",
   "epic": false,
   "family_fit": 75
+ },
+ "ab84fc09b7025e61": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Book reading of Swedish fiction anthology.",
+  "epic": false,
+  "family_fit": 10
+ },
+ "ab93239ed926648a": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour at Filoli estate.",
+  "epic": false,
+  "family_fit": 70
  },
  "ab9642ecbff2212f": {
   "adult_interest": 60,
@@ -29279,6 +30415,14 @@
   "epic": false,
   "family_fit": 40
  },
+ "ac60fc47e67bdf10": {
+  "adult_interest": 0,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Legal aid for immigration and housing issues in Spanish.",
+  "epic": false,
+  "family_fit": 0
+ },
  "ac673422271664e9": {
   "adult_interest": 85,
   "adults_only": false,
@@ -29414,6 +30558,14 @@
   "blurb": "Karaoke night at a bar in Bolinas.",
   "epic": false,
   "family_fit": 0
+ },
+ "ad2e23cc18f8f21f": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Dance performance of The Nutcracker.",
+  "epic": false,
+  "family_fit": 20
  },
  "ad33be3688660e89": {
   "adult_interest": 85,
@@ -29814,6 +30966,14 @@
   "blurb": "Touring musical with a classic story, may be engaging for teens.",
   "epic": false,
   "family_fit": 50
+ },
+ "af836854e07048b3": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Gabriel Rutledge is a solo performer at a theater in Livermore.",
+  "epic": false,
+  "family_fit": 30
  },
  "afad938580af7716": {
   "adult_interest": 10,
@@ -31191,6 +32351,14 @@
   "epic": false,
   "family_fit": 30
  },
+ "b9189ce4b1c693ad": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's garden and estate with food pairings.",
+  "epic": false,
+  "family_fit": 60
+ },
  "b91a43b98bc03cbc": {
   "adult_interest": 75,
   "adults_only": true,
@@ -31463,6 +32631,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "ba48e54c99adbe63": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Concert by The Front Bottoms at The Warfield.",
+  "epic": false,
+  "family_fit": 0
+ },
  "ba6a57d1e31fe7fa": {
   "adult_interest": 85,
   "adults_only": false,
@@ -31550,6 +32726,14 @@
   "blurb": "Comedy night featuring Black and Asian comedians in SF.",
   "epic": false,
   "family_fit": 0
+ },
+ "bae28761819b83e1": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free Dolly tribute night and costume contest at Monarch Store.",
+  "epic": false,
+  "family_fit": 60
  },
  "baed95044d2dc607": {
   "adult_interest": 80,
@@ -31719,6 +32903,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "bb93fb5d69c6cd3d": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "21+ concert at a music hall.",
+  "epic": false,
+  "family_fit": 0
+ },
  "bb95a575606e8cc6": {
   "adult_interest": 85,
   "adults_only": true,
@@ -31790,6 +32982,14 @@
   "blurb": "Free market with free treasures in Oakland, unremarkable for kids.",
   "epic": false,
   "family_fit": 45
+ },
+ "bc27efcf670560ca": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour at Filoli estate.",
+  "epic": false,
+  "family_fit": 70
  },
  "bc2d39a0240d4542": {
   "adult_interest": 30,
@@ -32711,6 +33911,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "c17ca1c513f4f6eb": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filoli estate holiday lights and garden tour.",
+  "epic": false,
+  "family_fit": 70
+ },
  "c1826b1ce8f1f6a7": {
   "adult_interest": 85,
   "adults_only": false,
@@ -32967,6 +34175,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "c2aa03ea81947db0": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Bob Ross-themed bingo and lookalike contest at KQED.",
+  "epic": false,
+  "family_fit": 30
+ },
  "c2b505acba3cf163": {
   "adult_interest": 65,
   "adults_only": false,
@@ -33095,6 +34311,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "c38ddae0369944dd": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filoli estate holiday lights and garden tour.",
+  "epic": false,
+  "family_fit": 70
+ },
  "c38f8933b148ae9d": {
   "adult_interest": 80,
   "adults_only": true,
@@ -33198,6 +34422,14 @@
   "blurb": "Screeching Weasel rock show at August Hall.",
   "epic": false,
   "family_fit": 0
+ },
+ "c402dcf37a6780da": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Taste of Filoli Tour at Filoli estate.",
+  "epic": false,
+  "family_fit": 40
  },
  "c4189cf178b11284": {
   "adult_interest": 90,
@@ -33351,6 +34583,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "c5022b9f20838ea0": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Dance performance of The Nutcracker.",
+  "epic": false,
+  "family_fit": 20
+ },
  "c504031f65c4995b": {
   "adult_interest": 85,
   "adults_only": false,
@@ -33414,6 +34654,14 @@
   "blurb": "Free outdoor movie screenings at multiple venues in Bernal Heights.",
   "epic": false,
   "family_fit": 70
+ },
+ "c56dcc4dda75ee67": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's garden and estate with food pairings.",
+  "epic": false,
+  "family_fit": 60
  },
  "c57880fe9417b642": {
   "adult_interest": 85,
@@ -33494,6 +34742,14 @@
   "blurb": "4K restoration of the anime classic Akira.",
   "epic": false,
   "family_fit": 40
+ },
+ "c5e2454f515333c6": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Film screening of a samurai crime drama.",
+  "epic": false,
+  "family_fit": 10
  },
  "c5eebcc0b6c00c10": {
   "adult_interest": 60,
@@ -33596,6 +34852,14 @@
   "adults_only": true,
   "audience": "adults",
   "blurb": "Comedy show for adults only in SF.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "c67368450b67f7d7": {
+  "adult_interest": 65,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Ariel Posen with Zach Person at Sweetwater Music Hall.",
   "epic": false,
   "family_fit": 0
  },
@@ -33702,6 +34966,14 @@
   "blurb": "Broadway Barbara's holiday show at a San Francisco venue.",
   "epic": false,
   "family_fit": 0
+ },
+ "c732e82a26c70e3a": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Music show at a music hall.",
+  "epic": false,
+  "family_fit": 20
  },
  "c734278bd2d44fef": {
   "adult_interest": 85,
@@ -33887,6 +35159,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "c85fed227e3c68b2": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's gardens and food offerings.",
+  "epic": false,
+  "family_fit": 60
+ },
  "c87282d0156a9bae": {
   "adult_interest": 85,
   "adults_only": true,
@@ -33918,6 +35198,14 @@
   "blurb": "Art crawl with galleries open in North Beach, free and family-friendly.",
   "epic": false,
   "family_fit": 60
+ },
+ "c8aca604d99d4672": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "The Cactus Blossoms concert at Felton Music Hall, 21+.",
+  "epic": false,
+  "family_fit": 0
  },
  "c8e1f1b720ed5a6d": {
   "adult_interest": 0,
@@ -34407,6 +35695,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "cc027c9fdefe7c31": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Ballet folklorico performance by Carlos Moreno's group.",
+  "epic": false,
+  "family_fit": 30
+ },
  "cc09316da99b8414": {
   "adult_interest": 85,
   "adults_only": false,
@@ -34431,6 +35727,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "cc0ec8cebcf98a46": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Taste of Filoli tour at Filoli estate.",
+  "epic": false,
+  "family_fit": 40
+ },
  "cc21bdf17915753a": {
   "adult_interest": 70,
   "adults_only": false,
@@ -34454,6 +35758,14 @@
   "blurb": "21+ Folsom Street Fair in San Francisco.",
   "epic": false,
   "family_fit": 0
+ },
+ "cc5879a778c60f26": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Amy Winehouse tribute show at a music hall.",
+  "epic": false,
+  "family_fit": 10
  },
  "cc5dc9ade6d179c9": {
   "adult_interest": 85,
@@ -34510,6 +35822,14 @@
   "blurb": "Country music show at Cafe Du Nord, suitable for adults.",
   "epic": false,
   "family_fit": 0
+ },
+ "cc8f00eaf77ffcd7": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Karaoke night at Yoshi's Oakland with live music.",
+  "epic": false,
+  "family_fit": 10
  },
  "cc953f58f6335e1b": {
   "adult_interest": 70,
@@ -34647,6 +35967,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "cd588a963b509cb4": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free market in Oakland for free items, every Friday-Sunday.",
+  "epic": false,
+  "family_fit": 20
+ },
  "cd660a15597d5dae": {
   "adult_interest": 80,
   "adults_only": true,
@@ -34678,6 +36006,14 @@
   "blurb": "Free First Thursdays at Berkeley Art Museum.",
   "epic": false,
   "family_fit": 30
+ },
+ "cd8f1f4473e6b0ec": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Tasting tour at historic estate.",
+  "epic": false,
+  "family_fit": 20
  },
  "cd9710b0de4c6d78": {
   "adult_interest": 40,
@@ -35135,6 +36471,14 @@
   "epic": false,
   "family_fit": 70
  },
+ "d092217331eeb517": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Concert by Peter Hook & The Light at a winery.",
+  "epic": false,
+  "family_fit": 20
+ },
  "d0a85d354bddcb18": {
   "adult_interest": 60,
   "adults_only": false,
@@ -35166,6 +36510,14 @@
   "blurb": "San Jose Giants baseball game.",
   "epic": false,
   "family_fit": 60
+ },
+ "d0b8451ff186f1ba": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Taste of Filoli Tour offers food and drink samples at Filoli estate during a seasonal event.",
+  "epic": false,
+  "family_fit": 75
  },
  "d0bc0a70d22bb1d6": {
   "adult_interest": 85,
@@ -35551,6 +36903,14 @@
   "epic": false,
   "family_fit": 80
  },
+ "d2d07fc863bb8c72": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "The Wildwoods concert at Felton Music Hall.",
+  "epic": false,
+  "family_fit": 20
+ },
  "d2d0c56ed1b3ad74": {
   "adult_interest": 70,
   "adults_only": false,
@@ -35574,6 +36934,14 @@
   "blurb": "Hockey game between Sharks and Islanders.",
   "epic": false,
   "family_fit": 80
+ },
+ "d2e361b18c05ea45": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Holiday music show at a theater, not for kids.",
+  "epic": false,
+  "family_fit": 10
  },
  "d2e9a2f0f41d51e6": {
   "adult_interest": 90,
@@ -35814,6 +37182,14 @@
   "blurb": "21+ R&B concert at a nightclub.",
   "epic": false,
   "family_fit": 0
+ },
+ "d4a057582aae3e2d": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "B.J. Novak performs at Bankhead Theater.",
+  "epic": false,
+  "family_fit": 20
  },
  "d4b4a26234aadf0e": {
   "adult_interest": 50,
@@ -36271,6 +37647,14 @@
   "epic": false,
   "family_fit": 50
  },
+ "d75a19cdf36e2d36": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Black Flag performs at Felton Music Hall.",
+  "epic": false,
+  "family_fit": 20
+ },
  "d75ee01807d733ed": {
   "adult_interest": 60,
   "adults_only": false,
@@ -36390,6 +37774,14 @@
   "blurb": "Beetlejuice touring theater show.",
   "epic": false,
   "family_fit": 0
+ },
+ "d7edc6ba48fefc1c": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Volunteer cleanup with free drink at Marina Happy Hour.",
+  "epic": false,
+  "family_fit": 80
  },
  "d7f1d3e6ea23359f": {
   "adult_interest": 60,
@@ -36583,6 +37975,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "d91945934c9ecc2f": {
+  "adult_interest": 90,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only music show.",
+  "epic": false,
+  "family_fit": 0
+ },
  "d924c2016a7e0cd0": {
   "adult_interest": 85,
   "adults_only": false,
@@ -36622,6 +38022,14 @@
   "blurb": "Dance/electronic music show at a historic theater.",
   "epic": false,
   "family_fit": 40
+ },
+ "d9631a1cc52e1825": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filoli Unwrapped is a seasonal event at Filoli estate with holiday decorations and activities for families.",
+  "epic": false,
+  "family_fit": 75
  },
  "d965cd19309cf25c": {
   "adult_interest": 20,
@@ -36676,6 +38084,14 @@
   "adults_only": false,
   "audience": "adults",
   "blurb": "Startup pitch event, $50-$100 tickets.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "d9d84ce9ae018d37": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Free comedy night at a bar.",
   "epic": false,
   "family_fit": 0
  },
@@ -37183,6 +38599,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "dc7fa96e32572241": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Public lands volunteer event at Crissy Field.",
+  "epic": false,
+  "family_fit": 60
+ },
  "dca64b9226de7296": {
   "adult_interest": 70,
   "adults_only": false,
@@ -37511,6 +38935,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "de496b3e182cfcc2": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Taste of Filoli Tour at Filoli estate.",
+  "epic": false,
+  "family_fit": 40
+ },
  "de4accb9d54ca112": {
   "adult_interest": 70,
   "adults_only": true,
@@ -37806,6 +39238,14 @@
   "blurb": "Comedy show at Cobb's Comedy Club.",
   "epic": false,
   "family_fit": 0
+ },
+ "e0a537cfdab661b1": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filoli estate food and drink tour.",
+  "epic": false,
+  "family_fit": 60
  },
  "e0b082016c7096d1": {
   "adult_interest": 75,
@@ -38510,6 +39950,14 @@
   "blurb": "Monster Jam pit party with trucks and kids.",
   "epic": false,
   "family_fit": 70
+ },
+ "e55a90554cce5838": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's gardens and estate, free for members.",
+  "epic": false,
+  "family_fit": 60
  },
  "e55db9794943d7c3": {
   "adult_interest": 85,
@@ -39327,6 +40775,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "eb00725085dcb7fd": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour at Filoli estate.",
+  "epic": false,
+  "family_fit": 70
+ },
  "eb03a3567be8edd4": {
   "adult_interest": 70,
   "adults_only": true,
@@ -39518,6 +40974,14 @@
   "blurb": "Adult comedy show with 18+ age restriction.",
   "epic": false,
   "family_fit": 0
+ },
+ "ec2ab27bfa2c91cf": {
+  "adult_interest": 5,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "25th anniversary celebration for kids' show.",
+  "epic": false,
+  "family_fit": 5
  },
  "ec442bf227a209c8": {
   "adult_interest": 90,
@@ -39831,6 +41295,14 @@
   "epic": false,
   "family_fit": 70
  },
+ "ee5635104c4ebe39": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Comedy night at SF's intimate comedy club.",
+  "epic": false,
+  "family_fit": 20
+ },
  "ee582db2167617c1": {
   "adult_interest": 90,
   "adults_only": true,
@@ -39878,6 +41350,14 @@
   "blurb": "Baseball game between Giants and Dodgers at Oracle Park.",
   "epic": false,
   "family_fit": 50
+ },
+ "ee970b4f3646a393": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filoli estate open for holiday-themed tours and activities.",
+  "epic": false,
+  "family_fit": 70
  },
  "eebdc191c3ae5ebf": {
   "adult_interest": 60,
@@ -40231,6 +41711,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "f096c88403f7c8a8": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "VIP upgrade for Syd's concert at The Castro Theatre.",
+  "epic": false,
+  "family_fit": 0
+ },
  "f09d14cab8f5802f": {
   "adult_interest": 75,
   "adults_only": false,
@@ -40471,6 +41959,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "f26c853be0a7a1b1": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Musical theater performance with mature themes and language.",
+  "epic": false,
+  "family_fit": 20
+ },
  "f270eddafba8b194": {
   "adult_interest": 50,
   "adults_only": false,
@@ -40510,6 +42006,14 @@
   "blurb": "Folk artist performance at Cafe Du Nord.",
   "epic": false,
   "family_fit": 0
+ },
+ "f2b14f80097b5969": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's garden and estate with food pairings.",
+  "epic": false,
+  "family_fit": 60
  },
  "f2c504209c7d6344": {
   "adult_interest": 65,
@@ -40654,6 +42158,14 @@
   "blurb": "Book of Love dance/electronic event at The Chapel.",
   "epic": false,
   "family_fit": 0
+ },
+ "f373ed644893f1a7": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Taste of Filoli Tour offers food and drink samples at Filoli estate during a seasonal event.",
+  "epic": false,
+  "family_fit": 75
  },
  "f389ae3dd932b954": {
   "adult_interest": 65,
@@ -41279,6 +42791,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "f71a13ac82b3096f": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "21+ comedy show at Felton Music Hall.",
+  "epic": false,
+  "family_fit": 0
+ },
  "f71a6e1b6ca412c4": {
   "adult_interest": 85,
   "adults_only": true,
@@ -41406,6 +42926,14 @@
   "blurb": "Hip-hop/rap concert with charity benefit.",
   "epic": false,
   "family_fit": 0
+ },
+ "f7d8b5be869625ba": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "She Wants Revenge performs at Felton Music Hall.",
+  "epic": false,
+  "family_fit": 20
  },
  "f7daa35e77652580": {
   "adult_interest": 35,
@@ -41550,6 +43078,14 @@
   "blurb": "Free bioblitz exploring 400+ species at Ocean Beach in SF.",
   "epic": false,
   "family_fit": 85
+ },
+ "f8c4ee542672711a": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Free 21+ comedy show in Oakland.",
+  "epic": false,
+  "family_fit": 0
  },
  "f8cda8fcce4d4a6d": {
   "adult_interest": 50,
@@ -41894,6 +43430,14 @@
   "blurb": "NBA basketball game between Kings and Magic.",
   "epic": false,
   "family_fit": 0
+ },
+ "fb29921979ade268": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filipino art exhibition in SF cultural center.",
+  "epic": false,
+  "family_fit": 30
  },
  "fb4f0ed839be965f": {
   "adult_interest": 75,
@@ -42303,6 +43847,14 @@
   "epic": false,
   "family_fit": 45
  },
+ "fdd56f5e5acc722f": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Concert by Dogstar at The Fillmore.",
+  "epic": false,
+  "family_fit": 10
+ },
  "fde27b27a05557e5": {
   "adult_interest": 50,
   "adults_only": true,
@@ -42526,6 +44078,14 @@
   "blurb": "Cortex with J Rocc at UC Theatre in Berkeley.",
   "epic": false,
   "family_fit": 0
+ },
+ "ff6cab503d1ff4bf": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tasting tour of Filoli's gardens and food offerings.",
+  "epic": false,
+  "family_fit": 60
  },
  "ff742bc2bbb4d071": {
   "adult_interest": 75,
