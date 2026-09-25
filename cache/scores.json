@@ -311,6 +311,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "01ba481a07a92acf": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Art film screening, not suitable for kids.",
+  "epic": false,
+  "family_fit": 10
+ },
  "01c361e8663cdc58": {
   "adult_interest": 70,
   "adults_only": false,
@@ -502,6 +510,14 @@
   "blurb": "Free concerts and food trucks at Civic Center Plaza in San Francisco.",
   "epic": false,
   "family_fit": 70
+ },
+ "029af06e095416b2": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Veteran's Day dental screenings for veterans in San Francisco.",
+  "epic": false,
+  "family_fit": 10
  },
  "02ac041aaf3e2dd3": {
   "adult_interest": 45,
@@ -959,11 +975,27 @@
   "epic": false,
   "family_fit": 0
  },
+ "0596bae52425b891": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Hocus Pocus movie screening at Crest Theater.",
+  "epic": false,
+  "family_fit": 10
+ },
  "059c89aad93cc68a": {
   "adult_interest": 85,
   "adults_only": true,
   "audience": "adults",
   "blurb": "18+ open mic comedy show at Sacramento bar.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "05b256be3225263f": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only music event at a nightclub.",
   "epic": false,
   "family_fit": 0
  },
@@ -1015,6 +1047,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "05fcea31dab698d4": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Salsa dancing event with live band.",
+  "epic": false,
+  "family_fit": 20
+ },
  "0600fa38381c4dbd": {
   "adult_interest": 85,
   "adults_only": true,
@@ -1030,6 +1070,14 @@
   "blurb": "Hip-hop show for ages 5+.",
   "epic": false,
   "family_fit": 60
+ },
+ "0612b0aff4bf8870": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Navy band performance at a park, likely for military appreciation.",
+  "epic": false,
+  "family_fit": 40
  },
  "0617c3fe8a8e6f3a": {
   "adult_interest": 75,
@@ -1303,6 +1351,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "07b2b75bb199ee9f": {
+  "adult_interest": 90,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "DJ set at a nightclub.",
+  "epic": false,
+  "family_fit": 0
+ },
  "07b6cec8067e3399": {
   "adult_interest": 40,
   "adults_only": false,
@@ -1479,6 +1535,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "087c3e2216d847a2": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Bicycle scavenger hunt and race in Oakland park.",
+  "epic": false,
+  "family_fit": 85
+ },
  "088330c61e801620": {
   "adult_interest": 60,
   "adults_only": true,
@@ -1534,6 +1598,14 @@
   "blurb": "DJ set at Regency Ballroom, 21+ only.",
   "epic": false,
   "family_fit": 0
+ },
+ "08df5fbc78b1fe7f": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Hong Kong kung fu film screening at a cinema.",
+  "epic": false,
+  "family_fit": 20
  },
  "08e7b3b2f63d61e5": {
   "adult_interest": 65,
@@ -1863,6 +1935,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "0a9ad3f1f92c3c50": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "ILLENIUM electronic music concert.",
+  "epic": false,
+  "family_fit": 10
+ },
  "0a9e3617fdea31b8": {
   "adult_interest": 20,
   "adults_only": false,
@@ -1910,6 +1990,14 @@
   "blurb": "Minor league baseball game in Stockton.",
   "epic": false,
   "family_fit": 60
+ },
+ "0b018a0a1b9d6819": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Art market benefiting CALMA with 18 artists, not family-friendly.",
+  "epic": false,
+  "family_fit": 30
  },
  "0b04dba2b990e66c": {
   "adult_interest": 85,
@@ -1990,6 +2078,14 @@
   "blurb": "Dance/electronic show with 21+ restriction.",
   "epic": false,
   "family_fit": 0
+ },
+ "0b42e72a15adc89b": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free concerts and food trucks in a downtown plaza, family-friendly music and eats.",
+  "epic": false,
+  "family_fit": 60
  },
  "0b52e5d9ba2367e6": {
   "adult_interest": 80,
@@ -2110,6 +2206,22 @@
   "blurb": "Metal band performance at a Roseville venue.",
   "epic": false,
   "family_fit": 0
+ },
+ "0bff1ce526c59373": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "DJ set at a nightclub.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "0bff407bf445d222": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free concerts and food trucks at Civic Center.",
+  "epic": false,
+  "family_fit": 65
  },
  "0c082515ab0e4c32": {
   "adult_interest": 60,
@@ -2343,6 +2455,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "0d814089e989ff15": {
+  "adult_interest": 75,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Music performance at a tavern in Sebastopol.",
+  "epic": false,
+  "family_fit": 0
+ },
  "0d8e0a9604e7eb4f": {
   "adult_interest": 80,
   "adults_only": true,
@@ -2518,6 +2638,14 @@
   "blurb": "Exploratorium after-hours event with engineering focus.",
   "epic": false,
   "family_fit": 70
+ },
+ "0eb6a43405141652": {
+  "adult_interest": 90,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Frankenstein double feature horror film at Crest Theater.",
+  "epic": false,
+  "family_fit": 0
  },
  "0ebf43bb6688c24c": {
   "adult_interest": 65,
@@ -2758,6 +2886,14 @@
   "blurb": "Free admission to Japanese Tea Garden in Golden Gate Park.",
   "epic": false,
   "family_fit": 75
+ },
+ "0fedc3e4f69767f7": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Kumo 99 electronic music show at Brick and Mortar.",
+  "epic": false,
+  "family_fit": 10
  },
  "0ff734f0671c6cc7": {
   "adult_interest": 60,
@@ -3719,6 +3855,14 @@
   "epic": false,
   "family_fit": 65
  },
+ "14f19cf466d4bb93": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Mini Masterpieces Holiday Gifts Show for holiday shopping.",
+  "epic": false,
+  "family_fit": 40
+ },
  "14ff13bf6000e074": {
   "adult_interest": 60,
   "adults_only": true,
@@ -4583,6 +4727,14 @@
   "epic": false,
   "family_fit": 65
  },
+ "19dc42f1cb47ef72": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Free Breema bodywork open house in Santa Cruz",
+  "epic": false,
+  "family_fit": 0
+ },
  "19e0779b3efebd54": {
   "adult_interest": 65,
   "adults_only": false,
@@ -4943,6 +5095,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "1bd247c433e058b0": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free Noe Valley Night Market with food and games.",
+  "epic": false,
+  "family_fit": 70
+ },
  "1bda259d157b12a7": {
   "adult_interest": 60,
   "adults_only": false,
@@ -5271,6 +5431,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "1d926f1c89abc1ba": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Music group performance, not for kids.",
+  "epic": false,
+  "family_fit": 10
+ },
  "1db75a5c625edc7b": {
   "adult_interest": 85,
   "adults_only": false,
@@ -5559,6 +5727,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "1f77e851d5b8d7b3": {
+  "adult_interest": 10,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Mistress Mastery event at Kink Center",
+  "epic": false,
+  "family_fit": 0
+ },
  "1f78d23c655a5ca4": {
   "adult_interest": 85,
   "adults_only": false,
@@ -5654,6 +5830,14 @@
   "blurb": "Mariachi music event at San Jose Civic.",
   "epic": false,
   "family_fit": 60
+ },
+ "1ff1093dc1f256ea": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only comedy show at a venue.",
+  "epic": false,
+  "family_fit": 0
  },
  "1ff23fc78a9a6042": {
   "adult_interest": 85,
@@ -5751,6 +5935,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "20c5d8118af1f83b": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only event with music and dancing.",
+  "epic": false,
+  "family_fit": 0
+ },
  "20c82f1823e4c5a7": {
   "adult_interest": 80,
   "adults_only": true,
@@ -5831,6 +6023,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "2119e9dc60f0a8ca": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Symphony concert, not very engaging for kids.",
+  "epic": false,
+  "family_fit": 40
+ },
  "21296799b36e9d36": {
   "adult_interest": 85,
   "adults_only": true,
@@ -5846,6 +6046,14 @@
   "blurb": "Comedy show for adults only in Sacramento.",
   "epic": false,
   "family_fit": 0
+ },
+ "213b36e051371495": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free dance film festival screening and onstage dance in San Francisco.",
+  "epic": false,
+  "family_fit": 55
  },
  "2140abf0c8fcf628": {
   "adult_interest": 60,
@@ -6540,6 +6748,14 @@
   "adults_only": false,
   "audience": "adults",
   "blurb": "R&B concert at a venue with limited seating, sold out.",
+  "epic": false,
+  "family_fit": 10
+ },
+ "24a37b2ea6c5d84b": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Bill Frisell & Harmony 5 perform a jazz concert at a venue.",
   "epic": false,
   "family_fit": 10
  },
@@ -7783,6 +7999,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "2b525180dae3e604": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Pianist Craig Terry performs a classical music residency concert.",
+  "epic": false,
+  "family_fit": 10
+ },
  "2b547b145a1e8ff4": {
   "adult_interest": 75,
   "adults_only": false,
@@ -7822,6 +8046,14 @@
   "blurb": "A planetarium show connecting astronomy discoveries with artistic expression for ages 8+.",
   "epic": false,
   "family_fit": 70
+ },
+ "2bc1820fe5e0cce0": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Arcade karaoke with $3 shots, 21+ bar event for adults.",
+  "epic": false,
+  "family_fit": 20
  },
  "2bf25bf24e6e33cf": {
   "adult_interest": 60,
@@ -7908,6 +8140,14 @@
   "adults_only": false,
   "audience": "all",
   "blurb": "Tasting tour of Filoli's garden and estate with food pairings.",
+  "epic": false,
+  "family_fit": 60
+ },
+ "2c4a71d9af7e7d76": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free outdoor concert with three bands in Golden Gate Park.",
   "epic": false,
   "family_fit": 60
  },
@@ -8047,6 +8287,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "2d7d43becd1dee4c": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only rock show at a theater in Petaluma.",
+  "epic": false,
+  "family_fit": 0
+ },
  "2d857a148b22ccb5": {
   "adult_interest": 70,
   "adults_only": false,
@@ -8086,6 +8334,14 @@
   "blurb": "Dave Attell comedy show at Punch Line Comedy Club in Sacramento.",
   "epic": false,
   "family_fit": 0
+ },
+ "2da3f7854034f287": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Soft opening for padel sports event in Dogpatch.",
+  "epic": false,
+  "family_fit": 20
  },
  "2da591958ba7a6a9": {
   "adult_interest": 60,
@@ -8183,6 +8439,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "2e4c77822d329d51": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Hockey game between two teams in Stockton.",
+  "epic": false,
+  "family_fit": 50
+ },
  "2e52f5701d834f2e": {
   "adult_interest": 75,
   "adults_only": true,
@@ -8270,6 +8534,14 @@
   "blurb": "Planetarium show on Mexica archaeoastronomy, 49-minute drive.",
   "epic": false,
   "family_fit": 70
+ },
+ "2ed35548ac66ba3f": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Comedian Dr. Brady Smith at San Jose Improv.",
+  "epic": false,
+  "family_fit": 0
  },
  "2edfed8de22f15fd": {
   "adult_interest": 85,
@@ -9007,6 +9279,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "32d3918e4a2620e5": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Indie-folk concert at Cafe Du Nord.",
+  "epic": false,
+  "family_fit": 20
+ },
  "32e1696e6ada32dd": {
   "adult_interest": 80,
   "adults_only": false,
@@ -9278,6 +9558,14 @@
   "blurb": "Terrapin Roadshow concert series in Truckee.",
   "epic": false,
   "family_fit": 20
+ },
+ "3496658c4ccc6c5f": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Comedian Kira Soltanovich at a San Jose venue.",
+  "epic": false,
+  "family_fit": 10
  },
  "349d380a7bbe0a01": {
   "adult_interest": 75,
@@ -9551,6 +9839,14 @@
   "epic": false,
   "family_fit": 80
  },
+ "35bb53a3cec26539": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Music show, not for kids.",
+  "epic": false,
+  "family_fit": 10
+ },
  "35bdb989e4960dfb": {
   "adult_interest": 90,
   "adults_only": true,
@@ -9742,6 +10038,14 @@
   "blurb": "Comedy show at a comedy club, 18+ only.",
   "epic": false,
   "family_fit": 0
+ },
+ "36c4938942dc38dc": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Taylor Tomlinson comedy show at San Jose Improv.",
+  "epic": false,
+  "family_fit": 10
  },
  "36ca06d7e8f6f9bc": {
   "adult_interest": 90,
@@ -10207,6 +10511,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "390f37c93c11c7af": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Four new plays by Melina Cohen-Bramwell",
+  "epic": false,
+  "family_fit": 0
+ },
  "391393e9fc12f470": {
   "adult_interest": 85,
   "adults_only": false,
@@ -10342,6 +10654,14 @@
   "blurb": "Kamasi Washington blues concert at UC Theatre.",
   "epic": false,
   "family_fit": 10
+ },
+ "39760f161198b153": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Army Big Band Concert during Fleet Week.",
+  "epic": false,
+  "family_fit": 40
  },
  "397a7753b164e3ed": {
   "adult_interest": 40,
@@ -10767,6 +11087,14 @@
   "epic": false,
   "family_fit": 80
  },
+ "3b3de7a90a0f27ea": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Free music show, not for kids.",
+  "epic": false,
+  "family_fit": 10
+ },
  "3b3ef4bdc6274b78": {
   "adult_interest": 40,
   "adults_only": false,
@@ -10854,6 +11182,14 @@
   "blurb": "Olafur Arnalds classical music performance.",
   "epic": false,
   "family_fit": 0
+ },
+ "3b9c8eb0e57b536f": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free outdoor concert at Jack London Square in Oakland.",
+  "epic": false,
+  "family_fit": 60
  },
  "3bad0c8046dad480": {
   "adult_interest": 60,
@@ -11599,6 +11935,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "3fb372af510b5b5a": {
+  "adult_interest": 60,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Film screening by Sudanese filmmakers at a radio station in San Francisco.",
+  "epic": false,
+  "family_fit": 0
+ },
  "3fbdda96d91cc37c": {
   "adult_interest": 70,
   "adults_only": false,
@@ -11710,6 +12054,14 @@
   "blurb": "Drag, music, and art event at Castro Art Mart.",
   "epic": false,
   "family_fit": 35
+ },
+ "4096ad7ee5da9a1a": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Album signing for Japanese boy band at record store.",
+  "epic": false,
+  "family_fit": 0
  },
  "40b77bdec69664bd": {
   "adult_interest": 75,
@@ -12127,6 +12479,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "4315308fe3def9dd": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Gear sale for kayaks and paddleboards at a lake.",
+  "epic": false,
+  "family_fit": 30
+ },
  "431e5014112f89f2": {
   "adult_interest": 60,
   "adults_only": false,
@@ -12150,6 +12510,14 @@
   "blurb": "Metal concert at a San Jose venue with 21+ age restriction.",
   "epic": false,
   "family_fit": 0
+ },
+ "434d74787fb07d19": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free concerts and food trucks in a downtown plaza, family-friendly music and eats.",
+  "epic": false,
+  "family_fit": 60
  },
  "435b27b7028807b9": {
   "adult_interest": 75,
@@ -12295,6 +12663,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "4429d82a0a5257a0": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Warriors vs. Bucks basketball game.",
+  "epic": false,
+  "family_fit": 60
+ },
  "442a7f645a8e8c59": {
   "adult_interest": 75,
   "adults_only": false,
@@ -12358,6 +12734,14 @@
   "blurb": "21+ electronic music event at a venue.",
   "epic": false,
   "family_fit": 0
+ },
+ "44671d4d2976e8a8": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Free horse fair in Woodside with horse-related activities.",
+  "epic": false,
+  "family_fit": 60
  },
  "44699168feb69ef3": {
   "adult_interest": 70,
@@ -12879,6 +13263,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "4715afba9799ed17": {
+  "adult_interest": 75,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Film screening of a folk-horror movie at a theater in San Francisco.",
+  "epic": false,
+  "family_fit": 0
+ },
  "471b5c91cbba906e": {
   "adult_interest": 85,
   "adults_only": true,
@@ -13127,6 +13519,14 @@
   "epic": false,
   "family_fit": 30
  },
+ "486e1d357914e3e9": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free admission hour at Japanese Tea Garden, quiet outdoor garden visit.",
+  "epic": false,
+  "family_fit": 40
+ },
  "4873476613a93552": {
   "adult_interest": 80,
   "adults_only": true,
@@ -13199,6 +13599,14 @@
   "epic": false,
   "family_fit": 80
  },
+ "48c327a5123946ec": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Comedy show at a bar, not for kids.",
+  "epic": false,
+  "family_fit": 20
+ },
  "48d3d06bc149dbc3": {
   "adult_interest": 80,
   "adults_only": true,
@@ -13206,6 +13614,14 @@
   "blurb": "Free adults-only rock show at The Independent.",
   "epic": false,
   "family_fit": 0
+ },
+ "48d4952ba9f5dbbd": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Chowder festival with clam chowder tasting at Fisherman's Wharf, family-friendly food event.",
+  "epic": false,
+  "family_fit": 60
  },
  "48dc3560a619508d": {
   "adult_interest": 85,
@@ -13318,6 +13734,14 @@
   "blurb": "Dru Hill and Ginuwine perform at Mountain Winery.",
   "epic": false,
   "family_fit": 0
+ },
+ "4957b4bbe6e0aea3": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Black cowboy parade and festival in Oakland.",
+  "epic": false,
+  "family_fit": 60
  },
  "495b0de1c7bffeab": {
   "adult_interest": 85,
@@ -14143,6 +14567,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "4db263d440ba47c8": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Fleet Fest USAF Band of Golden West at Crab Wheel Plaza.",
+  "epic": false,
+  "family_fit": 75
+ },
  "4dc70aa4438982de": {
   "adult_interest": 85,
   "adults_only": true,
@@ -14895,6 +15327,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "5222b9b85d11b4d4": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free outdoor concert with three bands at Golden Gate Park bandshell.",
+  "epic": false,
+  "family_fit": 70
+ },
  "5229f78f3b22f747": {
   "adult_interest": 60,
   "adults_only": false,
@@ -15023,6 +15463,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "530c42dd2fbff1d6": {
+  "adult_interest": 55,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free Michael Jackson tribute concert at shopping center",
+  "epic": false,
+  "family_fit": 60
+ },
  "5312279d7507bcc3": {
   "adult_interest": 80,
   "adults_only": false,
@@ -15150,6 +15598,14 @@
   "blurb": "Latin music concert at a large arena.",
   "epic": false,
   "family_fit": 0
+ },
+ "53915dc8b0257390": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Weekly trivia night at Mission Bowling Club",
+  "epic": false,
+  "family_fit": 30
  },
  "5393c7dcd31a41c0": {
   "adult_interest": 80,
@@ -15287,6 +15743,22 @@
   "epic": false,
   "family_fit": 80
  },
+ "543175b401c7e125": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Concert by Band of the West Division during Fleet Week.",
+  "epic": false,
+  "family_fit": 40
+ },
+ "5434a4e51c8e889f": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Brass and woodwind quintet performance during Fleet Week.",
+  "epic": false,
+  "family_fit": 40
+ },
  "544275eab8782437": {
   "adult_interest": 60,
   "adults_only": true,
@@ -15358,6 +15830,14 @@
   "blurb": "Planetarium show about the Sun for ages 6+.",
   "epic": false,
   "family_fit": 65
+ },
+ "54ac4299c8166e52": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Jeff Arcuri comedy show at The Masonic.",
+  "epic": false,
+  "family_fit": 10
  },
  "54ad27d091eec0da": {
   "adult_interest": 70,
@@ -17079,6 +17559,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "5d60f3cc62b485ee": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Market with live music, not engaging for kids.",
+  "epic": false,
+  "family_fit": 30
+ },
  "5d665bffbd0e98bf": {
   "adult_interest": 65,
   "adults_only": false,
@@ -17254,6 +17742,14 @@
   "blurb": "Adult comedy show, 18+ with ID required.",
   "epic": false,
   "family_fit": 0
+ },
+ "5e7141759db264d8": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Latine makers market at Ferry Building with food.",
+  "epic": false,
+  "family_fit": 70
  },
  "5ea7c881aaf71a36": {
   "adult_interest": 60,
@@ -18095,6 +18591,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "62b7ff4da6c34d36": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Silent physical comedy show at a venue in San Francisco.",
+  "epic": false,
+  "family_fit": 0
+ },
  "62b9ba209d909ee2": {
   "adult_interest": 60,
   "adults_only": false,
@@ -18439,6 +18943,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "64d69f589b0f39b0": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free concerts and food trucks in downtown SF.",
+  "epic": false,
+  "family_fit": 50
+ },
  "64da8ace220f4330": {
   "adult_interest": 80,
   "adults_only": true,
@@ -18751,6 +19263,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "665f6cbe45dda8e1": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "DJ set at a venue.",
+  "epic": false,
+  "family_fit": 0
+ },
  "666927a34dad513a": {
   "adult_interest": 85,
   "adults_only": true,
@@ -18822,6 +19342,14 @@
   "blurb": "R&B concert by Jessie Reyez, 18+ only.",
   "epic": false,
   "family_fit": 10
+ },
+ "67007ac4fa055e42": {
+  "adult_interest": 75,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Improv comedy show at a theater.",
+  "epic": false,
+  "family_fit": 0
  },
  "6708eb25e651eb61": {
   "adult_interest": 75,
@@ -19039,6 +19567,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "67bcbba91b0af12d": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Free weekly comedy night at Function.",
+  "epic": false,
+  "family_fit": 10
+ },
  "67d64ccf19a43855": {
   "adult_interest": 85,
   "adults_only": true,
@@ -19078,6 +19614,14 @@
   "blurb": "A screening of Redline, an animated racing film, in Sacramento.",
   "epic": false,
   "family_fit": 40
+ },
+ "6846ac52392de880": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Annual pear festival in Kelseyville.",
+  "epic": false,
+  "family_fit": 85
  },
  "685dd31c82d9d6e5": {
   "adult_interest": 70,
@@ -19135,6 +19679,14 @@
   "epic": false,
   "family_fit": 90
  },
+ "68cb2d7b95742098": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free admission hour at Japanese Tea Garden in Golden Gate Park.",
+  "epic": false,
+  "family_fit": 65
+ },
  "68cc79929808a9b4": {
   "adult_interest": 90,
   "adults_only": false,
@@ -19150,6 +19702,14 @@
   "blurb": "Folk music performance at Felton Music Hall, 21+.",
   "epic": false,
   "family_fit": 0
+ },
+ "68fafb9666269ec4": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free admission to Japanese Tea Garden in Golden Gate Park.",
+  "epic": false,
+  "family_fit": 50
  },
  "6910f1e2487003b6": {
   "adult_interest": 85,
@@ -19679,6 +20239,14 @@
   "epic": false,
   "family_fit": 5
  },
+ "6be25c866399588c": {
+  "adult_interest": 75,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Grateful Dead tribute band playing for free at a saloon in Bolinas.",
+  "epic": false,
+  "family_fit": 0
+ },
  "6be3e5301ce4d8cb": {
   "adult_interest": 85,
   "adults_only": false,
@@ -19734,6 +20302,14 @@
   "blurb": "Planetarium show about the sun for ages 6+.",
   "epic": false,
   "family_fit": 60
+ },
+ "6c15782117b2143d": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Closing night party for a lounge.",
+  "epic": false,
+  "family_fit": 0
  },
  "6c23f4e3eb5a5161": {
   "adult_interest": 75,
@@ -20087,6 +20663,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "6dd07cbd0953046a": {
+  "adult_interest": 75,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Free Afrobeats and hip-hop night at a venue.",
+  "epic": false,
+  "family_fit": 0
+ },
  "6dd4acbe06f662dd": {
   "adult_interest": 60,
   "adults_only": false,
@@ -20246,6 +20830,14 @@
   "blurb": "Comedy show at a Sacramento bar, 139 minutes away, 18+.",
   "epic": false,
   "family_fit": 0
+ },
+ "6e6efb633f45fab1": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Arcade karaoke with $3 shots in San Francisco.",
+  "epic": false,
+  "family_fit": 20
  },
  "6e72b8271e7ea69e": {
   "adult_interest": 55,
@@ -20463,6 +21055,14 @@
   "epic": false,
   "family_fit": 80
  },
+ "6fb2cb28938b2fa5": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Syleena Johnson concert at Yoshi's Oakland",
+  "epic": false,
+  "family_fit": 10
+ },
  "6fcc8d0c1ad91816": {
   "adult_interest": 0,
   "adults_only": true,
@@ -20542,6 +21142,14 @@
   "blurb": "A Christmas Carol play at Walnut Creek theater.",
   "epic": false,
   "family_fit": 70
+ },
+ "707aa926b30995a1": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Electronic music concert at a venue for adults, not family-friendly.",
+  "epic": false,
+  "family_fit": 10
  },
  "707f990840e8cc14": {
   "adult_interest": 60,
@@ -20663,6 +21271,14 @@
   "epic": false,
   "family_fit": 80
  },
+ "70e064d44533e8af": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Ballet performance, not engaging for kids.",
+  "epic": false,
+  "family_fit": 20
+ },
  "70ee0c39d25be29c": {
   "adult_interest": 60,
   "adults_only": false,
@@ -20678,6 +21294,14 @@
   "blurb": "Country music show at a Novato tavern.",
   "epic": false,
   "family_fit": 0
+ },
+ "70f3d43f1fb59a19": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Fleet Fest Navy Band SW Destroyers at Pier 39.",
+  "epic": false,
+  "family_fit": 70
  },
  "70fa6933c113d87b": {
   "adult_interest": 20,
@@ -20742,6 +21366,14 @@
   "blurb": "Palm Tree Music Festival is a two-day music event in Napa.",
   "epic": false,
   "family_fit": 40
+ },
+ "713dd8392a013df9": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Concert by Cannons at a winery.",
+  "epic": false,
+  "family_fit": 20
  },
  "71420da63d7f12d5": {
   "adult_interest": 10,
@@ -21527,6 +22159,14 @@
   "epic": false,
   "family_fit": 35
  },
+ "7571149d9236f1d3": {
+  "adult_interest": 70,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Pink Floyd tribute band at a music hall in Mill Valley.",
+  "epic": false,
+  "family_fit": 0
+ },
  "7585c2891e22ddc2": {
   "adult_interest": 85,
   "adults_only": false,
@@ -21622,6 +22262,14 @@
   "blurb": "An art gallery closing party with a fundraiser in San Francisco.",
   "epic": false,
   "family_fit": 30
+ },
+ "75eb7f20611df1e7": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Night market with Asian food and cultural activities.",
+  "epic": false,
+  "family_fit": 75
  },
  "75ee2301dc166d0c": {
   "adult_interest": 85,
@@ -21847,6 +22495,14 @@
   "epic": false,
   "family_fit": 40
  },
+ "7718b7b9bf9cf1f0": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Fleet Fest popular music group at Union Square.",
+  "epic": false,
+  "family_fit": 60
+ },
  "771aea1a1c1d0e32": {
   "adult_interest": 60,
   "adults_only": false,
@@ -21862,6 +22518,14 @@
   "blurb": "Comedy show in Sacramento, 18+ only.",
   "epic": false,
   "family_fit": 0
+ },
+ "77296c30ad04e6fe": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Cristian Castro performs a concert at a venue in Sacramento.",
+  "epic": false,
+  "family_fit": 10
  },
  "772bf168d0667afd": {
   "adult_interest": 50,
@@ -21910,6 +22574,14 @@
   "blurb": "SF Free Concerts & Food Trucks at Civic Center, every Tuesday/Thursday.",
   "epic": false,
   "family_fit": 80
+ },
+ "7751245e26b5c93d": {
+  "adult_interest": 90,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Live comedy show at Warfield theater.",
+  "epic": false,
+  "family_fit": 0
  },
  "7754ce567f851342": {
   "adult_interest": 80,
@@ -22054,6 +22726,14 @@
   "blurb": "Rock band Hot Water Music at Goldfield Trading Post in Roseville.",
   "epic": false,
   "family_fit": 0
+ },
+ "783fdd61dc51b679": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Oktoberfest celebration with free food and music.",
+  "epic": false,
+  "family_fit": 60
  },
  "7841e0985b40a0cc": {
   "adult_interest": 10,
@@ -22398,6 +23078,14 @@
   "blurb": "Electronic dance music event for 18+ only.",
   "epic": false,
   "family_fit": 0
+ },
+ "79d8f719ab747834": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Horror movie screening of Bride of Chucky at Crest Theater.",
+  "epic": false,
+  "family_fit": 10
  },
  "79e5ed22d4c772ee": {
   "adult_interest": 70,
@@ -23399,6 +24087,14 @@
   "epic": false,
   "family_fit": 70
  },
+ "7f197a48c86f256d": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Arcade karaoke with $3 shots in San Francisco.",
+  "epic": false,
+  "family_fit": 20
+ },
  "7f29f4b20346e3b6": {
   "adult_interest": 50,
   "adults_only": false,
@@ -23543,6 +24239,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "80140d42bf5057ad": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Fleet Fest brass band concert in Hayes Valley Park.",
+  "epic": false,
+  "family_fit": 85
+ },
  "80167c87647aebd2": {
   "adult_interest": 30,
   "adults_only": false,
@@ -23574,6 +24278,14 @@
   "blurb": "Rock concert in Napa, summer sessions.",
   "epic": false,
   "family_fit": 0
+ },
+ "802bdc5a7010a72f": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Comedy show at a bookshop, not for kids.",
+  "epic": false,
+  "family_fit": 20
  },
  "802be1a847bb7b7c": {
   "adult_interest": 60,
@@ -23999,6 +24711,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "82837136abebc902": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Sewing workshop in SF",
+  "epic": false,
+  "family_fit": 10
+ },
  "828d736b41587108": {
   "adult_interest": 60,
   "adults_only": false,
@@ -24006,6 +24726,14 @@
   "blurb": "Franklin Jonas & The Byzantines play folk at Brick & Mortar.",
   "epic": false,
   "family_fit": 20
+ },
+ "8290a0da4b4eab73": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only comedy show at a venue.",
+  "epic": false,
+  "family_fit": 0
  },
  "829e4574aaa56bc6": {
   "adult_interest": 75,
@@ -24286,6 +25014,14 @@
   "blurb": "Carol Luckenbach concert at Feinstein's.",
   "epic": false,
   "family_fit": 10
+ },
+ "839c80b779c7f431": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free admission hour at Japanese Tea Garden in Golden Gate Park.",
+  "epic": false,
+  "family_fit": 65
  },
  "839f36b57bfbf2a8": {
   "adult_interest": 30,
@@ -25007,6 +25743,22 @@
   "epic": false,
   "family_fit": 50
  },
+ "86c674ed24a27d30": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Rock bands performing at a pub in San Francisco.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "86cfb78d99bff31a": {
+  "adult_interest": 90,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Secret music show in a living room, adults-only venue.",
+  "epic": false,
+  "family_fit": 10
+ },
  "86d680b2622ec01e": {
   "adult_interest": 10,
   "adults_only": false,
@@ -25070,6 +25822,14 @@
   "blurb": "The Goddamn Gallows is a rock band show with a 21+ age restriction.",
   "epic": false,
   "family_fit": 10
+ },
+ "872aa3ef83640bc2": {
+  "adult_interest": 90,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Channel Tres, JYOTY, and Gelli Haha perform at a nightclub.",
+  "epic": false,
+  "family_fit": 0
  },
  "8738176f128b7faa": {
   "adult_interest": 35,
@@ -25270,6 +26030,14 @@
   "blurb": "Bike ride through San Jose with group.",
   "epic": false,
   "family_fit": 60
+ },
+ "883e6038eb7bd708": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only music event at a nightclub.",
+  "epic": false,
+  "family_fit": 0
  },
  "88458a91683bf8ee": {
   "adult_interest": 80,
@@ -25516,6 +26284,14 @@
   "adults_only": true,
   "audience": "adults",
   "blurb": "R&B concert for adults, no kids allowed.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "896b203090cbd697": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Disco night at a bar.",
   "epic": false,
   "family_fit": 0
  },
@@ -25983,6 +26759,14 @@
   "epic": false,
   "family_fit": 75
  },
+ "8c3fb0e1012172ee": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Norwegian blues guitarist playing late-night show in SF",
+  "epic": false,
+  "family_fit": 10
+ },
  "8c52998ae13d1dce": {
   "adult_interest": 80,
   "adults_only": true,
@@ -26279,6 +27063,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "8ddbc4a04d2c0949": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Free summit for Filipino entrepreneurs.",
+  "epic": false,
+  "family_fit": 10
+ },
  "8ddf4b53822d6774": {
   "adult_interest": 70,
   "adults_only": false,
@@ -26494,6 +27286,14 @@
   "blurb": "A launch party for a film series at Madrone Art Bar in San Francisco.",
   "epic": false,
   "family_fit": 20
+ },
+ "8edc6c656d3609a3": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free Dolly Parton-themed event in Crockett.",
+  "epic": false,
+  "family_fit": 80
  },
  "8ee85ec8a032cb99": {
   "adult_interest": 25,
@@ -26726,6 +27526,14 @@
   "blurb": "Toad the Wet Sprocket concert in Monterey.",
   "epic": false,
   "family_fit": 20
+ },
+ "906bde5bcbb5f137": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only music event at a venue.",
+  "epic": false,
+  "family_fit": 0
  },
  "906df666162f4d95": {
   "adult_interest": 25,
@@ -27311,6 +28119,14 @@
   "epic": false,
   "family_fit": 80
  },
+ "93f3bb79c6c0fb71": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Academy's annual awards dinner at Castro Theatre.",
+  "epic": false,
+  "family_fit": 10
+ },
  "93fe78f29a4a8a62": {
   "adult_interest": 70,
   "adults_only": false,
@@ -27543,6 +28359,14 @@
   "epic": false,
   "family_fit": 80
  },
+ "955fcea90f08ae23": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Religious concert tour, not suitable for children.",
+  "epic": false,
+  "family_fit": 0
+ },
  "956027f95d5a35cc": {
   "adult_interest": 70,
   "adults_only": false,
@@ -27558,6 +28382,14 @@
   "blurb": "Holiday circus show with comedy and magic for all ages.",
   "epic": false,
   "family_fit": 85
+ },
+ "957bef62da307d1c": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Labiahead alternative band tour show.",
+  "epic": false,
+  "family_fit": 10
  },
  "9585dc8afe9050e6": {
   "adult_interest": 85,
@@ -28071,6 +28903,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "97f78fae47c4ef28": {
+  "adult_interest": 90,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Leather and gear happy hour for adults only.",
+  "epic": false,
+  "family_fit": 0
+ },
  "97fcaf9b2244a7ff": {
   "adult_interest": 80,
   "adults_only": false,
@@ -28279,6 +29119,22 @@
   "epic": false,
   "family_fit": 65
  },
+ "99071ea29842034b": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Colby Acuff performs a concert at a venue with a 21+ restriction.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "990ebc167b046a31": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "DJ set at a nightclub.",
+  "epic": false,
+  "family_fit": 0
+ },
  "99147101915c27cc": {
   "adult_interest": 85,
   "adults_only": true,
@@ -28367,6 +29223,14 @@
   "epic": false,
   "family_fit": 75
  },
+ "9979a7822d869b06": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Arcade karaoke with $3 shots in SF downtown.",
+  "epic": false,
+  "family_fit": 40
+ },
  "997b2ae6952100b6": {
   "adult_interest": 0,
   "adults_only": false,
@@ -28439,6 +29303,14 @@
   "epic": false,
   "family_fit": 90
  },
+ "99be4eb9216fc624": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Halloween dog pawty with trunk or treat and classic cars at Fisherman's Wharf.",
+  "epic": false,
+  "family_fit": 85
+ },
  "99d409c9de5753bf": {
   "adult_interest": 85,
   "adults_only": true,
@@ -28446,6 +29318,14 @@
   "blurb": "Comedy show at Cobb's Comedy Club in SF, 18+ only.",
   "epic": false,
   "family_fit": 0
+ },
+ "99d52693c10e1b87": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Vessbroz Persian House experience in SF.",
+  "epic": false,
+  "family_fit": 10
  },
  "99e6b1d132d1bc6c": {
   "adult_interest": 80,
@@ -28582,6 +29462,14 @@
   "blurb": "Spencer Day jazz performance at Feinstein's.",
   "epic": false,
   "family_fit": 10
+ },
+ "9ac7c50dd08f4ab5": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Free comedy show, not for kids.",
+  "epic": false,
+  "family_fit": 0
  },
  "9ad074df2e071470": {
   "adult_interest": 85,
@@ -29399,6 +30287,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "9fbd721b5cbeb49e": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Laurie Anderson performance at a theater in San Francisco.",
+  "epic": false,
+  "family_fit": 0
+ },
  "9fc2652d9d54dc06": {
   "adult_interest": 90,
   "adults_only": true,
@@ -29903,6 +30799,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "a2dc31357f017617": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Art crawl in North Beach with open house tours.",
+  "epic": false,
+  "family_fit": 40
+ },
  "a2f8512b8ada9112": {
   "adult_interest": 85,
   "adults_only": true,
@@ -29958,6 +30862,14 @@
   "blurb": "Reggae show at a casino venue, all ages.",
   "epic": false,
   "family_fit": 0
+ },
+ "a364a5186845a07a": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Comedy show at a bar, not for kids.",
+  "epic": false,
+  "family_fit": 10
  },
  "a365fdac3673d15e": {
   "adult_interest": 70,
@@ -30087,6 +30999,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "a41a2e66fbaed3a8": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Halloween trick-or-treat trail and free movie in Hayes Valley.",
+  "epic": false,
+  "family_fit": 75
+ },
  "a41c22645ba83fd2": {
   "adult_interest": 60,
   "adults_only": false,
@@ -30183,6 +31103,14 @@
   "epic": false,
   "family_fit": 85
  },
+ "a49a9f1bb8e81bea": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Musical theater production of 9 to 5 in Woodland.",
+  "epic": false,
+  "family_fit": 30
+ },
  "a49e00c1b041fb17": {
   "adult_interest": 65,
   "adults_only": false,
@@ -30230,6 +31158,14 @@
   "blurb": "Adult-only hip-hop concert in Santa Cruz.",
   "epic": false,
   "family_fit": 0
+ },
+ "a4d280f8e9a3cbd5": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free concerts and food trucks in a downtown plaza, family-friendly music and eats.",
+  "epic": false,
+  "family_fit": 60
  },
  "a4d4a1587010f94a": {
   "adult_interest": 30,
@@ -30302,6 +31238,14 @@
   "blurb": "Rock concert with 5+ age restriction at August Hall.",
   "epic": false,
   "family_fit": 20
+ },
+ "a5435e653cfb8855": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Labiahead alternative band tour show.",
+  "epic": false,
+  "family_fit": 10
  },
  "a5534668983a6c4c": {
   "adult_interest": 70,
@@ -30422,6 +31366,14 @@
   "blurb": "Drone and flight sim activities at Hiller Aviation Museum.",
   "epic": false,
   "family_fit": 80
+ },
+ "a678f5bb118de424": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Brian Cox performing at a theater in SF.",
+  "epic": false,
+  "family_fit": 10
  },
  "a6819bcd675228df": {
   "adult_interest": 60,
@@ -30839,6 +31791,14 @@
   "epic": false,
   "family_fit": 85
  },
+ "a8575c4562b00934": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Opera, not very engaging for kids.",
+  "epic": false,
+  "family_fit": 30
+ },
  "a865162bfbdc9167": {
   "adult_interest": 65,
   "adults_only": false,
@@ -30991,6 +31951,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "a90237d33b96826d": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free outdoor music show at a BBQ restaurant.",
+  "epic": false,
+  "family_fit": 60
+ },
  "a903680ab2be4d70": {
   "adult_interest": 90,
   "adults_only": false,
@@ -31134,6 +32102,14 @@
   "blurb": "Postponed pop concert.",
   "epic": false,
   "family_fit": 0
+ },
+ "a9fe3a1b4b990429": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Fleet Fest SW Brass Band at Golden Gate Park bandshell.",
+  "epic": false,
+  "family_fit": 80
  },
  "a9ffed6ddd1f78d6": {
   "adult_interest": 70,
@@ -31399,6 +32375,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "ab5890550b7518d2": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Community sand painting on Ocean Beach, free for all ages.",
+  "epic": false,
+  "family_fit": 70
+ },
  "ab5c37d9d6e81576": {
   "adult_interest": 70,
   "adults_only": false,
@@ -31500,6 +32484,14 @@
   "adults_only": true,
   "audience": "adults",
   "blurb": "Adults-only comedy show in Sacramento, 18+ with ID required.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "abca99f606ac60c8": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only music event at a nightclub.",
   "epic": false,
   "family_fit": 0
  },
@@ -32039,6 +33031,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "aea9461a65b7f242": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Arcade karaoke with $3 shots in San Francisco.",
+  "epic": false,
+  "family_fit": 20
+ },
  "aeb424e21ebd2fcd": {
   "adult_interest": 60,
   "adults_only": false,
@@ -32126,6 +33126,14 @@
   "blurb": "Comedy night at a bar in Oakland.",
   "epic": false,
   "family_fit": 0
+ },
+ "af1620773fc8f59d": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Slow Magic performs a concert at a bar in San Francisco.",
+  "epic": false,
+  "family_fit": 10
  },
  "af27da9e027eb42d": {
   "adult_interest": 85,
@@ -32391,6 +33399,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "b0d673bece434bb4": {
+  "adult_interest": 65,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only music event at a venue.",
+  "epic": false,
+  "family_fit": 0
+ },
  "b11ff9049318f411": {
   "adult_interest": 80,
   "adults_only": true,
@@ -32510,6 +33526,14 @@
   "blurb": "Rock concert at a Roseville venue for adults only.",
   "epic": false,
   "family_fit": 0
+ },
+ "b21d7b4724caeea4": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Pianist Sarah Cahill performs a classical concert at a university hall.",
+  "epic": false,
+  "family_fit": 10
  },
  "b22c5ae8c8da5621": {
   "adult_interest": 90,
@@ -32903,6 +33927,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "b49fb8928c8d586b": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Brass band concert during Fleet Week at Fisherman's Wharf.",
+  "epic": false,
+  "family_fit": 40
+ },
  "b4a4da7c85c27d5c": {
   "adult_interest": 70,
   "adults_only": false,
@@ -33055,6 +34087,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "b57ee44ecf9f95f7": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Improv comedy about crime, not for kids.",
+  "epic": false,
+  "family_fit": 10
+ },
  "b588f4a3104579fa": {
   "adult_interest": 80,
   "adults_only": false,
@@ -33094,6 +34134,14 @@
   "blurb": "Free local music event at Kilowatt, 21+ only.",
   "epic": false,
   "family_fit": 40
+ },
+ "b5ac300201579239": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Free horse fair in Woodside with horse-related activities.",
+  "epic": false,
+  "family_fit": 60
  },
  "b5b3ffa5d2d05c6c": {
   "adult_interest": 80,
@@ -33246,6 +34294,14 @@
   "blurb": "Rock concert at a venue with 21+ age restriction.",
   "epic": false,
   "family_fit": 0
+ },
+ "b678a31090c86171": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free outdoor jazz concert in Golden Gate Park.",
+  "epic": false,
+  "family_fit": 70
  },
  "b67e6b30bdecb4c2": {
   "adult_interest": 85,
@@ -33807,6 +34863,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "b980c9a72524d482": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Tammy's Camaro performs at a venue with a 21+ restriction.",
+  "epic": false,
+  "family_fit": 0
+ },
  "b9818fad8c65ab31": {
   "adult_interest": 85,
   "adults_only": true,
@@ -33878,6 +34942,14 @@
   "blurb": "Phantom of the Opera touring musical, suitable for teens.",
   "epic": false,
   "family_fit": 40
+ },
+ "b9ddbd050bbdcf1b": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Tribal Seeds & Fortunate Youth concert at Quarry Park",
+  "epic": false,
+  "family_fit": 20
  },
  "b9e03b2002d16fdf": {
   "adult_interest": 40,
@@ -34303,6 +35375,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "bbbee2d9053b3518": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Comedy show featuring an actress from Back to the Future, likely adult-oriented.",
+  "epic": false,
+  "family_fit": 20
+ },
  "bbc06ae55de909bf": {
   "adult_interest": 60,
   "adults_only": false,
@@ -34599,6 +35679,14 @@
   "epic": false,
   "family_fit": 75
  },
+ "bce2d549fea81879": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "José González performs a concert at a theater in Napa.",
+  "epic": false,
+  "family_fit": 10
+ },
  "bce4f1312b781bff": {
   "adult_interest": 40,
   "adults_only": false,
@@ -34606,6 +35694,14 @@
   "blurb": "Planetarium show about the sun for all ages.",
   "epic": false,
   "family_fit": 75
+ },
+ "bd09b0fc0dc15031": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only band performance at a venue.",
+  "epic": false,
+  "family_fit": 0
  },
  "bd0e02873698c92e": {
   "adult_interest": 10,
@@ -34710,6 +35806,14 @@
   "blurb": "New musical theater works at Feinstein's in San Francisco.",
   "epic": false,
   "family_fit": 20
+ },
+ "bd75763507258bf8": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Italian Heritage Parade during Fleet Week.",
+  "epic": false,
+  "family_fit": 40
  },
  "bd7d1e7ec27b4a99": {
   "adult_interest": 75,
@@ -34999,6 +36103,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "bf46565eda8a1cfa": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Rock band performance at a theater in Petaluma.",
+  "epic": false,
+  "family_fit": 0
+ },
  "bf5f30864e2fcd6b": {
   "adult_interest": 85,
   "adults_only": true,
@@ -35119,6 +36231,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "c0230d78468accd2": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Improv comedy about conspiracy theories, not for kids.",
+  "epic": false,
+  "family_fit": 10
+ },
  "c02ea8bce23ba60b": {
   "adult_interest": 30,
   "adults_only": false,
@@ -35238,6 +36358,14 @@
   "blurb": "Gloria Estefan tribute show in Sacramento.",
   "epic": false,
   "family_fit": 50
+ },
+ "c098967f3fe13300": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Lego exhibition at a shopping center, open to the public.",
+  "epic": false,
+  "family_fit": 70
  },
  "c099c44e8cdd133b": {
   "adult_interest": 80,
@@ -35767,6 +36895,14 @@
   "epic": false,
   "family_fit": 40
  },
+ "c3679f5492e0ede7": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Fleet Fest woodwind quintet at Presidio Tunnel Tops.",
+  "epic": false,
+  "family_fit": 70
+ },
  "c36a40dcc5dcd115": {
   "adult_interest": 50,
   "adults_only": false,
@@ -35806,6 +36942,14 @@
   "blurb": "Oakland comedy night, recurring weekly event.",
   "epic": false,
   "family_fit": 10
+ },
+ "c39580700a384dbc": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Gallery chats at a museum for adults.",
+  "epic": false,
+  "family_fit": 30
  },
  "c39a35592a1775c7": {
   "adult_interest": 80,
@@ -36103,6 +37247,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "c526b0487ef7b556": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Makers market and free swim at pool for kids.",
+  "epic": false,
+  "family_fit": 80
+ },
  "c52f275440eae589": {
   "adult_interest": 80,
   "adults_only": true,
@@ -36318,6 +37470,14 @@
   "blurb": "Art reception for photographer Jerry Dodrill at Book Passage Corte Madera.",
   "epic": false,
   "family_fit": 30
+ },
+ "c639ac4790c9ba7f": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Maker Faire with robots, rockets, and hands-on making.",
+  "epic": true,
+  "family_fit": 80
  },
  "c642e70f48d924b8": {
   "adult_interest": 70,
@@ -36623,6 +37783,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "c81d8acb464df7ae": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Filipino night market with food and drinks in SoMa.",
+  "epic": false,
+  "family_fit": 60
+ },
  "c820af6e03e77045": {
   "adult_interest": 70,
   "adults_only": false,
@@ -36919,6 +38087,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "ca3fb3f5d6978e97": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Dolly Parton tribute event with music and remembrance.",
+  "epic": false,
+  "family_fit": 30
+ },
  "ca50d14feb29d824": {
   "adult_interest": 30,
   "adults_only": false,
@@ -37198,6 +38374,14 @@
   "blurb": "Disney On Ice at Oakland Arena.",
   "epic": false,
   "family_fit": 40
+ },
+ "cbacb1e65eaa0973": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Documentary film about concrete, not for kids.",
+  "epic": false,
+  "family_fit": 10
  },
  "cbc55e552d955fc5": {
   "adult_interest": 10,
@@ -37711,6 +38895,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "ce68ce0f71783c09": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free concerts and food trucks in a downtown plaza, family-friendly music and eats.",
+  "epic": false,
+  "family_fit": 60
+ },
  "ce695816e46e7e66": {
   "adult_interest": 60,
   "adults_only": false,
@@ -37879,6 +39071,14 @@
   "epic": false,
   "family_fit": 50
  },
+ "cf6b93c4c5bb50e1": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free concerts and food trucks in downtown SF.",
+  "epic": false,
+  "family_fit": 50
+ },
  "cf709b87ec538db8": {
   "adult_interest": 80,
   "adults_only": false,
@@ -37894,6 +39094,14 @@
   "blurb": "Alternative band tour, adults-only.",
   "epic": false,
   "family_fit": 0
+ },
+ "cf89bb45a5fedeae": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Hockey game between two teams in San Jose.",
+  "epic": false,
+  "family_fit": 50
  },
  "cf95c1f2f1222b57": {
   "adult_interest": 30,
@@ -37967,6 +39175,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "cfef1fff3b6b028f": {
+  "adult_interest": 50,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Free stand-up comedy show at a lounge in San Mateo.",
+  "epic": false,
+  "family_fit": 0
+ },
  "cffb176f6772bf1a": {
   "adult_interest": 40,
   "adults_only": false,
@@ -37974,6 +39190,14 @@
   "blurb": "Free first Tuesdays at Conservatory of Flowers, mild interest for kids.",
   "epic": false,
   "family_fit": 50
+ },
+ "d004d67b06498c01": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "PG-rated movie screening at a theater.",
+  "epic": false,
+  "family_fit": 40
  },
  "d050a1e86a0a2daa": {
   "adult_interest": 30,
@@ -38311,6 +39535,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "d1fc2d6a799da23b": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Trick-or-treat at Hiller Aviation Museum for Halloween.",
+  "epic": false,
+  "family_fit": 80
+ },
  "d1fcac37e9104848": {
   "adult_interest": 85,
   "adults_only": true,
@@ -38326,6 +39558,14 @@
   "blurb": "Alternative rock concert at a local venue, good for teens and adults.",
   "epic": false,
   "family_fit": 60
+ },
+ "d20278a92edf1de3": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free concerts and food trucks in downtown San Francisco.",
+  "epic": false,
+  "family_fit": 65
  },
  "d2070a286f566a9c": {
   "adult_interest": 60,
@@ -38454,6 +39694,14 @@
   "blurb": "Preview night for holiday decorations at Filoli.",
   "epic": false,
   "family_fit": 50
+ },
+ "d2a69b65cb820c9c": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Free member-only morning at a museum with breakfast.",
+  "epic": false,
+  "family_fit": 20
  },
  "d2abfab59236af11": {
   "adult_interest": 80,
@@ -38711,6 +39959,14 @@
   "epic": false,
   "family_fit": 50
  },
+ "d3bb685950baddf8": {
+  "adult_interest": 90,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Six Sex performs at a nightclub with a sold-out event.",
+  "epic": false,
+  "family_fit": 0
+ },
  "d3db2a95aa46a253": {
   "adult_interest": 60,
   "adults_only": false,
@@ -38758,6 +40014,14 @@
   "blurb": "Blood Orange concert at The Warfield, sold out.",
   "epic": false,
   "family_fit": 0
+ },
+ "d47c70f5ca032e46": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Open mic for poets and musicians, free, but not for kids.",
+  "epic": false,
+  "family_fit": 20
  },
  "d4840bcb8b84f9de": {
   "adult_interest": 70,
@@ -39175,6 +40439,14 @@
   "epic": false,
   "family_fit": 85
  },
+ "d6b8d452b8cfe6eb": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "ILLENIUM electronic music concert.",
+  "epic": false,
+  "family_fit": 10
+ },
  "d6b9933d07536e2b": {
   "adult_interest": 20,
   "adults_only": false,
@@ -39182,6 +40454,14 @@
   "blurb": "Free admission hour at Japanese Tea Garden in Golden Gate Park.",
   "epic": false,
   "family_fit": 80
+ },
+ "d6bb51b4649273bf": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Local band competition, not for kids.",
+  "epic": false,
+  "family_fit": 30
  },
  "d6c21bf0ffbb76a0": {
   "adult_interest": 40,
@@ -39262,6 +40542,14 @@
   "blurb": "Folk music show at August Hall, age 5+.",
   "epic": false,
   "family_fit": 50
+ },
+ "d7417b594162498d": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free art exhibition opening, family-friendly.",
+  "epic": false,
+  "family_fit": 60
  },
  "d75a19cdf36e2d36": {
   "adult_interest": 75,
@@ -39446,6 +40734,14 @@
   "blurb": "Free Shakespeare in the Park performance of Antony and Cleopatra.",
   "epic": false,
   "family_fit": 40
+ },
+ "d865e380c2b5b9c9": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free Fleet Week concert with US Navy Band in Golden Gate Park.",
+  "epic": false,
+  "family_fit": 75
  },
  "d867e25ba5a09393": {
   "adult_interest": 70,
@@ -39638,6 +40934,14 @@
   "blurb": "Dance/electronic music show at a historic theater.",
   "epic": false,
   "family_fit": 40
+ },
+ "d9598c15cc98b737": {
+  "adult_interest": 70,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Theater play about an older couple at a stage in Berkeley.",
+  "epic": false,
+  "family_fit": 0
  },
  "d9631a1cc52e1825": {
   "adult_interest": 45,
@@ -39975,6 +41279,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "db2af472c794f7ca": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Adaptive sports expo with wheelchair basketball and rugby, open to all ages.",
+  "epic": false,
+  "family_fit": 40
+ },
  "db30ebd847999678": {
   "adult_interest": 65,
   "adults_only": false,
@@ -40183,6 +41495,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "dbffb886feb429c2": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Monster trucks performing freestyle stunts at a stadium.",
+  "epic": false,
+  "family_fit": 90
+ },
  "dc00b1e6008b0233": {
   "adult_interest": 60,
   "adults_only": false,
@@ -40303,6 +41623,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "dcfdd45c6b2f90b1": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Sidewalk sale at a nursery school, likely for young children's items.",
+  "epic": false,
+  "family_fit": 20
+ },
  "dd036f986884bacc": {
   "adult_interest": 30,
   "adults_only": false,
@@ -40310,6 +41638,14 @@
   "blurb": "Free first Tuesdays at Conservatory of Flowers, great for families.",
   "epic": false,
   "family_fit": 80
+ },
+ "dd060a8d46ab1680": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Face to Face performs at a venue with a sold-out event.",
+  "epic": false,
+  "family_fit": 0
  },
  "dd0d487c9149f640": {
   "adult_interest": 85,
@@ -40438,6 +41774,14 @@
   "blurb": "Free electronic dance event, 21+ and adults-only.",
   "epic": false,
   "family_fit": 0
+ },
+ "dd8b646b2482709a": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Monster trucks performing freestyle stunts at a stadium.",
+  "epic": false,
+  "family_fit": 90
  },
  "dd95ebf92d702945": {
   "adult_interest": 70,
@@ -40596,6 +41940,14 @@
   "adults_only": true,
   "audience": "adults",
   "blurb": "Pop concert at a venue with 21+ age restriction.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "de7504f8e964e802": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "DJ set at a nightclub.",
   "epic": false,
   "family_fit": 0
  },
@@ -40796,6 +42148,14 @@
   "adults_only": true,
   "audience": "adults",
   "blurb": "18+ comedy show at The Masonic.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "e007760732048598": {
+  "adult_interest": 70,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Disco and house music event on Folsom Street.",
   "epic": false,
   "family_fit": 0
  },
@@ -41110,6 +42470,14 @@
   "blurb": "Classic film screening, not for kids.",
   "epic": false,
   "family_fit": 10
+ },
+ "e2119808fa6cadaf": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only queer house party at a venue.",
+  "epic": false,
+  "family_fit": 0
  },
  "e213d3c7bac448be": {
   "adult_interest": 65,
@@ -41639,6 +43007,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "e500fb5f3dbc8b56": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "R&B concert for adults only, 18+ age restriction.",
+  "epic": false,
+  "family_fit": 0
+ },
  "e50845af7abaac48": {
   "adult_interest": 80,
   "adults_only": true,
@@ -41967,6 +43343,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "e6bc6f21a8591ef4": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Fleet Fest Band of Golden West Brass at Ghirardelli Square.",
+  "epic": false,
+  "family_fit": 65
+ },
  "e6c10d0d45d561e1": {
   "adult_interest": 70,
   "adults_only": false,
@@ -42271,6 +43655,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "e887afd48e4b77c7": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free concerts and food trucks at Civic Center.",
+  "epic": false,
+  "family_fit": 65
+ },
  "e89a5581e63bf634": {
   "adult_interest": 85,
   "adults_only": true,
@@ -42278,6 +43670,14 @@
   "blurb": "Adults-only music event at a brewery.",
   "epic": false,
   "family_fit": 0
+ },
+ "e8a199e20e477d93": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Short film block celebrating Latine heritage, not engaging for kids.",
+  "epic": false,
+  "family_fit": 20
  },
  "e8a8716973f2cb7b": {
   "adult_interest": 10,
@@ -42398,6 +43798,14 @@
   "blurb": "Shortie event at Goldfield Trading Post in Roseville.",
   "epic": false,
   "family_fit": 20
+ },
+ "e98253fb9a3f062b": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free outdoor movie showing School of Rock.",
+  "epic": false,
+  "family_fit": 40
  },
  "e98ab0aa0e89d8dc": {
   "adult_interest": 60,
@@ -42543,6 +43951,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "eaba13d011b64371": {
+  "adult_interest": 90,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Kruder & Dorfmeister 30th anniversary tour at Fox Theater",
+  "epic": false,
+  "family_fit": 0
+ },
  "eac62494722db7a5": {
   "adult_interest": 75,
   "adults_only": false,
@@ -42566,6 +43982,14 @@
   "blurb": "Disney's Beauty and the Beast touring musical in San Jose.",
   "epic": false,
   "family_fit": 75
+ },
+ "eaebd2f902f439bf": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Band performance at Pier 39 during Fleet Week.",
+  "epic": false,
+  "family_fit": 40
  },
  "eaf1af6704a5abcd": {
   "adult_interest": 70,
@@ -42862,6 +44286,14 @@
   "blurb": "Twilight movie screening in Sacramento.",
   "epic": false,
   "family_fit": 10
+ },
+ "ecc5b99424f6767a": {
+  "adult_interest": 90,
+  "adults_only": true,
+  "audience": "teens",
+  "blurb": "Heavy metal concert, 21+ only.",
+  "epic": false,
+  "family_fit": 0
  },
  "ecccfa6a98f0d8b4": {
   "adult_interest": 75,
@@ -43319,6 +44751,14 @@
   "epic": false,
   "family_fit": 70
  },
+ "ef3d7bca73e2cda3": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free admission hour at Japanese Tea Garden in Golden Gate Park.",
+  "epic": false,
+  "family_fit": 65
+ },
  "ef405605e3be0c9e": {
   "adult_interest": 65,
   "adults_only": false,
@@ -43567,6 +45007,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "f095f24197e46ddd": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Archives event about transmasculine history, not for kids.",
+  "epic": false,
+  "family_fit": 20
+ },
  "f096c88403f7c8a8": {
   "adult_interest": 85,
   "adults_only": false,
@@ -43686,6 +45134,14 @@
   "blurb": "Country music concert by Riley Green in Mountain View.",
   "epic": false,
   "family_fit": 20
+ },
+ "f1702697530d18e9": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Film screening with restored animation, not for kids.",
+  "epic": false,
+  "family_fit": 40
  },
  "f1756013fe46c803": {
   "adult_interest": 70,
@@ -44207,6 +45663,22 @@
   "epic": false,
   "family_fit": 0
  },
+ "f43a1aa109aeb7f7": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Interactive tech and flight sim activities at a museum.",
+  "epic": false,
+  "family_fit": 85
+ },
+ "f43a52d78bb598fe": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Beck performs a concert at a venue in San Francisco.",
+  "epic": false,
+  "family_fit": 10
+ },
  "f44e6fcc00f1d6ed": {
   "adult_interest": 85,
   "adults_only": true,
@@ -44238,6 +45710,14 @@
   "blurb": "Labor Day bonfire at Ocean Beach, free and annual.",
   "epic": false,
   "family_fit": 80
+ },
+ "f47b0de319d77b3b": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only drag show at a science museum, not for children.",
+  "epic": false,
+  "family_fit": 0
  },
  "f47d92172528a99a": {
   "adult_interest": 70,
@@ -45047,6 +46527,14 @@
   "epic": false,
   "family_fit": 75
  },
+ "f95e19303cd7c9e9": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free documentary screening about Disney creators",
+  "epic": false,
+  "family_fit": 40
+ },
  "f96f384fa7463f16": {
   "adult_interest": 60,
   "adults_only": false,
@@ -45263,6 +46751,14 @@
   "epic": false,
   "family_fit": 25
  },
+ "fa87901bba969b80": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Musical theater production of 9 to 5 in Woodland.",
+  "epic": false,
+  "family_fit": 30
+ },
  "fa962b4710971dbe": {
   "adult_interest": 85,
   "adults_only": true,
@@ -45340,6 +46836,14 @@
   "adults_only": false,
   "audience": "adults",
   "blurb": "Open mic night in Bolinas.",
+  "epic": false,
+  "family_fit": 10
+ },
+ "fb4e5692ef60f611": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Salsa lessons and social dancing in SF",
   "epic": false,
   "family_fit": 10
  },
@@ -45990,6 +47494,14 @@
   "blurb": "Adults-only comedy show with 21+ restriction.",
   "epic": false,
   "family_fit": 0
+ },
+ "ff494d5d4a1a36de": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Film screening of a lesser-known Eastern European director.",
+  "epic": false,
+  "family_fit": 20
  },
  "ff4b3877e05187c6": {
   "adult_interest": 80,
