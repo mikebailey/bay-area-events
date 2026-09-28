@@ -551,6 +551,14 @@
   "epic": false,
   "family_fit": 40
  },
+ "02d0b73af08b3d29": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Rock orchestra playing classic rock songs in a formal setting.",
+  "epic": false,
+  "family_fit": 0
+ },
  "02d3e8c38b8c8ca5": {
   "adult_interest": 65,
   "adults_only": false,
@@ -734,6 +742,14 @@
   "blurb": "Tasting tour of Filoli's garden and estate with food pairings.",
   "epic": false,
   "family_fit": 60
+ },
+ "0408132fc32dbf30": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Brandi Carlile's all-request concert with phone-free policy.",
+  "epic": false,
+  "family_fit": 0
  },
  "042a72dcfa7d4b15": {
   "adult_interest": 50,
@@ -3223,6 +3239,14 @@
   "epic": false,
   "family_fit": 75
  },
+ "10b86a1d903c7402": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "1972 western film about a mountain man fighting Native Americans.",
+  "epic": false,
+  "family_fit": 20
+ },
  "10c2c3a8b644271b": {
   "adult_interest": 50,
   "adults_only": false,
@@ -3727,6 +3751,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "136bf4ea8df42185": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Metal band night at a bar with $12 cover.",
+  "epic": false,
+  "family_fit": 0
+ },
  "1389f53585a7dd18": {
   "adult_interest": 80,
   "adults_only": true,
@@ -4015,6 +4047,14 @@
   "epic": false,
   "family_fit": 30
  },
+ "14d40a4602dd8f6c": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Optional upgrade for a game ball at Santa Cruz arena.",
+  "epic": false,
+  "family_fit": 10
+ },
  "14dc5f929dcaef8d": {
   "adult_interest": 85,
   "adults_only": true,
@@ -4231,6 +4271,14 @@
   "epic": false,
   "family_fit": 30
  },
+ "16398291f9e46e04": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Harlem Globetrotters Rivalry Tour in San Jose.",
+  "epic": false,
+  "family_fit": 85
+ },
  "16434a69d99ede4c": {
   "adult_interest": 40,
   "adults_only": false,
@@ -4326,6 +4374,14 @@
   "blurb": "Open mic at a comedy club, 21+ only.",
   "epic": false,
   "family_fit": 0
+ },
+ "16c5ac0f99363533": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Optional game ball upgrade at San Jose arena.",
+  "epic": false,
+  "family_fit": 10
  },
  "16d534130788ed70": {
   "adult_interest": 85,
@@ -7135,6 +7191,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "24dc349171a07813": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Memorizing Alison film screening, not engaging for kids.",
+  "epic": false,
+  "family_fit": 40
+ },
  "24ea704c65fd8514": {
   "adult_interest": 85,
   "adults_only": false,
@@ -7198,6 +7262,14 @@
   "blurb": "Street fair with drag shows and DJs in Castro district.",
   "epic": false,
   "family_fit": 25
+ },
+ "251b739d90008471": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Harlem Globetrotters Rivalry Tour at Chase Center, family-friendly basketball show.",
+  "epic": false,
+  "family_fit": 85
  },
  "254adce1447e2e5d": {
   "adult_interest": 70,
@@ -7567,6 +7639,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "272fe020d481ba96": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Bobby McFerrin sings with MOTION at The Freight, family-friendly but not exciting for kids.",
+  "epic": false,
+  "family_fit": 40
+ },
  "273ab0d4a408c1ad": {
   "adult_interest": 75,
   "adults_only": false,
@@ -7772,6 +7852,14 @@
   "adults_only": true,
   "audience": "adults",
   "blurb": "Comedy show at a comedy club in San Jose.",
+  "epic": false,
+  "family_fit": 10
+ },
+ "284d97d0691e7e48": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Optional on-court access pass at Chase Center in SF.",
   "epic": false,
   "family_fit": 10
  },
@@ -8358,6 +8446,14 @@
   "blurb": "Free Latin dance event with reggaeton and dembow music.",
   "epic": false,
   "family_fit": 10
+ },
+ "2ae1abdbb25a3f11": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Fred Wesley's New Jbs with Martha High's Funky Divas, adults-only music.",
+  "epic": false,
+  "family_fit": 0
  },
  "2ae4511f906bad50": {
   "adult_interest": 30,
@@ -10087,6 +10183,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "34578e347777b3b9": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Stockton Kings vs. Valley Suns basketball game at Adventist Health Arena.",
+  "epic": false,
+  "family_fit": 60
+ },
  "345919d694968750": {
   "adult_interest": 75,
   "adults_only": false,
@@ -10551,6 +10655,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "3662f73882ded8bc": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Harlem Globetrotters Rivalry Tour at Golden 1 Center, family-friendly basketball show.",
+  "epic": false,
+  "family_fit": 85
+ },
  "366859a4d723faa2": {
   "adult_interest": 65,
   "adults_only": false,
@@ -10574,6 +10686,14 @@
   "blurb": "Musical theater production of 9 to 5 at Woodland Opera House.",
   "epic": false,
   "family_fit": 45
+ },
+ "368f7070c609fca3": {
+  "adult_interest": 0,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Golf tournament for charity, not family-friendly.",
+  "epic": false,
+  "family_fit": 0
  },
  "369c122b1687f768": {
   "adult_interest": 85,
@@ -10663,6 +10783,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "36f647efbd85624b": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Monday yoga at Ferry Building, not engaging for kids.",
+  "epic": false,
+  "family_fit": 20
+ },
  "36fa484453e6cc56": {
   "adult_interest": 50,
   "adults_only": false,
@@ -10734,6 +10862,14 @@
   "blurb": "VIP upgrade for a hip-hop concert, not including ticket.",
   "epic": false,
   "family_fit": 0
+ },
+ "372d293be6df8628": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Swing dance party in Golden Gate Park.",
+  "epic": false,
+  "family_fit": 60
  },
  "373031b27ea52956": {
   "adult_interest": 70,
@@ -17415,6 +17551,22 @@
   "epic": false,
   "family_fit": 60
  },
+ "588fee4a75c938e9": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Trivial pursuit night at a bar, sold out.",
+  "epic": false,
+  "family_fit": 10
+ },
+ "589977b33c0caba6": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Knitting group at The Lone Star Saloon, not family-friendly.",
+  "epic": false,
+  "family_fit": 20
+ },
  "589bb432500c82a8": {
   "adult_interest": 65,
   "adults_only": true,
@@ -19135,6 +19287,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "60b0322b9b39c68c": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Rap concert by LUCKI at a major venue.",
+  "epic": false,
+  "family_fit": 10
+ },
  "60b0d9e14b62525c": {
   "adult_interest": 85,
   "adults_only": true,
@@ -20311,6 +20471,14 @@
   "epic": false,
   "family_fit": 30
  },
+ "6697124fae47f61d": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Optional on-court access pass for a game at Santa Cruz.",
+  "epic": false,
+  "family_fit": 10
+ },
  "66baee0e303ce608": {
   "adult_interest": 50,
   "adults_only": false,
@@ -20959,6 +21127,14 @@
   "epic": false,
   "family_fit": 70
  },
+ "69e4ef3a669a138d": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Studio 24 lounge access for FLO show, not a concert ticket.",
+  "epic": false,
+  "family_fit": 0
+ },
  "69faa1e4e43ab1fb": {
   "adult_interest": 85,
   "adults_only": true,
@@ -21567,6 +21743,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "6cc04ff3a3963ebd": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Evening art class for adults making sun prints on paper and fabric.",
+  "epic": false,
+  "family_fit": 30
+ },
  "6cc3706332f35370": {
   "adult_interest": 60,
   "adults_only": true,
@@ -21662,6 +21846,14 @@
   "blurb": "Free admission to Japanese Tea Garden in Golden Gate Park.",
   "epic": false,
   "family_fit": 80
+ },
+ "6d4406d84c0c56e5": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only comedy show with cocktails in Oakland.",
+  "epic": false,
+  "family_fit": 0
  },
  "6d455c52d22a26fb": {
   "adult_interest": 75,
@@ -21926,6 +22118,14 @@
   "blurb": "Pop concert with 21+ age restriction at a music hall.",
   "epic": false,
   "family_fit": 10
+ },
+ "6e439d696e510d16": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Jazz trio performance at Piedmont Piano Company, adults-only music.",
+  "epic": false,
+  "family_fit": 0
  },
  "6e460a996eb83a4b": {
   "adult_interest": 40,
@@ -25039,6 +25239,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "7dcb70cd8df6a1f7": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Concert by Inayah at a music hall.",
+  "epic": false,
+  "family_fit": 10
+ },
  "7dd886f7d585845a": {
   "adult_interest": 70,
   "adults_only": false,
@@ -25852,6 +26060,14 @@
   "adults_only": false,
   "audience": "teens",
   "blurb": "Theatre show for ages 14+, no children under 5.",
+  "epic": false,
+  "family_fit": 10
+ },
+ "81781bbaa67f5cd5": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Optional replica game ball upgrade for Harlem Globetrotters game, requires main ticket.",
   "epic": false,
   "family_fit": 10
  },
@@ -27303,6 +27519,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "87b3459c6344763b": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Optional courtside pass for Harlem Globetrotters game, requires main ticket.",
+  "epic": false,
+  "family_fit": 70
+ },
  "87c3a6422af1bdee": {
   "adult_interest": 45,
   "adults_only": false,
@@ -27574,6 +27798,14 @@
   "blurb": "Bachata dance party at a bar, 21+ venue.",
   "epic": false,
   "family_fit": 0
+ },
+ "88e68823a420e542": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Optional courtside pass for Harlem Globetrotters game, requires main ticket.",
+  "epic": false,
+  "family_fit": 50
  },
  "88ef8ffe3a0eb284": {
   "adult_interest": 40,
@@ -28871,6 +29103,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "8fed13ca30b2428f": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Swing dance party in Golden Gate Park.",
+  "epic": false,
+  "family_fit": 60
+ },
  "8fee634bc9514e83": {
   "adult_interest": 65,
   "adults_only": false,
@@ -29775,6 +30015,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "94c3c2aad8a9341d": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Mixology contest at a casino.",
+  "epic": false,
+  "family_fit": 10
+ },
  "94dbf50cdc5e34bc": {
   "adult_interest": 85,
   "adults_only": false,
@@ -29822,6 +30070,14 @@
   "blurb": "21+ rock concert at a casino venue.",
   "epic": false,
   "family_fit": 0
+ },
+ "953cd5ed1e04e3db": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Swing dance party in Golden Gate Park.",
+  "epic": false,
+  "family_fit": 60
  },
  "954b2efc0bc175a1": {
   "adult_interest": 50,
@@ -30108,6 +30364,14 @@
   "adults_only": false,
   "audience": "all",
   "blurb": "Ballet performance with accessibility issues.",
+  "epic": false,
+  "family_fit": 40
+ },
+ "9683616cd97dc08c": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Critical Mass bike ride in San Francisco.",
   "epic": false,
   "family_fit": 40
  },
@@ -30423,6 +30687,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "97f800640bcc3821": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Stephan Jenkins of Third Eye Blind performs solo acoustic, family-friendly but not for kids.",
+  "epic": false,
+  "family_fit": 40
+ },
  "97fcaf9b2244a7ff": {
   "adult_interest": 80,
   "adults_only": false,
@@ -30478,6 +30750,14 @@
   "blurb": "Major league baseball game with family-friendly environment.",
   "epic": false,
   "family_fit": 70
+ },
+ "9825f3bf84db9883": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Optional court pass for a game at Santa Cruz.",
+  "epic": false,
+  "family_fit": 10
  },
  "9827bc0d7aae22eb": {
   "adult_interest": 30,
@@ -31238,6 +31518,14 @@
   "blurb": "Planetarium show about Maya astronomy for all ages.",
   "epic": false,
   "family_fit": 75
+ },
+ "9c06b3fe2bf64b51": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Artists' Television Access event.",
+  "epic": false,
+  "family_fit": 10
  },
  "9c07c5e8ba2396c5": {
   "adult_interest": 85,
@@ -32263,6 +32551,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "a1eaae12053dc94a": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Exclusive on-court access pass for Harlem Globetrotters game, requires main ticket.",
+  "epic": false,
+  "family_fit": 50
+ },
  "a1ece8c5df9a2a9f": {
   "adult_interest": 60,
   "adults_only": false,
@@ -32934,6 +33230,14 @@
   "blurb": "Karaoke Tuesday at Neck of the Woods.",
   "epic": false,
   "family_fit": 0
+ },
+ "a5b1d27fe59ce508": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Swing dance party in Golden Gate Park.",
+  "epic": false,
+  "family_fit": 60
  },
  "a5b4b9cb9f1f234b": {
   "adult_interest": 75,
@@ -34183,6 +34487,14 @@
   "epic": false,
   "family_fit": 70
  },
+ "ab9ac4267c219004": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only comedy club in San Francisco.",
+  "epic": false,
+  "family_fit": 0
+ },
  "ab9c7c6b1e88eb79": {
   "adult_interest": 70,
   "adults_only": false,
@@ -35270,6 +35582,14 @@
   "blurb": "Comedy show for 13+ with parental supervision, still not family-friendly.",
   "epic": false,
   "family_fit": 20
+ },
+ "b1a8a93f339d84cc": {
+  "adult_interest": 0,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Spanish language drug management program, not family-friendly.",
+  "epic": false,
+  "family_fit": 0
  },
  "b1c5cc063b178fbc": {
   "adult_interest": 75,
@@ -36407,6 +36727,22 @@
   "epic": false,
   "family_fit": 0
  },
+ "b84406f840affbdf": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Various bands playing at a bar with $12 cover.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "b84547703a6c1bd9": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Book discussion about fame with authors.",
+  "epic": false,
+  "family_fit": 10
+ },
  "b850045a87c66731": {
   "adult_interest": 85,
   "adults_only": false,
@@ -37223,6 +37559,14 @@
   "epic": false,
   "family_fit": 40
  },
+ "bb7eda2736e0af54": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Harlem Globetrotters show in Santa Cruz.",
+  "epic": false,
+  "family_fit": 85
+ },
  "bb81f7902a53d263": {
   "adult_interest": 85,
   "adults_only": true,
@@ -37310,6 +37654,14 @@
   "blurb": "TYLA pop concert in San Francisco.",
   "epic": false,
   "family_fit": 20
+ },
+ "bbdc6dabbda3a5b2": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Chess Night at Barebottle Brewery, good for family but not exciting for adults.",
+  "epic": false,
+  "family_fit": 60
  },
  "bbf3aa144fb34cc9": {
   "adult_interest": 80,
@@ -38742,6 +39094,14 @@
   "blurb": "Planetarium show about northern lights, ages 8+.",
   "epic": false,
   "family_fit": 75
+ },
+ "c2bfc19610444121": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Optional replica game ball upgrade for Harlem Globetrotters game, requires main ticket.",
+  "epic": false,
+  "family_fit": 10
  },
  "c2d091368fca4245": {
   "adult_interest": 85,
@@ -41111,6 +41471,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "cf1975c57adf241a": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Lagunitas Brewing Company DRAMA event, adults-only music.",
+  "epic": false,
+  "family_fit": 0
+ },
  "cf2834fcc11a2c94": {
   "adult_interest": 60,
   "adults_only": true,
@@ -41415,6 +41783,14 @@
   "epic": false,
   "family_fit": 30
  },
+ "d0cba7f0fa5fa350": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "D&D game night with drag performances.",
+  "epic": false,
+  "family_fit": 40
+ },
  "d0d751e6fccc5ccb": {
   "adult_interest": 85,
   "adults_only": true,
@@ -41534,6 +41910,14 @@
   "blurb": "Soccer match at Cal Expo in Sacramento.",
   "epic": false,
   "family_fit": 20
+ },
+ "d16c2c45ef4aece5": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "The Legend of Korra concert at SAFE Credit Union Performing Arts Center.",
+  "epic": false,
+  "family_fit": 80
  },
  "d177f2dfce209126": {
   "adult_interest": 80,
@@ -43495,6 +43879,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "db2379a59aa70810": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Hockey game between San Jose and Minnesota Frost.",
+  "epic": false,
+  "family_fit": 70
+ },
  "db2af472c794f7ca": {
   "adult_interest": 60,
   "adults_only": false,
@@ -43935,6 +44327,14 @@
   "epic": false,
   "family_fit": 40
  },
+ "dd37aa8107599dba": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Documentary film screening about New York City's concrete.",
+  "epic": false,
+  "family_fit": 20
+ },
  "dd3ab1239067e277": {
   "adult_interest": 80,
   "adults_only": true,
@@ -43966,6 +44366,14 @@
   "blurb": "R&B concert at a casino venue, all ages.",
   "epic": false,
   "family_fit": 50
+ },
+ "dd566f0e47094f82": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Science Buzz Cafe at Hopmonk Tavern, educational but not exciting for kids.",
+  "epic": false,
+  "family_fit": 60
  },
  "dd62a81059e3d1f7": {
   "adult_interest": 60,
@@ -44910,6 +45318,14 @@
   "blurb": "Hip-hop concert in Oakland with VIP options.",
   "epic": false,
   "family_fit": 10
+ },
+ "e2d40fa4b9e05627": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Rock band night at a bar with $12 cover.",
+  "epic": false,
+  "family_fit": 0
  },
  "e2ed3a90b21a8d6f": {
   "adult_interest": 60,
@@ -46006,6 +46422,14 @@
   "blurb": "Solo artist performance in Berkeley.",
   "epic": false,
   "family_fit": 0
+ },
+ "e8274a67a7ab70e2": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Book event with Angela Davis on radical black feminism.",
+  "epic": false,
+  "family_fit": 10
  },
  "e85ab0625349e11a": {
   "adult_interest": 80,
@@ -47623,6 +48047,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "f17c0a4ba60785b7": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Optional on-court access pass for a game at San Jose.",
+  "epic": false,
+  "family_fit": 10
+ },
  "f19649d7a3c9046d": {
   "adult_interest": 30,
   "adults_only": false,
@@ -48023,6 +48455,14 @@
   "epic": false,
   "family_fit": 50
  },
+ "f3adf7e35c85ff04": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Swing dance party in Golden Gate Park.",
+  "epic": false,
+  "family_fit": 60
+ },
  "f3ae9ba1f14636e0": {
   "adult_interest": 40,
   "adults_only": false,
@@ -48422,6 +48862,14 @@
   "blurb": "Annual Maya festival with cultural activities in SF.",
   "epic": false,
   "family_fit": 70
+ },
+ "f5dd3d51fed82879": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Optional court pass for a game at San Jose.",
+  "epic": false,
+  "family_fit": 10
  },
  "f5e812bf077175d9": {
   "adult_interest": 85,
@@ -49071,6 +49519,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "f9772d76b306e541": {
+  "adult_interest": 90,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Bluegrass concert by Grammy winner Molly Tuttle.",
+  "epic": false,
+  "family_fit": 10
+ },
  "f996571930a95be8": {
   "adult_interest": 70,
   "adults_only": true,
@@ -49342,6 +49798,14 @@
   "blurb": "Dave Attell comedy show at Punch Line Comedy Club.",
   "epic": false,
   "family_fit": 10
+ },
+ "faf6933147be4460": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Comedy film screening at a cinema.",
+  "epic": false,
+  "family_fit": 20
  },
  "fb18531898c07304": {
   "adult_interest": 80,
