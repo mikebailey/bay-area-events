@@ -262,8 +262,7 @@ What a holiday changes, once it is known:
   which is the lead time the Thursday-before digest cannot give you for
   anything that sells out. It is a no-op unless a family holiday falls exactly
   twelve days out, so the daily job can just run it every day.
-  Its subject and the top of both email formats say **Special holiday edition**,
-  with a note that it supplements the regular Thursday digest.
+  Its subject and the top of both email formats say **Special holiday edition**.
 - **The sweep** gets a holiday-specific prompt (`sweep.py --holiday`) aimed at
   annual traditions rather than weekend roundups.
 

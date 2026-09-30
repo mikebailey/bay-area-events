@@ -223,10 +223,7 @@ def render_html(sections, meta):
             "<div style='margin-bottom:14px'>"
             "<span style='display:inline-block;padding:5px 9px;background:#e5eee7;"
             "color:#2f6f4f;font-size:12px;font-weight:700;border-radius:4px'>"
-            "Special holiday edition</span>"
-            "<div style='color:#555;font-size:13px;margin-top:8px'>"
-            "An early look at the holiday, in addition to your regular Thursday digest."
-            "</div></div>")
+            "Special holiday edition</span></div>")
 
     blocks = []
     for title, evs in sections:
@@ -269,9 +266,7 @@ def render_html(sections, meta):
 def render_text(sections, meta):
     lines = [meta["heading"], "from %s" % HOME_LABEL, ""]
     if meta.get("holiday_edition"):
-        lines = ["SPECIAL HOLIDAY EDITION",
-                 "An early look at the holiday, in addition to your regular Thursday digest.",
-                 ""] + lines
+        lines = ["SPECIAL HOLIDAY EDITION", ""] + lines
     for title, evs in sections:
         if not evs:
             continue
