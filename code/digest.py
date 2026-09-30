@@ -216,6 +216,18 @@ def render_html(sections, meta):
     def esc(s):
         return html.escape(str(s or ""))
 
+    # Edition identity is explicit: weekly digests can also feature a holiday.
+    edition_banner = ""
+    if meta.get("holiday_edition"):
+        edition_banner = (
+            "<div style='margin-bottom:14px'>"
+            "<span style='display:inline-block;padding:5px 9px;background:#e5eee7;"
+            "color:#2f6f4f;font-size:12px;font-weight:700;border-radius:4px'>"
+            "Special holiday edition</span>"
+            "<div style='color:#555;font-size:13px;margin-top:8px'>"
+            "An early look at the holiday, in addition to your regular Thursday digest."
+            "</div></div>")
+
     blocks = []
     for title, evs in sections:
         if not evs:
@@ -241,6 +253,7 @@ def render_html(sections, meta):
         "<html><body style='margin:0;background:#f7f7f5'>"
         "<div style='max-width:600px;margin:0 auto;padding:24px 18px;"
         "font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#191918'>"
+        "%s"
         "<h1 style='font-size:21px;margin:0 0 2px'>%s</h1>"
         "<div style='color:#777;font-size:13px'>from %s · %s</div>"
         "%s"
@@ -249,12 +262,16 @@ def render_html(sections, meta):
         "<a href='%s' style='color:#2f6f4f'>See everything on the site</a> · "
         "%d events tracked · drive times are estimates"
         "</div></div></body></html>"
-        % (esc(meta["heading"]), esc(HOME_LABEL), esc(date.today().strftime("%B %d, %Y")),
+        % (edition_banner, esc(meta["heading"]), esc(HOME_LABEL), esc(date.today().strftime("%B %d, %Y")),
            "".join(blocks), SITE_URL, meta["total"]))
 
 
 def render_text(sections, meta):
     lines = [meta["heading"], "from %s" % HOME_LABEL, ""]
+    if meta.get("holiday_edition"):
+        lines = ["SPECIAL HOLIDAY EDITION",
+                 "An early look at the holiday, in addition to your regular Thursday digest.",
+                 ""] + lines
     for title, evs in sections:
         if not evs:
             continue
@@ -354,7 +371,8 @@ def main():
               % (name, span[0], span[1], args.lead_days))
 
     sections = build_sections(events, days=window, focus=focus)
-    meta = {"total": len(events), "heading": heading}
+    meta = {"total": len(events), "heading": heading,
+            "holiday_edition": args.holiday}
 
     kept = sum(len(v) for _, v in sections)
     if not kept:
@@ -375,6 +393,8 @@ def main():
     lead = shorten(top[0]["title"], 52) if top else "the week ahead"
     subject = "%s: %s%s" % (
         label, lead, " and %d more" % (kept - 1) if kept > 1 else "")
+    if args.holiday:
+        subject = "[Special holiday edition] " + subject
 
     PREVIEW_PATH.parent.mkdir(parents=True, exist_ok=True)
     PREVIEW_PATH.write_text(html_body, encoding="utf-8")
