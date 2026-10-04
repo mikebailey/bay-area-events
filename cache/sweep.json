@@ -1,355 +1,215 @@
 {
- "updated": "2026-09-20",
+ "updated": "2026-10-04",
  "events": [
   {
-   "title": "35th Annual Fiesta on the Hill",
-   "date": "2026-09-20",
-   "time": "10:00",
-   "venue": "Cortland Avenue, Bernal Heights",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://sf.funcheap.com/35th-annual-fiesta-hill-bernal-heights/",
-   "why": "Seven blocks of a genuinely neighborhood street fair — live music, artisan booths and family activities that tourists never find."
-  },
-  {
-   "title": "45th Annual Comedy Day in the Park",
-   "date": "2026-09-20",
-   "time": "12:00",
-   "venue": "Robin Williams Meadow, Golden Gate Park",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://sf.funcheap.com/comedy-day-park-golden-gate-park/",
-   "why": "SF's longest-running free outdoor comedy festival, 50+ comics in one five-hour show, with a history of surprise celebrity drop-ins."
-  },
-  {
-   "title": "47th Annual Haight Ashbury Street Fair",
-   "date": "2026-09-20",
+   "title": "3rd Annual Pet a Pony Day",
+   "date": "2026-10-04",
    "time": "11:00",
-   "venue": "Haight and Ashbury streets",
-   "city": "San Francisco",
+   "venue": "Purissima Park",
+   "city": "Los Altos Hills",
    "price": 0,
-   "url": "https://sfstandard.com/2026/09/16/best-events-sf-week-flower-piano-lowrider-parade/",
-   "why": "Two music stages, Grateful Dead tributes and dozens of vendors — a fun, low-commitment slice of SF counterculture history for older kids."
+   "url": "https://losaltoshills.ca.gov/Calendar.aspx?EID=5201&month=10&year=2026&day=12&calType=0",
+   "why": "A small local horsemen's association event ten minutes from Menlo Park where kids learn to brush, tie and feed ponies."
   },
   {
-   "title": "Berkeley Old Time Music Convention (final day)",
-   "date": "2026-09-20",
-   "time": null,
-   "venue": "Ashkenaz, The Freight, Berkeley Public Library and other venues",
-   "city": "Berkeley",
-   "price": null,
-   "url": "https://www.berkeleyoldtimemusic.org/",
-   "why": "The 23rd annual convention wraps up with old-time string band music, open jams and dancing across Berkeley venues — the kind of thing only locals track."
-  },
-  {
-   "title": "Blues, Brews & BBQ",
-   "date": "2026-09-20",
-   "time": "12:00",
-   "venue": "Washington Park",
-   "city": "Alameda",
-   "price": 0,
-   "url": "https://sf.funcheap.com/blues-brews-bbq-alameda/",
-   "why": "Free afternoon of live blues and barbecue in a park — easy, unhurried, and works for all ages."
-  },
-  {
-   "title": "Muni Heritage Weekend 2026",
-   "date": "2026-09-20",
-   "time": "10:00",
-   "venue": "San Francisco Railway Museum, 77 Steuart St",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://www.sfmta.com/calendar/muni-heritage-weekend-2026",
-   "why": "Free unlimited rides on vintage streetcars and buses from Muni's historic fleet, plus button-making and scavenger hunts — catnip for a 9-to-14 crowd."
-  },
-  {
-   "title": "SF Chinatown Autumn Moon Festival (closing day + Dragon Parade)",
-   "date": "2026-09-20",
+   "title": "52nd Annual Castro Street Fair",
+   "date": "2026-10-04",
    "time": "11:00",
-   "venue": "Grant Avenue between California and Broadway",
+   "venue": "Castro and Market Streets",
    "city": "San Francisco",
    "price": 0,
-   "url": "https://www.moonfestival.org/",
-   "why": "Mooncakes, lion dancers and a Dragon Parade at 4:45 pm close out the festival — a classic Bay Area cultural day the kids will remember."
+   "url": "https://sf.funcheap.com/san-franciscos-annual-castro-street-fair/",
+   "why": "The historic neighborhood street fair founded by Harvey Milk, with artists, vendors, live stages and dance areas; free with a suggested $10-20 donation and an all-ages but adult-leaning crowd."
   },
   {
-   "title": "Spotlight Sundays: 'Alice Street' Screening with Malonga Arts",
-   "date": "2026-09-20",
-   "time": "13:00",
-   "venue": "James Moore Theater, Oakland Museum of California",
-   "city": "Oakland",
-   "price": 10,
-   "url": "https://museumca.org/press/omca-announces-public-programs-and-events-for-september-2026/",
-   "why": "A documentary about a contested Oakland mural paired with live drum and dance performances — a good conversation starter for middle-schoolers."
-  },
-  {
-   "title": "Dolly Day 2026",
-   "date": "2026-09-25",
-   "time": "12:00",
-   "venue": "Union Square Park",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://sf.funcheap.com/dolly-parton-day-2026-free-outdoor-fest-union-square-sf/",
-   "why": "A free, gloriously odd civic tribute to Dolly Parton with live performances and glam — genuinely once-a-year and impossible to find on a ticketing feed."
-  },
-  {
-   "title": "Friday Nights at OMCA (with Los Tranquilos and a disco dance lesson)",
-   "date": "2026-09-25",
-   "time": "17:00",
-   "venue": "Oakland Museum of California, 1000 Oak St",
-   "city": "Oakland",
-   "price": 0,
-   "url": "https://museumca.org/press/omca-announces-public-programs-and-events-for-september-2026/",
-   "why": "Free museum-campus block party with live music, an all-vinyl DJ set and a beginner disco lesson the whole family can flub together."
-  },
-  {
-   "title": "St. Raymond Pumpkin Festival",
-   "date": "2026-09-25",
-   "time": "15:30",
-   "venue": "St. Raymond School, 1100 Santa Cruz Ave",
-   "city": "Menlo Park",
-   "price": 0,
-   "url": "https://inmenlo.com/2026/09/19/st-raymond-pumpkin-festival-returns-on-september-25-25/",
-   "why": "Walking distance from home: carnival games, bounce houses and a new giant slide and carnival swing, free to enter with wristbands for rides."
-  },
-  {
-   "title": "Sunset Night Market: Autumn Moon Festival Edition",
-   "date": "2026-09-25",
-   "time": "17:00",
-   "venue": "Irving Street at 22nd Ave",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://sf.funcheap.com/sfs-huge-sunset-night-market-sept-25/",
-   "why": "Asian-inspired night market with food stalls, cultural performances and makers — eating your way down a closed street is a great teen evening."
-  },
-  {
-   "title": "Visitacion Valley Night Market + Block Party",
-   "date": "2026-09-25",
-   "time": "16:00",
-   "venue": "Leland Avenue between Bayshore and Peabody",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://sf.funcheap.com/sfs-visitacion-valley-night-market-block-party-2026-2/",
-   "why": "An inaugural neighborhood night market with food vendors, street dancing and live music in a corner of SF almost no visitor sees."
-  },
-  {
-   "title": "8th Annual Bay Area Chuseok Korean Harvest Festival",
-   "date": "2026-09-26",
+   "title": "Litquake Out Loud + Book Fair",
+   "date": "2026-10-04",
    "time": "11:00",
-   "venue": "Presidio Main Post Lawn, Graham St & Keyes Ave",
+   "venue": "Yerba Buena Gardens",
    "city": "San Francisco",
    "price": 0,
-   "url": "https://koreancentersf.org/chuseok-festival/chuseok-festival-2026/",
-   "why": "Korean harvest-holiday celebration with traditional games, live performances and food vendors on a big open Presidio lawn."
+   "url": "https://sf.funcheap.com/litquake-out-loud-book-fair-yerba-buena-gardens-festival-2025/",
+   "why": "A free outdoor literary festival with small-press book stalls and poetry readings, good for a reader in the family."
   },
   {
-   "title": "Alcatraz City Cruises Free Community Day (20th anniversary)",
-   "date": "2026-09-26",
-   "time": "10:00",
-   "venue": "Pier 33, Alcatraz Landing",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://www.7x7.com/sf-events-9-21-26-2677863828.html",
-   "why": "A free family celebration on the Embarcadero marking 20 years of the NPS partnership — no ticket or RSVP, though it does not include an island tour."
-  },
-  {
-   "title": "Corgi Con Bay Area 2026",
-   "date": "2026-09-26",
-   "time": "10:00",
-   "venue": "Alameda County Fairgrounds, 4501 Pleasanton Ave",
-   "city": "Pleasanton",
-   "price": 13.44,
-   "url": "https://sf.funcheap.com/corgi-con-bay-area-alameda-county-fairgrounds/",
-   "why": "Corgi races, Corgi Ninja Warrior and a costume contest — absurd in the best way, and a reliable hit with this age range."
-  },
-  {
-   "title": "Free Shakespeare in the Park: 'Antony and Cleopatra'",
-   "date": "2026-09-26",
-   "time": "14:00",
-   "venue": "Sue Bierman Park, Washington & Drumm St",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://sfshakes.org/performance/free-shakes/ac/",
-   "why": "Ninety minutes, no intermission, no tickets required, right by the Ferry Building — a low-risk way to try Shakespeare with teens."
-  },
-  {
-   "title": "Hands-On Family Science Day: Stargazing & Planetarium Shows",
-   "date": "2026-09-26",
+   "title": "Little Italy San Jose Italian Festival",
+   "date": "2026-10-04",
    "time": "11:00",
-   "venue": "College of San Mateo, 1700 W Hillsdale Blvd",
-   "city": "San Mateo",
-   "price": 0,
-   "url": "https://sf.funcheap.com/handson-family-science-day-stargazing-planetarium-shows-san-mateo/",
-   "why": "Free all-day STEM workshops, hourly planetarium shows and solar telescopes, then a NASA scientist talk and rooftop stargazing at night."
-  },
-  {
-   "title": "LAMVCF Oktoberfest",
-   "date": "2026-09-26",
-   "time": "15:00",
-   "venue": "Lincoln Park, 199 University Ave",
-   "city": "Los Altos",
-   "price": 0,
-   "url": "https://givebutter.com/lamvcfoktoberfest26",
-   "why": "Free neighborhood Oktoberfest with a stein-holding competition, costume contest, square dancing and kids' cornhole and art."
-  },
-  {
-   "title": "Maker Faire Bay Area 2026 (20th anniversary)",
-   "date": "2026-09-26",
-   "time": "10:00",
-   "venue": "Historic Mare Island Naval Shipyard, 560 Nimitz Ave",
-   "city": "Vallejo",
-   "price": 45,
-   "url": "https://sf.funcheap.com/maker-faire-bay-area-2026-sept-2527/",
-   "why": "Robots, rockets, Tesla coils and Rube Goldberg machines — the single best paid day out on this list for curious 9-to-14 year olds."
-  },
-  {
-   "title": "Oktoberfest Downtown Redwood City",
-   "date": "2026-09-26",
-   "time": null,
-   "venue": "Courthouse Square, 2200 Broadway",
-   "city": "Redwood City",
-   "price": 10,
-   "url": "https://sf.funcheap.com/oktoberfest-downtown-redwood-city-2026/",
-   "why": "A Munich-style tent with 2,000 feet of communal benches, German bands and game hosts; the $10 all-ages non-drinker ticket includes a stein."
-  },
-  {
-   "title": "Pacific Coast Fog Fest (39th annual)",
-   "date": "2026-09-26",
-   "time": "10:00",
-   "venue": "Palmetto Avenue",
-   "city": "Pacifica",
-   "price": 0,
-   "url": "https://pacificcoastfogfest.com/",
-   "why": "Small-town coastal parade at 10 am, three stages of live music, 200+ craft booths and a Family Fun Fest — pure local Americana."
-  },
-  {
-   "title": "September Arts & Culture Fest with Live Mural Painting",
-   "date": "2026-09-26",
-   "time": "11:00",
-   "venue": "B Street, Downtown San Mateo",
-   "city": "San Mateo",
-   "price": 0,
-   "url": "https://sf.funcheap.com/september-arts-culture-fest-live-mural-painting-downtown-san-mateo/",
-   "why": "Live mural-painting competitions, a poetry open mic and community performances — watching artists work beats another vendor row."
-  },
-  {
-   "title": "The Great Glass Pumpkin Patch (31st annual)",
-   "date": "2026-09-26",
-   "time": "10:00",
-   "venue": "Palo Alto Art Center, 250 Hamilton Ave",
-   "city": "Palo Alto",
-   "price": 0,
-   "url": "https://www.paloalto.gov/Departments/Community-Services/Arts-Sciences/Palo-Alto-Art-Center/Special-Events/Pumpkins",
-   "why": "Ten thousand handblown glass pumpkins spread across the lawn plus live glassblowing demos — a beloved Palo Alto ritual, ten minutes from Menlo Park."
-  },
-  {
-   "title": "Third Coast Percussion: 'Time Pieces: The New Classical'",
-   "date": "2026-09-26",
-   "time": "19:30",
-   "venue": "765 Portola Ave",
-   "city": "Portola Valley",
-   "price": null,
-   "url": "https://inmenlo.com/2026/09/18/third-coast-percussion-comes-to-portola-valley-on-september-26/",
-   "why": "A Grammy-winning percussion quartet playing fifteen minutes from home — percussion is the most kid-legible way into contemporary classical."
-  },
-  {
-   "title": "Tour de Menlo 2026",
-   "date": "2026-09-26",
-   "time": "10:00",
-   "venue": "1105 Valparaiso Ave (start)",
-   "city": "Menlo Park",
-   "price": null,
-   "url": "https://inmenlo.com/2026/09/18/tour-de-menlo-returns-september-26-to-support-local-students/",
-   "why": "The family ride rolls out at 10 am with marked routes, rest stops and lunch, and the Rotary fundraiser sends local seniors to college."
-  },
-  {
-   "title": "Walnut Creek Oktoberfest",
-   "date": "2026-09-26",
-   "time": "12:00",
-   "venue": "Civic Park East, 1375 Civic Dr",
-   "city": "Walnut Creek",
-   "price": 0,
-   "url": "https://sf.funcheap.com/walnut-creek-oktoberfest-free-festival-21-chillgarten-kids-zone-sept-2526/",
-   "why": "Free entry, German bands, Bavarian folk dancers and a 'Kinder Karneval' with giant slides and mini golf; the Chillgarten lounge is 21+ only."
-  },
-  {
-   "title": "23rd Annual Cole Valley Fair",
-   "date": "2026-09-27",
-   "time": "10:00",
-   "venue": "Carl and Grattan Streets",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://sf.funcheap.com/cole-valley-fair-2/",
-   "why": "Ninety-plus vendors, live music, a resident vintage car show and a historical photo exhibit in a tucked-away neighborhood."
-  },
-  {
-   "title": "43rd Annual Folsom Street Fair (ADULTS ONLY)",
-   "date": "2026-09-27",
-   "time": null,
-   "venue": "Folsom Street between 8th and 12th",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://www.folsomstreet.org/",
-   "why": "The world's largest leather and fetish fair across 13 blocks — a genuine SF institution, but explicitly adults-only and not appropriate to bring the kids to."
-  },
-  {
-   "title": "Bodhi Mid-Autumn Festival with Lanterns",
-   "date": "2026-09-27",
-   "time": "10:00",
-   "venue": "San Francisco County Fair Building, 9th Ave & Lincoln Way",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://sf.funcheap.com/bodhi-midautumn-festival-lanterns-golden-gate-park/",
-   "why": "Lantern painting, Hanfu try-ons with photo ops, crafts and multicultural performances — hands-on rather than just watching."
-  },
-  {
-   "title": "Game Market West: Fall 2026",
-   "date": "2026-09-27",
-   "time": "10:00",
-   "venue": "Guildhouse, 420 First St",
+   "venue": "Little Italy San Jose",
    "city": "San Jose",
    "price": 0,
-   "url": "https://luma.com/6d5nmzxb",
-   "why": "35+ independent designers demoing and selling new tabletop games, with a play zone to try things on the spot — free and perfect for this age group."
+   "url": "https://sf.funcheap.com/italy-san-jose-italian-festival-2026/",
+   "why": "A once-a-year street festival with one of the largest Italian car shows in the country, Italian food and live entertainment."
   },
   {
-   "title": "Menlo Park Storytelling Festival opening: Clara Kamunde, 'Afri-Crafty Tales'",
-   "date": "2026-09-27",
-   "time": null,
-   "venue": "Menlo Park Library",
-   "city": "Menlo Park",
+   "title": "Millbrae Japanese Culture Festival",
+   "date": "2026-10-04",
+   "time": "10:30",
+   "venue": "Millbrae Civic Center Plaza",
+   "city": "Millbrae",
    "price": 0,
-   "url": "https://inmenlo.com/2026/09/15/get-ready-for-menlo-parks-11th-annual-storytelling-festival/",
-   "why": "Free kickoff of the 11th annual festival with a Kenyan-born storyteller, right at the home library — check the city site for exact time and age guidance."
+   "url": "https://www.japaneseculturefest-millbrae.org/",
+   "why": "A close-to-home 21st annual festival with hands-on tea ceremony, calligraphy, origami, games and live stage performances that suit tweens and teens."
   },
   {
-   "title": "Randall Museum 75th Anniversary Celebration",
-   "date": "2026-09-27",
+   "title": "Sparkle and Glow Diwali Festival",
+   "date": "2026-10-04",
    "time": "13:00",
-   "venue": "Randall Museum, 199 Museum Way",
-   "city": "San Francisco",
+   "venue": "Don Callejon School",
+   "city": "Santa Clara",
    "price": 0,
-   "url": "https://randallmuseum.org/randall-museum-75th-anniversary-celebration/",
-   "why": "A free one-afternoon-only birthday party at SF's hands-on kids' science and nature museum, with one of the best views in the city."
+   "url": "https://sf.funcheap.com/sparkle-glow-diwali-festival-2026-santa-clara/",
+   "why": "A free school-grounds Diwali celebration with Garba, Bhangra and Bollywood performances, kids' activities, food and a family-friendly evening concert."
   },
   {
-   "title": "SF German Day Festival",
-   "date": "2026-09-27",
+   "title": "Star Party at Hidden Villa (San Jose Astronomical Association)",
+   "date": "2026-10-04",
+   "time": "19:30",
+   "venue": "Hidden Villa",
+   "city": "Los Altos Hills",
+   "price": 0,
+   "url": "https://www.hiddenvilla.org/programs/catalog/555-star-party/region-HV/",
+   "why": "Free telescope viewing of planets and galaxies with astronomy volunteers at a nearby farm; advance registration and a day parking pass are required and it is weather dependent."
+  },
+  {
+   "title": "Fleet Week Parade of Ships",
+   "date": "2026-10-09",
    "time": "11:00",
-   "venue": "Golden Gate Park Bandshell, 75 Hagiwara Tea Garden Dr",
+   "venue": "Crissy Field",
    "city": "San Francisco",
    "price": 0,
-   "url": "https://sf.funcheap.com/sfs-german-day-festival-golden-gate-park-2026/",
-   "why": "Free bandshell concert with German food — sausages, döner, pretzels and pastries — and family activities in Golden Gate Park."
+   "url": "https://sf.funcheap.com/parade-of-ships-golden-gate-bridge-fleet-week/",
+   "why": "Navy and Coast Guard ships sail under the Golden Gate Bridge behind a fireboat spraying water jets, a free once-a-year spectacle."
   },
   {
-   "title": "Nexus: SF/Bay Area Black Art Week opening at MoAD",
-   "date": "2026-09-30",
-   "time": null,
-   "venue": "Museum of the African Diaspora, 685 Mission St",
+   "title": "34th Annual Indigenous Peoples Day Powwow & Indian Market",
+   "date": "2026-10-10",
+   "time": "10:00",
+   "venue": "Martin Luther King Jr. Civic Center Park",
+   "city": "Berkeley",
+   "price": 0,
+   "url": "https://sf.funcheap.com/34th-annual-indigenous-peoples-day-powwow-indian-market-berkeley/",
+   "why": "A free powwow with competition dancing, drumming, round dances open to everyone and a Native craft and food market; the Grand Entry is at 1 PM."
+  },
+  {
+   "title": "626 Night Market Bay Area",
+   "date": "2026-10-10",
+   "time": "15:00",
+   "venue": "Alameda County Fairgrounds",
+   "city": "Pleasanton",
+   "price": 8,
+   "url": "https://sf.funcheap.com/the-bays-huge-626-night-market-w-200-food-shopping-stalls-2026/",
+   "why": "A big Asian-style night market with 200+ food, craft, game and music stalls that teens tend to love; it runs Oct 9-11 with online-only tickets and $15 parking."
+  },
+  {
+   "title": "ArtWalk Livermore + Chalk It Up",
+   "date": "2026-10-10",
+   "time": "11:00",
+   "venue": "Downtown Livermore",
+   "city": "Livermore",
+   "price": 0,
+   "url": "https://sf.funcheap.com/artwalk-livermore-200-artists-chalk-art-fest-downtown-livermore/",
+   "why": "More than 200 artists fill the downtown sidewalks and plazas, with a new concurrent chalk art festival to watch."
+  },
+  {
+   "title": "Dublin Harvest Fair",
+   "date": "2026-10-10",
+   "time": "10:00",
+   "venue": "Dublin Heritage Park and Museums",
+   "city": "Dublin",
+   "price": 0,
+   "url": "https://dublin.ca.gov/1560/Harvest-Fair",
+   "why": "An old-fashioned fall fair with gold panning, butter churning, a petting zoo and tours of a 1910 farmhouse; entry is free and activity wristbands cost $11 in advance for non-residents."
+  },
+  {
+   "title": "Free Boat Rides + Fleet Week Waterfront Fun",
+   "date": "2026-10-10",
+   "time": "11:00",
+   "venue": "India Basin Waterfront Park",
    "city": "San Francisco",
+   "price": 0,
+   "url": "https://sf.funcheap.com/free-boat-rides-fleet-week-waterfront-fun-india-basin-park-sf/",
+   "why": "A low-key neighborhood Fleet Week alternative with free boat rides, military challenges, outdoor games and an Air Force brass band."
+  },
+  {
+   "title": "Lawton Fall Fest: Student-Built Arcade Games",
+   "date": "2026-10-10",
+   "time": "11:00",
+   "venue": "Lawton Alternative School Yard",
+   "city": "San Francisco",
+   "price": 0,
+   "url": "https://sf.funcheap.com/lawton-fall-fest-studentbuilt-arcade-games-sf/",
+   "why": "A school festival where fifth graders run carnival games they designed and built from recycled materials, in the spirit of Caine's Arcade."
+  },
+  {
+   "title": "Mavericks Surf Festival + Big Wave Season Kickoff",
+   "date": "2026-10-10",
+   "time": "11:00",
+   "venue": "Pillar Point Harbor",
+   "city": "Half Moon Bay",
+   "price": 0,
+   "url": "https://sf.funcheap.com/mavericks-2026-surf-festival-big-wave-season-kickoff-moon-bay/",
+   "why": "A free coastside festival where the family can meet Mavericks big-wave surfers, watch ocean-safety demos and browse a surf swap with live music and food trucks."
+  },
+  {
+   "title": "San Francisco Fleet Week Air Show (Blue Angels)",
+   "date": "2026-10-10",
+   "time": "12:00",
+   "venue": "Marina Green",
+   "city": "San Francisco",
+   "price": 0,
+   "url": "https://sf.funcheap.com/san-francisco-fleet-week-air-show/",
+   "why": "The free waterfront air show with the Blue Angels, an F-22, an F-35B and a United 777 flying a choreographed routine; it also runs Oct 9 and Oct 11."
+  },
+  {
+   "title": "Tarantula Fest",
+   "date": "2026-10-10",
+   "time": null,
+   "venue": "Henry W. Coe State Park headquarters",
+   "city": "Morgan Hill",
+   "price": 0,
+   "url": "https://coepark.net/events/tarantula-fest/",
+   "why": "A once-a-year park festival with live tarantula encounters, wildlife presentations and guided hikes during the fall tarantula mating season; admission is free but parking is $8 per car."
+  },
+  {
+   "title": "Day of the Horse: Family Horse Fair",
+   "date": "2026-10-11",
+   "time": null,
+   "venue": null,
+   "city": "Woodside",
    "price": null,
-   "url": "https://www.moadsf.org/event/nexus-sf-bay-area-black-art-week",
-   "why": "MoAD reopens from installation closure with three new exhibitions including Dewey Crumpler's first SF institutional solo show, launching a week of Black art across the Bay."
+   "url": "https://whoa94062.org/day-of-the-horse/",
+   "why": "Woodside's annual equestrian celebration next door to Menlo Park, with a family horse fair on Sunday themed Year of the Fire Horse (a progressive trail ride for riders is on Saturday Oct 10)."
+  },
+  {
+   "title": "San Francisco Italian Heritage Parade",
+   "date": "2026-10-11",
+   "time": "12:30",
+   "venue": "Fisherman's Wharf to Washington Square",
+   "city": "San Francisco",
+   "price": 0,
+   "url": "https://sfitalianheritage.org/parade/",
+   "why": "The longest continuously running Italian heritage parade in the US rolls through North Beach with floats, bands and a free Italian auto show, and it coincides with the final Blue Angels show overhead."
+  },
+  {
+   "title": "53rd Safeway World Championship Pumpkin Weigh-Off",
+   "date": "2026-10-12",
+   "time": "07:00",
+   "venue": "IDES Hall",
+   "city": "Half Moon Bay",
+   "price": null,
+   "url": "https://www.visithalfmoonbay.org/events/safeway-world-championship-pumpkin-weigh-0",
+   "why": "Forklifts hoist one-ton-plus pumpkins onto the scale as growers chase a $30,000 world-record prize, a quirky local tradition that falls on the Indigenous Peoples' Day school holiday."
+  },
+  {
+   "title": "Sunrise Gathering on Alcatraz for Indigenous Peoples' Day",
+   "date": "2026-10-12",
+   "time": "04:15",
+   "venue": "Alcatraz Island (ferries from Pier 33)",
+   "city": "San Francisco",
+   "price": 12,
+   "url": "https://sf.funcheap.com/sunrise-gathering-alcatraz-indigenous-peoples-day/",
+   "why": "A memorable pre-dawn ferry to a sunrise ceremony commemorating the 1969-71 occupation of Alcatraz, a meaningful school-holiday outing for older kids."
   }
  ]
 }
