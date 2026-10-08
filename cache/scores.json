@@ -679,6 +679,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "03052c8bfbde60d7": {
+  "adult_interest": 0,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "T.J. Miller comedy show, 18+ only.",
+  "epic": false,
+  "family_fit": 0
+ },
  "0309d4cc6344bbce": {
   "adult_interest": 85,
   "adults_only": true,
@@ -1206,6 +1214,14 @@
   "blurb": "Touring theater production, may be dull for teens.",
   "epic": false,
   "family_fit": 40
+ },
+ "05ba645d881da8a6": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Indie movie soundtrack album release show.",
+  "epic": false,
+  "family_fit": 10
  },
  "05cc28091d5d1ab8": {
   "adult_interest": 20,
@@ -1927,6 +1943,14 @@
   "epic": false,
   "family_fit": 70
  },
+ "08fbb387aeb2ed39": {
+  "adult_interest": 65,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "18+ rock concert at a San Jose venue.",
+  "epic": false,
+  "family_fit": 0
+ },
  "08fc6ccadddd5340": {
   "adult_interest": 85,
   "adults_only": true,
@@ -2038,6 +2062,14 @@
   "blurb": "Planetarium show about telescopes.",
   "epic": false,
   "family_fit": 75
+ },
+ "095e7ed6a6436dd1": {
+  "adult_interest": 75,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Comedy show, 18+ with ID required.",
+  "epic": false,
+  "family_fit": 0
  },
  "0962147c16d14805": {
   "adult_interest": 65,
@@ -2342,6 +2374,14 @@
   "blurb": "Shyne and Barrington Levy concert at Regency Ballroom.",
   "epic": false,
   "family_fit": 0
+ },
+ "0a8dadfe754c5455": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "A free zine release party with DJs and local food in Alameda.",
+  "epic": false,
+  "family_fit": 40
  },
  "0a971d2b9d5b1582": {
   "adult_interest": 75,
@@ -3847,6 +3887,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "110ea7ac2c3ca63f": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Free productivity workshop at SF library.",
+  "epic": false,
+  "family_fit": 10
+ },
  "1122d1fa663e20cb": {
   "adult_interest": 90,
   "adults_only": true,
@@ -4455,6 +4503,14 @@
   "epic": false,
   "family_fit": 75
  },
+ "13ee896b5be199f8": {
+  "adult_interest": 35,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free first Sunday at Oakland Museum of California.",
+  "epic": false,
+  "family_fit": 65
+ },
  "13fd617852dff85f": {
   "adult_interest": 25,
   "adults_only": false,
@@ -4959,6 +5015,30 @@
   "epic": false,
   "family_fit": 85
  },
+ "166205a3e55b3cf2": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Zoso rock concert in Berkeley.",
+  "epic": false,
+  "family_fit": 20
+ },
+ "1662b7e6ccf10bea": {
+  "adult_interest": 75,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Folk music show with age restriction for under 21.",
+  "epic": false,
+  "family_fit": 10
+ },
+ "166be3610c07fbb8": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Other event at a venue in Berkeley.",
+  "epic": false,
+  "family_fit": 0
+ },
  "1682a142d42bf1d2": {
   "adult_interest": 85,
   "adults_only": true,
@@ -5175,6 +5255,14 @@
   "epic": false,
   "family_fit": 30
  },
+ "1774959a00d26267": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Chilean observatories exploration for ages 8+ at Chabot.",
+  "epic": false,
+  "family_fit": 85
+ },
  "178482a3499e1d53": {
   "adult_interest": 60,
   "adults_only": false,
@@ -5196,6 +5284,14 @@
   "adults_only": true,
   "audience": "adults",
   "blurb": "Pop concert at Cafe Du Nord.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "178e8b95d696239d": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Midnight screening of horror film at Castro Theatre.",
   "epic": false,
   "family_fit": 0
  },
@@ -5519,6 +5615,14 @@
   "epic": false,
   "family_fit": 75
  },
+ "18d28c955c71f638": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Art show at Cornerstone in Berkeley.",
+  "epic": false,
+  "family_fit": 10
+ },
  "18d558e34a9f38e4": {
   "adult_interest": 65,
   "adults_only": false,
@@ -5830,6 +5934,14 @@
   "blurb": "Free festival with food and drinks in Millbrae.",
   "epic": false,
   "family_fit": 35
+ },
+ "1a2cdb3b45a84a30": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Lecture on resistance history at a library, not engaging for kids.",
+  "epic": false,
+  "family_fit": 30
  },
  "1a3961cfd48ebb58": {
   "adult_interest": 30,
@@ -7991,6 +8103,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "2390e25b802b80a8": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Kabaka Pyramid DJ set at UC Theatre.",
+  "epic": false,
+  "family_fit": 25
+ },
  "23918179318adf50": {
   "adult_interest": 75,
   "adults_only": false,
@@ -8060,6 +8180,22 @@
   "adults_only": true,
   "audience": "adults",
   "blurb": "Political campaign event at a theater in Berkeley.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "23cd04b0f82f75e4": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free silent disco in Oakland with costumes and prizes.",
+  "epic": false,
+  "family_fit": 60
+ },
+ "23dadc739ffd5041": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Ninajirachi concert, 18+ event.",
   "epic": false,
   "family_fit": 0
  },
@@ -8398,6 +8534,14 @@
   "blurb": "Korean harvest festival at The Presidio.",
   "epic": false,
   "family_fit": 75
+ },
+ "25605e21dd22f775": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "TesseracT metal concert at The Fillmore.",
+  "epic": false,
+  "family_fit": 0
  },
  "25697fd27d7e5cdc": {
   "adult_interest": 0,
@@ -8958,6 +9102,14 @@
   "blurb": "World music concert by Sonu Nigam at SAP Center.",
   "epic": false,
   "family_fit": 0
+ },
+ "27e9d2073b32f82c": {
+  "adult_interest": 90,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "WNBA game at Chase Center, high-energy basketball.",
+  "epic": false,
+  "family_fit": 80
  },
  "27ed2539baa3a68f": {
   "adult_interest": 70,
@@ -9879,6 +10031,14 @@
   "epic": false,
   "family_fit": 75
  },
+ "2c01667f3b627544": {
+  "adult_interest": 35,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "A planetarium show blending Indigenous knowledge with astronomy, for ages 8+.",
+  "epic": false,
+  "family_fit": 80
+ },
  "2c03ba64922a8918": {
   "adult_interest": 0,
   "adults_only": true,
@@ -10607,6 +10767,22 @@
   "epic": false,
   "family_fit": 0
  },
+ "2f33ac91c78488e7": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Belmont's centennial fest with vintage cars and drone show.",
+  "epic": false,
+  "family_fit": 75
+ },
+ "2f3b6bacb594e4ac": {
+  "adult_interest": 75,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "18+ dance event at a San Jose venue.",
+  "epic": false,
+  "family_fit": 0
+ },
  "2f43d05557b87fed": {
   "adult_interest": 80,
   "adults_only": false,
@@ -10935,6 +11111,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "30afacff9616297e": {
+  "adult_interest": 35,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Mexica Archeoastronomy planetarium show about Indigenous astronomy.",
+  "epic": false,
+  "family_fit": 65
+ },
  "30cd00bbb43fa009": {
   "adult_interest": 60,
   "adults_only": false,
@@ -11038,6 +11222,14 @@
   "blurb": "Tasting tour of Filoli's gardens and food offerings.",
   "epic": false,
   "family_fit": 60
+ },
+ "312792355abf2257": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Hip-hop show with age restriction for under 21.",
+  "epic": false,
+  "family_fit": 10
  },
  "312bef96a34c1067": {
   "adult_interest": 80,
@@ -11663,6 +11855,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "339562be995fd4b2": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Planetarium show about space exploration for all ages.",
+  "epic": false,
+  "family_fit": 55
+ },
  "33a1953c6546a436": {
   "adult_interest": 70,
   "adults_only": false,
@@ -11854,6 +12054,14 @@
   "blurb": "21+ music event in San Francisco.",
   "epic": false,
   "family_fit": 0
+ },
+ "34b704db29691b1f": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Halloween laser show in IMAX dome, not engaging for kids.",
+  "epic": false,
+  "family_fit": 40
  },
  "34ba9d4be9630471": {
   "adult_interest": 80,
@@ -12191,6 +12399,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "35e1e4118a5d061f": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Costume party with hip-hop music in Oakland.",
+  "epic": false,
+  "family_fit": 10
+ },
  "35e57b079034c762": {
   "adult_interest": 20,
   "adults_only": false,
@@ -12358,6 +12574,14 @@
   "blurb": "Musical theater production of 9 to 5 at Woodland Opera House.",
   "epic": false,
   "family_fit": 45
+ },
+ "368c69f590e79abf": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free yoga event at the beach, not very engaging for kids.",
+  "epic": false,
+  "family_fit": 60
  },
  "368f7070c609fca3": {
   "adult_interest": 0,
@@ -12919,6 +13143,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "38ae86827bdab513": {
+  "adult_interest": 55,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free lawn bowling at a historic club in GG Park.",
+  "epic": false,
+  "family_fit": 60
+ },
  "38c02de826564666": {
   "adult_interest": 30,
   "adults_only": false,
@@ -13159,6 +13391,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "397ffbb5bef1edd6": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Planetarium show about northern lights for ages 8+.",
+  "epic": false,
+  "family_fit": 70
+ },
  "398602f4050f4af2": {
   "adult_interest": 85,
   "adults_only": true,
@@ -13358,6 +13598,14 @@
   "blurb": "The Living Tombstone concert at San Jose Civic, dance/electronic.",
   "epic": false,
   "family_fit": 20
+ },
+ "3a345c29eba0c0d6": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only comedy show at a nightclub with 21+ age restriction.",
+  "epic": false,
+  "family_fit": 0
  },
  "3a3566556bed0403": {
   "adult_interest": 85,
@@ -14095,6 +14343,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "3d95be7e5d7ed6b2": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Hip-hop artist ezcodylee at Cornerstone in Berkeley.",
+  "epic": false,
+  "family_fit": 20
+ },
  "3d9e5e1884047dc0": {
   "adult_interest": 80,
   "adults_only": true,
@@ -14463,6 +14719,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "3f10573edb5576ac": {
+  "adult_interest": 75,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Spanish-language comedy show with 21+ age restriction.",
+  "epic": false,
+  "family_fit": 0
+ },
  "3f1bc89b94d21d6c": {
   "adult_interest": 60,
   "adults_only": false,
@@ -14766,6 +15030,14 @@
   "blurb": "Comedy night at a venue with age restrictions.",
   "epic": false,
   "family_fit": 0
+ },
+ "40857d594fb44b01": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Y&T at Monterey theater.",
+  "epic": false,
+  "family_fit": 20
  },
  "408741f080086ad3": {
   "adult_interest": 80,
@@ -16223,6 +16495,14 @@
   "epic": false,
   "family_fit": 40
  },
+ "473df443929bc695": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Aurora Storm planetarium show about northern lights.",
+  "epic": false,
+  "family_fit": 70
+ },
  "474025c16857ec8a": {
   "adult_interest": 50,
   "adults_only": false,
@@ -16583,6 +16863,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "48cf9f11fd7b49f7": {
+  "adult_interest": 35,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "A planetarium show about astronomy and STEM careers, for ages 8+.",
+  "epic": false,
+  "family_fit": 70
+ },
  "48d3d06bc149dbc3": {
   "adult_interest": 80,
   "adults_only": true,
@@ -16831,6 +17119,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "49c32106c067c259": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Dark matter exploration for ages 8+ at Chabot planetarium.",
+  "epic": false,
+  "family_fit": 80
+ },
  "49ce05f91f92d7a0": {
   "adult_interest": 30,
   "adults_only": false,
@@ -16918,6 +17214,14 @@
   "blurb": "Comedy show for adults only, 18+.",
   "epic": false,
   "family_fit": 0
+ },
+ "4a4edfb09d276dcc": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Literature lecture at library, not engaging for kids.",
+  "epic": false,
+  "family_fit": 20
  },
  "4a51a116c24e8235": {
   "adult_interest": 80,
@@ -17015,6 +17319,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "4aaa6c211e8c53aa": {
+  "adult_interest": 75,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "2DEAD BOYZ concert, 18+ event.",
+  "epic": false,
+  "family_fit": 5
+ },
  "4acaff348f8f08d4": {
   "adult_interest": 0,
   "adults_only": false,
@@ -17055,6 +17367,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "4b139ec3890813df": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Comedy night in downtown SF, 18+ only, not family-friendly.",
+  "epic": false,
+  "family_fit": 10
+ },
  "4b162fbe2e504f91": {
   "adult_interest": 80,
   "adults_only": true,
@@ -17078,6 +17398,14 @@
   "blurb": "Alternative music show at Cafe Du Nord.",
   "epic": false,
   "family_fit": 0
+ },
+ "4b33ae9c1373a4b6": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free trivia night in Mill Valley.",
+  "epic": false,
+  "family_fit": 30
  },
  "4b361b2dd3bd50d4": {
   "adult_interest": 75,
@@ -17439,6 +17767,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "4c74dd8b8ee978ed": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Artisan cheese and candle event in Sonoma, Christmas-themed.",
+  "epic": false,
+  "family_fit": 35
+ },
  "4c7625e0ee78254f": {
   "adult_interest": 0,
   "adults_only": true,
@@ -17734,6 +18070,14 @@
   "blurb": "Fleet Fest USAF Band of Golden West at Crab Wheel Plaza.",
   "epic": false,
   "family_fit": 75
+ },
+ "4db4b277ece9e8cb": {
+  "adult_interest": 90,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Jazz concert in Sacramento, 135-minute drive, not family-friendly.",
+  "epic": false,
+  "family_fit": 0
  },
  "4dc70aa4438982de": {
   "adult_interest": 85,
@@ -18127,6 +18471,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "4fcd8cc428f6dbb1": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Halloween art maze with tarot readings and DJs in SF.",
+  "epic": false,
+  "family_fit": 50
+ },
  "4fcfc34d4b27fe04": {
   "adult_interest": 75,
   "adults_only": true,
@@ -18287,6 +18639,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "5057dcbbaf160ee1": {
+  "adult_interest": 20,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Comedy show at Punch Line in Sacramento, 18+.",
+  "epic": false,
+  "family_fit": 0
+ },
  "505fa2719a80b174": {
   "adult_interest": 85,
   "adults_only": false,
@@ -18415,11 +18775,27 @@
   "epic": false,
   "family_fit": 85
  },
+ "50e0ec9f02a578ea": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Jazz concert at Feinstein's, adult-oriented music.",
+  "epic": false,
+  "family_fit": 10
+ },
  "50e8619b1fffee8e": {
   "adult_interest": 60,
   "adults_only": false,
   "audience": "all",
   "blurb": "Short planetarium show about telescopes detecting electromagnetic waves.",
+  "epic": false,
+  "family_fit": 70
+ },
+ "50f379fa03361782": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Free Halloween hike with spooky stories for kids.",
   "epic": false,
   "family_fit": 70
  },
@@ -18983,6 +19359,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "53a8d9fd75b3ceae": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Dance performance by a group learning pop songs, not very engaging for kids.",
+  "epic": false,
+  "family_fit": 50
+ },
  "53bb30fa9d2c5016": {
   "adult_interest": 85,
   "adults_only": true,
@@ -19535,6 +19919,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "5651e91b9349958a": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free museum day at Bank of America.",
+  "epic": false,
+  "family_fit": 50
+ },
  "565f309dbed33768": {
   "adult_interest": 40,
   "adults_only": false,
@@ -19783,6 +20175,14 @@
   "epic": false,
   "family_fit": 85
  },
+ "57569907a324f6e2": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Hockey game at SAP Center in San Jose.",
+  "epic": false,
+  "family_fit": 60
+ },
  "5762717054c5f486": {
   "adult_interest": 20,
   "adults_only": false,
@@ -19911,6 +20311,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "57c8e48ecdf75d3f": {
+  "adult_interest": 0,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Everybody Eats Comedy with Artie Valenzuela, 18+ only.",
+  "epic": false,
+  "family_fit": 0
+ },
  "57d2d2234cc616e0": {
   "adult_interest": 45,
   "adults_only": false,
@@ -19934,6 +20342,14 @@
   "blurb": "Bones Shredder, Dog Party, Bloodsugar, Tess and the Details at a theater.",
   "epic": false,
   "family_fit": 0
+ },
+ "57e6ead2df5ac886": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Planetarium show about hypothetical Earth scenarios for ages 8+.",
+  "epic": false,
+  "family_fit": 70
  },
  "57ea7c578a7c9c5d": {
   "adult_interest": 70,
@@ -19974,6 +20390,14 @@
   "blurb": "Sueco and Jeris Johnson at Great American Music Hall.",
   "epic": false,
   "family_fit": 10
+ },
+ "58162ec907a27659": {
+  "adult_interest": 90,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Warriors open practice, basketball fans enjoy.",
+  "epic": false,
+  "family_fit": 80
  },
  "58281e5611d5478f": {
   "adult_interest": 75,
@@ -20767,6 +21191,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "5b85b790bd378992": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Book festival at SF library, adult-focused.",
+  "epic": false,
+  "family_fit": 30
+ },
  "5b8907cd9c689bf5": {
   "adult_interest": 65,
   "adults_only": true,
@@ -21031,6 +21463,14 @@
   "epic": false,
   "family_fit": 70
  },
+ "5c81a5c1acf77730": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Queer tattoo party and holiday mart in SF.",
+  "epic": false,
+  "family_fit": 10
+ },
  "5c83b17c3bede8c6": {
   "adult_interest": 60,
   "adults_only": false,
@@ -21294,6 +21734,14 @@
   "blurb": "Concert by Megan Woods in Santa Cruz.",
   "epic": false,
   "family_fit": 35
+ },
+ "5d8d5ef5fbb71b55": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Sci-fi art exhibition opening in downtown SF.",
+  "epic": false,
+  "family_fit": 60
  },
  "5d944487b4f8481a": {
   "adult_interest": 45,
@@ -22159,6 +22607,14 @@
   "epic": false,
   "family_fit": 25
  },
+ "6172d5a05814a7bf": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Planetarium show about northern lights for kids.",
+  "epic": false,
+  "family_fit": 60
+ },
  "617c0e37a7b994c3": {
   "adult_interest": 70,
   "adults_only": false,
@@ -22614,6 +23070,14 @@
   "blurb": "Santa Cruz Warriors vs. Valley Suns basketball game.",
   "epic": false,
   "family_fit": 70
+ },
+ "63591019be932bb1": {
+  "adult_interest": 0,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Lance Woods comedy show, 18+ only.",
+  "epic": false,
+  "family_fit": 0
  },
  "6368bcb5f3e2a221": {
   "adult_interest": 75,
@@ -24303,6 +24767,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "6b498d484a871614": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Halloween party at a bar with DJs, not suitable for kids.",
+  "epic": false,
+  "family_fit": 20
+ },
  "6b4ff4a0ebc59069": {
   "adult_interest": 70,
   "adults_only": false,
@@ -25550,6 +26022,14 @@
   "blurb": "Rock concert, 21+.",
   "epic": false,
   "family_fit": 0
+ },
+ "7070ba0961680c7b": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "A free Día de los Muertos and Diwali celebration with cultural performances.",
+  "epic": false,
+  "family_fit": 55
  },
  "707699defb4266ce": {
   "adult_interest": 85,
@@ -27119,6 +27599,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "76f8b1b0e6cf5028": {
+  "adult_interest": 90,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "WNBA game at Chase Center, high-energy basketball.",
+  "epic": false,
+  "family_fit": 80
+ },
  "7711095d090f474e": {
   "adult_interest": 80,
   "adults_only": false,
@@ -27207,6 +27695,14 @@
   "epic": false,
   "family_fit": 90
  },
+ "77467a140affdeef": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Mexica archaeoastronomy show for ages 8+ at Chabot.",
+  "epic": false,
+  "family_fit": 70
+ },
  "774cd74ec3c3ba4c": {
   "adult_interest": 70,
   "adults_only": false,
@@ -27230,6 +27726,14 @@
   "blurb": "18+ stand-up comedy at a bar.",
   "epic": false,
   "family_fit": 0
+ },
+ "775d94406cf75dc0": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Dark matter exploration for ages 8+ at Chabot planetarium.",
+  "epic": false,
+  "family_fit": 80
  },
  "776441ac63c565f6": {
   "adult_interest": 60,
@@ -27270,6 +27774,14 @@
   "blurb": "Planetarium show about the moon's motion and phases, eclipses, and origin.",
   "epic": false,
   "family_fit": 70
+ },
+ "7798525ea574f0f5": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Country concert in Monterey, not family-friendly.",
+  "epic": false,
+  "family_fit": 10
  },
  "779cebcf3a937603": {
   "adult_interest": 80,
@@ -27351,6 +27863,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "781664dd1644508d": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Hip-hop/rap concert at Warfield in SF.",
+  "epic": false,
+  "family_fit": 10
+ },
  "78375e94451b5876": {
   "adult_interest": 80,
   "adults_only": true,
@@ -27382,6 +27902,14 @@
   "blurb": "21+ dance event at August Hall.",
   "epic": false,
   "family_fit": 0
+ },
+ "78423eeb22861e65": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Planetarium show exploring hypothetical Earth scenarios.",
+  "epic": false,
+  "family_fit": 80
  },
  "784a73d5dd611006": {
   "adult_interest": 60,
@@ -27542,6 +28070,14 @@
   "blurb": "Free comedy show in San Francisco.",
   "epic": false,
   "family_fit": 0
+ },
+ "789b609668eef5e9": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Waiting Far Away planetarium show about space exploration.",
+  "epic": false,
+  "family_fit": 60
  },
  "789dbd8659557d97": {
   "adult_interest": 25,
@@ -27983,6 +28519,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "7aea7ec73490e1b9": {
+  "adult_interest": 25,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "A planetarium show exploring hypothetical Earth scenarios, for ages 8+.",
+  "epic": false,
+  "family_fit": 75
+ },
  "7af9c45c51ef705e": {
   "adult_interest": 85,
   "adults_only": true,
@@ -27996,6 +28540,14 @@
   "adults_only": false,
   "audience": "teens",
   "blurb": "Women's volleyball game at Stanford, not very engaging for kids 9-14",
+  "epic": false,
+  "family_fit": 40
+ },
+ "7b209147b1452530": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Volunteers clean up Dogpatch and get free lunch.",
   "epic": false,
   "family_fit": 40
  },
@@ -28343,6 +28895,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "7c8ddec78970be1e": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "A planetarium show on Indigenous astronomy, suitable for ages 8+.",
+  "epic": false,
+  "family_fit": 65
+ },
  "7c92557879397eea": {
   "adult_interest": 30,
   "adults_only": false,
@@ -28446,6 +29006,14 @@
   "blurb": "Country music show with 18+ age restriction.",
   "epic": false,
   "family_fit": 0
+ },
+ "7cd59a7784963224": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Ohlone Skies planetarium show with Indigenous storytelling.",
+  "epic": false,
+  "family_fit": 80
  },
  "7ce107f99a05a717": {
   "adult_interest": 60,
@@ -28628,6 +29196,14 @@
   "adults_only": false,
   "audience": "all",
   "blurb": "Free art and drag event on Castro Street with music and art.",
+  "epic": false,
+  "family_fit": 75
+ },
+ "7ddb336f68306ded": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Indigenous Ohlone storytelling with science at Chabot planetarium.",
   "epic": false,
   "family_fit": 75
  },
@@ -30231,6 +30807,14 @@
   "epic": false,
   "family_fit": 40
  },
+ "841dbab4677df157": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Aurora Storm planetarium show about northern lights.",
+  "epic": false,
+  "family_fit": 75
+ },
  "8423bfbe31cf7da8": {
   "adult_interest": 40,
   "adults_only": false,
@@ -30359,6 +30943,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "847d1ce2de6d67dd": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Planetarium show about space exploration for all ages.",
+  "epic": false,
+  "family_fit": 60
+ },
  "847ebbbe6eb53915": {
   "adult_interest": 55,
   "adults_only": false,
@@ -30406,6 +30998,14 @@
   "blurb": "Free Grateful Dead-themed event with music and sea lions at PIER 39.",
   "epic": false,
   "family_fit": 65
+ },
+ "849ed237f0801971": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "SOLD OUT Tauren Wells worship tour in San Jose.",
+  "epic": false,
+  "family_fit": 0
  },
  "849ef0262c129007": {
   "adult_interest": 85,
@@ -30871,6 +31471,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "8656085b3eb43c82": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Alternative music show, 21+ only.",
+  "epic": false,
+  "family_fit": 0
+ },
  "86749e6d8969d010": {
   "adult_interest": 85,
   "adults_only": true,
@@ -31223,6 +31831,22 @@
   "epic": false,
   "family_fit": 65
  },
+ "87e1683a2d77ce14": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "WNBA game, not suitable for kids.",
+  "epic": false,
+  "family_fit": 10
+ },
+ "87e4c5d082e16f66": {
+  "adult_interest": 35,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free mask-making event for Halloween at The Faight.",
+  "epic": false,
+  "family_fit": 85
+ },
  "87ece7ab5c479f21": {
   "adult_interest": 65,
   "adults_only": false,
@@ -31375,6 +31999,22 @@
   "epic": false,
   "family_fit": 40
  },
+ "8860475168b90d2c": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Workshop on local news at a downtown SF venue.",
+  "epic": false,
+  "family_fit": 20
+ },
+ "8860fddee7568ee1": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free farm festival with BBQ and tours in SF.",
+  "epic": false,
+  "family_fit": 80
+ },
  "886a9b6fafb948f7": {
   "adult_interest": 80,
   "adults_only": false,
@@ -31414,6 +32054,14 @@
   "blurb": "Fulldome show about the moon at Chabot Space Center.",
   "epic": false,
   "family_fit": 60
+ },
+ "888dd7480f32119e": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Rock concert at UC Theatre in Berkeley.",
+  "epic": false,
+  "family_fit": 10
  },
  "889bdd97a7490fb3": {
   "adult_interest": 80,
@@ -31518,6 +32166,14 @@
   "blurb": "Mezcal & Mole Comedy Night in Oakland.",
   "epic": false,
   "family_fit": 10
+ },
+ "89132736989f741b": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Cannes-winning film La Bola Negra at Castro Theatre.",
+  "epic": false,
+  "family_fit": 0
  },
  "8914e87e9ff6ec93": {
   "adult_interest": 70,
@@ -31726,6 +32382,14 @@
   "blurb": "Smashing Pumpkins concert at SAP Center.",
   "epic": false,
   "family_fit": 40
+ },
+ "89d046030f5bb843": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free library event with music and bubbles for kids.",
+  "epic": false,
+  "family_fit": 70
  },
  "89edf158df7344a1": {
   "adult_interest": 65,
@@ -31991,6 +32655,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "8b568847018a1666": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "DJ night at a West Sacramento bar.",
+  "epic": false,
+  "family_fit": 0
+ },
  "8b5cb4031891893e": {
   "adult_interest": 40,
   "adults_only": true,
@@ -32255,6 +32927,14 @@
   "epic": false,
   "family_fit": 30
  },
+ "8c9d80b0ebe868f9": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Ballet performance of Sleeping Beauty at a historic opera house.",
+  "epic": false,
+  "family_fit": 40
+ },
  "8ca50b5cd544a758": {
   "adult_interest": 65,
   "adults_only": false,
@@ -32382,6 +33062,14 @@
   "blurb": "Rock concert for all ages in San Francisco.",
   "epic": false,
   "family_fit": 40
+ },
+ "8d4bb4b7f19aad3a": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "WNBA basketball game with family-friendly atmosphere.",
+  "epic": false,
+  "family_fit": 30
  },
  "8d71e2b87c2b73d6": {
   "adult_interest": 50,
@@ -33439,6 +34127,14 @@
   "epic": false,
   "family_fit": 50
  },
+ "928f3f24146bbe88": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Sensory Sunday at a museum, for kids with sensory sensitivities.",
+  "epic": false,
+  "family_fit": 20
+ },
  "9291bd1154305917": {
   "adult_interest": 60,
   "adults_only": false,
@@ -33454,6 +34150,14 @@
   "blurb": "Six: The Musical live performance.",
   "epic": false,
   "family_fit": 40
+ },
+ "92a12a2ba79e9651": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "A free cultural celebration combining Día de los Muertos and Diwali with a fire ceremony.",
+  "epic": false,
+  "family_fit": 80
  },
  "92ad100a5989f0db": {
   "adult_interest": 60,
@@ -33655,6 +34359,14 @@
   "epic": false,
   "family_fit": 80
  },
+ "93b37348e0b75bc8": {
+  "adult_interest": 60,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Comedy show at Thunder Valley Casino, 21+.",
+  "epic": false,
+  "family_fit": 0
+ },
  "93c1309192f193b7": {
   "adult_interest": 85,
   "adults_only": false,
@@ -33750,6 +34462,14 @@
   "blurb": "Men's basketball game at Santa Clara University.",
   "epic": false,
   "family_fit": 60
+ },
+ "943e10fb43e785d7": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Planetarium show about Chilean observatories for ages 8+.",
+  "epic": false,
+  "family_fit": 75
  },
  "944b0152a199d97f": {
   "adult_interest": 85,
@@ -34375,6 +35095,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "96887a64b439862d": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Sensory Sunday at a museum, for kids with sensory sensitivities.",
+  "epic": false,
+  "family_fit": 20
+ },
  "968ea366d535dda3": {
   "adult_interest": 0,
   "adults_only": false,
@@ -34438,6 +35166,14 @@
   "blurb": "Candlebox concert in Menlo Park, all ages.",
   "epic": false,
   "family_fit": 20
+ },
+ "96cd56ca78e3fe95": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Touring musical based on the 1992 film, featuring romance and thrilling performances.",
+  "epic": false,
+  "family_fit": 65
  },
  "96d21f2aa23d2a6a": {
   "adult_interest": 85,
@@ -35279,6 +36015,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "99e962fe0ddc4141": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free pumpkin festival in San Jose with 1000+ pumpkins.",
+  "epic": false,
+  "family_fit": 70
+ },
  "99ec266ba59fb5d0": {
   "adult_interest": 65,
   "adults_only": false,
@@ -35767,6 +36511,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "9c38d7e3297e35e0": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Space journey story for all ages at Chabot planetarium.",
+  "epic": false,
+  "family_fit": 65
+ },
  "9c3bbd13e4c3009f": {
   "adult_interest": 85,
   "adults_only": true,
@@ -35838,6 +36590,14 @@
   "blurb": "Vincent Ingala performance at Yoshi's Oakland.",
   "epic": false,
   "family_fit": 20
+ },
+ "9c6740a15eadf7e7": {
+  "adult_interest": 70,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Comedy show at Cobb's, 18+ only, not family-friendly.",
+  "epic": false,
+  "family_fit": 10
  },
  "9c6a9c61a4ab7837": {
   "adult_interest": 25,
@@ -36174,6 +36934,14 @@
   "blurb": "Knitting group meeting at a bar.",
   "epic": false,
   "family_fit": 10
+ },
+ "9e5e969fffdf1d19": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "The Arcadian Wild folk concert in SF.",
+  "epic": false,
+  "family_fit": 0
  },
  "9e601ad52fc2845a": {
   "adult_interest": 85,
@@ -36862,6 +37630,14 @@
   "blurb": "Magic the Gathering game night, not family-friendly.",
   "epic": false,
   "family_fit": 20
+ },
+ "a1d38213095bfab9": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "21+ hip-hop concert at a music hall.",
+  "epic": false,
+  "family_fit": 0
  },
  "a1d93705e54da835": {
   "adult_interest": 90,
@@ -37951,6 +38727,14 @@
   "epic": false,
   "family_fit": 30
  },
+ "a72d6a2a4f4ad03c": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Drag and art event on a street, not suitable for kids but appealing to adults.",
+  "epic": false,
+  "family_fit": 30
+ },
  "a72df09b7fff4553": {
   "adult_interest": 60,
   "adults_only": true,
@@ -38428,6 +39212,14 @@
   "adults_only": true,
   "audience": "adults",
   "blurb": "Comedy show for adults only, no family fit.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "a8d55d64c45d8096": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "fakemink hip-hop/rap show in SF.",
   "epic": false,
   "family_fit": 0
  },
@@ -39207,6 +39999,14 @@
   "epic": false,
   "family_fit": 35
  },
+ "abedb6b7a3a23f27": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Art market with local vendors on a street block, free and family-friendly.",
+  "epic": false,
+  "family_fit": 70
+ },
  "abf154b67eacf186": {
   "adult_interest": 10,
   "adults_only": false,
@@ -39391,6 +40191,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "ac9d426fd1541480": {
+  "adult_interest": 90,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Free concert at Brick and Mortar, Machine Machine Fall 2026.",
+  "epic": false,
+  "family_fit": 0
+ },
  "aca8766e811e556f": {
   "adult_interest": 80,
   "adults_only": false,
@@ -39479,6 +40287,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "ad05e322ee1d8d48": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "College football game in San Jose.",
+  "epic": false,
+  "family_fit": 80
+ },
  "ad0cfb4256a05bd3": {
   "adult_interest": 85,
   "adults_only": false,
@@ -39495,6 +40311,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "ad251734a4e73320": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "A space-themed planetarium show about a cosmic journey, suitable for ages 8+.",
+  "epic": false,
+  "family_fit": 65
+ },
  "ad2e23cc18f8f21f": {
   "adult_interest": 75,
   "adults_only": false,
@@ -39502,6 +40326,14 @@
   "blurb": "Dance performance of The Nutcracker.",
   "epic": false,
   "family_fit": 20
+ },
+ "ad2f3edca636aaee": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Book festival at library, focused on adult literature.",
+  "epic": false,
+  "family_fit": 30
  },
  "ad33be3688660e89": {
   "adult_interest": 85,
@@ -39590,6 +40422,14 @@
   "blurb": "Patrick Wolf concert in San Francisco.",
   "epic": false,
   "family_fit": 0
+ },
+ "ad949b63d8700564": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Rock concert at Cornerstone in Berkeley.",
+  "epic": false,
+  "family_fit": 10
  },
  "ada039cc4e20e66a": {
   "adult_interest": 45,
@@ -39767,6 +40607,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "ae5dc6f318ceb339": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Winter wonderland block party in San Rafael.",
+  "epic": false,
+  "family_fit": 85
+ },
  "ae5ed4be092cdfde": {
   "adult_interest": 10,
   "adults_only": false,
@@ -39782,6 +40630,14 @@
   "blurb": "R&B concert with 21+ age restriction.",
   "epic": false,
   "family_fit": 0
+ },
+ "ae80fd029cb961a5": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Indie author fair at library, mostly for adults.",
+  "epic": false,
+  "family_fit": 50
  },
  "ae82a1b28d739771": {
   "adult_interest": 75,
@@ -40967,6 +41823,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "b4e0137fce2a5e2c": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Día de los Muertos street fiesta in Stockton, free and family-friendly.",
+  "epic": false,
+  "family_fit": 70
+ },
  "b4e0210e23d4017a": {
   "adult_interest": 85,
   "adults_only": false,
@@ -41214,6 +42078,14 @@
   "blurb": "Hip-hop concert at Bill Graham Civic, 18+.",
   "epic": false,
   "family_fit": 20
+ },
+ "b62ed9884c27bed6": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Sutekh Hexen concert in SF.",
+  "epic": false,
+  "family_fit": 0
  },
  "b632b99c25efe8bc": {
   "adult_interest": 5,
@@ -41703,6 +42575,14 @@
   "epic": false,
   "family_fit": 30
  },
+ "b8777877770294bc": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Free citizenship trivia game at library.",
+  "epic": false,
+  "family_fit": 0
+ },
  "b878aea473e26f1d": {
   "adult_interest": 85,
   "adults_only": true,
@@ -41775,6 +42655,14 @@
   "epic": false,
   "family_fit": 40
  },
+ "b8bb4636c1603828": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Sharon Cuneta concert at Graton Resort, 8 tickets max.",
+  "epic": false,
+  "family_fit": 0
+ },
  "b8be6e666791d718": {
   "adult_interest": 40,
   "adults_only": false,
@@ -41790,6 +42678,14 @@
   "blurb": "Concert in SF, not 21+.",
   "epic": false,
   "family_fit": 0
+ },
+ "b8c06720669e3975": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Women's basketball game between California Golden Bears and Florida State Seminoles.",
+  "epic": false,
+  "family_fit": 55
  },
  "b8c9288ac2e154c9": {
   "adult_interest": 75,
@@ -42375,6 +43271,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "baef559787b16ef4": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Pop concert with all-ages entry, but not engaging for kids.",
+  "epic": false,
+  "family_fit": 10
+ },
  "baf320f515a70063": {
   "adult_interest": 75,
   "adults_only": false,
@@ -42494,6 +43398,14 @@
   "blurb": "Drone and flight simulator activities at Hiller Aviation Museum.",
   "epic": false,
   "family_fit": 85
+ },
+ "bb457f9ed6f1f70a": {
+  "adult_interest": 20,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Comedy show at Punch Line in Sacramento, 18+.",
+  "epic": false,
+  "family_fit": 0
  },
  "bb4712fa37024976": {
   "adult_interest": 85,
@@ -43495,6 +44407,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "bf65e6723ed823e4": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "An offsite sound voyage event not hosted by Chabot, likely not family-friendly.",
+  "epic": false,
+  "family_fit": 20
+ },
  "bf666fb543e869c3": {
   "adult_interest": 85,
   "adults_only": false,
@@ -43740,6 +44660,22 @@
   "adults_only": false,
   "audience": "adults",
   "blurb": "Miscellaneous music show for adults.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "c0787054ba97f6a0": {
+  "adult_interest": 25,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free admission day at Asian Art Museum.",
+  "epic": false,
+  "family_fit": 55
+ },
+ "c0788f147658f09a": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Yurie Collins comedy show at San Jose Improv.",
   "epic": false,
   "family_fit": 0
  },
@@ -44030,6 +44966,14 @@
   "blurb": "21+ disco event at a venue.",
   "epic": false,
   "family_fit": 0
+ },
+ "c1d6d66b9b2d3d03": {
+  "adult_interest": 25,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Holiday lights at the San Francisco Zoo, featuring Christmas decorations and activities.",
+  "epic": false,
+  "family_fit": 85
  },
  "c1d9756c0097ab36": {
   "adult_interest": 30,
@@ -44358,6 +45302,14 @@
   "blurb": "Free brass band concert at a town square with festival setup.",
   "epic": false,
   "family_fit": 85
+ },
+ "c326aa51175ca1ab": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Indigenous Ohlone storytelling with science at Chabot planetarium.",
+  "epic": false,
+  "family_fit": 75
  },
  "c32bf8fa23775c33": {
   "adult_interest": 90,
@@ -45871,6 +46823,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "ca240c272cba842b": {
+  "adult_interest": 10,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Poetry and music with community bread in San Francisco.",
+  "epic": false,
+  "family_fit": 20
+ },
  "ca3f14694fc82237": {
   "adult_interest": 40,
   "adults_only": false,
@@ -46319,6 +47279,14 @@
   "epic": false,
   "family_fit": 40
  },
+ "cc1cc157f4a1baf5": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Big Astronomy planetarium show about Chilean observatories.",
+  "epic": false,
+  "family_fit": 70
+ },
  "cc1dc6536eeecd1f": {
   "adult_interest": 70,
   "adults_only": false,
@@ -46471,6 +47439,14 @@
   "epic": false,
   "family_fit": 40
  },
+ "ccc2548e62f60a13": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Film festival showing international films, mostly for adults.",
+  "epic": false,
+  "family_fit": 40
+ },
  "ccc27b6b128843eb": {
   "adult_interest": 85,
   "adults_only": true,
@@ -46548,6 +47524,14 @@
   "adults_only": false,
   "audience": "adults",
   "blurb": "Rock band The Psychedelic Furs with special guests at Uptown Theatre.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "cd0f1bb9ce1673cf": {
+  "adult_interest": 0,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Sensory Sunday at CuriOdyssey for visitors with sensory sensitivities.",
   "epic": false,
   "family_fit": 0
  },
@@ -46863,6 +47847,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "cea261e1df0fe732": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Volunteers clean up a park and get a free drink.",
+  "epic": false,
+  "family_fit": 40
+ },
  "cea7f0dab552547e": {
   "adult_interest": 55,
   "adults_only": false,
@@ -47014,6 +48006,14 @@
   "blurb": "Free First Tuesday at Conservatory of Flowers, Golden Gate Park.",
   "epic": false,
   "family_fit": 70
+ },
+ "cf52c830aa2b8010": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Overnight science adventure with astronomy and hands-on activities for families.",
+  "epic": false,
+  "family_fit": 85
  },
  "cf6b93c4c5bb50e1": {
   "adult_interest": 50,
@@ -47230,6 +48230,14 @@
   "blurb": "A show at a trading post in Roseville.",
   "epic": false,
   "family_fit": 10
+ },
+ "d078aa29536af494": {
+  "adult_interest": 0,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "T.J. Miller comedy show, 18+ only.",
+  "epic": false,
+  "family_fit": 0
  },
  "d088b25b1416fdfb": {
   "adult_interest": 80,
@@ -47470,6 +48478,14 @@
   "blurb": "Other Lives perform at The Chapel.",
   "epic": false,
   "family_fit": 0
+ },
+ "d17dda2e0c8b33f1": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Planetarium show about northern lights for ages 8+.",
+  "epic": false,
+  "family_fit": 70
  },
  "d1810a58d5d10cb3": {
   "adult_interest": 40,
@@ -48295,6 +49311,14 @@
   "epic": false,
   "family_fit": 80
  },
+ "d5004d2893c37cf4": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Día de Muertos party with cumbia DJs in Oakland.",
+  "epic": false,
+  "family_fit": 30
+ },
  "d5036b72bc712318": {
   "adult_interest": 80,
   "adults_only": true,
@@ -48326,6 +49350,14 @@
   "blurb": "Free art museum day at Asian Art Museum.",
   "epic": false,
   "family_fit": 85
+ },
+ "d51a726ca2a3938e": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Art studio open house in Berkeley with free food.",
+  "epic": false,
+  "family_fit": 30
  },
  "d52911ee372d5c7d": {
   "adult_interest": 30,
@@ -48764,6 +49796,14 @@
   "adults_only": false,
   "audience": "adults",
   "blurb": "Pop artist Post Sex Nachos at Cafe Du Nord.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "d72607b6d4d6e612": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Halloween karaoke contest with cash prizes, not family-friendly.",
   "epic": false,
   "family_fit": 0
  },
@@ -50055,6 +51095,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "dc7e23d58b3c18c8": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free marketplace at San Francisco Ferry Building.",
+  "epic": false,
+  "family_fit": 75
+ },
  "dc7fa96e32572241": {
   "adult_interest": 40,
   "adults_only": false,
@@ -50311,6 +51359,14 @@
   "epic": false,
   "family_fit": 15
  },
+ "dd80259608113faf": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Halloween block party with free activities in SF.",
+  "epic": false,
+  "family_fit": 80
+ },
  "dd80e77908f6f3da": {
   "adult_interest": 85,
   "adults_only": true,
@@ -50535,6 +51591,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "de599f495e360f28": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free magic workshop for kids at SF library.",
+  "epic": false,
+  "family_fit": 50
+ },
  "de66eed82cf8b34f": {
   "adult_interest": 85,
   "adults_only": true,
@@ -50678,6 +51742,14 @@
   "blurb": "Free art projection on a building in SF.",
   "epic": false,
   "family_fit": 30
+ },
+ "df103a7c968fe1db": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Planetarium show about Mexica astronomy for ages 8+.",
+  "epic": false,
+  "family_fit": 65
  },
  "df18fbf5a3bafb4a": {
   "adult_interest": 40,
@@ -50854,6 +51926,14 @@
   "blurb": "Boz Scaggs concert in SF, 52 min drive",
   "epic": false,
   "family_fit": 0
+ },
+ "e0590ecb2411a68f": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Community event with basketball court ribbon cutting.",
+  "epic": false,
+  "family_fit": 60
  },
  "e05c5e73f4a2b678": {
   "adult_interest": 20,
@@ -51415,6 +52495,14 @@
   "epic": false,
   "family_fit": 75
  },
+ "e2fd4f31aad7d020": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free concert in Golden Gate Park with music and food.",
+  "epic": false,
+  "family_fit": 85
+ },
  "e305359d5acee2db": {
   "adult_interest": 30,
   "adults_only": false,
@@ -51855,6 +52943,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "e505b9370a6a253b": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Short lecture on Eugene O'Neill's plays at a library, not engaging for kids.",
+  "epic": false,
+  "family_fit": 20
+ },
  "e50845af7abaac48": {
   "adult_interest": 80,
   "adults_only": true,
@@ -52014,6 +53110,14 @@
   "blurb": "A music show at a theater in San Francisco.",
   "epic": false,
   "family_fit": 20
+ },
+ "e5eb29a38a691805": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "A planetarium show about dark matter, suitable for ages 8+.",
+  "epic": false,
+  "family_fit": 65
  },
  "e5f53f681cbefb2b": {
   "adult_interest": 75,
@@ -52503,6 +53607,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "e7e9975ec228aaf4": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Hip-hop concert in Sacramento, all ages.",
+  "epic": false,
+  "family_fit": 10
+ },
  "e805221d9cac5975": {
   "adult_interest": 85,
   "adults_only": false,
@@ -52631,6 +53743,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "e8c16192967d438a": {
+  "adult_interest": 0,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Sensory Sunday at CuriOdyssey, 1 PM closure for sensory-sensitive visitors.",
+  "epic": false,
+  "family_fit": 0
+ },
  "e8c2f8373c798465": {
   "adult_interest": 20,
   "adults_only": false,
@@ -52726,6 +53846,14 @@
   "blurb": "Open mic night at bar, not family-friendly.",
   "epic": false,
   "family_fit": 20
+ },
+ "e934d6f2fa41d2d4": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Planetarium show about dark matter for ages 8+.",
+  "epic": false,
+  "family_fit": 75
  },
  "e93666fdee5c33aa": {
   "adult_interest": 70,
@@ -53191,6 +54319,14 @@
   "epic": true,
   "family_fit": 90
  },
+ "eb906666ef5afb72": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Other event at a venue in Berkeley.",
+  "epic": false,
+  "family_fit": 0
+ },
  "eb954804f9ca334a": {
   "adult_interest": 75,
   "adults_only": false,
@@ -53262,6 +54398,14 @@
   "blurb": "Mining history at Black Diamond Mines Preserve.",
   "epic": false,
   "family_fit": 70
+ },
+ "ebdd4c72b8e75331": {
+  "adult_interest": 20,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Comedy show at Punch Line in Sacramento, 18+.",
+  "epic": false,
+  "family_fit": 0
  },
  "ebe598fd7f0ed40f": {
   "adult_interest": 65,
@@ -53358,6 +54502,14 @@
   "blurb": "Crepe-themed Halloween event at a crepe place, likely adult-oriented.",
   "epic": false,
   "family_fit": 20
+ },
+ "ec87f2c1bf97bafb": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Pop concert in San Francisco, not family-friendly.",
+  "epic": false,
+  "family_fit": 10
  },
  "ec89b28d69e26e72": {
   "adult_interest": 30,
@@ -55143,6 +56295,22 @@
   "epic": false,
   "family_fit": 60
  },
+ "f4b8763b1be4ce61": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "A resource fair for seniors and transportation services, not family-friendly.",
+  "epic": false,
+  "family_fit": 10
+ },
+ "f4bb6168a8ea6af9": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "Worlds of Curiosity planetarium show about hypothetical Earths.",
+  "epic": false,
+  "family_fit": 70
+ },
  "f4de885da55b5aba": {
   "adult_interest": 65,
   "adults_only": false,
@@ -55999,6 +57167,14 @@
   "epic": false,
   "family_fit": 60
  },
+ "f8b387ec718f05ef": {
+  "adult_interest": 65,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "DJ set at Regency Ballroom, 18+.",
+  "epic": false,
+  "family_fit": 0
+ },
  "f8bfb0f90e7fc4d8": {
   "adult_interest": 10,
   "adults_only": false,
@@ -56094,6 +57270,14 @@
   "blurb": "Adults-only comedy show at Cobb's, 18+ with ID required.",
   "epic": false,
   "family_fit": 0
+ },
+ "f949c9084603224e": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Hockey game at SAP Center in San Jose.",
+  "epic": false,
+  "family_fit": 60
  },
  "f94d1e73afedf902": {
   "adult_interest": 85,
@@ -56422,6 +57606,14 @@
   "blurb": "Free museum day at East Bay museums, Bank of America's Museums On Us.",
   "epic": false,
   "family_fit": 85
+ },
+ "fad041c6b6205018": {
+  "adult_interest": 0,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "T.J. Miller comedy show, 18+ only.",
+  "epic": false,
+  "family_fit": 0
  },
  "fad6209a47a5ec45": {
   "adult_interest": 85,
@@ -56916,6 +58108,14 @@
   "adults_only": true,
   "audience": "adults",
   "blurb": "Hip-hop/rap concert at Stockton venue, 21+.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "fd2d2788b5118038": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Resource fair for seniors and transportation, not for families.",
   "epic": false,
   "family_fit": 0
  },
