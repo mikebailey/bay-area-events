@@ -623,6 +623,14 @@
   "epic": false,
   "family_fit": 40
  },
+ "02cb53cc7cdc84b3": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only music show at a venue with 21+ age restriction.",
+  "epic": false,
+  "family_fit": 0
+ },
  "02d0b73af08b3d29": {
   "adult_interest": 85,
   "adults_only": false,
@@ -1686,6 +1694,14 @@
   "blurb": "Amorphis and Insomnium rock concert at UC Theatre.",
   "epic": false,
   "family_fit": 10
+ },
+ "07ef14020bfb97df": {
+  "adult_interest": 55,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only music show at a venue with 21+ age restriction.",
+  "epic": false,
+  "family_fit": 0
  },
  "07f1da877c72d3ab": {
   "adult_interest": 90,
@@ -3711,6 +3727,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "1060308dcf11f3b0": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "The Bodyguard musical in San Jose.",
+  "epic": false,
+  "family_fit": 60
+ },
  "10622a12cc891ae8": {
   "adult_interest": 30,
   "adults_only": false,
@@ -4454,6 +4478,14 @@
   "blurb": "Karaoke night at a 21+ bar in San Francisco.",
   "epic": false,
   "family_fit": 0
+ },
+ "13c15a8d4afd9042": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Sleeping Beauty ballet in SF.",
+  "epic": false,
+  "family_fit": 60
  },
  "13c3a42e8c30921d": {
   "adult_interest": 40,
@@ -5383,6 +5415,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "17e02080dd1244d2": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "A concert by Toad the Wet Sprocket at a tavern.",
+  "epic": false,
+  "family_fit": 0
+ },
  "17fad99607f7e2e3": {
   "adult_interest": 85,
   "adults_only": false,
@@ -6047,6 +6087,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "1a94f85f3153da4d": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Comedy show at a venue with no age restriction.",
+  "epic": false,
+  "family_fit": 0
+ },
  "1a9e6e1118a906ac": {
   "adult_interest": 70,
   "adults_only": false,
@@ -6287,6 +6335,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "1bb5ec64a6645ef7": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "SpookFest film festival featuring horror movies for teens and young adults.",
+  "epic": false,
+  "family_fit": 45
+ },
  "1bbda42f795bf5b3": {
   "adult_interest": 85,
   "adults_only": true,
@@ -6364,6 +6420,14 @@
   "adults_only": false,
   "audience": "adults",
   "blurb": "Soccer match in Sacramento.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "1c30c10fd0c3d0d5": {
+  "adult_interest": 70,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only music show at a venue with 21+ age restriction.",
   "epic": false,
   "family_fit": 0
  },
@@ -6838,6 +6902,14 @@
   "blurb": "Free comedy show in San Francisco, suitable for families.",
   "epic": false,
   "family_fit": 60
+ },
+ "1df9b8bbf4e37531": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Danny Gonzalez performance in Monterey.",
+  "epic": false,
+  "family_fit": 10
  },
  "1dfc6dbe1bf2193e": {
   "adult_interest": 75,
@@ -7847,6 +7919,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "228039787a515169": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "A community summit for families in San Francisco.",
+  "epic": false,
+  "family_fit": 40
+ },
  "228074279c381601": {
   "adult_interest": 70,
   "adults_only": false,
@@ -8086,6 +8166,14 @@
   "blurb": "Closed on Christmas Day.",
   "epic": false,
   "family_fit": 0
+ },
+ "238477713c5b72d6": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Basketball game in Stockton.",
+  "epic": false,
+  "family_fit": 75
  },
  "23875bf6f603c1cf": {
   "adult_interest": 75,
@@ -11943,6 +12031,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "33de245b3ffb9071": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Monthly Exploratorium event with science trivia and community activities for all ages.",
+  "epic": false,
+  "family_fit": 65
+ },
  "33e52436f1808ae9": {
   "adult_interest": 75,
   "adults_only": false,
@@ -15551,6 +15647,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "4349630f8ab0cb44": {
+  "adult_interest": 90,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "A sold-out metal concert at a theater.",
+  "epic": false,
+  "family_fit": 0
+ },
  "434d74787fb07d19": {
   "adult_interest": 60,
   "adults_only": false,
@@ -16799,6 +16903,14 @@
   "epic": false,
   "family_fit": 75
  },
+ "489450c34a245e23": {
+  "adult_interest": 65,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only music show at a venue with 21+ age restriction.",
+  "epic": false,
+  "family_fit": 0
+ },
  "4899164d5291f95d": {
   "adult_interest": 40,
   "adults_only": false,
@@ -17687,6 +17799,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "4c59a1d47fa3e7ef": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "A panel discussion about Silicon Valley tech culture at a live event.",
+  "epic": false,
+  "family_fit": 40
+ },
  "4c5da133ace20123": {
   "adult_interest": 80,
   "adults_only": true,
@@ -17862,6 +17982,14 @@
   "blurb": "Nutcracker ballet performance in Sacramento.",
   "epic": false,
   "family_fit": 40
+ },
+ "4cf0e23cd2b9bb5b": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "A chamber music ensemble performing in a public garden.",
+  "epic": false,
+  "family_fit": 0
  },
  "4d01e6b5476dc61a": {
   "adult_interest": 80,
@@ -19535,6 +19663,14 @@
   "epic": false,
   "family_fit": 40
  },
+ "546e5136fdbd65e2": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only music show at a venue with 21+ age restriction.",
+  "epic": false,
+  "family_fit": 0
+ },
  "54714bff0eb7ab7f": {
   "adult_interest": 80,
   "adults_only": true,
@@ -19838,6 +19974,14 @@
   "blurb": "Family-friendly musical act touring after America's Got Talent.",
   "epic": false,
   "family_fit": 75
+ },
+ "55eedc0645b7a80e": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free art museum day at de Young Museum.",
+  "epic": false,
+  "family_fit": 85
  },
  "55f4c166d7aa5883": {
   "adult_interest": 80,
@@ -22359,6 +22503,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "605beabe77e9b7eb": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Screening of Beetlejuice movie at a cinema.",
+  "epic": false,
+  "family_fit": 60
+ },
  "605e7099a3d6a928": {
   "adult_interest": 50,
   "adults_only": false,
@@ -22510,6 +22662,14 @@
   "blurb": "Film screening of a 1984 concert film with a pre-show music event.",
   "epic": false,
   "family_fit": 20
+ },
+ "60f7f50753d66912": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Free cartoon art museum day in SF.",
+  "epic": false,
+  "family_fit": 85
  },
  "60fd6451f1eebea7": {
   "adult_interest": 80,
@@ -23182,6 +23342,14 @@
   "blurb": "Live film and music experience at Presidio Theatre.",
   "epic": false,
   "family_fit": 60
+ },
+ "63a9da2b7b2dae9c": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Jonathan Van Ness appearance at Channel 24 in Sacramento.",
+  "epic": false,
+  "family_fit": 0
  },
  "63ac2a083287f644": {
   "adult_interest": 85,
@@ -24335,6 +24503,14 @@
   "epic": false,
   "family_fit": 55
  },
+ "6957575d16b03a4e": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Free indie music performance by Shrøud, Young Lovers, and Held at Kilowatt.",
+  "epic": false,
+  "family_fit": 10
+ },
  "695cc7afd5cef5b6": {
   "adult_interest": 65,
   "adults_only": false,
@@ -24463,6 +24639,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "69ba59521d9a945d": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "An open house for an arts marketplace in Berkeley.",
+  "epic": false,
+  "family_fit": 0
+ },
  "69dbe1a2ce19f91c": {
   "adult_interest": 85,
   "adults_only": false,
@@ -24494,6 +24678,14 @@
   "blurb": "Comedy show at Napa theatre, 12+ with adult.",
   "epic": false,
   "family_fit": 0
+ },
+ "6a0a3d1e972685b3": {
+  "adult_interest": 30,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Family event at a museum on the first Friday of the month.",
+  "epic": false,
+  "family_fit": 75
  },
  "6a0ee405a71c08de": {
   "adult_interest": 55,
@@ -25782,6 +25974,14 @@
   "blurb": "Art studios open to the public for viewing and purchasing works.",
   "epic": false,
   "family_fit": 60
+ },
+ "6ed4c6da11e06bc1": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "teens",
+  "blurb": "A support group for LGBTQ+ youth ages 16-24.",
+  "epic": false,
+  "family_fit": 0
  },
  "6ee08ae263d56903": {
   "adult_interest": 85,
@@ -29367,6 +29567,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "7e640562e5cddf99": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Standup comedy night at a venue in Oakland.",
+  "epic": false,
+  "family_fit": 0
+ },
  "7e72f48714233587": {
   "adult_interest": 85,
   "adults_only": false,
@@ -30238,6 +30446,14 @@
   "blurb": "Football game at Stanford Stadium.",
   "epic": false,
   "family_fit": 70
+ },
+ "821f2a015f347fae": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Concert by Thinking Fellers Union Local 282 at a music hall.",
+  "epic": false,
+  "family_fit": 20
  },
  "822878e46a75fe9d": {
   "adult_interest": 50,
@@ -31735,6 +31951,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "87610e18796ee3c4": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Outdoor screening of a 1970s rock documentary about Leon Russell.",
+  "epic": false,
+  "family_fit": 20
+ },
  "8766d60cf8c82b4c": {
   "adult_interest": 85,
   "adults_only": true,
@@ -32166,6 +32390,14 @@
   "blurb": "Mezcal & Mole Comedy Night in Oakland.",
   "epic": false,
   "family_fit": 10
+ },
+ "890d778d5f6918a4": {
+  "adult_interest": 50,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "A documentary about concrete at a theater.",
+  "epic": false,
+  "family_fit": 0
  },
  "89132736989f741b": {
   "adult_interest": 85,
@@ -33719,6 +33951,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "90619622775a2413": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "California Academy of Sciences night event focused on insects and their role in ecosystems.",
+  "epic": false,
+  "family_fit": 70
+ },
  "90666c837adea205": {
   "adult_interest": 65,
   "adults_only": false,
@@ -33903,6 +34143,14 @@
   "epic": false,
   "family_fit": 85
  },
+ "918e382152174c80": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Rock concert at a venue with 21+ age restriction.",
+  "epic": false,
+  "family_fit": 0
+ },
  "91903f79a1e79ef8": {
   "adult_interest": 20,
   "adults_only": false,
@@ -33966,6 +34214,14 @@
   "blurb": "Interactive flight simulators and invention lab at a museum for teens.",
   "epic": false,
   "family_fit": 85
+ },
+ "91e386256a59e9f9": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "18+ comedy show in Sacramento.",
+  "epic": false,
+  "family_fit": 0
  },
  "91f46982a61efe46": {
   "adult_interest": 85,
@@ -34207,6 +34463,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "92ce8ba7b4156c3d": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Live music on the plaza at the Ferry Building.",
+  "epic": false,
+  "family_fit": 60
+ },
  "92e3bdfe4ef221e3": {
   "adult_interest": 50,
   "adults_only": false,
@@ -34310,6 +34574,14 @@
   "blurb": "Planetarium show about the Moon's nature and origin for all ages.",
   "epic": false,
   "family_fit": 75
+ },
+ "9371a27fb0a61701": {
+  "adult_interest": 35,
+  "adults_only": false,
+  "audience": "kids",
+  "blurb": "Free Halloween dog adoption event with dog runway.",
+  "epic": false,
+  "family_fit": 85
  },
  "937508ada3b53710": {
   "adult_interest": 40,
@@ -34606,6 +34878,14 @@
   "blurb": "Free summer party series at The Chapel.",
   "epic": false,
   "family_fit": 10
+ },
+ "94a8c194c0bbe36a": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Lily Tomlin comedy show at a theater in Santa Rosa.",
+  "epic": false,
+  "family_fit": 0
  },
  "94adb02829745f0d": {
   "adult_interest": 60,
@@ -36967,6 +37247,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "9e7c54ec3b7dc600": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only music show at a venue with 21+ age restriction.",
+  "epic": false,
+  "family_fit": 0
+ },
  "9e83d201bbf7eb18": {
   "adult_interest": 10,
   "adults_only": false,
@@ -38111,6 +38399,14 @@
   "epic": false,
   "family_fit": 20
  },
+ "a440bb35b702a01b": {
+  "adult_interest": 40,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "A family summit at the Women's Building.",
+  "epic": false,
+  "family_fit": 0
+ },
  "a44a75cc4aff9937": {
   "adult_interest": 80,
   "adults_only": false,
@@ -38783,6 +39079,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "a75b789b50c9215a": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "21+ concert by Xiu Xiu at a venue.",
+  "epic": false,
+  "family_fit": 0
+ },
  "a76869f8b69bbb1f": {
   "adult_interest": 0,
   "adults_only": true,
@@ -38806,6 +39110,14 @@
   "blurb": "Comedy show for adults only.",
   "epic": false,
   "family_fit": 10
+ },
+ "a77e69ea05ddcf3d": {
+  "adult_interest": 85,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only music show at a venue with 21+ age restriction.",
+  "epic": false,
+  "family_fit": 0
  },
  "a7865cfe2edad87f": {
   "adult_interest": 55,
@@ -38958,6 +39270,14 @@
   "blurb": "The Bends band performance at Rickshaw Stop.",
   "epic": false,
   "family_fit": 0
+ },
+ "a7e1105c72103645": {
+  "adult_interest": 90,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Free world garage lounge music performance by Catherine DeNuvaring at Otherwise Brewing.",
+  "epic": false,
+  "family_fit": 15
  },
  "a7e6c2c2ee616034": {
   "adult_interest": 80,
@@ -40431,6 +40751,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "ad9c4c9a17f3e752": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "21+ concert by Mon Rovîa at The Castro.",
+  "epic": false,
+  "family_fit": 0
+ },
  "ada039cc4e20e66a": {
   "adult_interest": 45,
   "adults_only": false,
@@ -40894,6 +41222,14 @@
   "blurb": "Holiday tea service at a historic estate, likely for young children.",
   "epic": false,
   "family_fit": 30
+ },
+ "af70eb451d5fd7c4": {
+  "adult_interest": 60,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only music show at a venue with 21+ age restriction.",
+  "epic": false,
+  "family_fit": 0
  },
  "af7946b703b3dcc7": {
   "adult_interest": 85,
@@ -41366,6 +41702,14 @@
   "blurb": "Free comedy show at Function in SF, but it's a weekly event.",
   "epic": false,
   "family_fit": 10
+ },
+ "b29f70572f1e07d7": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Comedy show with Ai Ai Delas Alas in San Leandro.",
+  "epic": false,
+  "family_fit": 25
  },
  "b2ac9850a75cb22b": {
   "adult_interest": 85,
@@ -41871,6 +42215,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "b517229facc1cf91": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Salsa dancing on a rooftop in San Francisco.",
+  "epic": false,
+  "family_fit": 0
+ },
  "b530018664c3a74e": {
   "adult_interest": 85,
   "adults_only": true,
@@ -42046,6 +42398,14 @@
   "blurb": "Hip-hop/rap show at a historic theater.",
   "epic": false,
   "family_fit": 20
+ },
+ "b5f6cc9e3a6c6dc2": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "21+ comedy show at a venue.",
+  "epic": false,
+  "family_fit": 0
  },
  "b600f6e44e1ce849": {
   "adult_interest": 65,
@@ -42534,6 +42894,14 @@
   "blurb": "Book discussion about fame with authors.",
   "epic": false,
   "family_fit": 10
+ },
+ "b84a17320a986982": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Latin music show at a theater in San Leandro.",
+  "epic": false,
+  "family_fit": 25
  },
  "b850045a87c66731": {
   "adult_interest": 85,
@@ -43510,6 +43878,14 @@
   "blurb": "Women's basketball game, family-friendly.",
   "epic": false,
   "family_fit": 60
+ },
+ "bb9bd25ec1482bb5": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Parrotfish band performance at DNA Lounge in San Francisco.",
+  "epic": false,
+  "family_fit": 5
  },
  "bbab7134e87f5991": {
   "adult_interest": 30,
@@ -44735,6 +45111,14 @@
   "epic": false,
   "family_fit": 30
  },
+ "c0be38fbab296fed": {
+  "adult_interest": 70,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only music show at a venue with 21+ age restriction.",
+  "epic": false,
+  "family_fit": 0
+ },
  "c0c302a488ddad72": {
   "adult_interest": 60,
   "adults_only": false,
@@ -44844,6 +45228,14 @@
   "adults_only": false,
   "audience": "all",
   "blurb": "Hip-hop concert featuring Talib Kweli at a venue in Orinda.",
+  "epic": false,
+  "family_fit": 30
+ },
+ "c157d1a20fde1175": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Classical music performance by Brooklyn Rider at a theater.",
   "epic": false,
   "family_fit": 30
  },
@@ -46100,6 +46492,14 @@
   "adults_only": true,
   "audience": "adults",
   "blurb": "21+ music event, not family-friendly.",
+  "epic": false,
+  "family_fit": 0
+ },
+ "c683dcfc8e2eaaa9": {
+  "adult_interest": 75,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only music show at a venue with 21+ age restriction.",
   "epic": false,
   "family_fit": 0
  },
@@ -47951,6 +48351,14 @@
   "epic": false,
   "family_fit": 0
  },
+ "cf0c1cafabc7b1e5": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Bachata dance party at Cigar Bar & Grill in San Francisco.",
+  "epic": false,
+  "family_fit": 20
+ },
  "cf18950321acfeb1": {
   "adult_interest": 65,
   "adults_only": false,
@@ -48663,6 +49071,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "d21c311c227c2d84": {
+  "adult_interest": 80,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Concert by Jo1, a K-pop group, at a venue with 21+ age restriction.",
+  "epic": false,
+  "family_fit": 0
+ },
  "d21ef53581814192": {
   "adult_interest": 40,
   "adults_only": false,
@@ -48677,6 +49093,14 @@
   "audience": "adults",
   "blurb": "Bruno Mars concert at Levi's Stadium.",
   "epic": true,
+  "family_fit": 0
+ },
+ "d2275345a64932cc": {
+  "adult_interest": 20,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "A support group for Latin community affected by HIV/AIDS.",
+  "epic": false,
   "family_fit": 0
  },
  "d227b71377e774f7": {
@@ -49358,6 +49782,14 @@
   "blurb": "Art studio open house in Berkeley with free food.",
   "epic": false,
   "family_fit": 30
+ },
+ "d51e122c075c938f": {
+  "adult_interest": 45,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "Free art museum day at Legion of Honor.",
+  "epic": false,
+  "family_fit": 85
  },
  "d52911ee372d5c7d": {
   "adult_interest": 30,
@@ -51751,6 +52183,14 @@
   "epic": false,
   "family_fit": 65
  },
+ "df178df5c69ca558": {
+  "adult_interest": 70,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Discussion on translating Black diaspora literature.",
+  "epic": false,
+  "family_fit": 20
+ },
  "df18fbf5a3bafb4a": {
   "adult_interest": 40,
   "adults_only": false,
@@ -52999,6 +53439,14 @@
   "epic": false,
   "family_fit": 70
  },
+ "e55119b61d2a426c": {
+  "adult_interest": 75,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Free comedy show in SF on Monday.",
+  "epic": false,
+  "family_fit": 10
+ },
  "e557dcac1c0c02f5": {
   "adult_interest": 75,
   "adults_only": false,
@@ -53775,6 +54223,14 @@
   "epic": false,
   "family_fit": 25
  },
+ "e8d8ea0d793cd804": {
+  "adult_interest": 65,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "Free public talk about money in San Francisco politics at Internet Archive.",
+  "epic": false,
+  "family_fit": 25
+ },
  "e8ebe49d3028c5d5": {
   "adult_interest": 80,
   "adults_only": true,
@@ -54007,6 +54463,14 @@
   "epic": false,
   "family_fit": 10
  },
+ "e9c8542647fadead": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "After Dark Thursday Nights at Exploratorium: interactive science exhibits and activities for all ages.",
+  "epic": false,
+  "family_fit": 75
+ },
  "e9dc350271ac4fe2": {
   "adult_interest": 65,
   "adults_only": true,
@@ -54198,6 +54662,14 @@
   "blurb": "Lecture on music journalism in San Francisco.",
   "epic": false,
   "family_fit": 20
+ },
+ "eaf724fdd808b482": {
+  "adult_interest": 75,
+  "adults_only": true,
+  "audience": "adults",
+  "blurb": "Adults-only music show at a venue with 21+ age restriction.",
+  "epic": false,
+  "family_fit": 0
  },
  "eb00725085dcb7fd": {
   "adult_interest": 30,
@@ -54942,6 +55414,14 @@
   "blurb": "Filoli estate open for holiday-themed tours and activities.",
   "epic": false,
   "family_fit": 70
+ },
+ "ee9d73e769c4e659": {
+  "adult_interest": 60,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "A meditation series at a botanical garden.",
+  "epic": false,
+  "family_fit": 0
  },
  "eebdc191c3ae5ebf": {
   "adult_interest": 60,
@@ -55967,6 +56447,14 @@
   "epic": false,
   "family_fit": 75
  },
+ "f37b0d5a768af654": {
+  "adult_interest": 85,
+  "adults_only": false,
+  "audience": "adults",
+  "blurb": "MVFF film screening of Querida Fátima at Corte Madera Village.",
+  "epic": false,
+  "family_fit": 30
+ },
  "f389ae3dd932b954": {
   "adult_interest": 65,
   "adults_only": true,
@@ -56430,6 +56918,14 @@
   "blurb": "Tom Jones concert, 21+.",
   "epic": false,
   "family_fit": 0
+ },
+ "f57c2484a689182e": {
+  "adult_interest": 80,
+  "adults_only": false,
+  "audience": "all",
+  "blurb": "NBA basketball game in Sacramento.",
+  "epic": false,
+  "family_fit": 75
  },
  "f57e944f6ab78b8e": {
   "adult_interest": 80,
