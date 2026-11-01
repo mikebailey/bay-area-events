@@ -1,365 +1,315 @@
 {
- "updated": "2026-10-18",
+ "updated": "2026-11-01",
  "events": [
   {
-   "title": "Berkeley Bird Festival",
-   "date": "2026-10-18",
-   "time": "08:00",
-   "venue": "David Brower Center and East Bay birding sites",
-   "city": "Berkeley",
-   "price": null,
-   "url": "https://berkeleybirdfestival.org/",
-   "why": "Once-a-year birding festival with guided morning field trips and an afternoon fair of talks, exhibits and kids' activities at the Brower Center."
-  },
-  {
-   "title": "Half Moon Bay Art & Pumpkin Festival (54th annual)",
-   "date": "2026-10-18",
-   "time": "09:00",
-   "venue": "Main Street, downtown Half Moon Bay",
-   "city": "Half Moon Bay",
+   "title": "Fruitvale Día de los Muertos Festival (31st annual)",
+   "date": "2026-11-01",
+   "time": "10:00",
+   "venue": "Fruitvale Village, International Blvd",
+   "city": "Oakland",
    "price": 0,
-   "url": "https://sf.funcheap.com/54th-annual-half-moon-bay-art-pumpkin-festival-oct-17-18/",
-   "why": "The coast's signature fall street fair with giant pumpkins, pie-eating contests, live music and a costume parade; final day of the two-day run."
+   "url": "https://sf.funcheap.com/annual-fruitvale-dia-de-los-muertos-festival/",
+   "why": "The Bay Area's largest Día de los Muertos street festival, with dozens of altars, Aztec dancers, live music and great street food."
   },
   {
-   "title": "Harding Carnival & Pumpkin Patch",
-   "date": "2026-10-18",
-   "time": "11:00",
-   "venue": "Harding Park and Clubhouse, 7115 C Street",
-   "city": "El Cerrito",
+   "title": "La Peña Día de Muertos Celebración: Ceremony, Ofrenda and Son Jarocho",
+   "date": "2026-11-01",
+   "time": "17:00",
+   "venue": "La Peña Cultural Center, 3105 Shattuck Ave",
+   "city": "Berkeley",
+   "price": 0,
+   "url": "https://sf.funcheap.com/da-de-muertos-celebracin-ceremony-ofrenda-son-jarocho-food-berkeley/",
+   "why": "An intimate evening ceremony with live son jarocho music and a community ofrenda, a calmer alternative to the big street festivals."
+  },
+  {
+   "title": "Micailhuitl Día de Muertos Festival (22nd annual)",
+   "date": "2026-11-01",
+   "time": "10:00",
+   "venue": "History Park, 635 Phelan Ave",
+   "city": "San Jose",
+   "price": 0,
+   "url": "https://sf.funcheap.com/san-joses-micailhuitl-dia-de-muertos-festival-2026-oct-31-nov-1/",
+   "why": "A big, free, all-day Día de Muertos celebration with community altars, ceremonies, crafts and food in a historic park setting kids can roam."
+  },
+  {
+   "title": "45th Annual Día de los Muertos Procession in the Mission",
+   "date": "2026-11-02",
+   "time": "18:00",
+   "venue": "22nd St and Bryant St",
+   "city": "San Francisco",
+   "price": 0,
+   "url": "https://sf.funcheap.com/sf-dia-de-los-muertos-procession-mission/",
+   "why": "A once-a-year candlelit walking procession through the Mission with painted faces, drums and giant puppets that older kids find memorable."
+  },
+  {
+   "title": "Festival of Altars (Día de los Muertos)",
+   "date": "2026-11-02",
+   "time": "17:00",
+   "venue": "Potrero del Sol Park",
+   "city": "San Francisco",
+   "price": 0,
+   "url": "https://sf.funcheap.com/dia-de-los-muertos-festival-altars-mission-san-francisco/",
+   "why": "Dozens of large community altars built during the day, then a candlelit ceremony at 5pm and performances at 8pm; pairs with the procession nearby."
+  },
+  {
+   "title": "Union Square Ice Rink opening night",
+   "date": "2026-11-04",
+   "time": "17:30",
+   "venue": "Union Square",
+   "city": "San Francisco",
    "price": null,
-   "url": "https://www.510families.com/calendar/harding-carnival-pumpkin-patch-2/",
-   "why": "Elementary school PTA carnival with games, live music and magic, food and a pumpkin patch; a true neighborhood event tourists never see."
+   "url": "https://dhillondiary.substack.com/p/sfbay-area-events-for-the-week-nov",
+   "why": "Opening night features on-ice performances and the first 100 guests at the 5:30pm and 7pm sessions skate free."
   },
   {
-   "title": "Palo Alto Art Center Fall Family Day",
-   "date": "2026-10-18",
-   "time": "14:00",
-   "venue": "Palo Alto Art Center",
+   "title": "Downtown First Thursdays block party with Big Freedia",
+   "date": "2026-11-05",
+   "time": null,
+   "venue": "2nd Street, SoMa",
+   "city": "San Francisco",
+   "price": 0,
+   "url": "https://www.dftsf.com/",
+   "why": "A free all-ages street party with DJs, food trucks and a Big Freedia set from 8 to 9pm; lively and loud, best for the older kids."
+  },
+  {
+   "title": "Luminous Ties public unveiling and artist celebration",
+   "date": "2026-11-05",
+   "time": "17:00",
+   "venue": "City Hall King Plaza, 250 Hamilton Ave",
    "city": "Palo Alto",
    "price": 0,
-   "url": "https://www.paloalto.gov/Events-Directory/Community-Services/2026-Fall-Family-Day",
-   "why": "Free afternoon of hands-on art-making tied to the current exhibitions, ten minutes from Menlo Park and well suited to tweens."
+   "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Luminous-Ties-Public-Unveiling-and-Artist-Celebration",
+   "why": "A ten-minute drive from Menlo Park to meet artist Kiana Honarmand and try a new interactive bench sculpture that lights up when people sit on opposite sides."
   },
   {
-   "title": "Shipyard Open Studios Fall 2026",
-   "date": "2026-10-18",
-   "time": "11:00",
-   "venue": "Hunters Point Shipyard",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://sf.funcheap.com/shipyard-open-studios-fall-2026-130-artists-free-admission-parking-2/",
-   "why": "Twice-a-year chance to wander 130 working artist studios in the old naval shipyard, with free admission and parking."
-  },
-  {
-   "title": "Sunday Streets Excelsior",
-   "date": "2026-10-18",
-   "time": "11:00",
-   "venue": "Mission Street, Excelsior District",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://sf.funcheap.com/sunday-streets-sfs-free-street-festival-block-party-excelsior-2/",
-   "why": "Car-free neighborhood block party with bike riding, performances and activity zones; the last Sunday Streets of the 2026 season."
-  },
-  {
-   "title": "Children's Fairyland Monsters' Ball",
-   "date": "2026-10-23",
-   "time": "18:00",
-   "venue": "Children's Fairyland",
+   "title": "Glowfari opening night at Oakland Zoo",
+   "date": "2026-11-06",
+   "time": "16:30",
+   "venue": "Oakland Zoo",
    "city": "Oakland",
    "price": null,
-   "url": "https://fairyland.org/monsters-ball/",
-   "why": "Adults-only (21+) Halloween night with a DJ and cocktails inside the storybook park; a rare grown-up take on a kids' landmark."
+   "url": "https://www.oaklandzoo.org/glowfari",
+   "why": "Seventh year of the lantern festival with hundreds of all-new animal lanterns themed around California forests, the Bay and the Everglades."
   },
   {
-   "title": "Goblins' BOOtacular",
-   "date": "2026-10-23",
-   "time": "17:00",
-   "venue": "Downtown San Anselmo",
-   "city": "San Anselmo",
-   "price": null,
-   "url": "https://www.sananselmo.gov/787/Goblins-BOOtacular",
-   "why": "Small-town Marin Halloween street party with downtown trick-or-treating and activities on a Friday evening."
+   "title": "ZooLights opening night at San Francisco Zoo",
+   "date": "2026-11-06",
+   "time": "17:30",
+   "venue": "San Francisco Zoo",
+   "city": "San Francisco",
+   "price": 30,
+   "url": "https://www.sfzoo.org/zoolights/",
+   "why": "The first night of the zoo's million-light walk-through, with 14 themed zones including an illuminated dinosaur exhibit."
   },
   {
-   "title": "Halloween Haunted Hangar at Hiller Aviation Museum",
-   "date": "2026-10-23",
+   "title": "Zoppé Italian Family Circus opening night",
+   "date": "2026-11-06",
+   "time": "18:30",
+   "venue": "Circus tent, Redwood City Public Library lot, 1044 Middlefield Rd",
+   "city": "Redwood City",
+   "price": 17,
+   "url": "https://sf.funcheap.com/zopp-italian-family-circus-2026-redwood-city-nov-629/",
+   "why": "An old-world one-ring circus under a small big top where every seat is within 20 feet of the horses, dogs and acrobats; runs through Nov 29."
+  },
+  {
+   "title": "Cosmic Camp-In: Our Solar System (overnight at Chabot)",
+   "date": "2026-11-07",
+   "time": "17:15",
+   "venue": "Chabot Space and Science Center",
+   "city": "Oakland",
+   "price": 115,
+   "url": "https://chabotspace.org/calendar/cosmic-camp-in-our-solar-system-2/",
+   "why": "An overnight for families with hands-on science and live telescope astronomy, well suited to the 9 to 14 range."
+  },
+  {
+   "title": "Día de los Muertos and Diwali Festival at Crissy Field Center",
+   "date": "2026-11-07",
    "time": "10:00",
-   "venue": "Hiller Aviation Museum",
-   "city": "San Carlos",
-   "price": null,
-   "url": "https://www.hiller.org/event/haunted-hangar/",
-   "why": "The museum's hangar becomes a not-too-scary haunted walkthrough with Halloween activities, included with admission, October 23 through 31."
-  },
-  {
-   "title": "Pleasanton Harvest Festival Original Art & Craft Show",
-   "date": "2026-10-23",
-   "time": "10:00",
-   "venue": "Alameda County Fairgrounds",
-   "city": "Pleasanton",
-   "price": 9,
-   "url": "https://www.harvestfestival.com/pleasanton",
-   "why": "Three-day indoor fair of roughly 500 handmade-craft vendors with entertainment and food, running October 23 through 25 with $5 admission on Sunday."
-  },
-  {
-   "title": "Witches & Warlocks Wine Stroll",
-   "date": "2026-10-23",
-   "time": "18:00",
-   "venue": "Downtown Los Altos",
-   "city": "Los Altos",
-   "price": 65.87,
-   "url": "https://downtownlosaltos.org/event/downtown-los-altos-wine-stroll/",
-   "why": "Adults-only (21+) costumed wine tasting through downtown Los Altos shops; a once-a-year neighborhood event."
-  },
-  {
-   "title": "Boos and Brews on B Street",
-   "date": "2026-10-24",
-   "time": "15:00",
-   "venue": "B Street between 1st and 3rd Avenues",
-   "city": "San Mateo",
+   "venue": "Crissy Field Center, 603 Mason St, Presidio",
+   "city": "San Francisco",
    "price": 0,
-   "url": "https://www.cityofsanmateo.org/4740/Boos-and-Brews-on-B-Street",
-   "why": "Downtown San Mateo Halloween street party mixing kids' trick-or-treating with a beer garden for parents."
+   "url": "https://www.parksconservancy.org/events/presidio-tunnel-tops/dia-de-los-muertos-and-diwali-festival",
+   "why": "A free Presidio celebration combining both holidays with crafts, dance, storytelling and a fire ceremony, with the beach right outside."
   },
   {
-   "title": "Cupertino Monster Mash",
-   "date": "2026-10-24",
-   "time": "17:00",
-   "venue": "Quinlan Community Center",
-   "city": "Cupertino",
-   "price": 18,
-   "url": "https://www.almanacnews.com/ae/news-events/2026/10/15/find-spirited-halloween-happenings-for-all-ages-at-these-silicon-valley-haunts/",
-   "why": "Evening Halloween party with games, crafts and a haunted maze run by the city; ticketed and listed in The Almanac's roundup."
-  },
-  {
-   "title": "FOG Diwali Festival of Lights",
-   "date": "2026-10-24",
+   "title": "Fall Train Show at the South Bay Historical Railroad Society",
+   "date": "2026-11-07",
    "time": "10:00",
-   "venue": "Washington High School",
-   "city": "Fremont",
-   "price": null,
-   "url": "https://www.ronniesawesomelist.com/diwali/fog-diwali",
-   "why": "One of the Bay Area's largest Diwali melas with cultural performances, food stalls and a fireworks finale."
-  },
-  {
-   "title": "Foster City Halloween Festival",
-   "date": "2026-10-24",
-   "time": "11:00",
-   "venue": "Foster City Community Center, 650 Shell Blvd.",
-   "city": "Foster City",
+   "venue": "Santa Clara Caltrain Station, 1005 Railroad Ave",
+   "city": "Santa Clara",
    "price": 5,
-   "url": "https://www.fostercity.org/1248/2026-Halloween-Festival",
-   "why": "City-run festival with carnival games, crafts and costume contests; pre-registration is required and it usually sells out."
+   "url": "https://www.sbhrs.org/OpenHouseInfo",
+   "why": "Two running model railroads, a 1912 Pullman car, a tower for spotting real trains and live bluegrass; kids under 18 get in free."
   },
   {
-   "title": "Leap Sandcastle Classic (44th annual)",
-   "date": "2026-10-24",
+   "title": "Friends of the Los Altos Library used book sale",
+   "date": "2026-11-07",
+   "time": "10:00",
+   "venue": "New Los Altos Community Center, 97 Hillview Ave",
+   "city": "Los Altos",
+   "price": 0,
+   "url": "https://www.booksalefinder.com/CAB.html",
+   "why": "More than 40,000 used books, puzzles and movies with a kids' play area and a $5 bag sale on Sunday, close to home."
+  },
+  {
+   "title": "How to Train Your Dragon: The Musical JR. (Children's Musical Theater San Jose)",
+   "date": "2026-11-07",
+   "time": null,
+   "venue": "Montgomery Theater, 271 S Market St",
+   "city": "San Jose",
+   "price": null,
+   "url": "https://www.bayareakidfun.com/family-friendly-events-in-the-bay-area/",
+   "why": "A Bay Area premiere of the DreamWorks story staged by a young cast, running Nov 4 through 8 with multiple weekend showtimes."
+  },
+  {
+   "title": "Palo Alto Museum: First Look at Two Inaugural Exhibits (Palo Alto Stories)",
+   "date": "2026-11-07",
    "time": "11:00",
-   "venue": "Ocean Beach",
-   "city": "San Francisco",
+   "venue": "Palo Alto Museum, 300 Homer Ave",
+   "city": "Palo Alto",
    "price": 0,
-   "url": "https://sf.funcheap.com/leap-arts-annual-sandcastle-classic/",
-   "why": "Architecture firms and school teams build huge themed sand sculptures on Ocean Beach; a once-a-year spectacle kids love to watch."
+   "url": "https://paloaltomuseum.org/events/",
+   "why": "A free weekend preview of the new museum's first exhibits on Juana Briones and local history, with historian talks, hands-on activities and an AI docent kids can quiz."
   },
   {
-   "title": "Lit Crawl SF 2026",
-   "date": "2026-10-24",
-   "time": "17:00",
-   "venue": "Mission District bars, cafes and shops",
+   "title": "San Francisco Coffee Festival",
+   "date": "2026-11-07",
+   "time": "09:30",
+   "venue": "Fort Mason Festival Pavilion",
    "city": "San Francisco",
-   "price": 0,
-   "url": "https://sf.funcheap.com/lit-crawl-sf-epic-4hour-roaming-literature-festival-mission/",
-   "why": "Litquake's free roaming literary festival with 250+ authors reading in bars, laundromats and bookstores; adult-leaning though some venues welcome all ages."
+   "price": 29,
+   "url": "https://sf.funcheap.com/sf-coffee-festival-2026-coffee-tastings-live-music-nov-7-8/",
+   "why": "Mostly for the adults: unlimited tastings from dozens of Bay Area roasters with live music, Saturday and Sunday."
   },
   {
-   "title": "Menlo Park Halloween Hoopla Parade and Carnival",
-   "date": "2026-10-24",
+   "title": "San Francisco Fall Cider Fest (21+ adults only)",
+   "date": "2026-11-07",
+   "time": "12:00",
+   "venue": "SPARK Social SF",
+   "city": "San Francisco",
+   "price": 45,
+   "url": "https://sf.funcheap.com/2026-san-francisco-fall-cider-fest-unlimited-tastings-of-30-ciders/",
+   "why": "Adults-only (21+): unlimited tastings of about 30 craft ciders in an outdoor food-truck park, a good parents' afternoon out."
+  },
+  {
+   "title": "San José Roots Cultural Fest and Historic Home Tours",
+   "date": "2026-11-07",
+   "time": "12:00",
+   "venue": "San Pedro Square Market, 87 N San Pedro St",
+   "city": "San Jose",
+   "price": 0,
+   "url": "https://sf.funcheap.com/free-san-jos-roots-cultural-fest-historic-home-tours/",
+   "why": "History San José opens the Peralta Adobe and Fallon House for free tours alongside Spanish and Mexican era hands-on activities and performances."
+  },
+  {
+   "title": "Sea Glass and Ocean Art Festival",
+   "date": "2026-11-07",
+   "time": "10:00",
+   "venue": "The Grove, 400 Beach St",
+   "city": "Santa Cruz",
+   "price": 5,
+   "url": "https://www.santacruz.org/upcoming-event/sea-glass-ocean-art-festival/",
+   "why": "Sixty sea glass and ocean artists in a historic building with ocean views, an easy pairing with a beach afternoon over the hill."
+  },
+  {
+   "title": "USA Taiwan Global Expo (Discover Taiwan)",
+   "date": "2026-11-07",
+   "time": "10:00",
+   "venue": "San Mateo County Event Center, 1346 Saratoga Dr",
+   "city": "San Mateo",
+   "price": 3.79,
+   "url": "https://sf.funcheap.com/discover-taiwan-expo-2026-san-mateo-nov-78/",
+   "why": "A cheap two-day showcase of Taiwanese street food, products and culture twenty minutes from Menlo Park."
+  },
+  {
+   "title": "Blankets and Blockbusters: Toy Story 5 outdoor screening",
+   "date": "2026-11-08",
+   "time": "13:00",
+   "venue": "Thrive City at Chase Center",
+   "city": "San Francisco",
+   "price": null,
+   "url": "https://www.eventbrite.com/e/blankets-blockbusters-toy-story-5-tickets-1996427456264",
+   "why": "A Sunday afternoon outdoor movie on the Thrive City plaza, bring blankets."
+  },
+  {
+   "title": "Helicopter Adventure at Hiller Aviation Museum",
+   "date": "2026-11-08",
    "time": "11:00",
-   "venue": "Fremont Park and Santa Cruz Avenue",
-   "city": "Menlo Park",
-   "price": 0,
-   "url": "https://menlopark.gov/Citywide-calendar/Community-events/20261024-Halloween-Hoopla-Parade-and-Carnival",
-   "why": "Your hometown costume parade down Santa Cruz Avenue with merchant trick-or-treating and a carnival in Fremont Park."
-  },
-  {
-   "title": "Mountain View Monster Bash",
-   "date": "2026-10-24",
-   "time": "10:00",
-   "venue": "Rengstorff Park, 201 S. Rengstorff Ave.",
-   "city": "Mountain View",
-   "price": 0,
-   "url": "https://www.almanacnews.com/ae/news-events/2026/10/15/find-spirited-halloween-happenings-for-all-ages-at-these-silicon-valley-haunts/",
-   "why": "Free fall festival with stilt walkers, a bike circus, inflatables, live performances and a Treat Trail; details in The Almanac's Halloween roundup."
-  },
-  {
-   "title": "Northern California Renaissance Faire Halloween Fantasy Weekend",
-   "date": "2026-10-24",
-   "time": "10:00",
-   "venue": "Casa de Fruta",
-   "city": "Hollister",
-   "price": 42,
-   "url": "https://www.bayareakidsgo.com/post/best-family-friendly-halloween-events-in-the-bay-area-2026-guide",
-   "why": "Closing weekend of the Ren Faire, themed for Halloween with costumes encouraged, jousting and artisan villages; runs Saturday and Sunday."
-  },
-  {
-   "title": "Paint-A-Plane at Hiller Aviation Museum",
-   "date": "2026-10-24",
-   "time": "10:00",
    "venue": "Hiller Aviation Museum",
    "city": "San Carlos",
    "price": null,
-   "url": "https://www.hiller.org/event/paint-a-plane/2026-10-24/",
-   "why": "Kids get to paint a real Cessna Cardinal and explore open cockpits, included with museum admission."
+   "url": "https://www.hiller.org/event/helicopter-adventure/2026-11-08/",
+   "why": "A one-off helicopter-themed program at the Peninsula's aviation museum, fifteen minutes up the 101."
   },
   {
-   "title": "Randall Museum Family Halloween Day",
-   "date": "2026-10-24",
-   "time": "10:00",
-   "venue": "Randall Museum",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://randallmuseum.org/randall-museum-events/halloween/",
-   "why": "Free Halloween crafts, science activities and live animals at the Corona Heights museum."
-  },
-  {
-   "title": "San Jose Diwali Carnival",
-   "date": "2026-10-24",
-   "time": "14:00",
-   "venue": "Plaza de Cesar Chavez",
-   "city": "San Jose",
-   "price": 0,
-   "url": "https://www.aiaevents.org/san-jose-diwali-carnival",
-   "why": "Free downtown Diwali celebration with Bollywood music, dance performances and Indian food vendors running into the evening."
-  },
-  {
-   "title": "Symphonic Spooktacular with Symphony San Jose",
-   "date": "2026-10-24",
-   "time": "19:30",
-   "venue": "California Theatre",
-   "city": "San Jose",
-   "price": null,
-   "url": "https://www.symphonysanjose.org/attend/2026-2027-season/concerts/symphonic-spooktacular/",
-   "why": "Full orchestra playing heroes-and-villains film and Halloween scores, a good first symphony outing for kids; also Sunday October 25 at 2:30 pm."
-  },
-  {
-   "title": "Teen Halloween Roller Derby",
-   "date": "2026-10-24",
-   "time": "14:00",
-   "venue": "600 E. Meadow Drive (Mitchell Park)",
-   "city": "Palo Alto",
-   "price": 0,
-   "url": "https://www.almanacnews.com/ae/news-events/2026/10/15/find-spirited-halloween-happenings-for-all-ages-at-these-silicon-valley-haunts/",
-   "why": "A free Halloween roller-skating event aimed specifically at teens and tweens, a rare age-appropriate option for the 12 to 14 crowd."
-  },
-  {
-   "title": "Witches and Wizards on Water Paddle",
-   "date": "2026-10-24",
-   "time": "09:00",
-   "venue": "Sea Trek Alameda",
-   "city": "Alameda",
-   "price": 0,
-   "url": "https://www.seatrek.com/event/witches-and-wizards-on-water/",
-   "why": "Costumed witches and wizards paddle kayaks and boards around the Alameda shoreline; free to watch from shore, with kayak rentals or a $10 launch fee to join."
-  },
-  {
-   "title": "Downtown Burlingame Halloween Costume Bar Crawl",
-   "date": "2026-10-25",
-   "time": "17:00",
-   "venue": "Downtown Burlingame bars",
-   "city": "Burlingame",
-   "price": 0,
-   "url": "https://www.almanacnews.com/ae/news-events/2026/10/15/find-spirited-halloween-happenings-for-all-ages-at-these-silicon-valley-haunts/",
-   "why": "Adults-only (21+) costume crawl through Burlingame Avenue bars; listed in The Almanac's Halloween roundup."
-  },
-  {
-   "title": "Menlo Park Pumpkin Splash",
-   "date": "2026-10-25",
-   "time": "11:30",
-   "venue": "Burgess Pool and Belle Haven Pool",
-   "city": "Menlo Park",
-   "price": 12,
-   "url": "https://www.almanacnews.com/ae/news-events/2026/10/15/find-spirited-halloween-happenings-for-all-ages-at-these-silicon-valley-haunts/",
-   "why": "Swim out to pick a pumpkin from a floating patch at the city pools, then decorate it; ticket includes pumpkin, goody bag and swim time."
-  },
-  {
-   "title": "OMCA Día de los Muertos Community Celebration (32nd annual)",
-   "date": "2026-10-25",
-   "time": "11:00",
-   "venue": "Oakland Museum of California",
-   "city": "Oakland",
-   "price": null,
-   "url": "https://museumca.org/dia-de-los-muertos/",
-   "why": "One of the region's biggest Day of the Dead celebrations with community altars, Aztec dancers, mariachi and craft stations."
-  },
-  {
-   "title": "Pillar Point Halloween Witches Paddle",
-   "date": "2026-10-25",
-   "time": "10:00",
-   "venue": "Pillar Point Harbor",
-   "city": "El Granada",
-   "price": 0,
-   "url": "https://coastsidebuzz.com/events/san-mateo-county-harbor-district-hosts-2026-pillar-point-halloween-witches-paddle",
-   "why": "Costumed paddlers fill the harbor in the morning, followed by a trunk-or-treat at 2 pm; a coastside tradition locals know about."
-  },
-  {
-   "title": "UC Botanical Garden Animal Day",
-   "date": "2026-10-25",
-   "time": "10:00",
-   "venue": "UC Botanical Garden",
+   "title": "Muchos Art + Comic Expo (50+ artists)",
+   "date": "2026-11-08",
+   "time": "12:00",
+   "venue": "La Peña Cultural Center, 3105 Shattuck Ave",
    "city": "Berkeley",
-   "price": 18,
-   "url": "https://botanicalgarden.berkeley.edu/event/save-the-date-animal-day-2026/",
-   "why": "Annual day of live-animal encounters and wildlife organizations stationed throughout the garden, included with regular admission."
-  },
-  {
-   "title": "World of Dumplings Festival",
-   "date": "2026-10-25",
-   "time": "11:00",
-   "venue": "Ferry Building",
-   "city": "San Francisco",
    "price": 0,
-   "url": "https://sf.funcheap.com/world-of-dumplings-festival/",
-   "why": "Free-entry food festival with dumpling vendors from a dozen cuisines plus demos at the Ferry Building."
+   "url": "https://sf.funcheap.com/2026-muchos-art-comic-expo-50-artists-berkeley/",
+   "why": "A free all-ages indie comics and zine fair with Pentel-sponsored drawing workshops, ideal for a comics-loving kid."
   },
   {
-   "title": "Boo Bash Redwood City",
-   "date": "2026-10-27",
-   "time": "16:00",
-   "venue": "Chan Zuckerberg Community Space, 801 Jefferson Ave.",
+   "title": "Redwood City Día de los Muertos Festival",
+   "date": "2026-11-08",
+   "time": "15:00",
+   "venue": "Courthouse Square, 2200 Broadway",
    "city": "Redwood City",
    "price": 0,
-   "url": "https://www.almanacnews.com/ae/news-events/2026/10/15/find-spirited-halloween-happenings-for-all-ages-at-these-silicon-valley-haunts/",
-   "why": "Free weeknight Halloween party with shadow theater, a slime lab, banjo sing-along and costume parade; entry by reserved time slot."
+   "url": "https://sf.funcheap.com/free-da-de-los-muertos-festival-altars-courthouse-square-redwood-city/",
+   "why": "Casa Círculo Cultural's free festival drew 9,000 people last year with altars, folklórico, a car display and food, ten minutes from Menlo Park."
   },
   {
-   "title": "Howl-ooo-ween at Lindsay Wildlife Experience",
-   "date": "2026-10-27",
+   "title": "San Francisco Diwali Festival at Yerba Buena Gardens",
+   "date": "2026-11-08",
+   "time": "13:00",
+   "venue": "Yerba Buena Gardens",
+   "city": "San Francisco",
+   "price": 0,
+   "url": "https://sf.funcheap.com/san-francisco-diwali-festival-yerba-buena-gardens-2026/",
+   "why": "A free outdoor Diwali celebration with dance performances, music and food in a central downtown park."
+  },
+  {
+   "title": "Palo Alto Veterans Day Recognition Event",
+   "date": "2026-11-09",
    "time": "15:00",
-   "venue": "Lindsay Wildlife Experience",
-   "city": "Walnut Creek",
-   "price": 20,
-   "url": "https://lindsaywildlife.org/events/howl-ooo-ween-2026",
-   "why": "Evening Halloween event at the wildlife rehab museum with animal encounters, crafts and trick-or-treat stations."
+   "venue": "MacArthur Park, 27 University Ave",
+   "city": "Palo Alto",
+   "price": 0,
+   "url": "https://www.paloalto.gov/Events-Directory/Office-of-Emergency-Services/Veterans-Day-Event-2026",
+   "why": "A short, free civic ceremony next door in Palo Alto, a low-key way for kids to mark Veterans Day."
   },
   {
-   "title": "Belmont Boo Bash",
-   "date": "2026-10-28",
-   "time": "17:00",
-   "venue": "Twin Pines Park",
-   "city": "Belmont",
-   "price": 0,
-   "url": "https://www.almanacnews.com/ae/news-events/2026/10/15/find-spirited-halloween-happenings-for-all-ages-at-these-silicon-valley-haunts/",
-   "why": "Free evening Halloween festival in Belmont's Twin Pines Park with games, crafts and trick-or-treating."
+   "title": "Petaluma Veterans Day Parade and Huey helicopter flyover",
+   "date": "2026-11-11",
+   "time": "12:00",
+   "venue": "Walnut Park, 201 4th St",
+   "city": "Petaluma",
+   "price": null,
+   "url": "https://www.ronniesawesomelist.com/veterans-day/veterans-day-parade-flyover",
+   "why": "A small-town parade with a Vietnam-era Huey landing and aircraft flyovers, the largest Veterans Day parade north of the Golden Gate."
   },
   {
-   "title": "Menlo Park Trunk-or-Treat",
-   "date": "2026-10-28",
-   "time": "16:30",
-   "venue": "100 Terminal Ave.",
-   "city": "Menlo Park",
-   "price": 0,
-   "url": "https://www.almanacnews.com/ae/news-events/2026/10/15/find-spirited-halloween-happenings-for-all-ages-at-these-silicon-valley-haunts/",
-   "why": "City-run trunk-or-treat with decorated car trunks and free candy bags, a short walk from home on a Wednesday afternoon."
+   "title": "San Jose Veterans Day Parade (108th, largest in Northern California)",
+   "date": "2026-11-11",
+   "time": "11:00",
+   "venue": "Plaza de Cesar Chavez, downtown",
+   "city": "San Jose",
+   "price": null,
+   "url": "https://www.ronniesawesomelist.com/veterans-day/san-jose-veterans-day-parade",
+   "why": "Held since 1918, this is the largest Veterans Day parade in Northern California and falls on a school holiday."
+  },
+  {
+   "title": "Veterans Day aboard the USS Hornet",
+   "date": "2026-11-11",
+   "time": "10:00",
+   "venue": "USS Hornet Sea, Air and Space Museum, 707 W Hornet Ave",
+   "city": "Alameda",
+   "price": null,
+   "url": "https://www.ronniesawesomelist.com/veterans-day/veterans-day-at-the-uss-hornet",
+   "why": "A ceremony with guest speakers on the deck of a real aircraft carrier, plus full access to the ship on a day off school."
   }
  ]
 }
