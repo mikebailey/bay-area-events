@@ -1,225 +1,15 @@
 {
- "updated": "2026-11-01",
+ "updated": "2026-11-08",
  "events": [
   {
-   "title": "Fruitvale Día de los Muertos Festival (31st annual)",
-   "date": "2026-11-01",
-   "time": "10:00",
-   "venue": "Fruitvale Village, International Blvd",
-   "city": "Oakland",
-   "price": 0,
-   "url": "https://sf.funcheap.com/annual-fruitvale-dia-de-los-muertos-festival/",
-   "why": "The Bay Area's largest Día de los Muertos street festival, with dozens of altars, Aztec dancers, live music and great street food."
-  },
-  {
-   "title": "La Peña Día de Muertos Celebración: Ceremony, Ofrenda and Son Jarocho",
-   "date": "2026-11-01",
-   "time": "17:00",
-   "venue": "La Peña Cultural Center, 3105 Shattuck Ave",
-   "city": "Berkeley",
-   "price": 0,
-   "url": "https://sf.funcheap.com/da-de-muertos-celebracin-ceremony-ofrenda-son-jarocho-food-berkeley/",
-   "why": "An intimate evening ceremony with live son jarocho music and a community ofrenda, a calmer alternative to the big street festivals."
-  },
-  {
-   "title": "Micailhuitl Día de Muertos Festival (22nd annual)",
-   "date": "2026-11-01",
-   "time": "10:00",
-   "venue": "History Park, 635 Phelan Ave",
-   "city": "San Jose",
-   "price": 0,
-   "url": "https://sf.funcheap.com/san-joses-micailhuitl-dia-de-muertos-festival-2026-oct-31-nov-1/",
-   "why": "A big, free, all-day Día de Muertos celebration with community altars, ceremonies, crafts and food in a historic park setting kids can roam."
-  },
-  {
-   "title": "45th Annual Día de los Muertos Procession in the Mission",
-   "date": "2026-11-02",
-   "time": "18:00",
-   "venue": "22nd St and Bryant St",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://sf.funcheap.com/sf-dia-de-los-muertos-procession-mission/",
-   "why": "A once-a-year candlelit walking procession through the Mission with painted faces, drums and giant puppets that older kids find memorable."
-  },
-  {
-   "title": "Festival of Altars (Día de los Muertos)",
-   "date": "2026-11-02",
-   "time": "17:00",
-   "venue": "Potrero del Sol Park",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://sf.funcheap.com/dia-de-los-muertos-festival-altars-mission-san-francisco/",
-   "why": "Dozens of large community altars built during the day, then a candlelit ceremony at 5pm and performances at 8pm; pairs with the procession nearby."
-  },
-  {
-   "title": "Union Square Ice Rink opening night",
-   "date": "2026-11-04",
-   "time": "17:30",
-   "venue": "Union Square",
-   "city": "San Francisco",
-   "price": null,
-   "url": "https://dhillondiary.substack.com/p/sfbay-area-events-for-the-week-nov",
-   "why": "Opening night features on-ice performances and the first 100 guests at the 5:30pm and 7pm sessions skate free."
-  },
-  {
-   "title": "Downtown First Thursdays block party with Big Freedia",
-   "date": "2026-11-05",
-   "time": null,
-   "venue": "2nd Street, SoMa",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://www.dftsf.com/",
-   "why": "A free all-ages street party with DJs, food trucks and a Big Freedia set from 8 to 9pm; lively and loud, best for the older kids."
-  },
-  {
-   "title": "Luminous Ties public unveiling and artist celebration",
-   "date": "2026-11-05",
-   "time": "17:00",
-   "venue": "City Hall King Plaza, 250 Hamilton Ave",
-   "city": "Palo Alto",
-   "price": 0,
-   "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Luminous-Ties-Public-Unveiling-and-Artist-Celebration",
-   "why": "A ten-minute drive from Menlo Park to meet artist Kiana Honarmand and try a new interactive bench sculpture that lights up when people sit on opposite sides."
-  },
-  {
-   "title": "Glowfari opening night at Oakland Zoo",
-   "date": "2026-11-06",
+   "title": "Azar Lawrence Experience at Bach Dancing & Dynamite Society",
+   "date": "2026-11-08",
    "time": "16:30",
-   "venue": "Oakland Zoo",
-   "city": "Oakland",
-   "price": null,
-   "url": "https://www.oaklandzoo.org/glowfari",
-   "why": "Seventh year of the lantern festival with hundreds of all-new animal lanterns themed around California forests, the Bay and the Everglades."
-  },
-  {
-   "title": "ZooLights opening night at San Francisco Zoo",
-   "date": "2026-11-06",
-   "time": "17:30",
-   "venue": "San Francisco Zoo",
-   "city": "San Francisco",
-   "price": 30,
-   "url": "https://www.sfzoo.org/zoolights/",
-   "why": "The first night of the zoo's million-light walk-through, with 14 themed zones including an illuminated dinosaur exhibit."
-  },
-  {
-   "title": "Zoppé Italian Family Circus opening night",
-   "date": "2026-11-06",
-   "time": "18:30",
-   "venue": "Circus tent, Redwood City Public Library lot, 1044 Middlefield Rd",
-   "city": "Redwood City",
-   "price": 17,
-   "url": "https://sf.funcheap.com/zopp-italian-family-circus-2026-redwood-city-nov-629/",
-   "why": "An old-world one-ring circus under a small big top where every seat is within 20 feet of the horses, dogs and acrobats; runs through Nov 29."
-  },
-  {
-   "title": "Cosmic Camp-In: Our Solar System (overnight at Chabot)",
-   "date": "2026-11-07",
-   "time": "17:15",
-   "venue": "Chabot Space and Science Center",
-   "city": "Oakland",
-   "price": 115,
-   "url": "https://chabotspace.org/calendar/cosmic-camp-in-our-solar-system-2/",
-   "why": "An overnight for families with hands-on science and live telescope astronomy, well suited to the 9 to 14 range."
-  },
-  {
-   "title": "Día de los Muertos and Diwali Festival at Crissy Field Center",
-   "date": "2026-11-07",
-   "time": "10:00",
-   "venue": "Crissy Field Center, 603 Mason St, Presidio",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://www.parksconservancy.org/events/presidio-tunnel-tops/dia-de-los-muertos-and-diwali-festival",
-   "why": "A free Presidio celebration combining both holidays with crafts, dance, storytelling and a fire ceremony, with the beach right outside."
-  },
-  {
-   "title": "Fall Train Show at the South Bay Historical Railroad Society",
-   "date": "2026-11-07",
-   "time": "10:00",
-   "venue": "Santa Clara Caltrain Station, 1005 Railroad Ave",
-   "city": "Santa Clara",
-   "price": 5,
-   "url": "https://www.sbhrs.org/OpenHouseInfo",
-   "why": "Two running model railroads, a 1912 Pullman car, a tower for spotting real trains and live bluegrass; kids under 18 get in free."
-  },
-  {
-   "title": "Friends of the Los Altos Library used book sale",
-   "date": "2026-11-07",
-   "time": "10:00",
-   "venue": "New Los Altos Community Center, 97 Hillview Ave",
-   "city": "Los Altos",
-   "price": 0,
-   "url": "https://www.booksalefinder.com/CAB.html",
-   "why": "More than 40,000 used books, puzzles and movies with a kids' play area and a $5 bag sale on Sunday, close to home."
-  },
-  {
-   "title": "How to Train Your Dragon: The Musical JR. (Children's Musical Theater San Jose)",
-   "date": "2026-11-07",
-   "time": null,
-   "venue": "Montgomery Theater, 271 S Market St",
-   "city": "San Jose",
-   "price": null,
-   "url": "https://www.bayareakidfun.com/family-friendly-events-in-the-bay-area/",
-   "why": "A Bay Area premiere of the DreamWorks story staged by a young cast, running Nov 4 through 8 with multiple weekend showtimes."
-  },
-  {
-   "title": "Palo Alto Museum: First Look at Two Inaugural Exhibits (Palo Alto Stories)",
-   "date": "2026-11-07",
-   "time": "11:00",
-   "venue": "Palo Alto Museum, 300 Homer Ave",
-   "city": "Palo Alto",
-   "price": 0,
-   "url": "https://paloaltomuseum.org/events/",
-   "why": "A free weekend preview of the new museum's first exhibits on Juana Briones and local history, with historian talks, hands-on activities and an AI docent kids can quiz."
-  },
-  {
-   "title": "San Francisco Coffee Festival",
-   "date": "2026-11-07",
-   "time": "09:30",
-   "venue": "Fort Mason Festival Pavilion",
-   "city": "San Francisco",
-   "price": 29,
-   "url": "https://sf.funcheap.com/sf-coffee-festival-2026-coffee-tastings-live-music-nov-7-8/",
-   "why": "Mostly for the adults: unlimited tastings from dozens of Bay Area roasters with live music, Saturday and Sunday."
-  },
-  {
-   "title": "San Francisco Fall Cider Fest (21+ adults only)",
-   "date": "2026-11-07",
-   "time": "12:00",
-   "venue": "SPARK Social SF",
-   "city": "San Francisco",
-   "price": 45,
-   "url": "https://sf.funcheap.com/2026-san-francisco-fall-cider-fest-unlimited-tastings-of-30-ciders/",
-   "why": "Adults-only (21+): unlimited tastings of about 30 craft ciders in an outdoor food-truck park, a good parents' afternoon out."
-  },
-  {
-   "title": "San José Roots Cultural Fest and Historic Home Tours",
-   "date": "2026-11-07",
-   "time": "12:00",
-   "venue": "San Pedro Square Market, 87 N San Pedro St",
-   "city": "San Jose",
-   "price": 0,
-   "url": "https://sf.funcheap.com/free-san-jos-roots-cultural-fest-historic-home-tours/",
-   "why": "History San José opens the Peralta Adobe and Fallon House for free tours alongside Spanish and Mexican era hands-on activities and performances."
-  },
-  {
-   "title": "Sea Glass and Ocean Art Festival",
-   "date": "2026-11-07",
-   "time": "10:00",
-   "venue": "The Grove, 400 Beach St",
-   "city": "Santa Cruz",
-   "price": 5,
-   "url": "https://www.santacruz.org/upcoming-event/sea-glass-ocean-art-festival/",
-   "why": "Sixty sea glass and ocean artists in a historic building with ocean views, an easy pairing with a beach afternoon over the hill."
-  },
-  {
-   "title": "USA Taiwan Global Expo (Discover Taiwan)",
-   "date": "2026-11-07",
-   "time": "10:00",
-   "venue": "San Mateo County Event Center, 1346 Saratoga Dr",
-   "city": "San Mateo",
-   "price": 3.79,
-   "url": "https://sf.funcheap.com/discover-taiwan-expo-2026-san-mateo-nov-78/",
-   "why": "A cheap two-day showcase of Taiwanese street food, products and culture twenty minutes from Menlo Park."
+   "venue": "Douglas Beach House",
+   "city": "Half Moon Bay",
+   "price": 50,
+   "url": "https://bachddsoc.org/calendar/?pg=selectevent&eid=202286&edid=0",
+   "why": "Adult-oriented: saxophonist Azar Lawrence plays the legendary beachfront jazz room in Half Moon Bay, a Sunday-afternoon coastside institution."
   },
   {
    "title": "Blankets and Blockbusters: Toy Story 5 outdoor screening",
@@ -232,6 +22,16 @@
    "why": "A Sunday afternoon outdoor movie on the Thrive City plaza, bring blankets."
   },
   {
+   "title": "Día de los Muertos Festival: Altars & Folklórico at Courthouse Square",
+   "date": "2026-11-08",
+   "time": "15:00",
+   "venue": "Courthouse Square, 2200 Broadway",
+   "city": "Redwood City",
+   "price": 0,
+   "url": "https://sf.funcheap.com/free-da-de-los-muertos-festival-altars-courthouse-square-redwood-city/",
+   "why": "Redwood City's big Día de los Muertos night with community altars, folklórico dancers and a lowrider display, 15 minutes from Menlo Park and drew 9,000 people last year."
+  },
+  {
    "title": "Helicopter Adventure at Hiller Aviation Museum",
    "date": "2026-11-08",
    "time": "11:00",
@@ -242,6 +42,16 @@
    "why": "A one-off helicopter-themed program at the Peninsula's aviation museum, fifteen minutes up the 101."
   },
   {
+   "title": "LoveFest SF: Free 7-Hour Reggae Festival & Food Drive",
+   "date": "2026-11-08",
+   "time": "12:00",
+   "venue": "Spreckels Temple of Music Bandshell, Golden Gate Park",
+   "city": "San Francisco",
+   "price": 0,
+   "url": "https://sf.funcheap.com/lovefest-sf-free-7hour-reggae-festival-golden-gate-park-food-drive-sf/",
+   "why": "All-ages outdoor reggae afternoon in the park; bring canned food for the drive."
+  },
+  {
    "title": "Muchos Art + Comic Expo (50+ artists)",
    "date": "2026-11-08",
    "time": "12:00",
@@ -250,6 +60,16 @@
    "price": 0,
    "url": "https://sf.funcheap.com/2026-muchos-art-comic-expo-50-artists-berkeley/",
    "why": "A free all-ages indie comics and zine fair with Pentel-sponsored drawing workshops, ideal for a comics-loving kid."
+  },
+  {
+   "title": "National STEM Day Free Community Day at The Tech Interactive",
+   "date": "2026-11-08",
+   "time": null,
+   "venue": "The Tech Interactive, 201 S Market St",
+   "city": "San Jose",
+   "price": 0,
+   "url": "https://www.thetech.org/explore/upcoming-events/",
+   "why": "The whole museum is free today with extra community booths and bonus activities, a rare no-cost visit to a top kids' science museum."
   },
   {
    "title": "Redwood City Día de los Muertos Festival",
@@ -269,17 +89,27 @@
    "city": "San Francisco",
    "price": 0,
    "url": "https://sf.funcheap.com/san-francisco-diwali-festival-yerba-buena-gardens-2026/",
-   "why": "A free outdoor Diwali celebration with dance performances, music and food in a central downtown park."
+   "why": "Free afternoon Diwali celebration with dance performances, food and festival-of-lights activities for families."
+  },
+  {
+   "title": "San Francisco Veterans Day Parade",
+   "date": "2026-11-08",
+   "time": "11:00",
+   "venue": "North Point & Jefferson St to Aquatic Park, Fisherman's Wharf",
+   "city": "San Francisco",
+   "price": 0,
+   "url": "https://sf.funcheap.com/veterans-day-parade-sf/",
+   "why": "Once-a-year parade along the Wharf with marching bands, military units and vintage vehicles, free and easy for kids to watch."
   },
   {
    "title": "Palo Alto Veterans Day Recognition Event",
    "date": "2026-11-09",
    "time": "15:00",
-   "venue": "MacArthur Park, 27 University Ave",
+   "venue": "MacArthur Park Historical Building, 27 University Ave",
    "city": "Palo Alto",
    "price": 0,
    "url": "https://www.paloalto.gov/Events-Directory/Office-of-Emergency-Services/Veterans-Day-Event-2026",
-   "why": "A short, free civic ceremony next door in Palo Alto, a low-key way for kids to mark Veterans Day."
+   "why": "Small-town civic ceremony with the Stanford Mendicants a cappella group and a Quilt of Honor presentation, five minutes from Menlo Park."
   },
   {
    "title": "Petaluma Veterans Day Parade and Huey helicopter flyover",
@@ -310,6 +140,216 @@
    "price": null,
    "url": "https://www.ronniesawesomelist.com/veterans-day/veterans-day-at-the-uss-hornet",
    "why": "A ceremony with guest speakers on the deck of a real aircraft carrier, plus full access to the ship on a day off school."
+  },
+  {
+   "title": "Arab Film Festival Outdoor Movie Night: Spices and Lies",
+   "date": "2026-11-12",
+   "time": "19:30",
+   "venue": "Proxy SF, 432 Octavia St",
+   "city": "San Francisco",
+   "price": 0,
+   "url": "https://sf.funcheap.com/free-arab-film-festival-outdoor-movie-night-proxy-hayes-valley/",
+   "why": "Free outdoor screening of a French-Algerian food rom-com with shawarma and kunafa vendors, marking the festival's 30th anniversary; RSVP required."
+  },
+  {
+   "title": "Menlo Park Storytelling Festival: StoryFest Online",
+   "date": "2026-11-12",
+   "time": "18:00",
+   "venue": "Online (Zoom) via Menlo Park Library",
+   "city": "Menlo Park",
+   "price": 0,
+   "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/20261112-StoryFest",
+   "why": "The hometown library's annual storytelling festival streams a lineup of live tellers for all ages, a free weeknight option without leaving the house."
+  },
+  {
+   "title": "Bhangra & Beats Diwali Night Market",
+   "date": "2026-11-13",
+   "time": "16:00",
+   "venue": "Yerba Buena Gardens",
+   "city": "San Francisco",
+   "price": 0,
+   "url": "https://www.bhangraandbeats.com/",
+   "why": "The City's official Diwali night market, billed as a family-friendly Indian rave with DJs, dance and street food, free and all ages."
+  },
+  {
+   "title": "Cubberley Artist Studio Program Open Studios",
+   "date": "2026-11-14",
+   "time": "13:00",
+   "venue": "Cubberley Community Center, 4000 Middlefield Rd",
+   "city": "Palo Alto",
+   "price": 0,
+   "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Cubberley-Artist-Studio-Program-Open-Studios",
+   "why": "Twenty-three resident artists open their studios with an AR asteroid sculpture, a FOPAL book sale and an Oaxacan food truck, ten minutes from Menlo Park."
+  },
+  {
+   "title": "Friends of the Menlo Park Library Autumn Book Sale",
+   "date": "2026-11-14",
+   "time": "10:00",
+   "venue": "Menlo Park Library, 800 Alma St",
+   "city": "Menlo Park",
+   "price": 0,
+   "url": "https://friendsmpl.org/",
+   "why": "Twice-a-year sale of thousands of books, kids' titles and DVDs mostly priced $1 to $2, right in town; also Friday Nov 13, 14:00 to 17:00."
+  },
+  {
+   "title": "Gamble Garden Second Saturday: Seeds and Indigenous Heritage Month",
+   "date": "2026-11-14",
+   "time": "10:00",
+   "venue": "Gamble Garden, 1431 Waverley St",
+   "city": "Palo Alto",
+   "price": 0,
+   "url": "https://www.gamblegarden.org/event/novembersaturday/",
+   "why": "Free hands-on garden morning making seed bracelets and seed bombs and exploring acorn traditions, with a plant sale; timed-entry registration."
+  },
+  {
+   "title": "Holidays at Filoli Opening Day",
+   "date": "2026-11-14",
+   "time": "10:00",
+   "venue": "Filoli Historic House & Garden",
+   "city": "Woodside",
+   "price": 40,
+   "url": "https://filoli.org/whats-on/events/holiday-daytime/",
+   "why": "First day of Filoli's holiday season, with a new Family Farm of mini cows and goats in the redwoods, 200+ decorated trees and a Celtic-themed house, 15 minutes from Menlo Park."
+  },
+  {
+   "title": "Kuchipudi Dance with Manaswini Avvari",
+   "date": "2026-11-14",
+   "time": "11:00",
+   "venue": "Flex Theater, Cañada College",
+   "city": "Redwood City",
+   "price": 0,
+   "url": "https://www.smcgov.org/ceo/arts-and-culture-events-around-county",
+   "why": "Free one-hour classical Indian dance performance at the local community college, a short cultural outing close to home."
+  },
+  {
+   "title": "Peninsula Youth Theatre: The Wizard of Oz",
+   "date": "2026-11-14",
+   "time": "14:00",
+   "venue": "Mountain View Center for the Performing Arts, Main Stage",
+   "city": "Mountain View",
+   "price": null,
+   "url": "https://www.pytnet.org/shows/the-wizard-of-oz",
+   "why": "Opening weekend of the local youth theatre's full-scale Wizard of Oz, with performers the same age as your kids; also 19:30 Saturday and 13:00 Sunday."
+  },
+  {
+   "title": "Renegade Craft Holiday Fair",
+   "date": "2026-11-14",
+   "time": "11:00",
+   "venue": "Fort Mason Center Festival Pavilion",
+   "city": "San Francisco",
+   "price": 0,
+   "url": "https://sf.funcheap.com/sfs-renegade-craft-holiday-2026-fair-250-makers-fort-mason-nov-1415/",
+   "why": "250+ curated makers plus food trucks in one indoor hall, a strong early holiday-shopping outing; also Sunday Nov 15, $5 suggested donation."
+  },
+  {
+   "title": "Rhône By The Bay Wine Tasting",
+   "date": "2026-11-14",
+   "time": "12:00",
+   "venue": "Gallery 308, Fort Mason Center",
+   "city": "San Francisco",
+   "price": 45,
+   "url": "https://projectsf.com/events/rhne-by-the-bay/",
+   "why": "ADULTS ONLY (21+): 44 Rhône Rangers wineries pour about 150 American Grenache, Syrah and Viognier bottlings in a walk-around tasting."
+  },
+  {
+   "title": "Rock the Dock Concert Series: Pop Rocks",
+   "date": "2026-11-14",
+   "time": "14:30",
+   "venue": "Port of Redwood City, 459 Seaport Court",
+   "city": "Redwood City",
+   "price": 0,
+   "url": "https://www.smcgov.org/ceo/arts-and-culture-events-around-county",
+   "why": "Final free waterfront concert of the season at the Port, with food vendors and room for kids to roam; county listing says 14:30, port site lists series slots at 15:30, so confirm start time."
+  },
+  {
+   "title": "SF Tea Festival at the Ferry Building",
+   "date": "2026-11-14",
+   "time": "10:00",
+   "venue": "Ferry Building",
+   "city": "San Francisco",
+   "price": 24,
+   "url": "https://sf.funcheap.com/2026-sf-tea-festival-at-ferry-building-nov-14-15/",
+   "why": "Taste hundreds of teas from 30+ vendors with a souvenir porcelain cup included; also Sunday Nov 15 and $5 off with code FUNCHEAP."
+  },
+  {
+   "title": "SF VegFest 2026",
+   "date": "2026-11-14",
+   "time": "11:00",
+   "venue": "SMC Event Center, 1111 Gough St",
+   "city": "San Francisco",
+   "price": 18,
+   "url": "https://sf.funcheap.com/san-francisco-vegfest/",
+   "why": "27th annual plant-based food festival with 80+ exhibitors, chef demos and comedians, a good grazing day for curious eaters."
+  },
+  {
+   "title": "The Big Open: 100+ Sausalito Artists Open Studios",
+   "date": "2026-11-14",
+   "time": "11:00",
+   "venue": "ICB Building, 480 Gate 5 Rd",
+   "city": "Sausalito",
+   "price": 0,
+   "url": "https://sf.funcheap.com/big-open-100-sausalito-artists-open-studios-nov-1315/",
+   "why": "Once-a-year weekend when 100+ working artists open their waterfront studios; also runs Sunday Nov 15."
+  },
+  {
+   "title": "Feathered Friends: Birdwatching & Nature Art for Families",
+   "date": "2026-11-15",
+   "time": "08:30",
+   "venue": "San Francisco Botanical Garden, Main Gate",
+   "city": "San Francisco",
+   "price": 40,
+   "url": "https://gggp.org/event/feathered-friends-garden-adventure-birdwatching-and-nature-art-for-families-11/",
+   "why": "Early-morning guided birdwatching on fall migration plus a nature-art session; $40 covers one adult and one child ages 5 to 12, so suits the 9-year-old."
+  },
+  {
+   "title": "Neave Trio at Kohl Mansion",
+   "date": "2026-11-15",
+   "time": "19:00",
+   "venue": "Kohl Mansion",
+   "city": "Burlingame",
+   "price": 68,
+   "url": "https://musicatkohl.org/neave-trio-2026-11-15/",
+   "why": "Adult-oriented: acclaimed piano trio in the Great Hall of a 1914 Tudor mansion, with a free pre-concert talk at 18:00 and $30 tickets for under-30s."
+  },
+  {
+   "title": "Palo Alto Youth Council Mental Health Fair for Parents & Teens",
+   "date": "2026-11-15",
+   "time": "14:30",
+   "venue": "Mitchell Park Community Center, 3700 Middlefield Rd",
+   "city": "Palo Alto",
+   "price": 0,
+   "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Mental-Health-Fair",
+   "why": "Teen-run fair with youth mental health experts, therapy dogs and free refreshments, designed for parents to attend with their teens."
+  },
+  {
+   "title": "Shadelands FallFest",
+   "date": "2026-11-15",
+   "time": "11:00",
+   "venue": "Shadelands SportsMall, 2640 Shadelands Dr",
+   "city": "Walnut Creek",
+   "price": 0,
+   "url": "https://sf.funcheap.com/shadelands-fallfest-free-sports-food-trucks-family-activities-walnut-creek/",
+   "why": "Free try-it sports sampler for kids with food trucks, shelter animals and a pink fire engine, good for active 9-to-14-year-olds."
+  },
+  {
+   "title": "Menlo Park Storytelling Festival: Jeff Gere, True Supernatural Tales of Hawaii",
+   "date": "2026-11-16",
+   "time": null,
+   "venue": "Menlo Park Library, 800 Alma St",
+   "city": "Menlo Park",
+   "price": 0,
+   "url": "https://www.menlopark.gov/News-articles/City-news/2026_09-11-11th-Storytelling-Festival",
+   "why": "Touring Hawaiian storyteller performs spooky true tales at the hometown library as part of the free annual festival; check the library calendar for the start time."
+  },
+  {
+   "title": "Embarcadero Center Holiday Market & 40th Annual Building Lighting",
+   "date": "2026-11-18",
+   "time": "16:00",
+   "venue": "Three Embarcadero Center",
+   "city": "San Francisco",
+   "price": null,
+   "url": "https://projectsf.com/events/embarcadero-center-holiday-market-and-building-lighting/",
+   "why": "The once-a-year moment when all four Embarcadero towers light up for the holidays, paired with a holiday market, kicking off the season downtown."
   }
  ]
 }
