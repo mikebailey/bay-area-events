@@ -1,16 +1,6 @@
 {
- "updated": "2026-11-09",
+ "updated": "2026-11-11",
  "events": [
-  {
-   "title": "Palo Alto Veterans Day Recognition Event",
-   "date": "2026-11-09",
-   "time": "15:00",
-   "venue": "MacArthur Park Historical Building, 27 University Ave",
-   "city": "Palo Alto",
-   "price": 0,
-   "url": "https://www.paloalto.gov/Events-Directory/Office-of-Emergency-Services/Veterans-Day-Event-2026",
-   "why": "Small-town civic ceremony with the Stanford Mendicants a cappella group and a Quilt of Honor presentation, five minutes from Menlo Park."
-  },
   {
    "title": "Arab Film Festival: Chronicle of a Disappearance at the Roxie",
    "date": "2026-11-11",
@@ -35,11 +25,21 @@
    "title": "Crab Cove Veterans Day Remembrance",
    "date": "2026-11-11",
    "time": "13:00",
-   "venue": "Doug Siden Visitor Center at Crab Cove, 1252 McKay Ave",
+   "venue": "Doug Siden Visitor Center, Crab Cove, 1252 McKay Ave",
    "city": "Alameda",
    "price": 0,
    "url": "https://www.ronniesawesomelist.com/veterans-day/alameda",
-   "why": "A free afternoon program with a self-guided history walk about the site's naval past, a flag-folding demonstration, and a craft, easy to pair with the USS Hornet across town."
+   "why": "A free East Bay Regional Parks afternoon with a self-guided history walk about Alameda's wartime past, flag-folding demonstrations, and crafts; easy to pair with the USS Hornet a few minutes away."
+  },
+  {
+   "title": "Cupertino Veterans Day Ceremony",
+   "date": "2026-11-11",
+   "time": "11:00",
+   "venue": "Memorial Park, 21121 Stevens Creek Blvd",
+   "city": "Cupertino",
+   "price": null,
+   "url": "https://www.cupertino.gov/Parks-Recreation/Events/Festivals/Veterans-Day-Ceremony",
+   "why": "The city-sponsored ceremony at the Cupertino Veterans Memorial runs 11:00 to 13:00 and is the nearest formal observance to Menlo Park on the Peninsula side."
   },
   {
    "title": "Danville Veterans Day Open House and Museum Exhibition with Huey Helicopter and Beacon Lighting",
@@ -52,6 +52,16 @@
    "why": "All-day free open house with a Huey helicopter and F-8 jet cockpit outdoors, an 11 a.m. family-friendly ceremony, and a sunset Mount Diablo beacon lighting."
   },
   {
+   "title": "Danville Veterans Day Open House, Museum Exhibition and Beacon Lighting",
+   "date": "2026-11-11",
+   "time": "09:00",
+   "venue": "Veterans Memorial Building of San Ramon Valley, 400 Hartz Ave",
+   "city": "Danville",
+   "price": 0,
+   "url": "https://patch.com/california/dublin/danville-veterans-day-observance-feature-mt-diablo-beacon-lighting-historical",
+   "why": "An all-day free event with Revolutionary War to Spanish-American War artifacts, a Huey helicopter and military vehicles outside, Quest Science Center family activities, an 11:00 observance with the Monte Vista High School choir, and the Mount Diablo beacon lighting at 16:40."
+  },
+  {
    "title": "East Bay Regional Parks Free Entry and Parking for Veterans",
    "date": "2026-11-11",
    "time": "10:00",
@@ -60,6 +70,16 @@
    "price": 0,
    "url": "https://www.ebparks.org/we-celebrate/veterans-day",
    "why": "The park district waives entry and parking for veterans, service members, and retirees on Veterans Day across its parks, including Ardenwood Historic Farm."
+  },
+  {
+   "title": "East Bay Regional Parks Veterans Day Free Entry (Ardenwood Historic Farm)",
+   "date": "2026-11-11",
+   "time": "10:00",
+   "venue": "Ardenwood Historic Farm, 34600 Ardenwood Blvd",
+   "city": "Fremont",
+   "price": null,
+   "url": "https://www.ronniesawesomelist.com/veterans-day/ebparks",
+   "why": "The park district waives entry and parking fees for veterans and active service members at fee parks including Ardenwood; regular admission applies to other family members."
   },
   {
    "title": "Fairfield Veterans Day Celebration and Parade: Honoring All Who Served",
@@ -72,6 +92,16 @@
    "why": "Solano County's big annual Veterans Day with a 10 a.m. ceremony and concert followed by a 12:30 p.m. parade down Kentucky Street."
   },
   {
+   "title": "Fairfield Veterans Day Celebration: Honoring All Who Served",
+   "date": "2026-11-11",
+   "time": "10:00",
+   "venue": "Downtown Theatre, 1035 Texas St",
+   "city": "Fairfield",
+   "price": 0,
+   "url": "https://www.yahoo.com/lifestyle/articles/veterans-day-2026-bay-area-150000893.html",
+   "why": "Fairfield, home to Travis Air Force Base, holds its free annual celebration in the downtown theater; only worth it if you are already heading north."
+  },
+  {
    "title": "Free National Parks Day at Muir Woods",
    "date": "2026-11-11",
    "time": "07:00",
@@ -80,6 +110,16 @@
    "price": 0,
    "url": "https://sf.funcheap.com/free-national-parks-day-muir-woods-yosemite-for-veterans-day-2026/",
    "why": "Entrance fees are waived at all national parks for Veterans Day, including Muir Woods, though a paid parking or shuttle reservation is still required."
+  },
+  {
+   "title": "Free National Parks Day: Muir Woods and Hyde Street Pier",
+   "date": "2026-11-11",
+   "time": null,
+   "venue": "Muir Woods National Monument",
+   "city": "Mill Valley",
+   "price": 0,
+   "url": "https://sf.funcheap.com/free-national-parks-day-muir-woods-yosemite-for-veterans-day-2026/",
+   "why": "Veterans Day is a fee-free day at national parks, so the $15 Muir Woods entrance fee is waived, but parking reservations ($10) are still required and free entry now applies only to US citizens and permanent residents."
   },
   {
    "title": "Handel's The Power of Music: Philharmonia Baroque at Bing Concert Hall",
@@ -102,6 +142,26 @@
    "why": "An afternoon ceremony in downtown Los Altos fifteen minutes from Menlo Park, so it can follow a morning event elsewhere."
   },
   {
+   "title": "Los Altos Veterans Day Observance",
+   "date": "2026-11-11",
+   "time": "14:00",
+   "venue": "Veterans Community Plaza, State and Main streets",
+   "city": "Los Altos",
+   "price": 0,
+   "url": "https://www.calegionpost558.org/veterans-ceremonies-memorial",
+   "why": "An afternoon downtown ceremony close to home, with the Cradle of Liberty statue at Shoup Park Veterans Memorial a short walk away."
+  },
+  {
+   "title": "Marin County Veterans Day Ceremony",
+   "date": "2026-11-11",
+   "time": "09:00",
+   "venue": "Exhibit Hall, Marin Veterans' Memorial Auditorium, 20 Avenue of the Flags",
+   "city": "San Rafael",
+   "price": 0,
+   "url": "https://www.yahoo.com/lifestyle/articles/veterans-day-2026-bay-area-150000893.html",
+   "why": "Marin's county-wide ceremony is early enough to combine with the Sausalito schooner sail or a Muir Woods visit the same day."
+  },
+  {
    "title": "Marin Veterans Day Ceremony",
    "date": "2026-11-11",
    "time": "09:30",
@@ -122,6 +182,16 @@
    "why": "A historic-cemetery ceremony followed by a community gathering at Plaza Ignacio Park, a different setting from the parade-style events."
   },
   {
+   "title": "Milpitas Veterans Day Ceremony",
+   "date": "2026-11-11",
+   "time": "09:00",
+   "venue": "Veterans Plaza, 457 E Calaveras Blvd",
+   "city": "Milpitas",
+   "price": 0,
+   "url": "https://www.yahoo.com/lifestyle/articles/veterans-day-2026-bay-area-150000893.html",
+   "why": "A short morning civic ceremony that fits before the San Jose parade a few miles south."
+  },
+  {
    "title": "Milpitas Veterans Day Ceremony with Community Concert Band",
    "date": "2026-11-11",
    "time": "09:00",
@@ -139,7 +209,17 @@
    "city": "Mountain View",
    "price": 0,
    "url": "https://www.calegionpost558.org/veterans-ceremonies-memorial",
-   "why": "The closest Veterans Day ceremony to Menlo Park, a one-hour outdoor observance by American Legion Post 558 and the Mountain View Veterans Memorial Committee."
+   "why": "A one-hour American Legion ceremony timed to the Armistice hour, fifteen minutes from Menlo Park and over by noon."
+  },
+  {
+   "title": "Petaluma Veterans Day Parade & Huey Flyover: Celebrating 250 Years",
+   "date": "2026-11-11",
+   "time": "12:00",
+   "venue": "Walnut Park, 201 Fourth St",
+   "city": "Petaluma",
+   "price": 0,
+   "url": "https://www.visitpetaluma.com/event/petaluma-american-legion-veterans-day-parade/",
+   "why": "The North Bay's biggest parade pairs a downtown procession with a Vietnam-era Huey helicopter flyover and landing plus other flyovers, which kids this age tend to remember; worth the roughly 90-minute drive."
   },
   {
    "title": "Petaluma Veterans Day Parade and Huey Helicopter Flyover",
@@ -160,6 +240,16 @@
    "price": null,
    "url": "https://www.pinole.gov/?p=53972",
    "why": "Pinole's second annual celebration features a flag retirement ceremony, speeches, and entertainment, a rarely seen ritual that is educational for kids."
+  },
+  {
+   "title": "Presidio Veterans Day Interfaith Service",
+   "date": "2026-11-11",
+   "time": "11:00",
+   "venue": "Presidio Chapel, 130 Fisher Loop",
+   "city": "San Francisco",
+   "price": 0,
+   "url": "https://www.swords-to-plowshares.org/post/2026-veterans-day-round-up",
+   "why": "The annual service in the historic Presidio chapel starts at the 11th hour of the 11th day; free but reservations are requested by email to presidiointerfaith@gmail.com."
   },
   {
    "title": "Rohnert Park Veterans Day Celebration",
@@ -184,12 +274,22 @@
   {
    "title": "San Jose Veterans Day Parade: A Salute to Our Vietnam Veterans",
    "date": "2026-11-11",
-   "time": "11:00",
-   "venue": "Plaza de Cesar Chavez / Market Street",
+   "time": "12:00",
+   "venue": "Plaza de Cesar Chavez / Market Street, downtown",
    "city": "San Jose",
    "price": 0,
    "url": "https://www.ronniesawesomelist.com/veterans-day/san-jose-veterans-day-parade",
-   "why": "Northern California's largest Veterans Day parade, running since 1918, with an 11 a.m. ceremony and noon parade only 35 minutes from Menlo Park."
+   "why": "The largest Veterans Day parade in Northern California, running since 1918, with an 11:00 ceremony at Plaza de Cesar Chavez before the parade steps off down Market Street; the closest big holiday tradition to Menlo Park."
+  },
+  {
+   "title": "Stanford Memorial Auditorium Veterans Day Open House",
+   "date": "2026-11-11",
+   "time": "11:00",
+   "venue": "Memorial Auditorium and Memorial Court",
+   "city": "Stanford",
+   "price": 0,
+   "url": "https://community.stanford.edu/events/veterans-day-2026",
+   "why": "The auditorium lobby opens 11:00 to 17:00 so visitors can see the memorial plaques for Stanford's war dead and the wreaths in Memorial Court; a free ten-minute outing from Menlo Park."
   },
   {
    "title": "Stanford Veterans Day Wreaths at Memorial Court and Memorial Auditorium",
@@ -202,6 +302,16 @@
    "why": "Stanford places wreaths and displays the president's letter at its war memorials, with plaques viewable 11 a.m. to 5 p.m., a quiet ten-minute-away stop for a family walk."
   },
   {
+   "title": "Veterans Day Choral Evensong at St Thomas Anglican",
+   "date": "2026-11-11",
+   "time": "19:30",
+   "venue": "St Thomas Anglican Church, Pacific Heights",
+   "city": "San Francisco",
+   "price": 0,
+   "url": "https://sf.funcheap.com/veterans-day-remembrance-day-choral-music-evensong-pacific-heights-sf/",
+   "why": "A free hour of Remembrance Day choral music to close the holiday for a family already in the city that evening."
+  },
+  {
    "title": "Veterans Day Cruise Aboard the USS Potomac",
    "date": "2026-11-11",
    "time": "10:30",
@@ -212,6 +322,16 @@
    "why": "A once-a-year bay cruise on FDR's presidential yacht that pauses at the USS Hornet for a bagpipe-and-choir ceremony before a box-lunch sail, so advance tickets are needed."
   },
   {
+   "title": "Veterans Day Cruise on FDR's Yacht USS Potomac",
+   "date": "2026-11-11",
+   "time": "10:30",
+   "venue": "Jack London Square, 540 Water St",
+   "city": "Oakland",
+   "price": 35,
+   "url": "https://www.ronniesawesomelist.com/veterans-day/veterans-day-cruise-on-san-francisco-bay",
+   "why": "A ticketed three-hour Bay cruise on the presidential yacht with a bagpiper, the Oakland Interfaith Youth Choir, a tribute ceremony alongside the USS Hornet, and a box lunch; limited seats, book ahead."
+  },
+  {
    "title": "Veterans Day Interfaith Service at the Presidio Chapel",
    "date": "2026-11-11",
    "time": "11:00",
@@ -220,6 +340,16 @@
    "price": 0,
    "url": "https://presidio.gov/explore/events/veterans-day-interfaith-service/",
    "why": "A free, all-ages one-hour service in the historic Presidio chapel with keynote speaker Michael Blecker of Swords to Plowshares; advance RSVP by email requested."
+  },
+  {
+   "title": "Veterans Day Sail on Schooner Seaward",
+   "date": "2026-11-11",
+   "time": "13:00",
+   "venue": "Bay Model Visitor Center, 2100 Bridgeway",
+   "city": "Sausalito",
+   "price": 49,
+   "url": "https://www.ronniesawesomelist.com/veterans-day/veterans-day-sail-on-schooner-seaward",
+   "why": "Call of the Sea's tall-ship sail on the Bay with check-in at 12:45; every passenger needs an advance ticket and these sails sell out."
   },
   {
    "title": "Veterans Day Sail on the Schooner Seaward",
@@ -249,7 +379,7 @@
    "city": "Walnut Creek",
    "price": 0,
    "url": "https://www.yahoo.com/lifestyle/articles/veterans-day-2026-bay-area-150000893.html",
-   "why": "A free one-hour ceremony and concert in a real concert hall, a good indoor option paired with the Danville open house ten minutes away."
+   "why": "A free one-hour indoor ceremony with live music in a proper theater, a good option if the weather turns."
   },
   {
    "title": "Zoppe Italian Family Circus: Special Veterans Day Matinees",
