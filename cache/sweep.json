@@ -1,605 +1,285 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-22",
  "events": [
   {
-   "title": "Arab Film Festival: Chronicle of a Disappearance at the Roxie",
-   "date": "2026-11-11",
-   "time": "20:00",
-   "venue": "Roxie Theater",
+   "title": "Elmwood Holiday Market",
+   "date": "2026-11-22",
+   "time": "12:00",
+   "venue": "College Avenue at Ashby Avenue",
+   "city": "Berkeley",
+   "price": 0,
+   "url": "https://www.berkeleyside.org/2026/11/19/things-to-do-in-berkeley-before-and-after-thanksgiving",
+   "why": "Free neighborhood holiday street market in the Elmwood shopping district, one of two dates this season."
+  },
+  {
+   "title": "Festival of Lights: A Diwali Celebration",
+   "date": "2026-11-22",
+   "time": "14:00",
+   "venue": "Mitchell Park Community Center",
+   "city": "Palo Alto",
+   "price": 0,
+   "url": "https://www.paloalto.gov/Events-Directory/Library/Festival-of-Lights-A-Diwali-Celebration",
+   "why": "Free library-run Diwali afternoon with dance, crafts and food, a one-off community cultural event close to home."
+  },
+  {
+   "title": "Glow Festival at the Exploratorium",
+   "date": "2026-11-22",
+   "time": null,
+   "venue": "Exploratorium, Pier 15",
    "city": "San Francisco",
-   "price": 20,
-   "url": "https://sf.funcheap.com/arab-film-fest-chronicle-of-a-disappearance-sf/",
-   "why": "A one-night Arab Film Festival screening of Elia Suleiman's classic, an advance-ticket option for parents after the kids' daytime events."
+   "price": null,
+   "url": "https://www.exploratorium.edu/tickets",
+   "why": "One-day festival of light-based exhibits and demos at the Exploratorium, a strong fit for science-minded older kids."
   },
   {
-   "title": "California State Parks Free Day-Use for Veterans and Active Duty",
-   "date": "2026-11-11",
+   "title": "Math Festival at San Jose Public Library",
+   "date": "2026-11-22",
    "time": null,
-   "venue": "Mount Tamalpais State Park and 144 other state parks",
-   "city": "Mill Valley",
+   "venue": "San Jose Public Library",
+   "city": "San José",
    "price": 0,
-   "url": "https://www.parks.ca.gov/NewsRelease/1606",
-   "why": "Veterans, active-duty, and reserve members with ID get free day-use at 145 state parks for the holiday, a reason to add a Mount Tam hike to a Marin day."
+   "url": "https://sjpl.bibliocommons.com/events/69c19013e2a2952aed0a154c",
+   "why": "Free hands-on math puzzles and games festival, a one-day library event aimed squarely at school-age kids."
   },
   {
-   "title": "Crab Cove Veterans Day Remembrance",
-   "date": "2026-11-11",
-   "time": "13:00",
-   "venue": "Doug Siden Visitor Center, Crab Cove, 1252 McKay Ave",
-   "city": "Alameda",
-   "price": 0,
-   "url": "https://www.ronniesawesomelist.com/veterans-day/alameda",
-   "why": "A free East Bay Regional Parks afternoon with a self-guided history walk about Alameda's wartime past, flag-folding demonstrations, and crafts; easy to pair with the USS Hornet a few minutes away."
-  },
-  {
-   "title": "Cupertino Veterans Day Ceremony",
-   "date": "2026-11-11",
-   "time": "11:00",
-   "venue": "Memorial Park, 21121 Stevens Creek Blvd",
-   "city": "Cupertino",
-   "price": null,
-   "url": "https://www.cupertino.gov/Parks-Recreation/Events/Festivals/Veterans-Day-Ceremony",
-   "why": "The city-sponsored ceremony at the Cupertino Veterans Memorial runs 11:00 to 13:00 and is the nearest formal observance to Menlo Park on the Peninsula side."
-  },
-  {
-   "title": "Danville Veterans Day Open House and Museum Exhibition with Huey Helicopter and Beacon Lighting",
-   "date": "2026-11-11",
-   "time": "09:00",
-   "venue": "Veterans Memorial Building of San Ramon Valley, 400 Hartz Ave",
-   "city": "Danville",
-   "price": 0,
-   "url": "https://www.yahoo.com/lifestyle/articles/veterans-day-2026-bay-area-150000893.html",
-   "why": "All-day free open house with a Huey helicopter and F-8 jet cockpit outdoors, an 11 a.m. family-friendly ceremony, and a sunset Mount Diablo beacon lighting."
-  },
-  {
-   "title": "Danville Veterans Day Open House, Museum Exhibition and Beacon Lighting",
-   "date": "2026-11-11",
-   "time": "09:00",
-   "venue": "Veterans Memorial Building of San Ramon Valley, 400 Hartz Ave",
-   "city": "Danville",
-   "price": 0,
-   "url": "https://patch.com/california/dublin/danville-veterans-day-observance-feature-mt-diablo-beacon-lighting-historical",
-   "why": "An all-day free event with Revolutionary War to Spanish-American War artifacts, a Huey helicopter and military vehicles outside, Quest Science Center family activities, an 11:00 observance with the Monte Vista High School choir, and the Mount Diablo beacon lighting at 16:40."
-  },
-  {
-   "title": "East Bay Regional Parks Free Entry and Parking for Veterans",
-   "date": "2026-11-11",
-   "time": "10:00",
-   "venue": "Ardenwood Historic Farm and other East Bay Regional Parks",
-   "city": "Fremont",
-   "price": 0,
-   "url": "https://www.ebparks.org/we-celebrate/veterans-day",
-   "why": "The park district waives entry and parking for veterans, service members, and retirees on Veterans Day across its parks, including Ardenwood Historic Farm."
-  },
-  {
-   "title": "East Bay Regional Parks Veterans Day Free Entry (Ardenwood Historic Farm)",
-   "date": "2026-11-11",
-   "time": "10:00",
-   "venue": "Ardenwood Historic Farm, 34600 Ardenwood Blvd",
-   "city": "Fremont",
-   "price": null,
-   "url": "https://www.ronniesawesomelist.com/veterans-day/ebparks",
-   "why": "The park district waives entry and parking fees for veterans and active service members at fee parks including Ardenwood; regular admission applies to other family members."
-  },
-  {
-   "title": "Fairfield Veterans Day Celebration and Parade: Honoring All Who Served",
-   "date": "2026-11-11",
-   "time": "10:00",
-   "venue": "Downtown Theatre, 1035 Texas St",
-   "city": "Fairfield",
-   "price": 0,
-   "url": "https://www.yahoo.com/lifestyle/articles/veterans-day-2026-bay-area-150000893.html",
-   "why": "Solano County's big annual Veterans Day with a 10 a.m. ceremony and concert followed by a 12:30 p.m. parade down Kentucky Street."
-  },
-  {
-   "title": "Fairfield Veterans Day Celebration: Honoring All Who Served",
-   "date": "2026-11-11",
-   "time": "10:00",
-   "venue": "Downtown Theatre, 1035 Texas St",
-   "city": "Fairfield",
-   "price": 0,
-   "url": "https://www.yahoo.com/lifestyle/articles/veterans-day-2026-bay-area-150000893.html",
-   "why": "Fairfield, home to Travis Air Force Base, holds its free annual celebration in the downtown theater; only worth it if you are already heading north."
-  },
-  {
-   "title": "Free National Parks Day at Muir Woods",
-   "date": "2026-11-11",
-   "time": "07:00",
-   "venue": "Muir Woods National Monument",
-   "city": "Mill Valley",
-   "price": 0,
-   "url": "https://sf.funcheap.com/free-national-parks-day-muir-woods-yosemite-for-veterans-day-2026/",
-   "why": "Entrance fees are waived at all national parks for Veterans Day, including Muir Woods, though a paid parking or shuttle reservation is still required."
-  },
-  {
-   "title": "Free National Parks Day: Muir Woods and Hyde Street Pier",
-   "date": "2026-11-11",
+   "title": "West Coast Craft Winter Market",
+   "date": "2026-11-22",
    "time": null,
-   "venue": "Muir Woods National Monument",
-   "city": "Mill Valley",
+   "venue": "Fort Mason Festival Pavilion",
+   "city": "San Francisco",
    "price": 0,
-   "url": "https://sf.funcheap.com/free-national-parks-day-muir-woods-yosemite-for-veterans-day-2026/",
-   "why": "Veterans Day is a fee-free day at national parks, so the $15 Muir Woods entrance fee is waived, but parking reservations ($10) are still required and free entry now applies only to US citizens and permanent residents."
+   "url": "https://www.westcoastcraft.com/wcc-attend",
+   "why": "Free twice-a-year design and craft fair with hundreds of independent makers, good for early holiday shopping."
   },
   {
-   "title": "Handel's The Power of Music: Philharmonia Baroque at Bing Concert Hall",
-   "date": "2026-11-11",
-   "time": "19:30",
-   "venue": "Bing Concert Hall, 327 Lasuen St",
-   "city": "Stanford",
-   "price": 40,
-   "url": "https://sf.funcheap.com/handels-the-power-of-music-stanford/",
-   "why": "A US premiere of the 1742 Dublin version of Handel's Alexander's Feast by Philharmonia Baroque, a ticketed holiday-evening concert ten minutes from home."
-  },
-  {
-   "title": "Los Altos Veterans Day Ceremony at Veterans Community Plaza",
-   "date": "2026-11-11",
-   "time": "14:00",
-   "venue": "Veterans Community Plaza, State St and Main St",
-   "city": "Los Altos",
-   "price": 0,
-   "url": "https://www.calegionpost558.org/veterans-ceremonies-memorial",
-   "why": "An afternoon ceremony in downtown Los Altos fifteen minutes from Menlo Park, so it can follow a morning event elsewhere."
-  },
-  {
-   "title": "Los Altos Veterans Day Observance",
-   "date": "2026-11-11",
-   "time": "14:00",
-   "venue": "Veterans Community Plaza, State and Main streets",
-   "city": "Los Altos",
-   "price": 0,
-   "url": "https://www.calegionpost558.org/veterans-ceremonies-memorial",
-   "why": "An afternoon downtown ceremony close to home, with the Cradle of Liberty statue at Shoup Park Veterans Memorial a short walk away."
-  },
-  {
-   "title": "Marin County Veterans Day Ceremony",
-   "date": "2026-11-11",
-   "time": "09:00",
-   "venue": "Exhibit Hall, Marin Veterans' Memorial Auditorium, 20 Avenue of the Flags",
-   "city": "San Rafael",
-   "price": 0,
-   "url": "https://www.yahoo.com/lifestyle/articles/veterans-day-2026-bay-area-150000893.html",
-   "why": "Marin's county-wide ceremony is early enough to combine with the Sausalito schooner sail or a Muir Woods visit the same day."
-  },
-  {
-   "title": "Marin Veterans Day Ceremony",
-   "date": "2026-11-11",
-   "time": "09:30",
-   "venue": "Marin Veterans' Memorial Auditorium, 10 Avenue of the Flags",
-   "city": "San Rafael",
-   "price": 0,
-   "url": "https://www.ronniesawesomelist.com/veterans-day/marin-veterans-day",
-   "why": "Marin County's main free morning ceremony, which fits before a Muir Woods free-entry visit or the Sausalito schooner sail."
-  },
-  {
-   "title": "Martinez Veterans Day Ceremony at Alhambra Pioneer Cemetery",
-   "date": "2026-11-11",
-   "time": "10:00",
-   "venue": "Alhambra Pioneer Cemetery, 3 Carquinez Scenic Dr",
-   "city": "Martinez",
-   "price": null,
-   "url": "https://www.yahoo.com/lifestyle/articles/veterans-day-2026-bay-area-150000893.html",
-   "why": "A historic-cemetery ceremony followed by a community gathering at Plaza Ignacio Park, a different setting from the parade-style events."
-  },
-  {
-   "title": "Milpitas Veterans Day Ceremony",
-   "date": "2026-11-11",
-   "time": "09:00",
-   "venue": "Veterans Plaza, 457 E Calaveras Blvd",
-   "city": "Milpitas",
-   "price": 0,
-   "url": "https://www.yahoo.com/lifestyle/articles/veterans-day-2026-bay-area-150000893.html",
-   "why": "A short morning civic ceremony that fits before the San Jose parade a few miles south."
-  },
-  {
-   "title": "Milpitas Veterans Day Ceremony with Community Concert Band",
-   "date": "2026-11-11",
-   "time": "09:00",
-   "venue": "Veterans Plaza, 457 E Calaveras Blvd",
-   "city": "Milpitas",
-   "price": 0,
-   "url": "https://www.milpitas.gov/1326/Veterans-Day",
-   "why": "A short formal ceremony with the Milpitas Community Concert Band playing patriotic music and the Veteran of the Year announcement, timed to finish before the San Jose parade."
-  },
-  {
-   "title": "Mountain View Veterans Day Ceremony at Eagle Park",
-   "date": "2026-11-11",
-   "time": "11:00",
-   "venue": "Eagle Park, 650 Franklin St",
+   "title": "Ernie's Trains neighborhood model railroad display",
+   "date": "2026-11-26",
+   "time": "18:30",
+   "venue": "2387 Adele Ave (Monta Loma neighborhood)",
    "city": "Mountain View",
    "price": 0,
-   "url": "https://www.calegionpost558.org/veterans-ceremonies-memorial",
-   "why": "A one-hour American Legion ceremony timed to the Armistice hour, fifteen minutes from Menlo Park and over by noon."
+   "url": "https://www.paloaltoonline.com/ae/news-events/2026/11/19/where-to-find-the-peninsulas-best-holiday-displays-decorations-and-interactive-experiences/",
+   "why": "Free front-yard display of five model train tracks that runs evenings Nov 26 to Dec 26 except Mondays, a local-knowledge Peninsula tradition."
   },
   {
-   "title": "Petaluma Veterans Day Parade & Huey Flyover: Celebrating 250 Years",
-   "date": "2026-11-11",
-   "time": "12:00",
-   "venue": "Walnut Park, 201 Fourth St",
-   "city": "Petaluma",
-   "price": 0,
-   "url": "https://www.visitpetaluma.com/event/petaluma-american-legion-veterans-day-parade/",
-   "why": "The North Bay's biggest parade pairs a downtown procession with a Vietnam-era Huey helicopter flyover and landing plus other flyovers, which kids this age tend to remember; worth the roughly 90-minute drive."
-  },
-  {
-   "title": "Petaluma Veterans Day Parade and Huey Helicopter Flyover",
-   "date": "2026-11-11",
-   "time": "12:00",
-   "venue": "Walnut Park, 201 Fourth St",
-   "city": "Petaluma",
-   "price": 0,
-   "url": "https://www.ronniesawesomelist.com/veterans-day/veterans-day-parade-flyover",
-   "why": "The biggest Veterans Day parade north of the Golden Gate, with 200-plus entries, a USAF jazz combo at noon, a 1 p.m. parade, and a Huey Vets helicopter flyover kids will remember."
-  },
-  {
-   "title": "Pinole Veterans Day Celebration and Flag Retirement Ceremony",
-   "date": "2026-11-11",
-   "time": "11:00",
-   "venue": "Fernandez Park",
-   "city": "Pinole",
-   "price": null,
-   "url": "https://www.pinole.gov/?p=53972",
-   "why": "Pinole's second annual celebration features a flag retirement ceremony, speeches, and entertainment, a rarely seen ritual that is educational for kids."
-  },
-  {
-   "title": "Presidio Veterans Day Interfaith Service",
-   "date": "2026-11-11",
-   "time": "11:00",
-   "venue": "Presidio Chapel, 130 Fisher Loop",
+   "title": "Free Thanksgiving Day at San Francisco Botanical Garden",
+   "date": "2026-11-26",
+   "time": "07:30",
+   "venue": "San Francisco Botanical Garden, Golden Gate Park",
    "city": "San Francisco",
    "price": 0,
-   "url": "https://www.swords-to-plowshares.org/post/2026-veterans-day-round-up",
-   "why": "The annual service in the historic Presidio chapel starts at the 11th hour of the 11th day; free but reservations are requested by email to presidiointerfaith@gmail.com."
+   "url": "https://projectsf.com/events/san-francisco-botanical-garden-free-thanksgiving-day/",
+   "why": "The garden waives admission for everyone on Thanksgiving Day, a quiet morning walk before dinner."
   },
   {
-   "title": "Rohnert Park Veterans Day Celebration",
-   "date": "2026-11-11",
-   "time": "11:00",
-   "venue": "Rohnert Park Community Center, 5401 Snyder Lane",
-   "city": "Rohnert Park",
+   "title": "Indigenous Peoples' Thanksgiving Sunrise Gathering on Alcatraz",
+   "date": "2026-11-26",
+   "time": "04:15",
+   "venue": "Alcatraz Island, ferries from Pier 33",
+   "city": "San Francisco",
    "price": null,
-   "url": "https://www.yahoo.com/lifestyle/articles/veterans-day-2026-bay-area-150000893.html",
-   "why": "A Sonoma County community celebration that pairs with the Petaluma parade and flyover fifteen minutes down the road."
+   "url": "https://www.7x7.com/sf-events-11-23-26-2678448203.html",
+   "why": "Annual pre-dawn ceremony on Alcatraz honoring the 1969 occupation; ferries leave Pier 33 between 4:15 and 5:15am and tickets are limited."
   },
   {
-   "title": "San Jose Veterans Day Parade (108th, largest in Northern California)",
-   "date": "2026-11-11",
-   "time": "11:00",
-   "venue": "Plaza de Cesar Chavez, downtown",
-   "city": "San Jose",
+   "title": "San Francisco Turkey Trot",
+   "date": "2026-11-26",
+   "time": "08:00",
+   "venue": "Golden Gate Park",
+   "city": "San Francisco",
    "price": null,
-   "url": "https://www.ronniesawesomelist.com/veterans-day/san-jose-veterans-day-parade",
-   "why": "Held since 1918, this is the largest Veterans Day parade in Northern California and falls on a school holiday."
+   "url": "https://projectsf.com/events/san-francisco-turkey-trot/",
+   "why": "Thanksgiving-morning 5K and 10K through Golden Gate Park with a kids' run, a once-a-year family tradition."
   },
   {
-   "title": "San Jose Veterans Day Parade: A Salute to Our Vietnam Veterans",
-   "date": "2026-11-11",
+   "title": "Christmas in the Park opening weekend",
+   "date": "2026-11-27",
    "time": "12:00",
-   "venue": "Plaza de Cesar Chavez / Market Street, downtown",
-   "city": "San Jose",
+   "venue": "Plaza de César Chávez",
+   "city": "San José",
    "price": 0,
-   "url": "https://www.ronniesawesomelist.com/veterans-day/san-jose-veterans-day-parade",
-   "why": "The largest Veterans Day parade in Northern California, running since 1918, with an 11:00 ceremony at Plaza de Cesar Chavez before the parade steps off down Market Street; the closest big holiday tradition to Menlo Park."
+   "url": "https://christmasinthepark.com",
+   "why": "Downtown San José's free holiday village of decorated trees and displays opens Nov 27; open noon to 10pm Fri-Sun during the window."
   },
   {
-   "title": "Stanford Memorial Auditorium Veterans Day Open House",
-   "date": "2026-11-11",
-   "time": "11:00",
-   "venue": "Memorial Auditorium and Memorial Court",
-   "city": "Stanford",
+   "title": "Holiday Light Spectacular opening night",
+   "date": "2026-11-27",
+   "time": "17:00",
+   "venue": "Marin Center",
+   "city": "San Rafael",
    "price": 0,
-   "url": "https://community.stanford.edu/events/veterans-day-2026",
-   "why": "The auditorium lobby opens 11:00 to 17:00 so visitors can see the memorial plaques for Stanford's war dead and the wreaths in Memorial Court; a free ten-minute outing from Menlo Park."
+   "url": "https://www.marincounty.gov/departments/cultural-services/department-sponsored-events/holiday-light-spectacular",
+   "why": "Free drive-and-walk light show at the Marin Center that opens Nov 27 and runs Fri-Sun evenings 5-9pm."
   },
   {
-   "title": "Stanford Veterans Day Wreaths at Memorial Court and Memorial Auditorium",
-   "date": "2026-11-11",
-   "time": "11:00",
-   "venue": "Memorial Court and Memorial Auditorium, Stanford University",
-   "city": "Stanford",
-   "price": 0,
-   "url": "https://community.stanford.edu/events/veterans-day-2026",
-   "why": "Stanford places wreaths and displays the president's letter at its war memorials, with plaques viewable 11 a.m. to 5 p.m., a quiet ten-minute-away stop for a family walk."
-  },
-  {
-   "title": "Veterans Day Choral Evensong at St Thomas Anglican",
-   "date": "2026-11-11",
-   "time": "19:30",
-   "venue": "St Thomas Anglican Church, Pacific Heights",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://sf.funcheap.com/veterans-day-remembrance-day-choral-music-evensong-pacific-heights-sf/",
-   "why": "A free hour of Remembrance Day choral music to close the holiday for a family already in the city that evening."
-  },
-  {
-   "title": "Veterans Day Cruise Aboard the USS Potomac",
-   "date": "2026-11-11",
-   "time": "10:30",
-   "venue": "USS Potomac, Jack London Square, 540 Water St",
-   "city": "Oakland",
-   "price": 35,
-   "url": "https://www.yahoo.com/lifestyle/articles/veterans-day-2026-bay-area-150000893.html",
-   "why": "A once-a-year bay cruise on FDR's presidential yacht that pauses at the USS Hornet for a bagpipe-and-choir ceremony before a box-lunch sail, so advance tickets are needed."
-  },
-  {
-   "title": "Veterans Day Cruise on FDR's Yacht USS Potomac",
-   "date": "2026-11-11",
-   "time": "10:30",
-   "venue": "Jack London Square, 540 Water St",
-   "city": "Oakland",
-   "price": 35,
-   "url": "https://www.ronniesawesomelist.com/veterans-day/veterans-day-cruise-on-san-francisco-bay",
-   "why": "A ticketed three-hour Bay cruise on the presidential yacht with a bagpiper, the Oakland Interfaith Youth Choir, a tribute ceremony alongside the USS Hornet, and a box lunch; limited seats, book ahead."
-  },
-  {
-   "title": "Veterans Day Interfaith Service at the Presidio Chapel",
-   "date": "2026-11-11",
-   "time": "11:00",
-   "venue": "Presidio Chapel, 130 Fisher Loop",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://presidio.gov/explore/events/veterans-day-interfaith-service/",
-   "why": "A free, all-ages one-hour service in the historic Presidio chapel with keynote speaker Michael Blecker of Swords to Plowshares; advance RSVP by email requested."
-  },
-  {
-   "title": "Veterans Day Sail on Schooner Seaward",
-   "date": "2026-11-11",
-   "time": "13:00",
-   "venue": "Bay Model Visitor Center, 2100 Bridgeway",
-   "city": "Sausalito",
-   "price": 49,
-   "url": "https://www.ronniesawesomelist.com/veterans-day/veterans-day-sail-on-schooner-seaward",
-   "why": "Call of the Sea's tall-ship sail on the Bay with check-in at 12:45; every passenger needs an advance ticket and these sails sell out."
-  },
-  {
-   "title": "Veterans Day Sail on the Schooner Seaward",
-   "date": "2026-11-11",
-   "time": "13:00",
-   "venue": "Bay Model Visitor Center, 2100 Bridgeway",
-   "city": "Sausalito",
-   "price": 49,
-   "url": "https://events.humanitix.com/veterans-day-sail-on-schooner-seaward-9tzphsfu",
-   "why": "Call of the Sea's annual three-hour tall-ship sail on the bay with check-in at 12:45 p.m., bring-your-own food, and free parking, a ticketed one-day event that sells out."
-  },
-  {
-   "title": "Veterans Day aboard the USS Hornet",
-   "date": "2026-11-11",
+   "title": "Holidays at Filoli",
+   "date": "2026-11-27",
    "time": "10:00",
-   "venue": "USS Hornet Sea, Air and Space Museum, 707 W Hornet Ave",
-   "city": "Alameda",
+   "venue": "Filoli Historic House and Garden",
+   "city": "Woodside",
+   "price": 40,
+   "url": "https://filoli.org/holidays/",
+   "why": "Daytime holiday house and garden from $40, or the evening Holiday Lights walk 4-10pm from $45; the closest big light display to Menlo Park."
+  },
+  {
+   "title": "Joseph and the Amazing Technicolor Dreamcoat",
+   "date": "2026-11-27",
+   "time": null,
+   "venue": "Los Altos Stage Company, 97 Hillview Ave",
+   "city": "Los Altos",
+   "price": 29,
+   "url": "https://www.paloaltoonline.com/ae/news-events/2026/11/19/winter-wonderland-a-guide-to-holiday-arts-on-the-peninsula/",
+   "why": "Local community theater run of the family musical opens Nov 27 and continues through Dec 20, a short drive from Menlo Park."
+  },
+  {
+   "title": "Lightscape at San Francisco Botanical Garden",
+   "date": "2026-11-27",
+   "time": null,
+   "venue": "San Francisco Botanical Garden, Golden Gate Park",
+   "city": "San Francisco",
    "price": null,
-   "url": "https://www.ronniesawesomelist.com/veterans-day/veterans-day-at-the-uss-hornet",
-   "why": "A ceremony with guest speakers on the deck of a real aircraft carrier, plus full access to the ship on a day off school."
+   "url": "https://gggp.org/lightscape/",
+   "why": "Mile-long illuminated art trail through the botanical garden, nightly through Jan 3, a seasonal evening outing for the long weekend."
   },
   {
-   "title": "Walnut Creek Veterans Day Ceremony and Concert",
-   "date": "2026-11-11",
-   "time": "11:00",
-   "venue": "Lesher Center for the Arts, 1601 Civic Dr",
-   "city": "Walnut Creek",
-   "price": 0,
-   "url": "https://www.yahoo.com/lifestyle/articles/veterans-day-2026-bay-area-150000893.html",
-   "why": "A free one-hour indoor ceremony with live music in a proper theater, a good option if the weather turns."
+   "title": "Roaring Camp Holiday Lights Train",
+   "date": "2026-11-27",
+   "time": "17:00",
+   "venue": "Santa Cruz Beach Boardwalk depot",
+   "city": "Santa Cruz",
+   "price": 58.25,
+   "url": "https://www.roaringcamp.com/holiday-lights-train",
+   "why": "Lighted vintage train with carolers departs the Boardwalk at 5:00 and 6:30pm on Nov 27-28; the page lists dates but confirm the year when booking."
   },
   {
-   "title": "Zoppe Italian Family Circus: Special Veterans Day Matinees",
-   "date": "2026-11-11",
-   "time": "12:00",
-   "venue": "Circus Tent, 1044 Middlefield Rd",
-   "city": "Redwood City",
-   "price": 17,
-   "url": "https://sf.funcheap.com/zopp-italian-family-circus-2026-redwood-city-nov-629/",
-   "why": "The one-ring European family circus adds special Wednesday shows at noon and 4 p.m. for the holiday, ten minutes from Menlo Park with every seat within 20 feet of the ring."
-  },
-  {
-   "title": "Arab Film Festival Outdoor Movie Night: Spices and Lies",
-   "date": "2026-11-12",
-   "time": "19:30",
-   "venue": "Proxy SF, 432 Octavia St",
+   "title": "Santa Lights the Square: Ghirardelli Square tree lighting",
+   "date": "2026-11-27",
+   "time": "16:30",
+   "venue": "Ghirardelli Square",
    "city": "San Francisco",
    "price": 0,
-   "url": "https://sf.funcheap.com/free-arab-film-festival-outdoor-movie-night-proxy-hayes-valley/",
-   "why": "Free outdoor screening of a French-Algerian food rom-com with shawarma and kunafa vendors, marking the festival's 30th anniversary; RSVP required."
+   "url": "https://projectsf.com/events/santa-lights-the-square-ghirardelli-square-tree-lighting/",
+   "why": "Free Black Friday tree lighting with Santa's arrival, carolers and chocolate, a once-a-year waterfront kickoff."
   },
   {
-   "title": "Menlo Park Storytelling Festival: StoryFest Online",
-   "date": "2026-11-12",
-   "time": "18:00",
-   "venue": "Online (Zoom) via Menlo Park Library",
-   "city": "Menlo Park",
+   "title": "Vault Garden Winter Wonderland opening",
+   "date": "2026-11-27",
+   "time": "11:00",
+   "venue": "The Vault Garden, 555 California St",
+   "city": "San Francisco",
+   "price": null,
+   "url": "https://www.7x7.com/sf-events-11-23-26-2678448203.html",
+   "why": "Adults-only pick: the downtown restaurant's heated outdoor holiday dining and cocktail installation opens Nov 27, geared to a parents' night out."
+  },
+  {
+   "title": "Alice in Wonderland: Panto in the Presidio",
+   "date": "2026-11-28",
+   "time": null,
+   "venue": "Presidio Theatre",
+   "city": "San Francisco",
+   "price": null,
+   "url": "https://projectsf.com/events/alice-in-wonderland-panto-in-the-presidio/",
+   "why": "British-style holiday pantomime with audience participation opens Nov 28, well suited to a 9-14 age range."
+  },
+  {
+   "title": "Cirque Kalabanté: WOW (World of Words)",
+   "date": "2026-11-28",
+   "time": "14:00",
+   "venue": "Zellerbach Hall, UC Berkeley",
+   "city": "Berkeley",
+   "price": 43,
+   "url": "https://calperformances.org/events/2026-27/seasonal-holidays/cirque-kalabante-wow-world-of-words/",
+   "why": "Guinean acrobatic circus at Cal Performances, Nov 28 2pm and Nov 29 3pm, a family-friendly holiday-season show rather than a stadium act."
+  },
+  {
+   "title": "Fellowship of Craft Marketplace",
+   "date": "2026-11-28",
+   "time": "10:00",
+   "venue": "Henry J. Kaiser Center for the Arts",
+   "city": "Oakland",
    "price": 0,
-   "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/20261112-StoryFest",
-   "why": "The hometown library's annual storytelling festival streams a lineup of live tellers for all ages, a free weeknight option without leaving the house."
+   "url": "https://www.fellowshipofcraft.com/",
+   "why": "Free two-day juried craft and design fair Nov 28-29, 10am-5pm, in the restored Kaiser Center."
   },
   {
-   "title": "Bhangra & Beats Diwali Night Market",
-   "date": "2026-11-13",
-   "time": "16:00",
+   "title": "Great Dickens Christmas Fair (Thanksgiving weekend)",
+   "date": "2026-11-28",
+   "time": "10:00",
+   "venue": "Cow Palace",
+   "city": "Daly City",
+   "price": 35,
+   "url": "https://dickensfair.com/",
+   "why": "The 42nd annual immersive Victorian London fair runs weekends through Dec 20, including Nov 22 and the Fri-Sun after Thanksgiving; a classic once-a-year Bay Area outing."
+  },
+  {
+   "title": "Hook in Concert with the San Francisco Symphony",
+   "date": "2026-11-28",
+   "time": "14:30",
+   "venue": "Davies Symphony Hall",
+   "city": "San Francisco",
+   "price": 49.5,
+   "url": "https://sf.funcheap.com/hook-live-in-concert-with-sf-symphony-nov-27-28/",
+   "why": "The 1991 Spielberg film screened with live orchestra Nov 27-28, with kids' tickets half off."
+  },
+  {
+   "title": "IlluminOdyssey 10th anniversary light exhibits",
+   "date": "2026-11-28",
+   "time": "09:30",
+   "venue": "CuriOdyssey, Coyote Point",
+   "city": "San Mateo",
+   "price": 24.95,
+   "url": "https://www.paloaltoonline.com/ae/news-events/2026/11/19/where-to-find-the-peninsulas-best-holiday-displays-decorations-and-interactive-experiences/",
+   "why": "Interactive light-and-science installations celebrating their tenth year, open daily through Jan 24, a good Thanksgiving-break outing for 9-14 year olds."
+  },
+  {
+   "title": "San Francisco Crystal Fair",
+   "date": "2026-11-28",
+   "time": "10:00",
+   "venue": "SF County Fair Building, 1199 Ninth Ave",
+   "city": "San Francisco",
+   "price": 11,
+   "url": "https://www.crystalfair.com/",
+   "why": "Twice-a-year crystal, mineral and jewelry fair Nov 28 10-6 and Nov 29 10-4; $14 at the door with an $11 Funcheap discount, kids 12 and under free."
+  },
+  {
+   "title": "The Velveteen Rabbit (ODC/Dance)",
+   "date": "2026-11-28",
+   "time": null,
+   "venue": "Yerba Buena Center for the Arts",
+   "city": "San Francisco",
+   "price": 30,
+   "url": "https://projectsf.com/events/the-velveteen-rabbit-odc-dance/",
+   "why": "ODC's annual holiday dance production opens Nov 28 and runs through Dec 6, a San Francisco seasonal staple."
+  },
+  {
+   "title": "Yerba Buena Gardens holiday tree and carousel lighting",
+   "date": "2026-11-28",
+   "time": "16:30",
    "venue": "Yerba Buena Gardens",
    "city": "San Francisco",
    "price": 0,
-   "url": "https://www.bhangraandbeats.com/",
-   "why": "The City's official Diwali night market, billed as a family-friendly Indian rave with DJs, dance and street food, free and all ages."
+   "url": "https://sf.funcheap.com/3rd-annual-holiday-tree-lighting-carousel-lighting-free-ice-skating-yerba-buena-gardens/",
+   "why": "Third annual free tree and LeRoy King Carousel lighting with free ice skating, RSVP required."
   },
   {
-   "title": "Cubberley Artist Studio Program Open Studios",
-   "date": "2026-11-14",
-   "time": "13:00",
-   "venue": "Cubberley Community Center, 4000 Middlefield Rd",
-   "city": "Palo Alto",
+   "title": "Los Altos Festival of Lights Parade",
+   "date": "2026-11-29",
+   "time": "18:00",
+   "venue": "Downtown Los Altos (Main and State streets)",
+   "city": "Los Altos",
    "price": 0,
-   "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Cubberley-Artist-Studio-Program-Open-Studios",
-   "why": "Twenty-three resident artists open their studios with an AR asteroid sculpture, a FOPAL book sale and an Oaxacan food truck, ten minutes from Menlo Park."
+   "url": "https://losaltosparade.org/",
+   "why": "Once-a-year lighted parade ten minutes from Menlo Park, with lit floats, marching bands and giant balloons; arrive early for curb space."
   },
   {
-   "title": "Friends of the Menlo Park Library Autumn Book Sale",
-   "date": "2026-11-14",
-   "time": "10:00",
-   "venue": "Menlo Park Library, 800 Alma St",
-   "city": "Menlo Park",
+   "title": "Angels Singing: An Early Music Christmas",
+   "date": "2026-12-02",
+   "time": "19:30",
+   "venue": "Memorial Church, Stanford University",
+   "city": "Stanford",
    "price": 0,
-   "url": "https://friendsmpl.org/",
-   "why": "Twice-a-year sale of thousands of books, kids' titles and DVDs mostly priced $1 to $2, right in town; also Friday Nov 13, 14:00 to 17:00."
-  },
-  {
-   "title": "Gamble Garden Second Saturday: Seeds and Indigenous Heritage Month",
-   "date": "2026-11-14",
-   "time": "10:00",
-   "venue": "Gamble Garden, 1431 Waverley St",
-   "city": "Palo Alto",
-   "price": 0,
-   "url": "https://www.gamblegarden.org/event/novembersaturday/",
-   "why": "Free hands-on garden morning making seed bracelets and seed bombs and exploring acorn traditions, with a plant sale; timed-entry registration."
-  },
-  {
-   "title": "Holidays at Filoli Opening Day",
-   "date": "2026-11-14",
-   "time": "10:00",
-   "venue": "Filoli Historic House & Garden",
-   "city": "Woodside",
-   "price": 40,
-   "url": "https://filoli.org/whats-on/events/holiday-daytime/",
-   "why": "First day of Filoli's holiday season, with a new Family Farm of mini cows and goats in the redwoods, 200+ decorated trees and a Celtic-themed house, 15 minutes from Menlo Park."
-  },
-  {
-   "title": "Kuchipudi Dance with Manaswini Avvari",
-   "date": "2026-11-14",
-   "time": "11:00",
-   "venue": "Flex Theater, Cañada College",
-   "city": "Redwood City",
-   "price": 0,
-   "url": "https://www.smcgov.org/ceo/arts-and-culture-events-around-county",
-   "why": "Free one-hour classical Indian dance performance at the local community college, a short cultural outing close to home."
-  },
-  {
-   "title": "Peninsula Youth Theatre: The Wizard of Oz",
-   "date": "2026-11-14",
-   "time": "14:00",
-   "venue": "Mountain View Center for the Performing Arts, Main Stage",
-   "city": "Mountain View",
-   "price": null,
-   "url": "https://www.pytnet.org/shows/the-wizard-of-oz",
-   "why": "Opening weekend of the local youth theatre's full-scale Wizard of Oz, with performers the same age as your kids; also 19:30 Saturday and 13:00 Sunday."
-  },
-  {
-   "title": "Renegade Craft Holiday Fair",
-   "date": "2026-11-14",
-   "time": "11:00",
-   "venue": "Fort Mason Center Festival Pavilion",
-   "city": "San Francisco",
-   "price": 0,
-   "url": "https://sf.funcheap.com/sfs-renegade-craft-holiday-2026-fair-250-makers-fort-mason-nov-1415/",
-   "why": "250+ curated makers plus food trucks in one indoor hall, a strong early holiday-shopping outing; also Sunday Nov 15, $5 suggested donation."
-  },
-  {
-   "title": "Rhône By The Bay Wine Tasting",
-   "date": "2026-11-14",
-   "time": "12:00",
-   "venue": "Gallery 308, Fort Mason Center",
-   "city": "San Francisco",
-   "price": 45,
-   "url": "https://projectsf.com/events/rhne-by-the-bay/",
-   "why": "ADULTS ONLY (21+): 44 Rhône Rangers wineries pour about 150 American Grenache, Syrah and Viognier bottlings in a walk-around tasting."
-  },
-  {
-   "title": "Rock the Dock Concert Series: Pop Rocks",
-   "date": "2026-11-14",
-   "time": "14:30",
-   "venue": "Port of Redwood City, 459 Seaport Court",
-   "city": "Redwood City",
-   "price": 0,
-   "url": "https://www.smcgov.org/ceo/arts-and-culture-events-around-county",
-   "why": "Final free waterfront concert of the season at the Port, with food vendors and room for kids to roam; county listing says 14:30, port site lists series slots at 15:30, so confirm start time."
-  },
-  {
-   "title": "SF Tea Festival at the Ferry Building",
-   "date": "2026-11-14",
-   "time": "10:00",
-   "venue": "Ferry Building",
-   "city": "San Francisco",
-   "price": 24,
-   "url": "https://sf.funcheap.com/2026-sf-tea-festival-at-ferry-building-nov-14-15/",
-   "why": "Taste hundreds of teas from 30+ vendors with a souvenir porcelain cup included; also Sunday Nov 15 and $5 off with code FUNCHEAP."
-  },
-  {
-   "title": "SF VegFest 2026",
-   "date": "2026-11-14",
-   "time": "11:00",
-   "venue": "SMC Event Center, 1111 Gough St",
-   "city": "San Francisco",
-   "price": 18,
-   "url": "https://sf.funcheap.com/san-francisco-vegfest/",
-   "why": "27th annual plant-based food festival with 80+ exhibitors, chef demos and comedians, a good grazing day for curious eaters."
-  },
-  {
-   "title": "The Big Open: 100+ Sausalito Artists Open Studios",
-   "date": "2026-11-14",
-   "time": "11:00",
-   "venue": "ICB Building, 480 Gate 5 Rd",
-   "city": "Sausalito",
-   "price": 0,
-   "url": "https://sf.funcheap.com/big-open-100-sausalito-artists-open-studios-nov-1315/",
-   "why": "Once-a-year weekend when 100+ working artists open their waterfront studios; also runs Sunday Nov 15."
-  },
-  {
-   "title": "Feathered Friends: Birdwatching & Nature Art for Families",
-   "date": "2026-11-15",
-   "time": "08:30",
-   "venue": "San Francisco Botanical Garden, Main Gate",
-   "city": "San Francisco",
-   "price": 40,
-   "url": "https://gggp.org/event/feathered-friends-garden-adventure-birdwatching-and-nature-art-for-families-11/",
-   "why": "Early-morning guided birdwatching on fall migration plus a nature-art session; $40 covers one adult and one child ages 5 to 12, so suits the 9-year-old."
-  },
-  {
-   "title": "Neave Trio at Kohl Mansion",
-   "date": "2026-11-15",
-   "time": "19:00",
-   "venue": "Kohl Mansion",
-   "city": "Burlingame",
-   "price": 68,
-   "url": "https://musicatkohl.org/neave-trio-2026-11-15/",
-   "why": "Adult-oriented: acclaimed piano trio in the Great Hall of a 1914 Tudor mansion, with a free pre-concert talk at 18:00 and $30 tickets for under-30s."
-  },
-  {
-   "title": "Palo Alto Youth Council Mental Health Fair for Parents & Teens",
-   "date": "2026-11-15",
-   "time": "14:30",
-   "venue": "Mitchell Park Community Center, 3700 Middlefield Rd",
-   "city": "Palo Alto",
-   "price": 0,
-   "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Mental-Health-Fair",
-   "why": "Teen-run fair with youth mental health experts, therapy dogs and free refreshments, designed for parents to attend with their teens."
-  },
-  {
-   "title": "Shadelands FallFest",
-   "date": "2026-11-15",
-   "time": "11:00",
-   "venue": "Shadelands SportsMall, 2640 Shadelands Dr",
-   "city": "Walnut Creek",
-   "price": 0,
-   "url": "https://sf.funcheap.com/shadelands-fallfest-free-sports-food-trucks-family-activities-walnut-creek/",
-   "why": "Free try-it sports sampler for kids with food trucks, shelter animals and a pink fire engine, good for active 9-to-14-year-olds."
-  },
-  {
-   "title": "Menlo Park Storytelling Festival: Jeff Gere, True Supernatural Tales of Hawaii",
-   "date": "2026-11-16",
-   "time": null,
-   "venue": "Menlo Park Library, 800 Alma St",
-   "city": "Menlo Park",
-   "price": 0,
-   "url": "https://www.menlopark.gov/News-articles/City-news/2026_09-11-11th-Storytelling-Festival",
-   "why": "Touring Hawaiian storyteller performs spooky true tales at the hometown library as part of the free annual festival; check the library calendar for the start time."
-  },
-  {
-   "title": "Embarcadero Center Holiday Market & 40th Annual Building Lighting",
-   "date": "2026-11-18",
-   "time": "16:00",
-   "venue": "Three Embarcadero Center",
-   "city": "San Francisco",
-   "price": null,
-   "url": "https://projectsf.com/events/embarcadero-center-holiday-market-and-building-lighting/",
-   "why": "The once-a-year moment when all four Embarcadero towers light up for the holidays, paired with a holiday market, kicking off the season downtown."
+   "url": "https://www.paloaltoonline.com/ae/news-events/2026/11/19/winter-wonderland-a-guide-to-holiday-arts-on-the-peninsula/",
+   "why": "Free early-music Christmas concert in Stanford's Memorial Church, a one-night event minutes from home."
   }
  ]
 }
